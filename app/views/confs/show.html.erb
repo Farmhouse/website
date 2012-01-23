@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @conf.name %>
+</p>
+
+<p>
+  <b>Subtitle:</b>
+  <%= @conf.subtitle %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @conf.year %>
+</p>
+
+<p>
+  <b>Starts at:</b>
+  <%= @conf.starts_at %>
+</p>
+
+<p>
+  <b>Ends at:</b>
+  <%= @conf.ends_at %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @conf.location_id %>
+</p>
+
+<p>
+  <b>Twitter:</b>
+  <%= @conf.twitter %>
+</p>
+
+
+<%= link_to 'Edit', edit_conf_path(@conf) %> |
+<%= link_to 'Back', confs_path %>

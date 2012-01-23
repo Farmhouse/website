@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  subtitle: MyString
+  year: 1
+  starts_at: 2012-01-23 15:52:05
+  ends_at: 2012-01-23 15:52:05
+  location_id: 1
+  twitter: MyString
+
+two:
+  name: MyString
+  subtitle: MyString
+  year: 1
+  starts_at: 2012-01-23 15:52:05
+  ends_at: 2012-01-23 15:52:05
+  location_id: 1
+  twitter: MyString
