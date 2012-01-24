@@ -1,3 +1,6 @@
 Farmhouse::Application.routes.draw do
-  resources :websites, :people, :confs, :locations
+  resources :websites
+  match "/websites/new/:whom" => "websites#new"
+
+  resources :people, :confs, :locations
 end
