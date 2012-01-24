@@ -1,40 +1,44 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @location.name %>
-</p>
+<div class="vcard h-card">
+  <p>
+    <b>Name:</b>
+    <span class="n p-n"><%= @location.name %></span>
+  </p>
+
+  <p>
+    <b>Street Address:</b>
+    <span class="street-address p-street-address"><%= @location.street_address %></span>
+  </p>
+
+  <p>
+    <b>Extended Address:</b>
+    <span class="extended-address p-extended-address"><%= @location.extended_address %></span>
+  </p>
+
+  <p>
+    <b>Locality:</b>
+    <span class="locality p-locality"><%= @location.locality %></span>
+  </p>
+
+  <p>
+    <b>Region:</b>
+    <span class="region p-region"><%= @location.region.name %></span>
+  </p>
+
+  <p>
+    <b>Postal code:</b>
+    <span class="postal-code p-postal-code"><%= @location.postal_code %></span>
+  </p>
+
+  <p>
+    <b>Country name:</b>
+    <span class="country p-country"><%= @location.country.name %></span>
+  </p>
+</div>
+
 
 <p>
-  <b>Street address:</b>
-  <%= @location.street_address %>
+  <%= link_to "Edit", edit_location_path(@location) %>
+  <%= link_to "Locations", locations_path %>
 </p>
-
-<p>
-  <b>Extended address:</b>
-  <%= @location.extended_address %>
-</p>
-
-<p>
-  <b>Locality:</b>
-  <%= @location.locality %>
-</p>
-
-<p>
-  <b>Region:</b>
-  <%= @location.region.name %>
-</p>
-
-<p>
-  <b>Postal code:</b>
-  <%= @location.postal_code %>
-</p>
-
-<p>
-  <b>Country name:</b>
-  <%= @location.country.name %>
-</p>
-
-
-<%= link_to 'Edit', edit_location_path(@location) %> |
-<%= link_to 'Back', locations_path %>

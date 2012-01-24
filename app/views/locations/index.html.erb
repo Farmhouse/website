@@ -1,35 +1,36 @@
-<h1>Listing locations</h1>
+<h1>
+  Locations
+  ( <%= link_to 'New', new_location_path %> )
+</h1>
 
 <table>
   <tr>
     <th>Name</th>
-    <th>Street address</th>
-    <th>Extended address</th>
-    <th>Region</th>
+    <th>Street Address</th>
+    <th>Extended Address</th>
     <th>Locality</th>
-    <th>Postal code</th>
-    <th>Country name</th>
-    <th></th>
-    <th></th>
+    <th>Region</th>
+    <th>Postal Code</th>
+    <th>Country</th>
     <th></th>
   </tr>
 
 <% @locations.each do |location| %>
-  <tr>
-    <td><%= location.name %></td>
-    <td><%= location.street_address %></td>
-    <td><%= location.extended_address %></td>
-    <td><%= location.region %></td>
-    <td><%= location.locality %></td>
-    <td><%= location.postal_code %></td>
-    <td><%= location.country_name %></td>
-    <td><%= link_to 'Show', location %></td>
-    <td><%= link_to 'Edit', edit_location_path(location) %></td>
-    <td><%= link_to 'Destroy', location, :confirm => 'Are you sure?', :method => :delete %></td>
+  <tr class="vcard h-card">
+    <td class="n p-n"><%= link_to location.name, location %></td>
+    <td class="street-address p-street-address"><%= location.street_address %></td>
+    <td class="extended-address p-extended-address"><%= location.extended_address %></td>
+    <td class="locality p-locality"><%= location.locality %></td>
+    <td class="region p-region"><%= location.region.name %></td>
+    <td class="postal-code p-postal-code"><%= location.postal_code %></td>
+    <td class="country p-country"><%= location.country.name %></td>
+    <td>
+      <%= link_to 'Show', location %>
+      <%= link_to 'Edit', edit_location_path(location) %>
+      <%= link_to 'Destroy', location, :confirm => 'Are you sure?', :method => :delete %>
+    </td>
   </tr>
 <% end %>
 </table>
 
-<br />
 
-<%= link_to 'New Location', new_location_path %>
