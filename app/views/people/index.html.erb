@@ -11,15 +11,13 @@
     <th>Staff</th>
     <th>Organizer</th>
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @people.each do |person| %>
   <tr>
-    <td><%= person.name %></td>
+    <td><%= link_to person.name, person %></td>
     <td><%= person.bio %></td>
-    <td><%= person.image %></td>
+    <td><%= link_to person.image, person.image %></td>
     <td><%= person.staff %></td>
     <td><%= person.organizer %></td>
     <td>

@@ -1,25 +1,24 @@
-<h1>Listing websites</h1>
+<h1>
+  Websites
+  ( <%= link_to "New", new_website_path %> )
+</h1>
 
 <table>
   <tr>
-    <th>Url</th>
     <th>Name</th>
-    <th></th>
-    <th></th>
+    <th>URL</th>
     <th></th>
   </tr>
 
 <% @websites.each do |website| %>
   <tr>
-    <td><%= website.url %></td>
     <td><%= website.name %></td>
-    <td><%= link_to 'Show', website %></td>
-    <td><%= link_to 'Edit', edit_website_path(website) %></td>
-    <td><%= link_to 'Destroy', website, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to website.url, website.url %></td>
+    <td>
+      <%= link_to "Show", website %>
+      <%= link_to "Edit", edit_website_path(website) %>
+      <%= link_to "Destroy", website, :confirm => "Are you sure?", :method => :delete %>
+    </td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Website', new_website_path %>

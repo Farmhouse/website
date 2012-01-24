@@ -1,15 +1,16 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Url:</b>
-  <%= @website.url %>
-</p>
-
-<p>
   <b>Name:</b>
   <%= @website.name %>
 </p>
 
+<p>
+  <b>URL:</b>
+  <%= link_to @website.url, @website.url, :rel => "external" %>
+</p>
 
-<%= link_to 'Edit', edit_website_path(@website) %> |
-<%= link_to 'Back', websites_path %>
+<p>
+  <%= link_to 'Edit', edit_website_path(@website) %>
+  <%= link_to 'Back', websites_path %>
+</p>
