@@ -45,7 +45,6 @@ ActiveRecord::Schema.define(:version => 20120124021152) do
 
   create_table "people", :force => true do |t|
     t.string   "name"
-    t.string   "slug"
     t.text     "bio"
     t.string   "image"
     t.boolean  "staff"

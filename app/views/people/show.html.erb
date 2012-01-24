@@ -6,11 +6,6 @@
 </p>
 
 <p>
-  <b>Slug:</b>
-  <%= @person.slug %>
-</p>
-
-<p>
   <b>Bio:</b>
   <%= @person.bio %>
 </p>
@@ -30,6 +25,7 @@
   <%= @person.organizer %>
 </p>
 
-
-<%= link_to 'Edit', edit_person_path(@person) %> |
-<%= link_to 'Back', people_path %>
+<p>
+  <%= link_to "Edit", edit_person_path(@person) %>
+  <%= link_to "People", people_path %>
+</p>
