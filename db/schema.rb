@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120124013823) do
+ActiveRecord::Schema.define(:version => 20120124021152) do
 
   create_table "confs", :force => true do |t|
     t.string   "name"
@@ -50,6 +50,13 @@ ActiveRecord::Schema.define(:version => 20120124013823) do
     t.string   "image"
     t.boolean  "staff"
     t.boolean  "organizer"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "people_websites", :force => true do |t|
+    t.integer  "person_id"
+    t.integer  "website_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
