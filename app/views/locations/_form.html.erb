@@ -24,12 +24,12 @@
     <%= f.text_field :extended_address %>
   </div>
   <div class="field">
-    <%= f.label :region %><br />
-    <%= f.text_field :region %>
+    <%= f.label :locality %><br />
+    <%= f.select :locality, State.options_for_select %>
   </div>
   <div class="field">
-    <%= f.label :locality %><br />
-    <%= f.text_field :locality %>
+    <%= f.label :region %><br />
+    <%= f.text_field :region %>
   </div>
   <div class="field">
     <%= f.label :postal_code %><br />
