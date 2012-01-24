@@ -37,7 +37,7 @@
   </div>
   <div class="field">
     <%= f.label :country_name %><br />
-    <%= f.text_field :country_name %>
+    <%= f.select :country_name, Country.options_for_select %>
   </div>
   <div class="actions">
     <%= f.submit %>
