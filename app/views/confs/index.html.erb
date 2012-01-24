@@ -1,4 +1,7 @@
-<h1>Listing confs</h1>
+<h1>
+  Confs
+  ( <%= link_to 'New', new_conf_path %> )
+</h1>
 
 <table>
   <tr>
@@ -16,20 +19,18 @@
 
 <% @confs.each do |conf| %>
   <tr>
-    <td><%= conf.name %></td>
+    <td><%= link_to conf.name, conf %></td>
     <td><%= conf.subtitle %></td>
     <td><%= conf.year %></td>
-    <td><%= conf.starts_at %></td>
-    <td><%= conf.ends_at %></td>
-    <td><%= conf.location_id %></td>
-    <td><%= conf.twitter %></td>
-    <td><%= link_to 'Show', conf %></td>
-    <td><%= link_to 'Edit', edit_conf_path(conf) %></td>
-    <td><%= link_to 'Destroy', conf, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= time_tag conf.starts_at %></td>
+    <td><%= time_tag conf.ends_at %></td>
+    <td><%= link_to conf.location.name, conf.location %></td>
+    <td><%= link_to_twitter conf %></td>
+    <td>
+      <%= link_to 'Show', conf %>
+      <%= link_to 'Edit', edit_conf_path(conf) %>
+      <%= link_to 'Destroy', conf, :confirm => 'Are you sure?', :method => :delete %>
+    </td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Conf', new_conf_path %>
