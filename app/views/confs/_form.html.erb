@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :year %><br />
-    <%= f.number_field :year %>
+    <%= f.text_field :year %>
   </div>
   <div class="field">
     <%= f.label :starts_at %><br />
@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :location_id %><br />
-    <%= f.number_field :location_id %>
+    <%= f.select :location_id, Location.options_for_select %>
   </div>
   <div class="field">
     <%= f.label :twitter %><br />

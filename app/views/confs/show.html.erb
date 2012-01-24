@@ -17,22 +17,22 @@
 
 <p>
   <b>Starts at:</b>
-  <%= @conf.starts_at %>
+  <%= time_tag @conf.starts_at %>
 </p>
 
 <p>
   <b>Ends at:</b>
-  <%= @conf.ends_at %>
+  <%= time_tag @conf.ends_at %>
 </p>
 
 <p>
   <b>Location:</b>
-  <%= @conf.location_id %>
+  <%= link_to @conf.location.name, @conf.location %>
 </p>
 
 <p>
   <b>Twitter:</b>
-  <%= @conf.twitter %>
+  <%= link_to_twitter(@conf) %>
 </p>
 
 

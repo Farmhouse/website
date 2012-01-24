@@ -28,7 +28,7 @@
     <%= f.text_field :locality %>
   </div>
   <div class="field">
-    <%= f.label :region %><br />
+    <%= f.label :region_id %><br />
     <%= f.select :region_id, Region.options_for_select %>
   </div>
   <div class="field">
@@ -36,7 +36,7 @@
     <%= f.text_field :postal_code %>
   </div>
   <div class="field">
-    <%= f.label :country %><br />
+    <%= f.label :country_id %><br />
     <%= f.select :country_id, Country.options_for_select %>
   </div>
   <div class="actions">
