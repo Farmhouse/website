@@ -2,16 +2,22 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.0'
 
-gem 'sqlite3'
+group :development do
+  gem "sqlite3-ruby", :require => "sqlite3"
+end
 
 gem 'json'
 
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
-  gem 'sass-rails', "  ~> 3.1.0"
-  gem 'coffee-rails', "~> 3.1.0"
+  gem 'sass-rails', "~> 3.1.0"
   gem 'uglifier'
 end
 
 gem 'jquery-rails'
+
+group :production do
+  gem "pg"
+  gem "thin"
+end
+
+gem "omniauth",  "~> 1.0.2"
