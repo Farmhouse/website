@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(:version => 20120124021152) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "states", :force => true do |t|
+  create_table "regions", :force => true do |t|
     t.string   "name"
     t.string   "abbreviation"
     t.integer  "country_id"
