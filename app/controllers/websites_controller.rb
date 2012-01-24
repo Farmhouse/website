@@ -19,7 +19,7 @@ class WebsitesController < ApplicationController
     @website = Website.new(params[:website])
 
     if @website.save
-      redirect_to @website, :notice => 'Website was successfully created.'
+      redirect_to @website, :notice => "Website was successfully created."
     else
       render :action => "new"
     end
@@ -29,7 +29,7 @@ class WebsitesController < ApplicationController
     @website = Website.find(params[:id])
 
     if @website.update_attributes(params[:website])
-      redirect_to @website, :notice => 'Website was successfully updated.'
+      redirect_to @website, :notice => "Website was successfully updated."
     else
       render :action => "edit"
     end

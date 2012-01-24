@@ -19,7 +19,7 @@ class ConfsController < ApplicationController
     @conf = Conf.new(params[:conf])
 
     if @conf.save
-      redirect_to @conf, :notice => 'Conf was successfully created.' 
+      redirect_to @conf, :notice => "Conf was successfully created." 
     else
       render :action => "new"
     end
@@ -29,7 +29,7 @@ class ConfsController < ApplicationController
     @conf = Conf.find(params[:id])
 
     if @conf.update_attributes(params[:conf])
-      redirect_to @conf, :notice => 'Conf was successfully updated.'
+      redirect_to @conf, :notice => "Conf was successfully updated."
     else
       render :action => "edit"
     end

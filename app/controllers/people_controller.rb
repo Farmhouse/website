@@ -19,7 +19,7 @@ class PeopleController < ApplicationController
     @person = Person.new(params[:person])
 
     if @person.save
-      redirect_to @person, :notice => 'Person was successfully created.'
+      redirect_to @person, :notice => "Person was successfully created."
     else
       render :action => "new"
     end
@@ -29,7 +29,7 @@ class PeopleController < ApplicationController
     @person = Person.find(params[:id])
 
     if @person.update_attributes(params[:person])
-      format.html { redirect_to @person, :notice => 'Person was successfully updated.' }
+      format.html { redirect_to @person, :notice => "Person was successfully updated." }
     else
       render :action => "edit"
     end
