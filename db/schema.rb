@@ -35,10 +35,10 @@ ActiveRecord::Schema.define(:version => 20120124021152) do
     t.string   "name"
     t.string   "street_address"
     t.string   "extended_address"
-    t.string   "region"
+    t.integer  "region_id"
     t.string   "locality"
     t.string   "postal_code"
-    t.integer  "country_name"
+    t.integer  "country_id"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end

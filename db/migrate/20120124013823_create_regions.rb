@@ -1,6 +1,6 @@
-class CreateStates < ActiveRecord::Migration
+class CreateRegions < ActiveRecord::Migration
   def self.up
-    create_table :states do |t|
+    create_table :regions do |t|
       t.string :name, :abbreviation
       t.belongs_to :country
       t.timestamps
@@ -78,15 +78,15 @@ class CreateStates < ActiveRecord::Migration
     ]
 
     usa.each do |state|
-      State.create!(:name => state.first, :abbreviation => state.last, :country => Country.where(:name => "United States").first)
+      Region.create!(:name => state.first, :abbreviation => state.last, :country => Country.where(:name => "United States").first)
     end
 
     canadia.each do |state|
-      State.create!(:name => state.first, :abbreviation => state.last, :country => Country.where(:name => "Canada").first)
+      Region.create!(:name => state.first, :abbreviation => state.last, :country => Country.where(:name => "Canada").first)
     end
   end
 
   def self.down
-    drop_table :states
+    drop_table :regions
   end
 end

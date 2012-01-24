@@ -4,10 +4,10 @@ class CreateLocations < ActiveRecord::Migration
       t.string :name
       t.string :street_address
       t.string :extended_address
-      t.string :region
+      t.belongs_to :region
       t.string :locality
       t.string :postal_code
-      t.integer :country_name
+      t.belongs_to :country
 
       t.timestamps
     end

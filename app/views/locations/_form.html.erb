@@ -25,19 +25,19 @@
   </div>
   <div class="field">
     <%= f.label :locality %><br />
-    <%= f.select :locality, State.options_for_select %>
+    <%= f.text_field :locality %>
   </div>
   <div class="field">
     <%= f.label :region %><br />
-    <%= f.text_field :region %>
+    <%= f.select :region_id, State.options_for_select %>
   </div>
   <div class="field">
     <%= f.label :postal_code %><br />
     <%= f.text_field :postal_code %>
   </div>
   <div class="field">
-    <%= f.label :country_name %><br />
-    <%= f.select :country_name, Country.options_for_select %>
+    <%= f.label :country %><br />
+    <%= f.select :country_id, Country.options_for_select %>
   </div>
   <div class="actions">
     <%= f.submit %>
