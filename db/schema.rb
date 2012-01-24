@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(:version => 20120124021152) do
     t.datetime "ends_at"
     t.integer  "location_id"
     t.string   "twitter"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "countries", :force => true do |t|
