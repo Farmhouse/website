@@ -7,7 +7,7 @@ class CreateLocations < ActiveRecord::Migration
       t.string :region
       t.string :locality
       t.string :postal_code
-      t.country_id :country_name
+      t.integer :country_name
 
       t.timestamps
     end

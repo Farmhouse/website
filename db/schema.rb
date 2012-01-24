@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120124002652) do
+ActiveRecord::Schema.define(:version => 20120124013026) do
 
   create_table "confs", :force => true do |t|
     t.string   "name"
@@ -22,6 +22,25 @@ ActiveRecord::Schema.define(:version => 20120124002652) do
     t.string   "twitter"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "countries", :force => true do |t|
+    t.string   "name"
+    t.string   "abbreviation"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "locations", :force => true do |t|
+    t.string   "name"
+    t.string   "street_address"
+    t.string   "extended_address"
+    t.string   "region"
+    t.string   "locality"
+    t.string   "postal_code"
+    t.integer  "country_name"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "people", :force => true do |t|
