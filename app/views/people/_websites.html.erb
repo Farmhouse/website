@@ -1,0 +1,5 @@
+<ul>
+  <% person.websites.each do |website| %>
+    <li><%= link_to website.name, website.url, :rel => "external" %></li>
+  <% end %>
+</ul>

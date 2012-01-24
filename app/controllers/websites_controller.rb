@@ -9,6 +9,10 @@ class WebsitesController < ApplicationController
 
   def new
     @website = Website.new
+
+    if params[:whom].blank?
+      redirect_to new_person_website_path("person")
+    end
   end
 
   def edit
@@ -20,6 +24,12 @@ class WebsitesController < ApplicationController
 
     if @website.save
       redirect_to @website, :notice => "Website was successfully created."
+
+      if params[:person_id]
+        Person.find(params[:person_id]).websites << @website
+      elsif params[:sponsor_id]
+        Sponsor.find(params[:sponsor_id]).websites << @website
+      end
     else
       render :action => "new"
     end

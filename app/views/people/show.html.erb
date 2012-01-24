@@ -6,6 +6,11 @@
 </p>
 
 <p>
+  <b>Websites:</b>
+  <%= render :partial => 'websites', :locals => { :person => @person } %>
+</p>
+
+<p>
   <b>Bio:</b>
   <%= @person.bio %>
 </p>

@@ -10,6 +10,7 @@
     <th>Image</th>
     <th>Staff</th>
     <th>Organizer</th>
+    <th>URLs</th>
     <th></th>
   </tr>
 
@@ -20,6 +21,9 @@
     <td><%= link_to person.image, person.image %></td>
     <td><%= person.staff %></td>
     <td><%= person.organizer %></td>
+    <td>
+      <%= render :partial => 'websites', :locals => { :person => person } %>
+    </td>
     <td>
       <%= link_to 'Show', person %>
       <%= link_to 'Edit', edit_person_path(person) %>

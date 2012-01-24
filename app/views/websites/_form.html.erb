@@ -11,6 +11,18 @@
     </div>
   <% end %>
 
+
+  <div class="field">
+    <% if    params[:whom] == "person" %>
+      <%= label_tag :person_id %><br />
+      <%= select_tag :person_id, options_from_collection_for_select(Person.all, :id, :name), :include_blank => true %>
+    <% elsif params[:whom] == "sponsor" %>
+      <%= label_tag :sponsor_id %><br />
+      <%= select_tag :sponsor_id, options_from_collection_for_select(Person.all, :id, :name), :include_blank => true %>
+    <% end %>
+  </div>
+
+
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
