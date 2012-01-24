@@ -53,11 +53,9 @@ ActiveRecord::Schema.define(:version => 20120124021152) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "people_websites", :force => true do |t|
-    t.integer  "person_id"
-    t.integer  "website_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+  create_table "people_websites", :id => false, :force => true do |t|
+    t.integer "person_id"
+    t.integer "website_id"
   end
 
   create_table "regions", :force => true do |t|
