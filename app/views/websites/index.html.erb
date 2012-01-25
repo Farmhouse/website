@@ -10,15 +10,15 @@
     <th></th>
   </tr>
 
-<% @websites.each do |website| %>
-  <tr>
-    <td><%= website.name %></td>
-    <td><%= link_to website.url, website.url %></td>
-    <td>
-      <%= link_to "Show", website %>
-      <%= link_to "Edit", edit_website_path(website) %>
-      <%= link_to "Destroy", website, :confirm => "Are you sure?", :method => :delete %>
-    </td>
-  </tr>
-<% end %>
+  <% @websites.each do |website| %>
+    <tr>
+      <td><%= website.name %></td>
+      <td><%= link_to website.url, website.url %></td>
+      <td>
+        <%= link_to "Show", website %>
+        <%= link_to "Edit", edit_website_path(website) %>
+        <%= link_to "Destroy", website, :confirm => "Are you sure?", :method => :delete %>
+      </td>
+    </tr>
+  <% end %>
 </table>

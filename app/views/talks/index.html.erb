@@ -1,0 +1,32 @@
+<h1>
+  Talks
+  ( <%= link_to "New", new_talk_path %> )
+</h1>
+
+<table>
+  <tr>
+    <th>Conf</th>
+    <th>Title</th>
+    <th>Subtitle</th>
+    <th>Description</th>
+    <th>Accepted</th>
+    <th>Keynote</th>
+    <th></th>
+  </tr>
+
+  <% @talks.each do |talk| %>
+    <tr>
+      <td><%= link_to talk.conf.name, talk.conf %></td>
+      <td><%= talk.title %></td>
+      <td><%= talk.subtitle %></td>
+      <td><%= talk.description %></td>
+      <td><%= talk.accepted %></td>
+      <td><%= talk.keynote %></td>
+      <td>
+        <%= link_to "Show", talk %>
+        <%= link_to "Edit", edit_talk_path(talk) %>
+        <%= link_to "Destroy", talk, :confirm => "Are you sure?", :method => :delete %>
+      </td>
+    </tr>
+  <% end %>
+</table>

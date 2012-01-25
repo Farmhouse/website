@@ -13,24 +13,22 @@
     <th>Location</th>
     <th>Twitter</th>
     <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
-<% @confs.each do |conf| %>
-  <tr>
-    <td><%= link_to conf.name, conf %></td>
-    <td><%= conf.subtitle %></td>
-    <td><%= conf.year %></td>
-    <td><%= time_tag conf.starts_at %></td>
-    <td><%= time_tag conf.ends_at %></td>
-    <td><%= link_to conf.location.name, conf.location %></td>
-    <td><%= link_to_twitter conf %></td>
-    <td>
-      <%= link_to 'Show', conf %>
-      <%= link_to 'Edit', edit_conf_path(conf) %>
-      <%= link_to 'Destroy', conf, :confirm => 'Are you sure?', :method => :delete %>
-    </td>
-  </tr>
-<% end %>
+  <% @confs.each do |conf| %>
+    <tr>
+      <td><%= link_to conf.name, conf %></td>
+      <td><%= conf.subtitle %></td>
+      <td><%= conf.year %></td>
+      <td><%= time_tag conf.starts_at %></td>
+      <td><%= time_tag conf.ends_at %></td>
+      <td><%= link_to conf.location.name, conf.location %></td>
+      <td><%= link_to_twitter conf %></td>
+      <td>
+        <%= link_to 'Show', conf %>
+        <%= link_to 'Edit', edit_conf_path(conf) %>
+        <%= link_to 'Destroy', conf, :confirm => 'Are you sure?', :method => :delete %>
+      </td>
+    </tr>
+  <% end %>
 </table>

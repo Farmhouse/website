@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Conf:</b>
+  <%= link_to @talk.conf.name, @talk.conf %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @talk.title %>
+</p>
+
+<p>
+  <b>Subtitle:</b>
+  <%= @talk.subtitle %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @talk.description %>
+</p>
+
+<p>
+  <b>Accepted:</b>
+  <%= @talk.accepted %>
+</p>
+
+<p>
+  <b>Keynote:</b>
+  <%= @talk.keynote %>
+</p>
+
+
+<p>
+  <%= link_to "Edit", edit_talk_path(@talk) %>
+  <%= link_to "Talks", talks_path %>
+</p>

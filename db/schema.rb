@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120124021152) do
+ActiveRecord::Schema.define(:version => 20120125041156) do
 
   create_table "confs", :force => true do |t|
     t.string   "name"
@@ -64,6 +64,17 @@ ActiveRecord::Schema.define(:version => 20120124021152) do
     t.integer  "country_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "talks", :force => true do |t|
+    t.integer  "conf_id"
+    t.string   "title"
+    t.string   "subtitle"
+    t.text     "description"
+    t.boolean  "accepted"
+    t.boolean  "keynote"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "websites", :force => true do |t|
