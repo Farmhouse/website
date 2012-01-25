@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Conf:</b>
+  <%= @photo.conf.name %>
+</p>
+
+<p>
+  <b>Talk:</b>
+  <%= @photo.talk.title %>
+</p>
+
+<p>
+  <b>Caption:</b>
+  <%= @photo.caption %>
+</p>
+
+<p>
+  <b>Photographer:</b>
+  <%= @photo.photographer %>
+</p>
+
+<p>
+  <b>URL:</b>
+  <%= link_to @photo.url, @photo.url %>
+</p>
+
+<p>
+  <b>Canonical URL:</b>
+  <%= link_to @photo.canonical_url, @photo.canonical_url, :rel => "external" %>
+</p>
+
+<p>
+  <%= link_to 'Edit', edit_photo_path(@photo) %>
+  <%= link_to 'Photos', photos_path %>
+</p>

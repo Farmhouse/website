@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120125043308) do
+ActiveRecord::Schema.define(:version => 20120125071532) do
 
   create_table "confs", :force => true do |t|
     t.string   "name"
@@ -63,6 +63,17 @@ ActiveRecord::Schema.define(:version => 20120125043308) do
     t.integer "website_id"
   end
 
+  create_table "photos", :force => true do |t|
+    t.integer  "conf_id"
+    t.integer  "talk_id"
+    t.text     "caption"
+    t.string   "photographer"
+    t.string   "url"
+    t.string   "canonical_url"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
   create_table "regions", :force => true do |t|
     t.string   "name"
     t.string   "abbreviation"
@@ -80,6 +91,18 @@ ActiveRecord::Schema.define(:version => 20120125043308) do
     t.boolean  "keynote"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "videos", :force => true do |t|
+    t.integer  "conf_id"
+    t.integer  "talk_id"
+    t.text     "caption"
+    t.string   "videographer"
+    t.string   "ogv"
+    t.string   "mp4"
+    t.string   "canonical_url"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "websites", :force => true do |t|

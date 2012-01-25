@@ -1,0 +1,35 @@
+<h1>Listing videos</h1>
+
+<table>
+  <tr>
+    <th>Conf</th>
+    <th>Talk</th>
+    <th>Caption</th>
+    <th>Videographer</th>
+    <th>Ogv</th>
+    <th>Mp4</th>
+    <th>Canonical url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @videos.each do |video| %>
+  <tr>
+    <td><%= video.conf_id %></td>
+    <td><%= video.talk_id %></td>
+    <td><%= video.caption %></td>
+    <td><%= video.videographer %></td>
+    <td><%= video.ogv %></td>
+    <td><%= video.mp4 %></td>
+    <td><%= video.canonical_url %></td>
+    <td><%= link_to 'Show', video %></td>
+    <td><%= link_to 'Edit', edit_video_path(video) %></td>
+    <td><%= link_to 'Destroy', video, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Video', new_video_path %>

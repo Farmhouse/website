@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Conf:</b>
+  <%= @video.conf.name %>
+</p>
+
+<p>
+  <b>Talk:</b>
+  <%= @video.talk.title %>
+</p>
+
+<p>
+  <b>Caption:</b>
+  <%= @video.caption %>
+</p>
+
+<p>
+  <b>Videographer:</b>
+  <%= @video.videographer %>
+</p>
+
+<p>
+  <b>OGV:</b>
+  <%= @video.ogv %>
+</p>
+
+<p>
+  <b>MP4:</b>
+  <%= @video.mp4 %>
+</p>
+
+<p>
+  <b>Canonical URL:</b>
+  <%= link_to @video.canonical_url, @video.canonical_url %>
+</p>
+
+<p>
+  <%= link_to 'Edit', edit_video_path(@video) %>
+  <%= link_to 'Back', videos_path %>
+</p>

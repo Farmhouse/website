@@ -1,0 +1,41 @@
+<%= form_for(@photo) do |f| %>
+  <% if @photo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@photo.errors.count, "error") %> prohibited this photo from being saved:</h2>
+
+      <ul>
+      <% @photo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :conf_id %><br />
+    <%= f.select :conf_id, Conf.options_for_select %>
+  </div>
+  <div class="field">
+    <%= f.label :talk_id %><br />
+    <%= f.select :talk_id, Talk.options_for_select %>
+  </div>
+  <div class="field">
+    <%= f.label :caption %><br />
+    <%= f.text_area :caption %>
+  </div>
+  <div class="field">
+    <%= f.label :photographer %><br />
+    <%= f.text_field :photographer %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :canonical_url %><br />
+    <%= f.text_field :canonical_url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
