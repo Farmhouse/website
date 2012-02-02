@@ -1,6 +1,8 @@
 class Talk < ActiveRecord::Base
   belongs_to :conf
-  has_and_belongs_to_many :people
+  has_many :speakings
+  has_many :people, :through => :speakings, :uniq => true
+
   has_many :photos
   has_many :videos
   has_many :tweets

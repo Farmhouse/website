@@ -9,13 +9,13 @@ location = Location.create!(
 )
 
 conf = Conf.create!(
-  :name        => "Farmhouse Conf",
+  :name        => "Farmhouse Conf 1",
   :subtitle    => "Backyard Storytelling Under an Avocado Tree",
-  :year        => 2012,
+  :year        => 2011,
   :starts_at   => DateTime.parse("2012-05-05 08:30"),
   :ends_at     => DateTime.parse("2012-05-05 23:00"),
   :location_id => location.id,
-  :twitter     => "farmhouse"
+  :twitter     => "farmhouseconf"
 )
 
 talk = Talk.create!(

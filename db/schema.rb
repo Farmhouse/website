@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120128225802) do
+ActiveRecord::Schema.define(:version => 20120202040735) do
 
   create_table "confs", :force => true do |t|
     t.string   "name"
@@ -66,11 +66,6 @@ ActiveRecord::Schema.define(:version => 20120128225802) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "people_talks", :id => false, :force => true do |t|
-    t.integer "person_id"
-    t.integer "talk_id"
-  end
-
   create_table "people_websites", :id => false, :force => true do |t|
     t.integer "person_id"
     t.integer "website_id"
@@ -93,6 +88,13 @@ ActiveRecord::Schema.define(:version => 20120128225802) do
     t.integer  "country_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "speakings", :force => true do |t|
+    t.integer  "talk_id"
+    t.integer  "person_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "talks", :force => true do |t|
