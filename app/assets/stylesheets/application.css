@@ -5,3 +5,13 @@
  *= require_self
  *= require_tree . 
 */
+
+#admin nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#admin nav li {
+  display: inline;
+}
+
