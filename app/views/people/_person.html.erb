@@ -1,0 +1,23 @@
+<li>
+  <article class="vcard h-card">
+    <%= image_tag person.image, :class => "photo p-photo" %>
+
+    <h1><%= link_to person.name, person, :class => "fn n p-fn p-n " %></h1>
+
+    <%= render :partial => 'websites', :locals => { :person => person } %>
+
+    <p class="note">
+      <%= person.bio %>
+    </p>
+
+    <p>
+      <%= "Staff" if person.staff? %>
+      <%= "Organizer" if person.organizer? %>
+    </p>
+
+    <ul class="actions">
+      <li><%= link_to 'Edit', edit_person_path(person) %></li>
+      <li><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></li>
+    </ul>
+  </article>
+</li>

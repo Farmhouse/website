@@ -3,32 +3,6 @@
   ( <%= link_to 'New', new_person_path %> )
 </h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Bio</th>
-    <th>Image</th>
-    <th>Staff</th>
-    <th>Organizer</th>
-    <th>URLs</th>
-    <th></th>
-  </tr>
-
-<% @people.each do |person| %>
-  <tr>
-    <td><%= link_to person.name, person %></td>
-    <td><%= person.bio %></td>
-    <td><%= link_to person.image, person.image %></td>
-    <td><%= person.staff %></td>
-    <td><%= person.organizer %></td>
-    <td>
-      <%= render :partial => 'websites', :locals => { :person => person } %>
-    </td>
-    <td>
-      <%= link_to 'Show', person %>
-      <%= link_to 'Edit', edit_person_path(person) %>
-      <%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %>
-    </td>
-  </tr>
-<% end %>
-</table>
+<ul id="people">
+  <%= render @people %>
+</ul>
