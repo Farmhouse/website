@@ -1,10 +1,16 @@
 class ConfsController < ApplicationController
-  def index
-    @confs = Conf.all
-  end
+  before_filter :redirect_to_root_in_development, :except => [:show]
 
   def show
-    @conf = Conf.find(params[:id])
+    if params[:year].blank?
+      @conf = Conf.order("year ASC").first
+    else
+      @conf = Conf.where(:year => params[:year]).first
+    end
+  end
+
+  def index
+    @confs = Conf.all
   end
 
   def new
@@ -19,7 +25,7 @@ class ConfsController < ApplicationController
     @conf = Conf.new(params[:conf])
 
     if @conf.save
-      redirect_to @conf, :notice => "Conf was successfully created." 
+      redirect_to @conf, :notice => "Conf was successfully created."
     else
       render :action => "new"
     end

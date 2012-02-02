@@ -52,7 +52,7 @@ shane = Person.create!(
 )
 
 people.each do |person|
-  slug = person.first.downcase.gsub(/\w/, "_")
+  slug = person.first.downcase.gsub(/\s/, "_")
 
   Person.create!(
     :name       => person.first,

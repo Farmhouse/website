@@ -1,13 +1,13 @@
 Farmhouse::Application.routes.draw do
-  resources :links, :locations, :people, :photos, :tweets, :videos, :websites
+  root :to => "confs#show"
 
-  resources :confs do
-    resources :talks
-  end
+  match "/:year"             => "confs#show",  :as => "year"
+  match "/:year/talks"       => "talks#index", :as => "year_talks"
+  match "/:year/talks/:slug" => "talks#show",  :as => "year_talk"
 
+
+  # adminy routes
+  resources :confs, :links, :locations, :people, :photos, :talks, :tweets, :videos, :websites
   resources :speakings, :only => [:destroy]
-
   match "/websites/new/:whom" => "websites#new", :as => "new_person_website"
-
-  root :to => "confs#index"
 end

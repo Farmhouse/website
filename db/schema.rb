@@ -101,6 +101,7 @@ ActiveRecord::Schema.define(:version => 20120202040735) do
     t.integer  "conf_id"
     t.string   "title"
     t.string   "subtitle"
+    t.string   "slug"
     t.text     "description"
     t.boolean  "accepted"
     t.boolean  "keynote"
