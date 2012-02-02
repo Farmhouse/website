@@ -1,10 +1,10 @@
 class PeopleController < ApplicationController
-  def index
-    @people = Person.all
+  def show
+    @person = Person.where(:slug => params[:slug]).first
   end
 
-  def show
-    @person = Person.find(params[:id])
+  def index
+    @people = Person.all
   end
 
   def new

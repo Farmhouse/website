@@ -4,6 +4,7 @@ Farmhouse::Application.routes.draw do
   match "/:year"             => "confs#show",  :as => "year"
   match "/:year/talks"       => "talks#index", :as => "year_talks"
   match "/:year/talks/:slug" => "talks#show",  :as => "year_talk"
+  match "/people/:slug"      => "people#show", :as => "person_slug"
 
 
   # adminy routes

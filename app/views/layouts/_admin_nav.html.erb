@@ -1,0 +1,44 @@
+<% if editing? %>
+  <div id="admin">
+    <nav>
+      <ul>
+        <li>
+          <%= link_to "Confs", confs_path %>
+          ( <%= link_to "new", new_conf_path %> )
+        </li>
+        <li>
+          <%= link_to "Talks", talks_path %>
+          ( <%= link_to "new", new_talk_path %> )
+        </li>
+        <li>
+          <%= link_to "People", people_path %>
+          ( <%= link_to "new", new_person_path %> )
+        </li>
+        <li>
+          <%= link_to "Locations", locations_path %>
+          ( <%= link_to "new", new_location_path %> )
+        </li>
+        <li>
+          <%= link_to "Websites", websites_path %>
+          ( <%= link_to "new", new_website_path %> )
+        </li>
+        <li>
+          <%= link_to "Tweets", tweets_path %>
+          ( <%= link_to "new", new_tweet_path %> )
+        </li>
+        <li>
+          <%= link_to "Links", links_path %>
+          ( <%= link_to "new", new_link_path %> )
+        </li>
+        <li>
+          <%= link_to "Photos", photos_path %>
+          ( <%= link_to "new", new_photo_path %> )
+        </li>
+        <li>
+          <%= link_to "Videos", videos_path %>
+          ( <%= link_to "new", new_video_path %> )
+        </li>
+      </ul>
+    </nav>
+  </div> <!-- /div#admin -->
+<% end %>

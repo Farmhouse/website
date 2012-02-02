@@ -2,7 +2,7 @@
   <article class="vcard h-card">
     <%= image_tag person.image, :class => "photo p-photo" %>
 
-    <h1><%= link_to person.name, person, :class => "fn n p-fn p-n " %></h1>
+    <h1><%= link_to_person(person) %></h1>
 
     <%= render :partial => 'websites', :locals => { :person => person } %>
 

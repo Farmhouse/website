@@ -1,11 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <h1>
-  <%= link_to_unless_current @conf.name, @conf %>
-  ( <%= link_to "Edit", edit_conf_path(@conf) %> )
+  <%= link_to_conf @conf %>
+
+  <% if editing? %>
+    ( <%= link_to "Edit", edit_conf_path(@conf) %> )
+  <% end %>
 </h1>
 <h2><%= @conf.subtitle %></h2>
-<h3>In <%= @conf.year %> at <%= link_to @conf.location.name, @conf.location %></h3>
+<h3>In <%= @conf.year %> at <%= @conf.location.name %></h3>
 
 <p>
   <%= time_tag @conf.starts_at %>
@@ -20,11 +23,11 @@
     <% @conf.talks.each do |talk| %>
       <li>
         <article>
-          <h1><%= link_to talk.title, talk %></h1>
+          <h1><%= link_to talk.title, year_talk_path(talk.conf.year, talk.slug) %></h1>
           <h2>
             by
             <% talk.people.each do |person| %>
-              <%= link_to person.name, person %>
+              <%= link_to_person person %>
             <% end %>
           </h2>
         </article>

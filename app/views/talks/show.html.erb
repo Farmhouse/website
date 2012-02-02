@@ -2,7 +2,7 @@
 
 <p>
   <b>Conf:</b>
-  <%= link_to @talk.conf.name, @talk.conf %>
+  <%= link_to_conf(@talk.conf) %>
 </p>
 
 <p>
@@ -18,8 +18,11 @@
 <ul>
   <% @talk.people.each do |person| %>
     <li>
-      <%= link_to person.name, person %>
-      <%= link_to "x", speaking_path(speaking(@talk, person)), :method => :delete %>
+      <%= link_to_person(person) %>
+
+      <% if editing? %>
+        <%= link_to "x", speaking_path(speaking(@talk, person)), :method => :delete %>
+      <% end %>
     </li>
   <% end %>
 </ul>
@@ -40,7 +43,9 @@
 </p>
 
 
-<p>
-  <%= link_to "Edit", edit_talk_path(@talk) %>
-  <%= link_to "Talks", talks_path %>
-</p>
+<% if editing? %>
+  <p>
+    <%= link_to "Edit", edit_talk_path(@talk) %>
+    <%= link_to "Talks", talks_path %>
+  </p>
+<% end %>

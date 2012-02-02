@@ -4,6 +4,8 @@
   <%= render @person %>
 </ul>
 
-<p>
-  <%= link_to "Edit", edit_person_path(@person) %>
-</p>
+<% if editing? %>
+  <p>
+    <%= link_to "Edit", edit_person_path(@person) %>
+  </p>
+<% end %>
