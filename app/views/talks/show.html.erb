@@ -15,6 +15,12 @@
   <%= @talk.subtitle %>
 </p>
 
+<ul>
+  <% @talk.people.each do |person| %>
+    <li><%= link_to person.name, person %></li>
+  <% end %>
+</ul>
+
 <p>
   <b>Description:</b>
   <%= @talk.description %>

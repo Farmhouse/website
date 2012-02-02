@@ -31,6 +31,10 @@ class TalksController < ApplicationController
     @talk = Talk.find(params[:id])
 
     if @talk.update_attributes(params[:talk])
+      unless params[:person_id].blank?
+        @talk.people << Person.find(params[:person_id])
+      end
+
       redirect_to @talk, :notice => 'Talk was successfully updated.'
     else
       render :action => "edit"
