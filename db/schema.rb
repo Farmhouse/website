@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120125071532) do
+ActiveRecord::Schema.define(:version => 20120128225802) do
 
   create_table "confs", :force => true do |t|
     t.string   "name"
@@ -27,6 +27,19 @@ ActiveRecord::Schema.define(:version => 20120125071532) do
   create_table "countries", :force => true do |t|
     t.string   "name"
     t.string   "abbreviation"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "links", :force => true do |t|
+    t.integer  "conf_id"
+    t.integer  "talk_id"
+    t.string   "title"
+    t.string   "subtitle"
+    t.string   "url"
+    t.string   "author"
+    t.text     "snippet"
+    t.datetime "published_at"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
@@ -91,6 +104,18 @@ ActiveRecord::Schema.define(:version => 20120125071532) do
     t.boolean  "keynote"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "tweets", :force => true do |t|
+    t.integer  "conf_id"
+    t.integer  "talk_id"
+    t.string   "url"
+    t.string   "author"
+    t.string   "twitter"
+    t.text     "content"
+    t.datetime "published_at"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "videos", :force => true do |t|

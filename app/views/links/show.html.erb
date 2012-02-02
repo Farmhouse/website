@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Conf:</b>
+  <%= link_to @link.conf.name, @link.conf %>
+</p>
+
+<p>
+  <b>Talk:</b>
+  <%= link_to @link.talk.title, @link.talk %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @link.title %>
+</p>
+
+<p>
+  <b>Subtitle:</b>
+  <%= @link.subtitle %>
+</p>
+
+<p>
+  <b>URL:</b>
+  <%= link_to @link.url, @link.url %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @link.author %>
+</p>
+
+<p>
+  <b>Snippet:</b>
+  <%= @link.snippet %>
+</p>
+
+<p>
+  <b>Published at:</b>
+  <%= @link.published_at %>
+</p>
+
+<p>
+  <%= link_to 'Edit', edit_link_path(@link) %>
+  <%= link_to 'Back', links_path %>
+</p>

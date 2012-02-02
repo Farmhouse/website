@@ -29,7 +29,7 @@ class PeopleController < ApplicationController
     @person = Person.find(params[:id])
 
     if @person.update_attributes(params[:person])
-      format.html { redirect_to @person, :notice => "Person was successfully updated." }
+      redirect_to @person, :notice => "Person was successfully updated."
     else
       render :action => "edit"
     end

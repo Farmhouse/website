@@ -1,0 +1,37 @@
+<h1>Listing links</h1>
+
+<table>
+  <tr>
+    <th>Conf</th>
+    <th>Talk</th>
+    <th>Title</th>
+    <th>Subtitle</th>
+    <th>Url</th>
+    <th>Author</th>
+    <th>Snippet</th>
+    <th>Published at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @links.each do |link| %>
+  <tr>
+    <td><%= link.conf_id %></td>
+    <td><%= link.talk_id %></td>
+    <td><%= link.title %></td>
+    <td><%= link.subtitle %></td>
+    <td><%= link.url %></td>
+    <td><%= link.author %></td>
+    <td><%= link.snippet %></td>
+    <td><%= link.published_at %></td>
+    <td><%= link_to 'Show', link %></td>
+    <td><%= link_to 'Edit', edit_link_path(link) %></td>
+    <td><%= link_to 'Destroy', link, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Link', new_link_path %>

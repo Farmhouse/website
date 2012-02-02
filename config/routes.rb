@@ -1,4 +1,8 @@
 Farmhouse::Application.routes.draw do
+  resources :links
+
+  resources :tweets
+
   resources :confs, :locations, :people, :photos, :talks, :videos, :websites
   match "/websites/new/:whom" => "websites#new", :as => "new_person_website"
 

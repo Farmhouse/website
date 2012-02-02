@@ -4,6 +4,8 @@ class Conf < ActiveRecord::Base
   has_many :photos
   has_many :talks
   has_many :videos
+  has_many :tweets
+  has_many :links
 
   class << self
     def options_for_select

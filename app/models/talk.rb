@@ -3,6 +3,8 @@ class Talk < ActiveRecord::Base
   has_and_belongs_to_many :people
   has_many :photos
   has_many :videos
+  has_many :tweets
+  has_many :links
 
   class << self
     def options_for_select

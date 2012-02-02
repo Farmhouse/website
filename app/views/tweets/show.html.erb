@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Conf:</b>
+  <%= link_to @tweet.conf.name, @tweet.conf %>
+</p>
+
+<p>
+  <b>Talk:</b>
+  <%= link_to @tweet.talk.title, @tweet.talk %>
+</p>
+
+<p>
+  <b>URL:</b>
+  <%= link_to @tweet.url, @tweet.url %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @tweet.author %>
+</p>
+
+<p>
+  <b>Twitter:</b>
+  <%= link_to @tweet.twitter, link_to_twitter(@tweet.twitter) %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @tweet.content %>
+</p>
+
+<p>
+  <b>Published at:</b>
+  <%= @tweet.published_at %>
+</p>
+
+<p>
+  <%= link_to 'Edit', edit_tweet_path(@tweet) %>
+  <%= link_to 'Back', tweets_path %>
+</p>

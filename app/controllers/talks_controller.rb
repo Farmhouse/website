@@ -19,6 +19,8 @@ class TalksController < ApplicationController
     @talk = Talk.new(params[:talk])
 
     if @talk.save
+      Person.find(params[:person_id]).talks << @talk
+
       redirect_to @talk, :notice => 'Talk was successfully created.'
     else
       render :action => "new"
