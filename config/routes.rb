@@ -1,5 +1,5 @@
 Farmhouse::Application.routes.draw do
-  root :to => "confs#show"
+  root :to => "about#index"
 
   match "/:year"             => "confs#show",  :as => "year"
   match "/:year/talks"       => "talks#index", :as => "year_talks"

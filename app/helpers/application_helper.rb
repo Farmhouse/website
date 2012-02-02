@@ -2,6 +2,7 @@ module ApplicationHelper
 
   def editing?
     Rails.env.development?
+    false
   end
 
   def link_to_twitter(thing)
