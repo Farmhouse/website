@@ -1,5 +1,9 @@
 Farmhouse::Application.routes.draw do
-  resources :confs, :links, :locations, :people, :photos, :talks, :tweets, :videos, :websites
+  resources :links, :locations, :people, :photos, :tweets, :videos, :websites
+
+  resources :confs do
+    resources :talks
+  end
 
   resources :speakings, :only => [:destroy]
 
