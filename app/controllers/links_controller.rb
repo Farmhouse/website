@@ -1,6 +1,4 @@
 class LinksController < ApplicationController
-  before_filter :redirect_to_root_in_development
-
   def index
     @links = Link.all
   end

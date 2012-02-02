@@ -1,6 +1,4 @@
 class PeopleController < ApplicationController
-  before_filter :redirect_to_root_in_development
-
   def index
     @people = Person.all
   end

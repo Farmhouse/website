@@ -1,6 +1,4 @@
 class TalksController < ApplicationController
-  before_filter :redirect_to_root_in_development, :except => [:show]
-
   def show
     conf = Conf.where(:year => params[:year]).first
     @talk = conf.talks.where(:slug => params[:slug]).first

@@ -1,6 +1,4 @@
 class ConfsController < ApplicationController
-  before_filter :redirect_to_root_in_development, :except => [:show]
-
   def show
     if params[:year].blank?
       @conf = Conf.order("year ASC").first

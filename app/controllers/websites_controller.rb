@@ -1,6 +1,4 @@
 class WebsitesController < ApplicationController
-  before_filter :redirect_to_root_in_development
-
   def index
     @websites = Website.all
   end

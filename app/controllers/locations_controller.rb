@@ -1,6 +1,4 @@
 class LocationsController < ApplicationController
-  before_filter :redirect_to_root_in_development
-
   def index
     @locations = Location.all
   end

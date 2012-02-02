@@ -7,7 +7,9 @@ Farmhouse::Application.routes.draw do
 
 
   # adminy routes
-  resources :confs, :links, :locations, :people, :photos, :talks, :tweets, :videos, :websites
-  resources :speakings, :only => [:destroy]
-  match "/websites/new/:whom" => "websites#new", :as => "new_person_website"
+  unless Rails.env.development?
+    resources :confs, :links, :locations, :people, :photos, :talks, :tweets, :videos, :websites
+    resources :speakings, :only => [:destroy]
+    match "/websites/new/:whom" => "websites#new", :as => "new_person_website"
+  end
 end

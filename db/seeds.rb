@@ -12,8 +12,8 @@ farmhouse_conf_1 = Conf.create!(
   :name        => "Farmhouse Conf 1",
   :subtitle    => "Backyard Storytelling Under an Avocado Tree",
   :year        => 2011,
-  :starts_at   => DateTime.parse("2012-05-05 08:30"),
-  :ends_at     => DateTime.parse("2012-05-05 23:00"),
+  :starts_at   => DateTime.parse("2011-05-07 08:30"),
+  :ends_at     => DateTime.parse("2011-05-07 23:00"),
   :location_id => location.id,
   :twitter     => "farmhouseconf"
 )
@@ -70,6 +70,19 @@ Talk.all.each do |talk|
   talk.people << person
 end
 
+
+
+
+
+farmhouse_conf_1 = Conf.create!(
+  :name        => "Farmhouse Conf 2",
+  :subtitle    => "Backyard Storytelling Under an Avocado Tree. Again.",
+  :year        => 2012,
+  :starts_at   => DateTime.parse("2012-05-07 08:30"),
+  :ends_at     => DateTime.parse("2012-05-07 23:00"),
+  :location_id => location.id,
+  :twitter     => "farmhouseconf"
+)
 
 
 

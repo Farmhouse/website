@@ -1,6 +1,4 @@
 class VideosController < ApplicationController
-  before_filter :redirect_to_root_in_development
-
   def index
     @videos = Video.all
   end
