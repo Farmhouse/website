@@ -1,42 +1,34 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @conf.name %>
-</p>
+<h1>
+  <%= link_to_unless_current @conf.name, @conf %>
+  ( <%= link_to "Edit", edit_conf_path(@conf) %> )
+</h1>
+<h2><%= @conf.subtitle %></h2>
+<h3>In <%= @conf.year %> at <%= link_to @conf.location.name, @conf.location %></h3>
 
 <p>
-  <b>Subtitle:</b>
-  <%= @conf.subtitle %>
-</p>
-
-<p>
-  <b>Year:</b>
-  <%= @conf.year %>
-</p>
-
-<p>
-  <b>Starts at:</b>
   <%= time_tag @conf.starts_at %>
-</p>
-
-<p>
-  <b>Ends at:</b>
+  &mdash;
   <%= time_tag @conf.ends_at %>
 </p>
 
-<p>
-  <b>Location:</b>
-  <%= link_to @conf.location.name, @conf.location %>
-</p>
+<p><%= link_to_twitter(@conf) %></p>
 
-<p>
-  <b>Twitter:</b>
-  <%= link_to_twitter(@conf) %>
-</p>
-
-
-<p>
-  <%= link_to 'Edit', edit_conf_path(@conf) %>
-  <%= link_to 'Back', confs_path %>
-</p>
+<% unless @conf.talks.blank? %>
+  <ul>
+    <% @conf.talks.each do |talk| %>
+      <li>
+        <article>
+          <h1><%= link_to talk.title, talk %></h1>
+          <h2>
+            by
+            <% talk.people.each do |person| %>
+              <%= link_to person.name, person %>
+            <% end %>
+          </h2>
+        </article>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

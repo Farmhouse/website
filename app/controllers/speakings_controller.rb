@@ -3,7 +3,7 @@ class SpeakingsController < ApplicationController
     @speaking = Speaking.find(params[:id])
 
     talk = Talk.find(@speaking.talk_id)
-    
+
     @speaking.destroy
     redirect_to talk
   end
