@@ -1,9 +1,10 @@
 /*
 = require_self
-= require_tree . 
+= require_tree .
 */
 
-
+@import "bootstrap-min";
+@import "bootstrap-responsive-min";
 
 #admin nav ul {
   margin: 0;
