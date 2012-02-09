@@ -11,8 +11,27 @@
 </head>
 
 <body>
-  <%= render :partial => '/layouts/admin_nav' %>
-  
-  <%= yield %>
+  <div class="container">
+
+    <nav class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <h1><%= link_to_unless_current "The Farmhouse", root_path, :class => "brand" %></h1>
+
+          <ul class="nav">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <%= render :partial => '/layouts/admin_nav' %>
+
+    <%= yield %>
+  </div> <!-- /div.container -->
 </body>
 </html>

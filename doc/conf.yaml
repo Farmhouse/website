@@ -1,0 +1,134 @@
+conf
+  location_id:integer
+  name:string
+  subtitle:string
+  year:integer
+  starts_at:datetime
+  ends_at:datetime
+  twitter:string
+
+person
+  name:string
+  slug:string
+  bio:text
+  image:string
+  staff:boolean
+  organizer:boolean
+
+website
+  url:string
+  name:string
+
+location
+  country_id:integer
+  name:string
+  street_address:string
+  extended_address:string
+  region:string
+  locality:string
+  postal_code:string
+
+country
+  name:string
+  abbreviation:string
+
+state
+  country_id:integer
+  name:string
+  abbreviation:string
+
+people_websites
+  person_id:integer
+  website_id:integer
+
+sponsor
+  conf_id:integer
+  name:string
+  slug:string
+  image:string
+  level:string
+
+sponsor_website
+  sponsor_id:integer
+  website_id:integer
+
+talk
+  conf_id:integer
+  title:string
+  subtitle:string
+  description:text
+  accepted:boolean
+  keynote:boolean
+
+people_talks
+  talk_id:integer
+  person_id:integer
+
+photo
+  conf_id:integer
+  talk_id:integer
+  caption:text
+  photographer:string
+  url:string
+  canonical_url:string
+
+video
+  conf_id:integer
+  talk_id:integer
+  caption:text
+  videographer:string
+  ogv:string
+  mp4:string
+  canonical_url:string
+
+tweet
+  conf_id:integer
+  talk_id:integer
+  url:string
+  author:string
+  username:string
+  content:text
+  published_at:datetime
+
+link
+  conf_id:integer
+  talk_id:integer
+  title:string
+  subtitle:string
+  url:string
+  author:string
+  snippet:text
+  published_at:datetime
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+provider
+  name:string
+  uid:string
+  user_id:integer
+
+ticket
+  name:string
+  price:integer
+  conf_id:integer
+  sale_starts_at:datetime
+  sale_ends_at:datetime
+
+registration
+  person_id:integer
+  ticket_id:integer
