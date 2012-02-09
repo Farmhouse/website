@@ -15,13 +15,16 @@ ActiveRecord::Schema.define(:version => 20120202040735) do
   create_table "confs", :force => true do |t|
     t.string   "name"
     t.string   "subtitle"
+    t.string   "twitter"
+    t.string   "registration_url"
+    t.string   "registration_success_url"
+    t.string   "registration_failure_url"
     t.integer  "year"
     t.datetime "starts_at"
     t.datetime "ends_at"
     t.integer  "location_id"
-    t.string   "twitter"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
   end
 
   create_table "countries", :force => true do |t|

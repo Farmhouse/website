@@ -9,13 +9,14 @@ location = Location.create!(
 )
 
 farmhouse_conf_1 = Conf.create!(
-  :name        => "Farmhouse Conf 1",
-  :subtitle    => "Backyard Storytelling Under an Avocado Tree",
-  :year        => 2011,
-  :starts_at   => DateTime.parse("2011-05-07 08:30"),
-  :ends_at     => DateTime.parse("2011-05-07 23:00"),
-  :location_id => location.id,
-  :twitter     => "farmhouseconf"
+  :name             => "Farmhouse Conf 1",
+  :subtitle         => "Backyard Storytelling Under an Avocado Tree",
+  :year             => 2011,
+  :starts_at        => DateTime.parse("2011-05-07 08:30"),
+  :ends_at          => DateTime.parse("2011-05-07 23:00"),
+  :location_id      => location.id,
+  :twitter          => "farmhouseconf",
+  :registration_url => "http://farmhouse.eventwax.com/farmhouse-conf-1/register/"
 )
 
 
@@ -74,14 +75,15 @@ end
 
 
 
-farmhouse_conf_1 = Conf.create!(
-  :name        => "Farmhouse Conf 2",
-  :subtitle    => "Backyard Storytelling Under an Avocado Tree. Again.",
-  :year        => 2012,
-  :starts_at   => DateTime.parse("2012-05-07 08:30"),
-  :ends_at     => DateTime.parse("2012-05-07 23:00"),
-  :location_id => location.id,
-  :twitter     => "farmhouseconf"
+farmhouse_conf_2 = Conf.create!(
+  :name             => "Farmhouse Conf 2",
+  :subtitle         => "Backyard Storytelling Under an Avocado Tree. Again.",
+  :year             => 2012,
+  :starts_at        => DateTime.parse("2012-05-07 08:30"),
+  :ends_at          => DateTime.parse("2012-05-07 23:00"),
+  :location_id      => location.id,
+  :twitter          => "farmhouseconf",
+  :registration_url => "http://farmhouse.eventwax.com/farmhouse-conf-2/register/"
 )
 
 
