@@ -1,3 +1,31 @@
-// Place all the styles related to the about controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.row h1,
+.row h2 {
+  margin-bottom: .25em;
+  font-weight: normal;
+}
+
+.row {
+  h2 {
+    background: black;
+    color: white;
+    padding: .25em .5em;
+  }
+}
+
+
+
+#heather-peterson-attribution {
+  text-align: right;
+}
+
+#big-pictures {
+
+}
+
+#map {
+  margin-bottom: 3em;
+
+  iframe {
+    border: 1px solid #999;
+  }
+}
