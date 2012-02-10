@@ -6,6 +6,10 @@
 @import "bootstrap-min";
 @import "bootstrap-responsive-min";
 
+body {
+  padding-top: .5em;
+}
+
 /* admin only nav... */
 #admin nav ul {
   margin: 0;
