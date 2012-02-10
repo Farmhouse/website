@@ -19,11 +19,9 @@
           <h1><%= link_to_unless_current "The Farmhouse", root_path, :class => "brand" %></h1>
 
           <ul class="nav">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li class="active"><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
+            <%= nav_to "Register",  register_path %>
+            <%= nav_to "Conf",      year_path("2012") %>
+            <%= nav_to "Last Year", year_path("2011") %>
           </ul>
         </div>
       </div>

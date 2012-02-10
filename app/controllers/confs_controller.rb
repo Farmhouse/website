@@ -1,7 +1,7 @@
 class ConfsController < ApplicationController
   def show
     if params[:year] !~ /\d{4}/
-      year = Conf.order("year DESC").first.year
+      year = Conf.latest.first.year
       return redirect_to(year_path(year))
     else
       @conf = Conf.where(:year => params[:year]).first

@@ -20,13 +20,23 @@ module ApplicationHelper
   def time_tag(datetime)
     content_tag(:time, human_readable_datetime(datetime), :datetime => html5_datetime(datetime))
   end
-  
+
   def link_to_person(person)
     link_to_unless_current person.name, person_slug_path(person.slug), :class => "fn n p-fn p-n"
   end
-  
+
   def link_to_conf(conf)
     link_to_unless_current conf.name, year_path(conf.year), :class => "org p-org"
+  end
+
+  def nav_to(link_text, link_path, options = {})
+    if request.path == link_path
+      options[:class] = "active"
+    end
+
+    content_tag :li, :class => options[:class]  do
+      link_to link_text, link_path
+    end
   end
 
 end
