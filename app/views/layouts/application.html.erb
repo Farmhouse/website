@@ -22,6 +22,7 @@
             <%= nav_to "Register",  register_path %>
             <%= nav_to "Conf",      year_path("2012") %>
             <%= nav_to "Last Year", year_path("2011") %>
+            <%= nav_to "Rules",     rules_path %>
           </ul>
         </div>
       </div>
@@ -29,9 +30,9 @@
 
     <section role="main">
       <%= render :partial => '/layouts/admin_nav' %>
-    </section>
 
-    <%= yield %>
+      <%= yield %>
+    </section>
   </div> <!-- .container -->
 
   <footer role="contentinfo" id="site" class="container">

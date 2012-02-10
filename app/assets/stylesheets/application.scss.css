@@ -10,6 +10,13 @@ body {
   padding-top: .5em;
 }
 
+.brand a,
+.brand a:hover,
+.brand a:active {
+  color: white;
+  text-decoration: none;
+}
+
 /* admin only nav... */
 #admin nav ul {
   margin: 0;

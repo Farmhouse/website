@@ -1,11 +1,15 @@
 Farmhouse::Application.routes.draw do
   root :to => "about#index"
 
+  match "/rules"             => "about#rules",  :as => "rules"
+
   match "/register"          => redirect(Conf.latest.first.registration_url), :as => "register"
+
   match "/:year"             => "confs#show",   :as => "year"
   match "/:year/photos"      => "photos#index", :as => "year_photos"
   match "/:year/talks"       => "talks#index",  :as => "year_talks"
   match "/:year/talks/:slug" => "talks#show",   :as => "year_talk"
+
   match "/people/:slug"      => "people#show",  :as => "person_slug"
 
 

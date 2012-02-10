@@ -63,14 +63,36 @@
   text-align: right;
 }
 
-#big-pictures {
-
-}
-
 #map {
   margin-bottom: 3em;
 
   iframe {
     border: 1px solid #999;
+  }
+}
+
+h1#rules {
+  font-size: 500%;
+  line-height: 150%;
+  letter-spacing: -0.06em;
+  margin: .5em 0;
+}
+
+.rules {
+  dt {
+    background: black;
+    padding: .75em .5em;
+    color: white;
+    font-size: 2em;
+
+    b {
+      font-weight: normal;
+    }
+  }
+
+  dd {
+    font-size: 2em;
+    line-height: 150%;
+    margin-bottom: 1em;
   }
 }
