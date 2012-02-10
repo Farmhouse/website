@@ -3,32 +3,53 @@
     <h1>A Live / Work Space in Hollywood, CA</h1>
   </header>
 
-  <a class="span12" href="http://www.flickr.com/photos/milllkmaid/6258380370/" title="100+ year old avocado tree at The Farmhouse by @hrrrthrrr"><img src="http://farm7.staticflickr.com/6058/6258380370_8cd1f0fa68_b.jpg" alt="100+ year old avocado tree at The Farmhouse by @hrrrthrrr"></a>
-  <a class="span12" href="http://www.flickr.com/photos/milllkmaid/6257853097/" title="The Farmhouse backyard by @hrrrthrrr"><img src="http://farm7.staticflickr.com/6162/6257853097_2de4daaa72_b.jpg" alt="The Farmhouse backyard by @hrrrthrrr"></a>
-</div>
+  <p class="span12">
+    <%= image_tag "http://farmhouse.s3.amazonaws.com/images/avocado-tree-at-night-at-the-farmhouse-by-heather-peterson.jpg",    :alt => "100+ year old avocado tree at The Farmhouse by @hrrrthrrr" %>
 
-<p id="heather-peterson-attribution">
-  <a href="http://www.flickr.com/photos/milllkmaid/6258380370" title="100 year old avocado tree | Flickr - Photo Sharing!">Both</a> <a href="http://www.flickr.com/photos/milllkmaid/6257853097" title="farmhouse backyard | Flickr - Photo Sharing!">photos</a> by <a href="http://hrrrthrrr.com" title="hrrrthrrr">Heather Peterson</a>
-</p>
+    <span class="photo-attribution">
+      <%= link_to "by", "http://www.flickr.com/photos/milllkmaid/6258380370/", :rel => "external" %>
+      <%= link_to "Heather Peterson", "http://hrrrthrrr.com", :rel => "external" %>
+    </span>
+  </p>
+  
+  <p class="span12">
+    <%= image_tag "http://farmhouse.s3.amazonaws.com/images/civ-in-the-shed-at-night-at-the-farmhouse-by-heather-peterson.jpg", :alt => "The Farmhouse backyard by @hrrrthrrr" %>
+  
+    <span class="photo-attribution">
+      <%= link_to "by", "http://www.flickr.com/photos/milllkmaid/6257853097/", :rel => "external" %>
+      <%= link_to "Heather Peterson", "http://hrrrthrrr.com", :rel => "external" %>
+    </span>
+  </p>
+</div>
 
 <div class="row">
   <div class="span6">
     <h2>Co-Working</h2>
-    <a href="http://www.flickr.com/photos/veganstraightedge/6711133615/" title="The Office at The Farmhouse in Hollywood, CA by veganstraightedge, on Flickr"><img src="http://farm8.staticflickr.com/7141/6711133615_c0eb687e66.jpg" alt="The Office at The Farmhouse in Hollywood, CA"></a>
+    <%= image_tag "http://farmhouse.s3.amazonaws.com/images/living-room-office-at-the-farmhouse-by-shane-becker.jpg", :alt => "The Office at The Farmhouse in Hollywood, CA" %>
+
+    <p class="photo-attribution">
+      <%= link_to "by", "http://www.flickr.com/photos/veganstraightedge/6711133615/", :rel => "external" %>
+      <%= link_to "Shane Becker", "http://twitter.com/veganstraightedge", :rel => "external" %>
+    </p>
 
     <p>
       The living room is really more office than anything else.
       Currently, it's occupied by <a href="http://twitter.com/veganstraightedge" title="Twitter">Shane Becker</a>,
       <a href="http://twitter.com/evanphx" title="@evanphx on Twitter">Evan Phoenix</a>,
       <a href="http://twitter.com/johnbender" title="Twitter">John Bender</a> and
-      <a href="http://twitter.com/hrrrthrrr" title="Twitter">Heather Peterson</a>.
+      <a href="http://hrrrthrrr.com" title="Twitter">Heather Peterson</a>.
       Overflow guest seating is available at the 10 person dining room table.
     </p>
   </div>
 
   <div class="span6">
     <h2>Co-Living</h2>
-    <a href="http://www.flickr.com/photos/veganstraightedge/4251544965/" title="Civ holding down the backyard at the Farmhouse in Hollywood, CA (photo by Heather) by veganstraightedge"><img src="http://farm6.staticflickr.com/5055/5533623778_86a0e6e972.jpg" alt="Civ holding down the backyard at the Farmhouse in Hollywood, CA (photo by Heather)"></a>
+    <%= image_tag "http://farmhouse.s3.amazonaws.com/images/civ-in-the-backyard-grass-at-the-farmhouse-by-heather-peterson.jpg", :alt => "Civ holding down the backyard at the Farmhouse in Hollywood, CA" %>
+
+    <p class="photo-attribution">
+      <%= link_to "by", "http://www.flickr.com/photos/veganstraightedge/5533623778/", :rel => "external" %>
+      <%= link_to "Heather Peterson", "http://hrrrthrrr.com", :rel => "external" %>
+    </p>
 
     <p>
       Let's be honest. It's <a href="http://twitter.com/civthedog" title="Twitter">Civ's</a> house and yard.
@@ -43,8 +64,12 @@
 <div class="row">
   <div class="span6">
     <h2>Conferences</h2>
-    <a href="http://www.flickr.com/photos/veganstraightedge/5696302641/" title="IMG_2276 by veganstraightedge, on Flickr"><img src="http://farm6.staticflickr.com/5110/5696302641_d1ecc0dd58.jpg" width="500" height="333" alt="IMG_2276"></a>
+    <%= image_tag "http://farmhouse.s3.amazonaws.com/images/farmhouse-conf-frontyard-sign-by-tj-nelson.jpg", :alt => "Farmhouse Conf Front Yard Sign by Tj Nelson" %>
 
+    <p class="photo-attribution">
+      <%= link_to "by", "http://www.flickr.com/photos/veganstraightedge/5696302641/", :rel => "external" %>
+      <%= link_to "Tj Nelson Jr", "http://twitter.com/tjnelsonjr", :rel => "external" %>
+    </p>
     <p>
       The Farmhouse is home to <%= link_to "Farmhouse Conf", year_path("conf") %> which happens once a year in May.
       The format is simple: no projector, no slides, just incredible stories told by amazing people.
@@ -54,7 +79,12 @@
 
   <div class="span6">
     <h2>Potlucks</h2>
-    <a href="http://www.flickr.com/photos/veganstraightedge/5696880416/" title="IMG_2284 by veganstraightedge, on Flickr"><img src="http://farm3.staticflickr.com/2411/5696880416_081239e63e.jpg" width="500" height="333" alt="IMG_2284"></a>
+    <%= image_tag "http://farmhouse.s3.amazonaws.com/images/farmhouse-conf-food-setup-by-tj-nelson.jpg", :alt => "Farmhouse Conf Food Setup by Tj Nelson" %>
+
+    <p class="photo-attribution">
+      <%= link_to "by", "http://www.flickr.com/photos/veganstraightedge/5696880416/", :rel => "external" %>
+      <%= link_to "Tj Nelson Jr", "http://twitter.com/tjnelsonjr", :rel => "external" %>
+    </p>
 
     <p>
       At The Farmhouse, all food is both <%= link_to "vegan and communal", rules_path %>.

@@ -1,25 +1,27 @@
-<p id="notice"><%= notice %></p>
-
 <h1>
   <%= link_to_conf @conf %>
 
   <% if editing? %>
-    ( <%= link_to "Edit", edit_conf_path(@conf) %> )
+  ( <%= link_to "Edit", edit_conf_path(@conf) %> )
   <% end %>
 </h1>
-<h2><%= @conf.subtitle %></h2>
-<h3>In <%= @conf.year %> at <%= @conf.location.name %></h3>
 
-<p>
-  <%= time_tag @conf.starts_at %>
-  &mdash;
-  <%= time_tag @conf.ends_at %>
-</p>
+<h2><%= @conf.subtitle %></h2>
+
+<div class="row">
+  <h3 class="span6">In <%= @conf.year %> at <%= @conf.location.name %></h3>
+  <h4 class="span6">
+    <%= time_tag @conf.starts_at %>
+    &mdash;
+    <%= time_tag @conf.ends_at %>
+  </h4>
+</div>
 
 <p><%= link_to_twitter(@conf) %></p>
 
 <% unless @conf.talks.blank? %>
   <ul>
+
     <% @conf.talks.each do |talk| %>
       <li>
         <article>
@@ -27,11 +29,12 @@
           <h2>
             by
             <% talk.people.each do |person| %>
-              <%= link_to_person person %>
+            <%= link_to_person person %>
             <% end %>
           </h2>
         </article>
       </li>
     <% end %>
+
   </ul>
 <% end %>
