@@ -13,7 +13,7 @@
 <body>
   <div class="container">
 
-    <nav class="navbar">
+    <nav role="navigation" class="navbar">
       <div class="navbar-inner">
         <div class="container">
           <h1 class="brand"><%= link_to_unless_current "The Farmhouse", root_path, :rel => "home" %></h1>
@@ -27,12 +27,20 @@
       </div>
     </nav>
 
-    <%= render :partial => '/layouts/admin_nav' %>
+    <section role="main">
+      <%= render :partial => '/layouts/admin_nav' %>
+    </section>
 
     <%= yield %>
   </div> <!-- /div.container -->
 
-  <%= render :partial => '/layouts/google_analytics' %>
+  <footer role="contentinfo" id="site" class="container">
+    <ul>
+      <li><a href="mailto:barn@farmhouse.la">barn@farmhouse.la</a></li>
+      <li><%= link_to "1558 Gordon St / LA, CA / 90028", "http://goo.gl/maps/tmWX", :rel => "external" %></li>
+    </ul>
+  </footer>
 
+  <%= render :partial => '/layouts/google_analytics' %>
 </body>
 </html>

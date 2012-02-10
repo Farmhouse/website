@@ -6,6 +6,7 @@
 @import "bootstrap-min";
 @import "bootstrap-responsive-min";
 
+/* admin only nav... */
 #admin nav ul {
   margin: 0;
   padding: 0;
@@ -14,4 +15,30 @@
 #admin nav li {
   display: inline;
 }
+/* ...admin only nav */
 
+
+/* site footer... */
+footer#site {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+footer#site ul,
+footer#site li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+footer#site li {
+  display: inline;
+  letter-spacing: 0.08em;
+}
+
+footer#site li:last-child {
+  float: right;
+}
+
+
+/* ...site footer */

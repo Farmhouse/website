@@ -30,6 +30,12 @@
       margin-top: .25em;
     }
   }
+
+  .btn-large + p {
+    text-align: right;
+    margin-right: .5em;
+    margin-top:   .5em;
+  }
 }
 
 .row h1,
@@ -43,6 +49,7 @@
     background: black;
     color: white;
     padding: .25em .5em;
+    margin-top: 2em;
   }
 }
 
