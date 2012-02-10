@@ -16,7 +16,7 @@ farmhouse_conf_1 = Conf.create!(
   :ends_at          => DateTime.parse("2011-05-07 23:00"),
   :location_id      => location.id,
   :twitter          => "farmhouseconf",
-  :registration_url => "http://farmhouse.eventwax.com/farmhouse-conf-1/register/"
+  :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-1/register/"
 )
 
 
@@ -83,7 +83,7 @@ farmhouse_conf_2 = Conf.create!(
   :ends_at          => DateTime.parse("2012-05-07 23:00"),
   :location_id      => location.id,
   :twitter          => "farmhouseconf",
-  :registration_url => "http://farmhouse.eventwax.com/farmhouse-conf-2/register/"
+  :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-2/register/"
 )
 
 
