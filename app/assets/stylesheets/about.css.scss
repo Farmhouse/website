@@ -1,10 +1,16 @@
+#home img,
+#home iframe {
+  width: 100%;
+}
+
 #register-banner {
   margin: 4em 0;
   overflow: hidden;
   padding-top: 2em;
   box-shadow: 0 0 15px rgba(0, 0, 0, .4);
   background-image: url('http://farmhouse.s3.amazonaws.com/images/watercolor-cropped-top.png');
-  background-position: left top;
+  background-position: center top;
+  background-repeat: no-repeat;
 
   h1 {
     font-size: 400%;
@@ -58,10 +64,6 @@
 
 #map {
   margin-bottom: 3em;
-
-  iframe {
-    border: 1px solid #999;
-  }
 }
 
 .photo-attribution {
