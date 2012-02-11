@@ -1,10 +1,10 @@
 /*
 = require_self
 = require_tree .
-*/
 
-/*@import "bootstrap-min";*/
-/*@import "bootstrap-responsive-min";*/
+= require twitter/bootstrap
+= require twitter/bootstrap-responsive
+*/
 
 body {
   padding-top: .5em;
