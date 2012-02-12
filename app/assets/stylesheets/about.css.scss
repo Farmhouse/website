@@ -9,7 +9,7 @@
   overflow: hidden;
   padding-top: 2em;
   box-shadow: 0 0 15px rgba(0, 0, 0, .4);
-  background-image: url('http://farmhouse.s3.amazonaws.com/images/watercolor-cropped-top.png');
+  background-image: url('http://farmhouse.s3.amazonaws.com/images/home/watercolor-cropped-top.png');
   background-position: center top;
   background-repeat: no-repeat;
 
@@ -190,7 +190,12 @@
   }
 }
 
-/* and (orientation:landscape) */
+@media (max-device-width: 480px) {
+  #home iframe {
+    height: 200px;
+  }
+}
+
 @media (max-device-width: 480px) and (orientation:portrait) {
   section[role=main] article {
     margin-left: 0;
@@ -198,7 +203,6 @@
 
   #register {
     font-size: 75%;
-    background-image: none;
 
     h2 {
       font-size: 200%;
@@ -220,7 +224,6 @@
 @media (max-device-width: 480px) and (orientation:landscape) {
   #register {
     font-size: 100%;
-    background-image: none;
 
     h2 {
       font-size: 250%;

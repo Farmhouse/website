@@ -1,5 +1,7 @@
 class ConfsController < ApplicationController
   def show
+    @slug = "conf"
+
     if params[:year] !~ /\d{4}/
       year = Conf.latest.first.year
       return redirect_to(year_path(year))
