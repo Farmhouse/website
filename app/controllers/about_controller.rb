@@ -2,11 +2,15 @@ class AboutController < ApplicationController
   def index
     @slug = "home"
   end
-  
+
+  def house
+    @slug = "house"
+  end
+
   def rules
     @slug = "rules"
   end
-  
+
   def us
     @slug = "us"
   end

@@ -5,6 +5,7 @@ Farmhouse::Application.routes.draw do
 
   match "/register"          => "about#register", :as => "register"
   match "/us"                => "about#us",       :as => "us"
+  match "/house"             => "about#house",    :as => "house"
 
   match "/:year"             => "confs#show",     :as => "year"
   match "/:year/photos"      => "photos#index",   :as => "year_photos"
