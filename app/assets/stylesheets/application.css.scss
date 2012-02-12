@@ -54,7 +54,8 @@ footer#site li:last-child {
 @media (max-width: 480px) {
   footer#site li {
     display: block;
-    float: left;
+    float: none;
+    text-align: right;
   }
 }
 

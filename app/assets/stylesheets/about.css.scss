@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-#register-banner {
+#register {
   margin: 4em 0;
   overflow: hidden;
   padding-top: 2em;
@@ -34,17 +34,57 @@
       padding: .5em 1em;
     }
 
+    span {
+      display: block;
+    }
+
     b {
       line-height: 150%;
       display: block;
       margin-top: .25em;
     }
+
+    & + p {
+      text-align: right;
+      margin-right: .5em;
+      margin-top:   .5em;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #register h1 {
+    font-size: 300%;
   }
 
-  .btn-large + p {
-    text-align: right;
-    margin-right: .5em;
-    margin-top:   .5em;
+  #register .btn-large {
+    width: 97%;
+    margin-top: 1em;
+
+    span,
+    b {
+      display: inline;
+    }
+
+    span:after {
+      content: " : ";
+    }
+
+    & + p {
+      margin-right: 1em;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #register .btn-large {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 980px) {
+  #register .span7 {
+    width: 400px;
   }
 }
 
