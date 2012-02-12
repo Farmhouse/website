@@ -10,6 +10,16 @@ body {
   padding-top: .5em;
 }
 
+@media (max-device-width: 1024px) and (orientation:portrait) {
+  section[role=main] > article {
+    margin-left: 20px;
+  }
+
+  #rules article .row {
+    margin-left: 0;
+  }
+}
+
 .brand a,
 .brand a:hover,
 .brand a:active {
@@ -58,7 +68,4 @@ footer#site li:last-child {
     text-align: right;
   }
 }
-
-
-
 /* ...site footer */

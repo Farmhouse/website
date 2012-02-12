@@ -149,6 +149,33 @@
   }
 }
 
+@media (max-device-width: 1024px) and (orientation:landscape) {
+  #rules article {
+    dl {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #rules article {
+    margin-left: 20px;
+
+    h1 {
+      margin-left: -20px;
+      font-size: 350%;
+    }
+
+    dl {
+      margin-left: -20px;
+    }
+
+    #chalkboard {
+      margin-left: -20px;
+    }
+  }
+}
+
 @media (max-width: 480px) {
   #rules article h1 {
     font-size: 200%;
@@ -185,8 +212,6 @@
 }
 
 @media (max-width: 480px) {
-  body {background: red;}
-
   #civ .photo,
   #friends .photo {
     width: 50%;
