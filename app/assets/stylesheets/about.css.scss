@@ -189,6 +189,55 @@
     }
   }
 }
+
+/* and (orientation:landscape) */
+@media (max-device-width: 480px) and (orientation:portrait) {
+  section[role=main] article {
+    margin-left: 0px;
+  }
+
+  #register {
+    font-size: 75%;
+    background-image: none;
+
+    h2 {
+      font-size: 200%;
+      letter-spacing: -0.06em;
+    }
+
+    h3 {
+      font-size: 175%;
+      letter-spacing: -0.06em;
+    }
+
+    .btn-large,
+    .btn-large + p {
+      width: 210px;
+    }
+  }
+}
+
+@media (max-device-width: 480px) and (orientation:landscape) {
+  #register {
+    font-size: 100%;
+    background-image: none;
+
+    h2 {
+      font-size: 250%;
+      letter-spacing: -0.06em;
+    }
+
+    h3 {
+      font-size: 175%;
+      letter-spacing: -0.06em;
+    }
+
+    .btn-large,
+    .btn-large + p {
+      width: 370px;
+    }
+  }
+}
 /* ...rules */
 
 /* about us... */
