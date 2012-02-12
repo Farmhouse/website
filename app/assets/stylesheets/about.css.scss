@@ -193,7 +193,7 @@
 /* and (orientation:landscape) */
 @media (max-device-width: 480px) and (orientation:portrait) {
   section[role=main] article {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   #register {
