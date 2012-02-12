@@ -83,12 +83,12 @@
 
 
 /* rules... */
-h1#rules {
+#us    article h1,
+#rules article h1 {
   font-size: 500%;
   line-height: 150%;
   letter-spacing: -0.06em;
-  margin:
-  .5em 0;
+  margin: .5em 0;
 }
 
 .rules {
@@ -110,3 +110,44 @@ h1#rules {
   }
 }
 /* ...rules */
+
+/* about us... */
+
+#us #shane .photo {
+  width: 50%;
+
+  &:nth-of-type(1),
+  &:nth-of-type(2) {
+    margin-bottom: -5px;
+  }
+}
+
+#us .photo {
+  width: 100%;
+}
+
+#civ .photo,
+#friends .photo {
+  width: 25%;
+}
+
+@media (max-width: 480px) {
+  body {background: red;}
+
+  #civ .photo,
+  #friends .photo {
+    width: 50%;
+  }
+}
+
+#tj,
+#bookis,
+#brooke,
+#eli, {
+  margin-bottom: 1em;
+}
+
+.notes {
+  margin-top: 1em;
+}
+/* ...about us */

@@ -51,5 +51,13 @@ footer#site li:last-child {
   float: right;
 }
 
+@media (max-width: 480px) {
+  footer#site li {
+    display: block;
+    float: left;
+  }
+}
+
+
 
 /* ...site footer */

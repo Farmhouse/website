@@ -19,10 +19,11 @@
           <h1 class="brand"><%= link_to_unless_current "The Farmhouse", root_path, :rel => "home" %></h1>
 
           <ul class="nav">
-            <%= nav_to "Register",  register_path %>
-            <%= nav_to "Conf",      year_path("2012") %>
-            <%= nav_to "Last Year", year_path("2011") %>
-            <%= nav_to "Rules",     rules_path %>
+            <%= nav_to "Register",   register_path %>
+            <%= nav_to "Conf",       year_path("2012") %>
+            <%= nav_to "Last Year",  year_path("2011") %>
+            <%= nav_to "Rules",      rules_path %>
+            <%= nav_to "Who We Are", us_path %>
           </ul>
         </div>
       </div>

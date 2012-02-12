@@ -1,0 +1,131 @@
+<article>
+  <div class="row">
+    <div class="span6" id="shane">
+      <h2>Hi, I'm Shane. I live here.</h2>
+
+      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/people/shane-becker.jpg", :class => "photo" %><%= image_tag "http://farmhouse.s3.amazonaws.com/images/people/shane-becker-at-disneyland-by-jessica-suttles.jpg", :class => "photo" %><%= image_tag "http://farmhouse.s3.amazonaws.com/images/people/shane-becker-at-farmhouse-front-door-by-tj-nelson-jr.jpg", :class => "photo" %><%= image_tag "http://farmhouse.s3.amazonaws.com/images/people/shane-becker-at-the-met-by-kristen-reyes.jpg", :class => "photo" %>
+
+      <p class="notes">
+        IRL, my name is
+        <%= link_to "Shane Becker", "http://iamshane.com", :rel => "external" %>.
+        On the web, I'm
+        <%= link_to "@veganstraightedge", "http://twitter.com/veganstraightedge",  :title => "Twitter",  :rel => "external" %>
+        <%= link_to "on",                 "http://flickr.com/veganstraightedge",   :title => "Flickr",   :rel => "external" %>
+        <%= link_to "all",                "http://vimeo.com/veganstraightedge",    :title => "Vimeo",    :rel => "external" %>
+        <%= link_to "of",                 "http://youtube.com/veganstraightedge",  :title => "YouTube",  :rel => "external" %>
+        <%= link_to "the",                "http://facebook.com/veganstraightedge", :title => "Facebook", :rel => "external" %>
+        <%= link_to "sites.",             "http://github.com/veganstraightedge",   :title => "GitHub",   :rel => "external" %>
+
+        I use the same avatar (top left) everywhere on the internet, but this is what I look in real life.
+        You can email me at <a href="mailto:veganstraightedge@gmail.com">veganstraightedge@gmail.com</a>.
+      </p>
+    </div>
+
+    <div class="span6" id="evan">
+      <h2>This is Evan.</h2>
+      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/people/evan-phoenix.jpg", :class => "photo" %>
+
+      <p class="notes">
+        Evan Phoenix is not eating an invisible sandwich in this photo. Maybe.
+        He works at The Farmhouse on the regular. He's
+        <%= link_to "@evanphx", "http://twitter.com/evanphx",  :title => "Twitter",  :rel => "external" %>
+        on Twitter and
+        <%= link_to "GitHub.", "https://github.com/evanphx", :title => "GitHub", :rel => "external" %>
+        He created and works on an
+        <%= link_to "open source software project", "https://github.com/rubinius", :title => "GitHub", :rel => "external" %>
+        called
+        <%= link_to "Rubinius.", "http://rubini.us", :title => "Rubinius Website", :rel => "external" %>.
+      </p>
+    </div>
+  </div> <!-- .row -->
+
+  <div class="row">
+    <div class="span6" id="john">
+      <h2>And John.</h2>
+      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/people/john-bender.jpg", :class => "photo" %>
+
+      <p class="notes">
+        <%= link_to "John Bender", "http://johnbender.us", :rel => "external" %>
+        <%= link_to "works", "https://github.com/johnbender", :title => "GitHub", :rel => "external" %>
+        at The Farmhouse most of the days on
+        <%= link_to "jQuery Mobile,", "http://jquerymobile.com", :rel => "external" %>
+        an
+        <%= link_to "open source JavaScript framework", "https://github.com/jquery/jquery-mobile" %>
+        for mobile development. He often has his hood up and
+        <%= link_to "rarely looks straight at the camera.", "http://flickr.com/veganstraightedge/5709097384" %>
+      </p>
+    </div>
+
+    <div class="span6" id="heather">
+      <h2>Finally, Heather.</h2>
+      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/people/heather-peterson.jpg", :class => "photo" %>
+
+      <p class="notes">
+        <%= link_to "Heather Peterson", "http://twitter.com/hrrrthrrr", :title => "Twitter", :rel => "external" %>
+        clearly has the most style of any of us around this place.
+        She sings, dances, raps and makes most amazing things. Her website is
+        <%= link_to "full of awesomitude.", "http://hrrrthrrr.com", :title => "Hrrrthrrr.com", :rel => "external" %>
+        If you need a
+        <%= link_to "Tumblr theme,", "http://tumblr.com/themes/by/hrrrthrrr", :title => "Pro Tumblr Themes by Heather", :rel => "external" %>
+        she's got you covered.
+      </p>
+    </div>
+  </div> <!-- .row -->
+
+
+
+  <div class="row">
+    <div class="span12" id="friends">
+      <h2>Friends of The Farmhouse.</h2>
+      <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/people/tj-nelson-jr.jpg", :class => "photo"), "http://twitter.com/tjnelsonjr", :title => "@tjnelsonjr on Twitter", :rel => "external" %><%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/people/bookis-smuin.jpg", :class => "photo"), "http://twitter.com/bookis", :title => "@bookis on Twitter", :rel => "external" %><%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/people/brooke-graham.jpg", :class => "photo"), "http://twitter.com/brke", :title => "@brke on Twitter", :rel => "external" %><%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/people/eli-duke.jpg", :class => "photo"), "http://twitter.com/eliduke", :title => "@eliduke on Twitter", :rel => "external" %>
+
+      <div class="row">
+        <div class="span3" id="tj">
+          <%= link_to "Tj Nelson Jr", "http://tjnelsonjr.com", :title => "Tj's Website", :rel => "external" %>.
+          <%= link_to "@tjnelsonjr", "http://twitter.com/tjnelsonjr", :title => "Twitter", :rel => "external" %>.
+          <%= link_to "On Flickr", "http://flickr.com/tjnelsonjunior", :title => "Tj on Flickr", :rel => "external" %>.
+          <%= link_to "On Vimeo", "https://vimeo.com/tjnelsonjr", :title => "Tj on Vimeo", :rel => "external" %>.
+          <%= link_to "On Instagram", "http://web.stagram.com/n/tjnelsonjr", :title => "Tj on Instagram", :rel => "external" %>.
+        </div>
+
+        <div class="span3" id="bookis">
+          <%= link_to "Bookis Smuin", "http://bookissmuin.com/bookis-smuin", :title => "Bookis' website", :rel => "external" %>.
+          <%= link_to "@bookis", "http://twitter.com/bookis", :title => "Twitter", :rel => "external" %>.
+          <%= link_to "Co-founded Luna&nbsp;Sandals".html_safe, "http://lunasandals.com", :title => "Luna Sandals", :rel => "external" %>.
+          <%= link_to "On GitHub", "https://github.com/bookis", :title => "GitHub", :rel => "external" %>.
+          <%= link_to "On Flickr", "http://flickr.com/bookis", :title => "Bookis on Flickr", :rel => "external" %>.
+        </div>
+
+        <div class="span3" id="brooke">
+          Brooke Graham.
+          <%= link_to "@brke", "http://twitter.com/brke", :title => "Twitter", :rel => "external" %>.
+          <%= link_to "On Flickr", "http://flickr.com/brke", :title => "Brooke on Flickr", :rel => "external" %>.
+        </div>
+
+        <div class="span3" id="eli">
+          <%= link_to "Eli Duke", "http://eliduke.com", :title => "Eli's Website", :rel => "external" %>.
+          <%= link_to "@eliduke", "http://twitter.com/eliduke", :title => "Twitter", :rel => "external" %>.
+          <%= link_to "Created ListYourList", "http://listyourlist.com", :title => "ListYourList", :rel => "external" %>.
+          <%= link_to "On Flickr", "http://flickr.com/elisfanclub", :title => "Eli on Flickr", :rel => "external" %>.
+          <%= link_to "On Vimeo", "https://vimeo.com/eliduke", :title => "Eli on Vimeo", :rel => "external" %>.
+          <%= link_to "On GitHub", "https://github.com/eliduke", :title => "GitHub", :rel => "external" %>.
+          <%= link_to "Blog", "http://blog.eliduke.com", :title => "Eli's Website", :rel => "external" %>.
+        </div>
+      </div> <!-- .row -->
+    </div>
+  </div> <!-- .row -->
+
+
+  <div class="row">
+    <div class="span12" id="civ">
+      <h2>Civ.</h2>
+      <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/people/civ.jpg", :class => "photo"), "http://twitter.com/civthedog", :title => "@CivTheDog on Twitter", :rel => "external" %><%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/people/civ-next-to-chair-wheels-by-shane-becker.jpg", :class => "photo"), "http://twitter.com/civthedog", :title => "@CivTheDog on Twitter", :rel => "external" %><%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/people/civ-next-to-closet-door-by-shane-becker.jpg", :class => "photo"), "http://twitter.com/civthedog", :title => "@CivTheDog on Twitter", :rel => "external" %><%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/people/civ-next-to-steve-klabnik-by-shane-becker.jpg", :class => "photo"), "http://twitter.com/civthedog", :title => "@CivTheDog on Twitter", :rel => "external" %>
+
+      <p>
+        It's
+        <%= link_to "Civ's", "http://twitter.com/civthedog", :title => "@CivTheDog on Twitter", :rel => "external" %>
+        world. We just live in it. She likes to sleep close to things and makes a great co-pilot.
+      </p>
+    </div>
+  </div> <!-- .row -->
+</article>
