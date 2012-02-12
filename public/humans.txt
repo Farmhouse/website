@@ -1,0 +1,14 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Janitor: Shane Becker
+  Site: http://iamshane.com
+  Twitter: @veganstraightedge
+  Location: Hollywood, CA
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Software: Ruby on Rails, Heroku, Rubinius
