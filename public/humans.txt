@@ -10,5 +10,5 @@
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
+  Components: Modernizr, jQuery, Twitter Bootstrap
   Software: Ruby on Rails, Heroku, Rubinius
