@@ -1,51 +1,33 @@
-<p id="notice"><%= notice %></p>
+<%= render :partial => "/confs/nav" %>
 
-<p>
-  <b>Conf:</b>
-  <%= link_to_conf(@talk.conf) %>
-</p>
+<article>
+  <header>
+    <h1><%= @talk.title %></h1>
 
-<p>
-  <b>Title:</b>
-  <%= @talk.title %>
-</p>
-
-<p>
-  <b>Subtitle:</b>
-  <%= @talk.subtitle %>
-</p>
-
-<ul>
-  <% @talk.people.each do |person| %>
-    <li>
-      <%= link_to_person(person) %>
-
-      <% if editing? %>
-        <%= link_to "x", speaking_path(speaking(@talk, person)), :method => :delete %>
-      <% end %>
-    </li>
-  <% end %>
-</ul>
-
-<p>
-  <b>Description:</b>
-  <%= @talk.description %>
-</p>
-
-<p>
-  <b>Accepted:</b>
-  <%= @talk.accepted %>
-</p>
-
-<p>
-  <b>Keynote:</b>
-  <%= @talk.keynote %>
-</p>
+    <h2>
+      At <%= link_to_conf(@talk.conf) %>
+    </h2>
+  </header>
 
 
-<% if editing? %>
-  <p>
-    <%= link_to "Edit", edit_talk_path(@talk) %>
-    <%= link_to "Talks", talks_path %>
-  </p>
-<% end %>
+  <div class="row">
+    <div class="span6">
+      <%= remote_image_tag("speakers/#{@talk.conf.year}/#{@talk.people.first.slug}/#{@talk.people.first.slug}") %>
+
+      <%= simple_format @talk.description, :class => "notes" %>
+    </div> <!-- .decription -->
+
+    <div class="span6">
+      <video controls poster="<%= @talk.videos.first.poster_frame_url %>" preload="none">
+        <source src="<%= @talk.videos.first.mp4 %>" />
+      </video>
+
+      <p class="notes">
+        Video by <%= @talk.videos.first.videographer %>.
+        <%= link_to "Higher resolutions", @talk.videos.first.canonical_url, :rel => "external" %>
+        available at
+        <%= link_to "Confreaks.", "http://confreaks.com", :rel => "external" %>
+      </p>
+    </div> <!-- .span6 -->
+  </div> <!-- .row -->
+</article>

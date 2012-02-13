@@ -1,5 +1,6 @@
 class TalksController < ApplicationController
   def show
+    @slug = "talk"
     conf = Conf.where(:year => params[:year]).first
     @talk = conf.talks.where(:slug => params[:slug]).first
   end

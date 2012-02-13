@@ -8,6 +8,7 @@ class CreateVideos < ActiveRecord::Migration
       t.string :ogv
       t.string :mp4
       t.string :canonical_url
+      t.string :poster_frame_url
 
       t.timestamps
     end

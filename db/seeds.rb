@@ -33,20 +33,45 @@ people = [
   ["Suzan Bond", "Suzan is a community builder, uber people person and curator of information. Known for her ability to building scalable organization, she has created 2 departments, 2 non-profits and 2 companies and is currently the Chief Rainmaker for SwagLove. A former executive coach and organizational and business strategist, she has worked with renowned companies such as Accenture, Deloitte, Kellogg and Kraft among others, where she developed her ideas about personal and business effectiveness. She's spoken all over the US and internationally, including at Ignite Boulder, the largest Ignite in the word. She's written a book about intuition and is currently in the midst of a writing frenzy that includes a blog, a memoir and The Art of Self Sourcing, a guide on decision making in a digital world. She lives in Boulder."]
 ]
 
-people.each do |talk|
-  Talk.create!(
+videos = [
+  ["http://cdn.confreaks.com/system/assets/datas/1419/original/535-farmhouseconf-evan-phoenix-small.mp4", "http://confreaks.com/videos/535-farmhouseconf-evan-phoenix", "http://confreaks.com/system/videos/images/535/preview/vlcsnap-2011-05-10-12h19m27s159.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1413/original/532-farmhouseconf-leah-silber-small.mp4", "http://confreaks.com/videos/532-farmhouseconf-leah-silber", "http://confreaks.com/system/videos/images/532/preview/vlcsnap-2011-05-10-11h49m01s77.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1393/original/528-farmhouseconf-sean-bonner-small.mp4", "http://confreaks.com/videos/528-farmhouseconf-sean-bonner", "http://confreaks.com/system/videos/images/528/preview/vlcsnap-2011-05-10-01h24m44s30.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1408/original/533-farmhouseconf-micki-krimmel-small.mp4", "http://confreaks.com/videos/533-farmhouseconf-micki-krimmel", "http://confreaks.com/system/videos/images/533/preview/vlcsnap-2011-05-10-11h51m39s105.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1396/original/530-farmhouseconf-tj-nelson-jr-small.mp4", "http://confreaks.com/videos/530-farmhouseconf-tj-nelson-jr", "http://confreaks.com/system/videos/images/530/preview/530-farmhouseconf-tj-nelson-jr-thumb_0000.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1405/original/536-farmhouseconf-sarah-mei-small.mp4", "http://confreaks.com/videos/536-farmhouseconf-sarah-mei", "http://confreaks.com/system/videos/images/536/preview/vlcsnap-2011-05-10-12h22m12s19.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1430/original/539-farmhouseconf-eli-duke-small.mp4", "http://confreaks.com/videos/539-farmhouseconf-eli-duke", "http://confreaks.com/system/videos/images/539/preview/vlcsnap-2011-05-10-12h19m52s150.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1402/original/534-farmhouseconf-meghann-millard-small.mp4", "http://confreaks.com/videos/534-farmhouseconf-meghann-millard", "http://confreaks.com/system/videos/images/534/preview/vlcsnap-2011-05-10-11h52m05s105.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1411/original/538-farmhouseconf-tmi-with-tenderlove-small.mp4", "http://confreaks.com/videos/538-farmhouseconf-tmi-with-tenderlove", "http://confreaks.com/system/videos/images/538/preview/vlcsnap-2011-05-10-12h23m02s9.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1399/original/531-farmhouseconf-suzan-bond-small.mp4", "http://confreaks.com/videos/531-farmhouseconf-suzan-bond", "http://confreaks.com/system/videos/images/531/preview/vlcsnap-2011-05-10-01h39m10s197.png"]
+]
+
+people.each_with_index do |person, index|
+  talk = Talk.create!(
     :conf_id      => farmhouse_conf_1.id,
-    :title        => talk.first,
+    :title        => person.first,
     :subtitle     => "",
-    :description  => talk.last,
+    :description  => person.last,
     :accepted     => true,
     :keynote      => false
   )
+
+  Video.create!(
+    :conf_id          => farmhouse_conf_1.id,
+    :talk_id          => talk.id,
+    :caption          => "",
+    :videographer     => "Coby Randquist",
+    :mp4              => videos[index].first,
+    :canonical_url    => videos[index][1],
+    :poster_frame_url => videos[index].last
+  )
 end
+
+
 
 shane = Person.create!(
   :name       => "Shane Becker",
-  :bio        => "Chief resident of The Farmhouse. Organizer of Farmhouse Conf.",
+  :bio        => "Chief Resident of The Farmhouse. Organizer of Farmhouse Conf.",
   :image      => "https://twimg0-a.akamaihd.net/profile_images/1266963198/avatar_a_sqaure.jpg",
   :staff      => true,
   :organizer  => true

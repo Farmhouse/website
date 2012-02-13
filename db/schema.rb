@@ -133,8 +133,9 @@ ActiveRecord::Schema.define(:version => 20120202040735) do
     t.string   "ogv"
     t.string   "mp4"
     t.string   "canonical_url"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.string   "poster_frame_url"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "websites", :force => true do |t|
