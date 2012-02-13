@@ -23,10 +23,9 @@
 
         <p><%= link_to_twitter(@conf) %></p>
 
-        <p>The Farmhouse was built in 1903 in Hollywood, CA on a 300-acre avocado grove. It is now a private co-living/co-working space. The backyard is huge. So is the last remaining 100-year-old avocado tree.</p>
-
-        <p>That avocado tree is the setting for Farmhouse Conf. Under the tree in the backyard 100 attendees will gather round to hear amazing stories of awesomeness from 10 speakers who will get 30 minutes and will have no slides. Just telling stories. This is a 1-day / 1-track event. Vegan breakfast, lunch and dinner will be provided (included in the cost of attending). Also, there'll be an after-party with music. Attendees are welcome to camp in the backyard overnight, but of course are not required to. If you do, bring your own tent, sleeping bag, etc.</p>
-
+        <div class="description">
+          <%= render "/confs/descriptions/farmhouse_conf_#{@conf.year}" %>
+        </div> <!-- .description -->
       </div>
     </div>
   </header>
