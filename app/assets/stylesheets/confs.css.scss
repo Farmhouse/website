@@ -31,3 +31,9 @@
     font-size: 400%;
   }
 }
+
+@media (max-device-width: 480px) and (orientation:landscape) {
+  h1 b {
+    display: block;
+  }
+}
