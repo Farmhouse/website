@@ -4,6 +4,13 @@ module ApplicationHelper
     Rails.env.development?
     false
   end
+  
+  def remote_image_tag(path, options = {})
+    image_tag "http://farmhouse.s3.amazonaws.com/images/#{path}.jpg",
+              :alt   => options[:alt],
+              :class => options[:class],
+              :id    => options[:id]
+  end
 
   def link_to_twitter(thing)
     link_to "@#{thing.twitter}", "http://twitter.com/#{thing.twitter}", :rel => "external"
