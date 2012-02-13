@@ -15,9 +15,11 @@
       <%= "Organizer" if person.organizer? %>
     </p>
 
-    <ul class="actions">
-      <li><%= link_to 'Edit', edit_person_path(person) %></li>
-      <li><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></li>
-    </ul>
+    <% if editing? %>
+      <ul class="actions">
+        <li><%= link_to 'Edit', edit_person_path(person) %></li>
+        <li><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></li>
+      </ul>
+    <% end %>
   </article>
 </li>
