@@ -67,10 +67,24 @@
 @media (max-device-width: 1024px) and (orientation:portrait) {
   section[role=main] > article {
     margin-left: 20px;
+
+    header h1,
+    header h2 {
+      margin-left: -20px;
+    }
   }
 
   #rules article .row {
     margin-left: 0;
+  }
+}
+
+@media (max-device-width: 480px) and (orientation:portrait) {
+  section[role=main] > article {
+    header h1,
+    header h2 {
+      margin-left: 0;
+    }
   }
 }
 
