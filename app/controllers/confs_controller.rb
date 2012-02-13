@@ -9,6 +9,10 @@ class ConfsController < ApplicationController
       @conf = Conf.where(:year => params[:year]).first
     end
   end
+  
+  def sponsor
+    @slug = "sponsor"
+  end
 
   def index
     @confs = Conf.all
