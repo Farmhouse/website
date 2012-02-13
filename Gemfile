@@ -18,6 +18,7 @@ gem "jquery-rails"
 group :production do
   gem "pg"
   gem "thin"
+  gem 'newrelic_rpm'
 end
 
 gem "omniauth",  "~> 1.0.2"
