@@ -1,7 +1,4 @@
 Farmhouse::Application.routes.draw do
-  # TEMP debugging in production
-  match "/wtf" => "confs#wtf"
-
   root :to => "about#index"
 
   match "/rules"             => "about#rules",    :as => "rules"
@@ -11,6 +8,8 @@ Farmhouse::Application.routes.draw do
 
   match "/prospectus"        => redirect("/conf/sponsor"), :as => "prospectus"
   match "/conf/sponsor"      => "confs#sponsor",           :as => "sponsor"
+
+  match "/conf"              => redirect("/2012")
 
   match "/:year"             => "confs#show",     :as => "year"
   match "/:year/photos"      => "photos#index",   :as => "year_photos"
