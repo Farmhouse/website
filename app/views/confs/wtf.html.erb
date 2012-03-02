@@ -1,19 +1,9 @@
-<% [
-  # "Evan Phoenix"
-  # "Leah Silber"
-  # "Sean Bonner"
-  # "Micki Krimmel"
-  # "Tj Nelson Jr"
-  # "Sarah Mei"
-  # "Eli Duke"
-  "Meghann Millard"
-  # "Aaron Patterson" BOOM
-].each do |person| %>
-  <%= render :partial => "/talks/descriptions/2011/#{sluggify(person, '_')}" %>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-  <hr>
-<% end %>
-  
+<%= render :partial => "/talks/descriptions/2011/evan_phoenix" %>
+<%= render :partial => "/talks/descriptions/2011/leah_silber" %>
+<%= render :partial => "/talks/descriptions/2011/sean_bonner" %>
+<%= render :partial => "/talks/descriptions/2011/micki_krimmel" %>
+<%= render :partial => "/talks/descriptions/2011/tj_nelson_jr" %>
+<%= render :partial => "/talks/descriptions/2011/sarah_mei" %>
+<%= render :partial => "/talks/descriptions/2011/eli_duke" %>
+
+<%# render :partial => "/talks/descriptions/2011/aaron_patterson" %>
