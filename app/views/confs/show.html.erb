@@ -45,6 +45,9 @@
       <div class="row">
 
         <% row.each do |talk| %>
+          <div class="span6">
+            <h2><%= link_to talk.title, year_talk_path(talk.conf.year, talk.slug) %></h2>
+          </div>
         <% end %>
 
       </div> <!-- .row -->
