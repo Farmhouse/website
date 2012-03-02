@@ -17,7 +17,7 @@ gem "jquery-rails"
 
 group :production do
   gem "pg"
-  gem "thin"
+  gem "puma"
   gem 'newrelic_rpm'
 end
 
