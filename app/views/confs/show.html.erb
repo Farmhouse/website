@@ -49,7 +49,7 @@
             <h2><%= link_to talk.title, year_talk_path(talk.conf.year, talk.slug) %></h2>
             <%= link_to remote_image_tag("speakers/#{talk.conf.year}/#{talk.people.first.slug}/#{talk.people.first.slug}"), year_talk_path(talk.conf.year, talk.slug) %>
 
-            <%= simple_format talk.description, :class => "notes" %>
+            <%# simple_format talk.description, :class => "notes" %>
           </div>
         <% end %>
 
