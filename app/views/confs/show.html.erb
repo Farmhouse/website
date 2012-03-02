@@ -27,6 +27,15 @@
           <%= render "/confs/descriptions/farmhouse_conf_#{@conf.year}" %>
         </div> <!-- .description -->
       </div>
+
+      <% if @conf.year == 2012 %>
+        <div id="sponsors" class="span6">
+          <h2>Sponsors</h2>
+
+          <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/okcupid-labs.png"), "http://okcupidlabs.com",     :rel => "external" %>
+          <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/github.png"),       "https://github.com", :rel => "external" %>
+        </div>
+      <% end %>
     </div>
   </header>
 
@@ -47,5 +56,4 @@
         </div> <!-- .row -->
       <% end %>
   <% end %>
-
 </article>
