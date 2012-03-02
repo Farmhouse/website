@@ -1,4 +1,7 @@
 Farmhouse::Application.routes.draw do
+  # TEMP debugging in production
+  match "/wtf" => "confs#wtf"
+
   root :to => "about#index"
 
   match "/rules"             => "about#rules",    :as => "rules"
