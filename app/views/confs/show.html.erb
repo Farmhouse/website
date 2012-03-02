@@ -32,12 +32,18 @@
         <div id="sponsors" class="span6">
           <h2>Sponsors</h2>
 
-          <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/okcupid-labs.png"), "http://okcupidlabs.com",     :rel => "external" %>
-          <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/github.png"),       "https://github.com", :rel => "external" %>
+          <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/okcupid-labs.png"), "http://okcupidlabs.com", :rel => "external" %>
+          <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/github.png"),       "https://github.com",     :rel => "external" %>
         </div>
       <% end %>
     </div>
   </header>
 
 
+  <% unless @conf.talks.blank? %>
+    <% @conf.talks.in_groups_of(2).each do |row| %>
+      <div class="row">
+      </div> <!-- .row -->
+    <% end %>
+  <% end %>
 </article>
