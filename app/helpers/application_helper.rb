@@ -5,6 +5,10 @@ module ApplicationHelper
     false
   end
   
+  def sluggify(text, separator="-")
+    text.downcase.gsub(/-/, separator).gsub(/ /, separator)
+  end
+
   def remote_image_tag(path, options = {})
     image_tag "http://farmhouse.s3.amazonaws.com/images/#{path}.jpg",
               :alt   => options[:alt],
