@@ -50,7 +50,7 @@
             <%= link_to remote_image_tag("speakers/#{talk.conf.year}/#{talk.people.first.slug}/#{talk.people.first.slug}"), year_talk_path(talk.conf.year, talk.slug) %>
 
             <div class="notes">
-              <%= talk.description %>
+              <%# talk.description %>
             </div>
           </div>
         <% end %>
