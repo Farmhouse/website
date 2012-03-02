@@ -1,13 +1,13 @@
 <% [
-  # "Evan Phoenix",
-  # "Leah Silber",
-  # "Sean Bonner",
-  # "Micki Krimmel",
-  # "Tj Nelson Jr",
-  # "Sarah Mei",
-  # "Eli Duke",
-  # "Meghann Millard",
-  "Aaron Patterson"
+  # "Evan Phoenix"
+  # "Leah Silber"
+  # "Sean Bonner"
+  # "Micki Krimmel"
+  # "Tj Nelson Jr"
+  # "Sarah Mei"
+  # "Eli Duke"
+  "Meghann Millard"
+  # "Aaron Patterson" BOOM
 ].each do |person| %>
   <%= render :partial => "/talks/descriptions/2011/#{sluggify(person, '_')}" %>
   <hr>
