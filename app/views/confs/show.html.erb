@@ -43,6 +43,10 @@
   <% unless @conf.talks.blank? %>
     <% @conf.talks.in_groups_of(2).each do |row| %>
       <div class="row">
+
+        <% row.each do |talk| %>
+        <% end %>
+
       </div> <!-- .row -->
     <% end %>
   <% end %>
