@@ -1,13 +1,15 @@
-<% ["Evan Phoenix",
-"Leah Silber",
-"Sean Bonner",
-"Micki Krimmel",
-"Tj Nelson Jr",
-"Sarah Mei",
-"Eli Duke",
-"Meghann Millard",
-"Aaron Patterson",
-"Suzan Bond"].each do |person| %>
+<% [
+  # "Evan Phoenix",
+  # "Leah Silber",
+  # "Sean Bonner",
+  # "Micki Krimmel",
+  # "Tj Nelson Jr",
+  # "Sarah Mei",
+  # "Eli Duke",
+  # "Meghann Millard",
+  # "Aaron Patterson",
+  "Suzan Bond"
+].each do |person| %>
   <%= render :partial => "/talks/descriptions/2011/#{sluggify(person, '_')}" %>
   <hr>
   <hr>
