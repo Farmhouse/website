@@ -2,13 +2,7 @@
 
 <article>
   <header>
-    <h1>
-      <%= link_to_conf @conf %>
-
-      <% if editing? %>
-      ( <%= link_to "Edit", edit_conf_path(@conf) %> )
-      <% end %>
-    </h1>
+    <h1><%= link_to_conf @conf %></h1>
 
     <h2><%= @conf.subtitle %></h2>
 

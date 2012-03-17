@@ -3,9 +3,3 @@
 <ul id="people">
   <%= render @person %>
 </ul>
-
-<% if editing? %>
-  <p>
-    <%= link_to "Edit", edit_person_path(@person) %>
-  </p>
-<% end %>
