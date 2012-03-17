@@ -32,7 +32,10 @@
         <% row.each do |talk| %>
           <% unless talk.nil? %>
             <div class="span6">
-              <h2><%= link_to talk.title, year_talk_path(talk.conf.year, talk.slug) %></h2>
+              <h2 id="<%= talk.people.first.slug %>">
+                <%= link_to talk.title, year_talk_path(talk.conf.year, talk.slug) %>
+              </h2>
+
               <%= link_to remote_image_tag("speakers/#{talk.conf.year}/#{talk.people.first.slug}/#{talk.people.first.slug}"), year_talk_path(talk.conf.year, talk.slug) %>
 
               <% if @conf.year == 2012 %>
