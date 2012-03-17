@@ -40,7 +40,7 @@
 
               <% if @conf.year == 2012 %>
                 <div class="notes">
-                  <%= render :partial => "/talks/descriptions/#{@conf.year}/#{sluggify(talk.people.first.name, "_")}" %>
+                  <%= simple_format talk.description %>
                 </div>
               <% end %>
 
