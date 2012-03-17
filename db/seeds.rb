@@ -1,3 +1,4 @@
+# the farmhouse location
 location = Location.create!(
   :name             => "The Farmhouse",
   :street_address   => "1558 Gordon St",
@@ -8,6 +9,7 @@ location = Location.create!(
   :country_id       => Country.where(:name => "United States").first
 )
 
+# farmhouse conf 1, 2011
 farmhouse_conf_1 = Conf.create!(
   :name             => "Farmhouse Conf 1",
   :subtitle         => "Backyard Storytelling Under an Avocado Tree",
@@ -20,7 +22,7 @@ farmhouse_conf_1 = Conf.create!(
 )
 
 
-people = [
+people_1 = [
   ["Evan Phoenix",    "<p>Evan is the creator of Rubinius, an open source Ruby software project. He has a beard and a cat named Fog. He'll be talking about how he managed to land his dream job 4 years ago.</p>"],
   ["Leah Silber",     "<p>Leah is one of the organizers of JRuby Conf, jQuery Conf and GoGaRuCo. She'll be talking about organizing the nerds... Nerd Herding, if you will.</p>"],
   ["Sean Bonner",     "<p>Sean Bonner is a Los Angeles-based entrepreneur, journalist, activist and enthusiast. Bonner has co-founded hackerspaces and blog networks, an art gallery, design firm and record label. He is a board member of Coffee Common, works closely with Neoteny Labs in Singapore and Tokyo and has been a regular contributor to BoingBoing. He's one of the co-founders of Safecast (previously RDTN).</p><p>Sean will be talking about Safecast (previously known as RDTN), a group he co-founded in March after the 3/11 earthquake in Japan and resulting problems at the Fukushima nuclear reactor showed a vast lack of radiation data available to the public that wasn't coming from a corporation or activist group. Safecast aims to create a global open data network of sensors and is currently focused on Japan. Sean has just returned from Tokyo and will be talking about their efforts there.</p>"],
@@ -46,7 +48,7 @@ videos = [
   ["http://cdn.confreaks.com/system/assets/datas/1399/original/531-farmhouseconf-suzan-bond-small.mp4", "http://confreaks.com/videos/531-farmhouseconf-suzan-bond", "http://confreaks.com/system/videos/images/531/preview/vlcsnap-2011-05-10-01h39m10s197.png"]
 ]
 
-people.each_with_index do |person, index|
+people_1.each_with_index do |person, index|
   talk = Talk.create!(
     :conf_id      => farmhouse_conf_1.id,
     :title        => person.first,
@@ -65,19 +67,7 @@ people.each_with_index do |person, index|
     :canonical_url    => videos[index][1],
     :poster_frame_url => videos[index].last
   )
-end
 
-
-
-shane = Person.create!(
-  :name       => "Shane Becker",
-  :bio        => "Chief Resident of The Farmhouse. Organizer of Farmhouse Conf.",
-  :image      => "https://twimg0-a.akamaihd.net/profile_images/1266963198/avatar_a_sqaure.jpg",
-  :staff      => true,
-  :organizer  => true
-)
-
-people.each do |person|
   slug = person.first.downcase.gsub(/\s/, "_")
 
   Person.create!(
@@ -90,6 +80,16 @@ people.each do |person|
 end
 
 
+
+shane = Person.create!(
+  :name       => "Shane Becker",
+  :bio        => "Chief Resident of The Farmhouse. Organizer of Farmhouse Conf.",
+  :image      => "https://twimg0-a.akamaihd.net/profile_images/1266963198/avatar_a_sqaure.jpg",
+  :staff      => true,
+  :organizer  => true
+)
+
+
 Talk.all.each do |talk|
   person = Person.where(:name => talk.title).first
 
@@ -99,7 +99,7 @@ end
 
 
 
-
+# farmhouse conf 2, 2012
 farmhouse_conf_2 = Conf.create!(
   :name             => "Farmhouse Conf 2",
   :subtitle         => "Backyard Storytelling Under an Avocado Tree. Again.",
@@ -111,6 +111,58 @@ farmhouse_conf_2 = Conf.create!(
   :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-2/register/"
 )
 
+# farmhouse conf 2 speakers
+people_2 = [
+  {
+    :name => "Tara Brown",
+    :bio  => "
+      <p>Tara Tiger Brown has designed, developed and led innovative software development projects for 15 years. Her primary focus has always been on excellent user experience, anywhere data access, online communities, and open platforms.</p>
+
+      <p>She is currently immersed in a startup she co-founded, <a href='http://teachmestuff.net/' title='Teach Me Stuff'>Teach Me Stuff</a>, a digital media learning (DML) platform that matches interest-driven learners with mentors and coaches.</p>
+
+      <p>Previously she co-founded Noot, a real-time interactive mobile sports game and before that worked at Shazam, Topspin and Microsoft.</p>
+
+      <p>She&rsquo;s passionate about getting more women into the technology field via the ladies technology group she founded, <a href='http://ladytacos.com/' title='LAdy Tacos &raquo; Los Angeles Women Working in Technology'>LAdy Tacos</a> and as a contributor for <a href='http://blogs.forbes.com/tarabrown/' title='Tara Tiger Brown - Lady Bits - Forbes'>ForbesWoman</a>.</p>
+
+      <p>In an effort to showcase the soft spoken tech scene in LA, she wrote the Forbes piece <a href='http://www.forbes.com/sites/tarabrown/2012/03/06/why-los-angeles-will-outpace-silicon-valley-as-the-tech-startup-capital/' title='Why Los Angeles Will Outpace Silicon Valley As The Tech Startup Capital - Forbes'>Why Los Angeles Will Outpace Silicon Valley As The Tech Startup Capital</a> and is currently working with startups and startup spaces to give LA a louder voice.</p>
+
+      <p>In her spare time she works on ridiculous things like: <a href='http://catworkout.com/' title='Cat Workout'>Cat Workout</a>; crowd-sourced music videos: <a href='http://wearethedoorways.com/' title='We Are The Doorways | by: The Insane Warrior'>We Are The Doorways</a>; and storytelling: <a href='http://transmediala.net/' title='Transmedia L.A.'>TransmediaLA</a>.</p>
+    "
+  }
+]
+
+
+
+people_2 do |person|
+  talk = Talk.create!(
+    :conf_id      => farmhouse_conf_2.id,
+    :title        => person[:name],
+    :subtitle     => "",
+    :description  => person.last,
+    :accepted     => true,
+    :keynote      => false
+  )
+
+  Video.create!(
+    :conf_id          => farmhouse_conf_1.id,
+    :talk_id          => talk.id,
+    :caption          => "",
+    :videographer     => "Coby Randquist",
+    :mp4              => videos[index].first,
+    :canonical_url    => videos[index][1],
+    :poster_frame_url => videos[index].last
+  )
+
+  slug = person.first.downcase.gsub(/\s/, "_")
+
+  Person.create!(
+    :name       => person[:name],
+    :bio        => person[:bio],
+    :image      => "http://farmhouse.la/images/speakers/#{slug}/#{slug}.jpg",
+    :staff      => false,
+    :organizer  => false
+  )
+end
 
 
 __END__
