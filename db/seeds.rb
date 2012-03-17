@@ -21,7 +21,7 @@ farmhouse_conf_1 = Conf.create!(
   :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-1/register/"
 )
 
-
+# fhc1 speakers
 people_1 = [
   ["Evan Phoenix",    "<p>Evan is the creator of Rubinius, an open source Ruby software project. He has a beard and a cat named Fog. He'll be talking about how he managed to land his dream job 4 years ago.</p>"],
   ["Leah Silber",     "<p>Leah is one of the organizers of JRuby Conf, jQuery Conf and GoGaRuCo. She'll be talking about organizing the nerds... Nerd Herding, if you will.</p>"],
@@ -35,19 +35,21 @@ people_1 = [
   ["Suzan Bond",      "<p>Suzan is a community builder, uber people person and curator of information. Known for her ability to building scalable organization, she has created 2 departments, 2 non-profits and 2 companies and is currently the Chief Rainmaker for SwagLove. A former executive coach and organizational and business strategist, she has worked with renowned companies such as Accenture, Deloitte, Kellogg and Kraft among others, where she developed her ideas about personal and business effectiveness. She's spoken all over the US and internationally, including at Ignite Boulder, the largest Ignite in the word. She's written a book about intuition and is currently in the midst of a writing frenzy that includes a blog, a memoir and The Art of Self Sourcing, a guide on decision making in a digital world. She lives in Boulder.</p>"]
 ]
 
+# fhc1 videos
 videos = [
-  ["http://cdn.confreaks.com/system/assets/datas/1419/original/535-farmhouseconf-evan-phoenix-small.mp4", "http://confreaks.com/videos/535-farmhouseconf-evan-phoenix", "http://confreaks.com/system/videos/images/535/preview/vlcsnap-2011-05-10-12h19m27s159.png"],
-  ["http://cdn.confreaks.com/system/assets/datas/1413/original/532-farmhouseconf-leah-silber-small.mp4", "http://confreaks.com/videos/532-farmhouseconf-leah-silber", "http://confreaks.com/system/videos/images/532/preview/vlcsnap-2011-05-10-11h49m01s77.png"],
-  ["http://cdn.confreaks.com/system/assets/datas/1393/original/528-farmhouseconf-sean-bonner-small.mp4", "http://confreaks.com/videos/528-farmhouseconf-sean-bonner", "http://confreaks.com/system/videos/images/528/preview/vlcsnap-2011-05-10-01h24m44s30.png"],
-  ["http://cdn.confreaks.com/system/assets/datas/1408/original/533-farmhouseconf-micki-krimmel-small.mp4", "http://confreaks.com/videos/533-farmhouseconf-micki-krimmel", "http://confreaks.com/system/videos/images/533/preview/vlcsnap-2011-05-10-11h51m39s105.png"],
-  ["http://cdn.confreaks.com/system/assets/datas/1396/original/530-farmhouseconf-tj-nelson-jr-small.mp4", "http://confreaks.com/videos/530-farmhouseconf-tj-nelson-jr", "http://confreaks.com/system/videos/images/530/preview/530-farmhouseconf-tj-nelson-jr-thumb_0000.png"],
-  ["http://cdn.confreaks.com/system/assets/datas/1405/original/536-farmhouseconf-sarah-mei-small.mp4", "http://confreaks.com/videos/536-farmhouseconf-sarah-mei", "http://confreaks.com/system/videos/images/536/preview/vlcsnap-2011-05-10-12h22m12s19.png"],
-  ["http://cdn.confreaks.com/system/assets/datas/1430/original/539-farmhouseconf-eli-duke-small.mp4", "http://confreaks.com/videos/539-farmhouseconf-eli-duke", "http://confreaks.com/system/videos/images/539/preview/vlcsnap-2011-05-10-12h19m52s150.png"],
-  ["http://cdn.confreaks.com/system/assets/datas/1402/original/534-farmhouseconf-meghann-millard-small.mp4", "http://confreaks.com/videos/534-farmhouseconf-meghann-millard", "http://confreaks.com/system/videos/images/534/preview/vlcsnap-2011-05-10-11h52m05s105.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1419/original/535-farmhouseconf-evan-phoenix-small.mp4",        "http://confreaks.com/videos/535-farmhouseconf-evan-phoenix",        "http://confreaks.com/system/videos/images/535/preview/vlcsnap-2011-05-10-12h19m27s159.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1413/original/532-farmhouseconf-leah-silber-small.mp4",         "http://confreaks.com/videos/532-farmhouseconf-leah-silber",         "http://confreaks.com/system/videos/images/532/preview/vlcsnap-2011-05-10-11h49m01s77.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1393/original/528-farmhouseconf-sean-bonner-small.mp4",         "http://confreaks.com/videos/528-farmhouseconf-sean-bonner",         "http://confreaks.com/system/videos/images/528/preview/vlcsnap-2011-05-10-01h24m44s30.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1408/original/533-farmhouseconf-micki-krimmel-small.mp4",       "http://confreaks.com/videos/533-farmhouseconf-micki-krimmel",       "http://confreaks.com/system/videos/images/533/preview/vlcsnap-2011-05-10-11h51m39s105.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1396/original/530-farmhouseconf-tj-nelson-jr-small.mp4",        "http://confreaks.com/videos/530-farmhouseconf-tj-nelson-jr",        "http://confreaks.com/system/videos/images/530/preview/530-farmhouseconf-tj-nelson-jr-thumb_0000.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1405/original/536-farmhouseconf-sarah-mei-small.mp4",           "http://confreaks.com/videos/536-farmhouseconf-sarah-mei",           "http://confreaks.com/system/videos/images/536/preview/vlcsnap-2011-05-10-12h22m12s19.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1430/original/539-farmhouseconf-eli-duke-small.mp4",            "http://confreaks.com/videos/539-farmhouseconf-eli-duke",            "http://confreaks.com/system/videos/images/539/preview/vlcsnap-2011-05-10-12h19m52s150.png"],
+  ["http://cdn.confreaks.com/system/assets/datas/1402/original/534-farmhouseconf-meghann-millard-small.mp4",     "http://confreaks.com/videos/534-farmhouseconf-meghann-millard",     "http://confreaks.com/system/videos/images/534/preview/vlcsnap-2011-05-10-11h52m05s105.png"],
   ["http://cdn.confreaks.com/system/assets/datas/1411/original/538-farmhouseconf-tmi-with-tenderlove-small.mp4", "http://confreaks.com/videos/538-farmhouseconf-tmi-with-tenderlove", "http://confreaks.com/system/videos/images/538/preview/vlcsnap-2011-05-10-12h23m02s9.png"],
-  ["http://cdn.confreaks.com/system/assets/datas/1399/original/531-farmhouseconf-suzan-bond-small.mp4", "http://confreaks.com/videos/531-farmhouseconf-suzan-bond", "http://confreaks.com/system/videos/images/531/preview/vlcsnap-2011-05-10-01h39m10s197.png"]
+  ["http://cdn.confreaks.com/system/assets/datas/1399/original/531-farmhouseconf-suzan-bond-small.mp4",          "http://confreaks.com/videos/531-farmhouseconf-suzan-bond",          "http://confreaks.com/system/videos/images/531/preview/vlcsnap-2011-05-10-01h39m10s197.png"]
 ]
 
+# fhc1 people + talks
 people_1.each_with_index do |person, index|
   talk = Talk.create!(
     :conf_id      => farmhouse_conf_1.id,
@@ -80,7 +82,7 @@ people_1.each_with_index do |person, index|
 end
 
 
-
+# me
 shane = Person.create!(
   :name       => "Shane Becker",
   :bio        => "Chief Resident of The Farmhouse. Organizer of Farmhouse Conf.",
@@ -89,7 +91,7 @@ shane = Person.create!(
   :organizer  => true
 )
 
-
+# fhc1, adding people to talks
 Talk.all.each do |talk|
   person = Person.where(:name => talk.title).first
 
@@ -127,41 +129,36 @@ people_2 = [
       <p>In an effort to showcase the soft spoken tech scene in LA, she wrote the Forbes piece <a href='http://www.forbes.com/sites/tarabrown/2012/03/06/why-los-angeles-will-outpace-silicon-valley-as-the-tech-startup-capital/' title='Why Los Angeles Will Outpace Silicon Valley As The Tech Startup Capital - Forbes'>Why Los Angeles Will Outpace Silicon Valley As The Tech Startup Capital</a> and is currently working with startups and startup spaces to give LA a louder voice.</p>
 
       <p>In her spare time she works on ridiculous things like: <a href='http://catworkout.com/' title='Cat Workout'>Cat Workout</a>; crowd-sourced music videos: <a href='http://wearethedoorways.com/' title='We Are The Doorways | by: The Insane Warrior'>We Are The Doorways</a>; and storytelling: <a href='http://transmediala.net/' title='Transmedia L.A.'>TransmediaLA</a>.</p>
-    "
+    ",
+    :talk => {
+      :title       => "Mapping the LA Tech Scene",
+      :description => "Recently Tara wrote a popular post on Forbes about how LA is going to take over the Silicon Valley as the hottest place to run a tech startup. This post received both positive cheers from the LA startup community and guffaws from Silicon Valley. In her talk Tara will talk about the history of the LA tech scene and map out where the startups and money guys (VCs, incubators) are within LA County."
+    }
   }
 ]
 
+# fhc2 people + talks
+people_2.each do |person|
+  slug = person[:name].downcase.gsub(/\s/, "_")
 
-
-people_2 do |person|
-  talk = Talk.create!(
-    :conf_id      => farmhouse_conf_2.id,
-    :title        => person[:name],
-    :subtitle     => "",
-    :description  => person.last,
-    :accepted     => true,
-    :keynote      => false
-  )
-
-  Video.create!(
-    :conf_id          => farmhouse_conf_1.id,
-    :talk_id          => talk.id,
-    :caption          => "",
-    :videographer     => "Coby Randquist",
-    :mp4              => videos[index].first,
-    :canonical_url    => videos[index][1],
-    :poster_frame_url => videos[index].last
-  )
-
-  slug = person.first.downcase.gsub(/\s/, "_")
-
-  Person.create!(
+  speaker = Person.create!(
     :name       => person[:name],
     :bio        => person[:bio],
     :image      => "http://farmhouse.la/images/speakers/#{slug}/#{slug}.jpg",
     :staff      => false,
     :organizer  => false
   )
+
+  talk = Talk.create!(
+    :conf_id      => farmhouse_conf_2.id,
+    :title        => person[:talk][:title],
+    :subtitle     => "",
+    :description  => person[:talk][:description],
+    :accepted     => true,
+    :keynote      => false
+  )
+  
+  talk.people << speaker
 end
 
 

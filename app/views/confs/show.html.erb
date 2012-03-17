@@ -21,17 +21,6 @@
           <%= render "/confs/descriptions/farmhouse_conf_#{@conf.year}" %>
         </div> <!-- .description -->
       </div>
-
-      <% if @conf.year == 2012 %>
-        <div id="sponsors" class="span6">
-          <h2>Sponsors</h2>
-
-          <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/okcupid-labs.png"),     "http://okcupidlabs.com", :rel => "external" %>
-          <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/github.png"),           "https://github.com",     :rel => "external" %>
-          <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/the-hybrid-group.png"), "http://hybridgroup.com", :rel => "external" %>
-          <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/square.png"),           "http://squareup.com",    :rel => "external" %>
-        </div>
-      <% end %>
     </div>
   </header>
 
@@ -41,17 +30,42 @@
       <div class="row">
 
         <% row.each do |talk| %>
-          <div class="span6">
-            <h2><%= link_to talk.title, year_talk_path(talk.conf.year, talk.slug) %></h2>
-            <%= link_to remote_image_tag("speakers/#{talk.conf.year}/#{talk.people.first.slug}/#{talk.people.first.slug}"), year_talk_path(talk.conf.year, talk.slug) %>
+          <% unless talk.nil? %>
+            <div class="span6">
+              <h2><%= link_to talk.title, year_talk_path(talk.conf.year, talk.slug) %></h2>
+              <%= link_to remote_image_tag("speakers/#{talk.conf.year}/#{talk.people.first.slug}/#{talk.people.first.slug}"), year_talk_path(talk.conf.year, talk.slug) %>
 
-            <div class="notes">
-              <%= render :partial => "/talks/descriptions/#{@conf.year}/#{sluggify(talk.people.first.name, "_")}" %>
+              <% if @conf.year == 2012 %>
+                <div class="notes">
+                  <%= render :partial => "/talks/descriptions/#{@conf.year}/#{sluggify(talk.people.first.name, "_")}" %>
+                </div>
+              <% end %>
+
+              <div class="bio">
+                <%= raw talk.people.first.try(:bio) %>
+              </div> <!-- .bio -->
             </div>
+          <% end %>
+        <% end %>
+
+
+        <% if @conf.year == 2012 %>
+          <div id="sponsors" class="span6">
+            <h2>Sponsors</h2>
+
+            <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/okcupid-labs.png"),     "http://okcupidlabs.com", :rel => "external" %>
+            <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/github.png"),           "https://github.com",     :rel => "external" %>
+            <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/the-hybrid-group.png"), "http://hybridgroup.com", :rel => "external" %>
+            <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/square.png"),           "http://squareup.com",    :rel => "external" %>
           </div>
         <% end %>
 
       </div> <!-- .row -->
     <% end %>
   <% end %>
+
+  <section id="sponsors">
+    <div class="row">
+    </div> <!-- .row -->
+  </section>
 </article>
