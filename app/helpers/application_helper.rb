@@ -1,10 +1,9 @@
 module ApplicationHelper
 
-  def editing?
-    Rails.env.development?
-    false
+  def link_to_sponsor_image_tag(year, slug, url)
+    link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/#{year}/#{slug}.png"), url, :rel => "external"
   end
-  
+
   def sluggify(text, separator="-")
     text.downcase.gsub(/-/, separator).gsub(/ /, separator)
   end
@@ -40,7 +39,7 @@ module ApplicationHelper
     pieces     = conf.name.split
     last_piece = pieces.pop
     conf_name  = pieces.join(" ") + "&nbsp;" + last_piece
-    
+
     link_to_unless_current conf_name.html_safe, year_path(conf.year), :class => "org p-org"
   end
 

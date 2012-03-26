@@ -56,10 +56,18 @@
           <div id="sponsors" class="span6">
             <h2>Sponsors</h2>
 
-            <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/okcupid-labs.png"),     "http://okcupidlabs.com", :rel => "external" %>
-            <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/github.png"),           "https://github.com",     :rel => "external" %>
-            <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/the-hybrid-group.png"), "http://hybridgroup.com", :rel => "external" %>
-            <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/2012/square.png"),           "http://squareup.com",    :rel => "external" %>
+            <%= link_to_sponsor_image_tag(2012, "okcupid-labs",     "http://okcupidlabs.com") %>
+            <%= link_to_sponsor_image_tag(2012, "github",           "https://github.com"    ) %>
+            <%= link_to_sponsor_image_tag(2012, "the-hybrid-group", "http://hybridgroup.com") %>
+            <%= link_to_sponsor_image_tag(2012, "square",           "http://squareup.com"   ) %>
+            <%= link_to_sponsor_image_tag(2012, "blueboxgroup",     "http://bluebox.net"    ) %>
+
+            <h2>Food and Drinks Provided by</h2>
+
+            <%= link_to_sponsor_image_tag(2012, "doomies",      "http://twitter.com/doomies") %>
+            <%= link_to_sponsor_image_tag(2012, "veggie-grill", "http://veggiegrill.com"    ) %>
+            <%= link_to_sponsor_image_tag(2012, "claras-cakes", "http://ClaraCakes.com"     ) %>
+            <%= link_to_sponsor_image_tag(2012, "heroku",       "http://heroku.com"         ) %>
           </div>
         <% end %>
 
