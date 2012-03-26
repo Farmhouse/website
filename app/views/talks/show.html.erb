@@ -18,16 +18,18 @@
     </div>
 
     <div class="span6">
-      <video controls poster="<%= @talk.videos.first.poster_frame_url %>" preload="none">
-        <source src="<%= @talk.videos.first.mp4 %>" />
-      </video>
+      <% unless @talk.videos.blank? %>
+        <video controls poster="<%= @talk.videos.first.poster_frame_url %>" preload="none">
+          <source src="<%= @talk.videos.first.mp4 %>" />
+        </video>
 
-      <p class="notes">
-        Video by <%= @talk.videos.first.videographer %>.
-        <%= link_to "Higher resolutions", @talk.videos.first.canonical_url, :rel => "external" %>
-        available at
-        <%= link_to "Confreaks.", "http://confreaks.com", :rel => "external" %>
-      </p>
+        <p class="notes">
+          Video by <%= @talk.videos.first.videographer %>.
+          <%= link_to "Higher resolutions", @talk.videos.first.canonical_url, :rel => "external" %>
+          available at
+          <%= link_to "Confreaks.", "http://confreaks.com", :rel => "external" %>
+        </p>
+      <% end %>
     </div>
   </div> <!-- .row -->
 </article>
