@@ -1,0 +1,102 @@
+<% if @conf.year == 2012 %>
+  <div id="sponsors" class="row">
+    <div id="party" class="span12">
+      <h2>After Party Open Bar by</h2>
+
+      <div class="row">
+        <%
+        [
+          ["engine-yard", "http://engineyard.com"],
+          ["sendgrid",    "http://sendgrid.com"]
+        ].each do |name, url| %>
+          <div class="span6">
+            <%= link_to_sponsor_image_tag(2012, name, url) %>
+          </div>
+        <% end %>
+      </div> <!-- .row -->
+    </div><!-- #party -->
+
+
+    <div id="sponsors" class="span12">
+      <h2>Sponsors</h2>
+
+      <div class="row">
+        <div class="span6">
+          <%
+          [
+            ["okcupid-labs",     "http://okcupidlabs.com"],
+            ["github",           "http://github.com"     ],
+            ["the-hybrid-group", "http://hybridgroup.com"]
+          ].each do |name, url| %>
+            <%= link_to_sponsor_image_tag(2012, name, url) %>
+          <% end %>
+        </div>
+
+        <div class="span6">
+          <%
+          [
+            ["square",           "http://squareup.com"   ],
+            ["blueboxgroup",     "http://bluebox.net"    ],
+            ["spire-io",         "http://spire.io"       ]
+          ].each do |name, url| %>
+            <%= link_to_sponsor_image_tag(2012, name, url) %>
+          <% end %>
+        </div>
+      </div> <!-- .row -->
+    </div><!-- #sponsors -->
+
+
+    <div id="meals" class="span12">
+      <h2>Food and Drinks Provided by</h2>
+
+      <div class="row">
+        <div class="span6">
+          <%
+          [
+            ["doomies",           "http://twitter.com/doomies"],
+            ["veggie-grill",      "http://veggiegrill.com"    ],
+            ["cruzer",            "http://cruzerpizza.com"    ]
+          ].each do |name, url| %>
+            <%= link_to_sponsor_image_tag(2012, name, url) %>
+          <% end %>
+        </div>
+
+        <div class="span6">
+          <%
+          [
+            ["claras-cakes",      "http://ClaraCakes.com"     ],
+            ["pac-nw-kale-chips", "http://pacifickale.com"    ]
+          ].each do |name, url| %>
+            <%= link_to_sponsor_image_tag(2012, name, url) %>
+          <% end %>
+        </div>
+      </div> <!-- .row -->
+    </div><!-- #meals -->
+
+
+    <div id="goodies" class="span12">
+      <h2>Goodie Bag Goodies by</h2>
+
+      <div class="row">
+        <div class="span6">
+          <%
+          [
+            ["field-notes",  "http://fieldnotesbrand.com"]
+          ].each do |name, url| %>
+            <%= link_to_sponsor_image_tag(2012, name, url) %>
+          <% end %>
+        </div>
+
+        <div class="span6">
+          <%
+          [
+            ["heroku",       "http://heroku.com"         ],
+            ["crimethinc",   "http://crimethinc.com"]
+          ].each do |name, url| %>
+            <%= link_to_sponsor_image_tag(2012, name, url) %>
+          <% end %>
+        </div>
+      </div> <!-- .row -->
+    </div><!-- #goodies -->
+  </div>
+<% end %>

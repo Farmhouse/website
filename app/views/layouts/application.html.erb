@@ -22,10 +22,10 @@
 
 <body>
   <div class="container">
-    <%= render :partial => '/layouts/nav' %>
+    <%= render "/layouts/nav" %>
 
     <section role="main">
-      <%= render :partial => '/layouts/register_banner' %>
+      <%= render "/layouts/register_banner" %>
 
       <%= yield %>
     </section>
@@ -38,6 +38,6 @@
     </ul>
   </footer>
 
-  <%= render :partial => '/layouts/google_analytics' %>
+  <%= render "/layouts/google_analytics" %>
 </body>
 </html>

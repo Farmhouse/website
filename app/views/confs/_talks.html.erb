@@ -1,0 +1,37 @@
+<% unless @conf.talks.blank? %>
+  <div class="row">
+
+    <div id="talks" class="span12">
+      <% @conf.talks.in_groups_of(2).each do |row| %>
+
+        <div class="row">
+          <% row.each do |talk| %>
+
+            <% unless talk.nil? %>
+              <div class="talk span6">
+                <h2 id="<%= talk.people.first.slug %>">
+                  <%= link_to talk.title, year_talk_path(talk.conf.year, talk.slug) %>
+                </h2>
+
+                <%= link_to remote_image_tag("speakers/#{talk.conf.year}/#{talk.people.first.slug}/#{talk.people.first.slug}"), year_talk_path(talk.conf.year, talk.slug) %>
+
+                <% if @conf.year == 2012 %>
+                  <div class="notes">
+                    <%= simple_format talk.description %>
+                  </div>
+                <% end %>
+
+                <div class="bio">
+                  <%= raw talk.people.first.try(:bio) %>
+                </div> <!-- .bio -->
+              </div> <!-- .talk -->
+            <% end %>
+
+          <% end %>
+        </div> <!-- .row -->
+
+      <% end %>
+    </div><!-- #talks -->
+
+  </div> <!-- .row -->
+<% end %>

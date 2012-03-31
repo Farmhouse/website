@@ -1,4 +1,4 @@
-<%= render :partial => "nav" %>
+<%= render "nav" %>
 
 <article>
   <header>
@@ -16,100 +16,23 @@
         </h4>
 
         <p class="twitter"><%= link_to_twitter(@conf) %></p>
-
-        <div class="description">
-          <%= render "/confs/descriptions/farmhouse_conf_#{@conf.year}" %>
-        </div> <!-- .description -->
       </div>
-    </div>
+
+      <div class="span12">
+        <div class="row">
+
+          <div class="span6" id="description">
+            <h3>Description</h3>
+            <%= render "/confs/descriptions/farmhouse_conf_#{@conf.year}" %>
+          </div>
+
+          <%= render "/confs/extra_descriptions/farmhouse_conf_#{@conf.year}" %>
+        </div> <!-- .description -->
+
+      </div> <!-- .span12 -->
+    </div> <!-- .row -->
   </header>
 
-
-  <% unless @conf.talks.blank? %>
-    <% @conf.talks.in_groups_of(2).each do |row| %>
-      <div class="row">
-
-        <% row.each do |talk| %>
-          <% unless talk.nil? %>
-            <div class="span6">
-              <h2 id="<%= talk.people.first.slug %>">
-                <%= link_to talk.title, year_talk_path(talk.conf.year, talk.slug) %>
-              </h2>
-
-              <%= link_to remote_image_tag("speakers/#{talk.conf.year}/#{talk.people.first.slug}/#{talk.people.first.slug}"), year_talk_path(talk.conf.year, talk.slug) %>
-
-              <% if @conf.year == 2012 %>
-                <div class="notes">
-                  <%= simple_format talk.description %>
-                </div>
-              <% end %>
-
-              <div class="bio">
-                <%= raw talk.people.first.try(:bio) %>
-              </div> <!-- .bio -->
-            </div>
-          <% end %>
-        <% end %>
-
-
-        <% if @conf.year == 2012 %>
-          <div id="sponsors" class="span6">
-            <h2 id="party">After Party Open Bar by</h2>
-
-            <%
-            [
-              ["engine-yard", "http://engineyard.com"],
-              ["sendgrid",    "http://sendgrid.com"]
-            ].each do |name, url| %>
-              <%= link_to_sponsor_image_tag(2012, name, url) %>
-            <% end %>
-
-
-            <h2 id="standard">Sponsors</h2>
-
-            <%
-            [
-              ["okcupid-labs",     "http://okcupidlabs.com"],
-              ["github",           "http://github.com"    ],
-              ["the-hybrid-group", "http://hybridgroup.com"],
-              ["square",           "http://squareup.com"   ],
-              ["blueboxgroup",     "http://bluebox.net"    ],
-              ["spire-io",         "http://spire.io"       ]
-            ].each do |name, url| %>
-              <%= link_to_sponsor_image_tag(2012, name, url) %>
-            <% end %>
-
-
-            <h2 id="meals">Food and Drinks Provided by</h2>
-
-            <%
-            [
-              ["doomies",           "http://twitter.com/doomies"],
-              ["veggie-grill",      "http://veggiegrill.com"    ],
-              ["cruzer",            "http://cruzerpizza.com"    ],
-              ["claras-cakes",      "http://ClaraCakes.com"     ],
-              ["pac-nw-kale-chips", "http://pacifickale.com"    ]
-            ].each do |name, url| %>
-              <%= link_to_sponsor_image_tag(2012, name, url) %>
-            <% end %>
-
-
-            <h2 id="goodies">Goodie Bag Goodies by</h2>
-
-            <%
-            [
-              ["heroku",       "http://heroku.com"         ],
-              ["field-notes",  "http://fieldnotesbrand.com"],
-              ["crimethinc",   "http://crimethinc.com"]
-            ].each do |name, url| %>
-              <%= link_to_sponsor_image_tag(2012, name, url) %>
-            <% end %>
-
-
-          </div>
-        <% end %>
-
-      </div> <!-- .row -->
-    <% end %>
-  <% end %>
+  <%= render "talks"    %>
+  <%= render "sponsors" %>
 </article>
