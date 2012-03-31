@@ -1,7 +1,12 @@
 module ApplicationHelper
 
   def link_to_sponsor_image_tag(year, slug, url)
-    link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/#{year}/#{slug}.png"), url, :rel => "external"
+    link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/#{year}/#{slug}.png",
+                      :alt => slug.gsub(/-/, " ")
+                     ),
+            url,
+            :rel => "external",
+            :id  => slug
   end
 
   def sluggify(text, separator="-")

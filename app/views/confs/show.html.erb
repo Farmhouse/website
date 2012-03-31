@@ -54,21 +54,57 @@
 
         <% if @conf.year == 2012 %>
           <div id="sponsors" class="span6">
-            <h2>Sponsors</h2>
+            <h2 id="party">After Party Open Bar by</h2>
 
-            <%= link_to_sponsor_image_tag(2012, "okcupid-labs",     "http://okcupidlabs.com") %>
-            <%= link_to_sponsor_image_tag(2012, "github",           "https://github.com"    ) %>
-            <%= link_to_sponsor_image_tag(2012, "the-hybrid-group", "http://hybridgroup.com") %>
-            <%= link_to_sponsor_image_tag(2012, "square",           "http://squareup.com"   ) %>
-            <%= link_to_sponsor_image_tag(2012, "blueboxgroup",     "http://bluebox.net"    ) %>
-            <%= link_to_sponsor_image_tag(2012, "spire-io",         "http://spire.io"       ) %>
+            <%
+            [
+              ["engine-yard", "http://engineyard.com"],
+              ["sendgrid",    "http://sendgrid.com"]
+            ].each do |name, url| %>
+              <%= link_to_sponsor_image_tag(2012, name, url) %>
+            <% end %>
 
-            <h2>Food and Drinks Provided by</h2>
 
-            <%= link_to_sponsor_image_tag(2012, "doomies",      "http://twitter.com/doomies") %>
-            <%= link_to_sponsor_image_tag(2012, "veggie-grill", "http://veggiegrill.com"    ) %>
-            <%= link_to_sponsor_image_tag(2012, "claras-cakes", "http://ClaraCakes.com"     ) %>
-            <%= link_to_sponsor_image_tag(2012, "heroku",       "http://heroku.com"         ) %>
+            <h2 id="standard">Sponsors</h2>
+
+            <%
+            [
+              ["okcupid-labs",     "http://okcupidlabs.com"],
+              ["github",           "https://github.com"    ],
+              ["the-hybrid-group", "http://hybridgroup.com"],
+              ["square",           "http://squareup.com"   ],
+              ["blueboxgroup",     "http://bluebox.net"    ],
+              ["spire-io",         "http://spire.io"       ]
+            ].each do |name, url| %>
+              <%= link_to_sponsor_image_tag(2012, name, url) %>
+            <% end %>
+
+
+            <h2 id="meals">Food and Drinks Provided by</h2>
+
+            <%
+            [
+              ["doomies",           "http://twitter.com/doomies"],
+              ["veggie-grill",      "http://veggiegrill.com"    ],
+              ["cruzer",            "http://cruzerpizza.com"    ],
+              ["claras-cakes",      "http://ClaraCakes.com"     ],
+              ["pac-nw-kale-chips", "http://pacifickale.com"    ]
+            ].each do |name, url| %>
+              <%= link_to_sponsor_image_tag(2012, name, url) %>
+            <% end %>
+
+
+            <h2 id="goodies">Goodie Bag Goodies by</h2>
+
+            <%
+            [
+              ["heroku",       "http://heroku.com"         ],
+              ["field-notes",  "http://fieldnotesbrand.com"]
+            ].each do |name, url| %>
+              <%= link_to_sponsor_image_tag(2012, name, url) %>
+            <% end %>
+
+
           </div>
         <% end %>
 
