@@ -134,6 +134,16 @@ people_2 = [
       :title       => "Mapping the LA Tech Scene",
       :description => "Recently Tara wrote a popular post on Forbes about how LA is going to take over the Silicon Valley as the hottest place to run a tech startup. This post received both positive cheers from the LA startup community and guffaws from Silicon Valley. In her talk Tara will talk about the history of the LA tech scene and map out where the startups and money guys (VCs, incubators) are within LA County."
     }
+  },
+  {
+    :name => "Greg Bennick",
+    :bio  => %s{
+      <p>Greg Bennick is the singer of the hardcore bands <a href="http://en.wikipedia.org/wiki/Trial_(band)" title="Trial (band) - Wikipedia">Trial</a> and <a href="http://myspace.com/betweenearthandsky" title="Between Earth and Sky | Free Music, Tour Dates, Photos, Videos">Between Earth &amp; Sky</a>. He is the founder and executive director of <a href="http://onehundredforhaiti.org" title="ONE HUNDRED FOR HAITI">One Hundred For Haiti</a>, a development and relief organization focusing on bringing opportunities to people in post-earthquake Haiti. He co-founded <a href="http://www.thelegacyproject.com" title="Welcome to the Legacy Project Home Page">The Legacy Project</a> a multi-year initiative to explore how people transition from massive trauma on a social scale to a point of finding reconciliation and justice. He co-produced a number of documentaries which have been seen globally including the multi-award winning &ldquo;Flight From Death: The Quest For Immortality&rdquo;. He speaks to audiences around the world, full time, and is based in Seattle WA.</p>
+    },
+    :talk => {
+      :title       => "The Map from Trauma to Survival",
+      :description => "Greg will be speaking about the map from trauma to survival that One Hundred For Haiti is exploring as it starts a new program called &ldquo;Moto Logistics&rdquo; as a development initiative in Haiti. The program might serve as a model to anyone doing development, social, or relief work anywhere in the world as a means of creating jobs and new opportunities from the standpoint of SELF empowerment rather than imposed empowerment."
+    }
   }
 ]
 
