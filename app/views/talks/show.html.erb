@@ -2,7 +2,7 @@
 
 <article>
   <header>
-    <h1><%= @talk.title %></h1>
+    <h1><%= @talk.title.html_safe %></h1>
 
     <h2>
       By <%= @talk.people.first.name %>
