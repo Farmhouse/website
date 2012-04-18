@@ -149,7 +149,7 @@ people_2 = [
   {
     :name => "Brian",
     :bio  => %s{
-      A longtime contributor to the notorious underground publisher <a href="http://www.crimethinc.com/">CrimethInc.</a>, Brian has organized on a national level within the anarchist, anti-globalization, anti-war, and Occupy movements. In the course of the resulting adventures, he has breathed tear gas for days on end, faced felony rioting charges, and lost friends to the bullets of Mexican paramilitaries. Recently he has traveled the Americas and Europe speaking on grass-roots social movements and anti-capitalist strategies, appearing everywhere from the School of Fine Arts in Athens, Greece to the Universidade Federal de Minas Gerais in Belo Horizonte, but chiefly outside the academy at occupations, social centers, and union halls.
+      <p>A longtime contributor to the notorious underground publisher <a href="http://www.crimethinc.com/">CrimethInc.</a>, Brian has organized on a national level within the anarchist, anti-globalization, anti-war, and Occupy movements. In the course of the resulting adventures, he has breathed tear gas for days on end, faced felony rioting charges, and lost friends to the bullets of Mexican paramilitaries. Recently he has traveled the Americas and Europe speaking on grass-roots social movements and anti-capitalist strategies, appearing everywhere from the School of Fine Arts in Athens, Greece to the Universidade Federal de Minas Gerais in Belo Horizonte, but chiefly outside the academy at occupations, social centers, and union halls.</p>
     },
     :talk => {
       :title       => "The Map versus the Territory",
@@ -188,6 +188,22 @@ people_2 = [
     :talk => {
       :title       => "How Einstein Taught Me to Follow My Bliss",
       :description => "A discussion on the power of happiness."
+    }
+  },
+  {
+    :name => "Eric Gradman",
+    :bio  => %s{
+      <p><a href="http://gradman.com" title="Eric Gradman">Eric Gradman</a> is an inventor and entertainer who makes others see technology as magic. He has a colorful history as a circus performer, professional whistler, roboticist, and rapid prototyper. He co-founded <a href="http://doppelgames.com" title="Doppelgames - Home">Doppelgames</a>, a Los Angeles location-based gaming studio.</p>
+
+      <p>He is also one of the founding members of <a href="http://SyynLabs.com" title="Syyn Labs">Syyn Labs</a>, a group of artists, thinkers, technologists, engineers and scientists who build and twist together art and technology in original inventive ways. From its humble beginnings as "a drinking club with an art problem" the group's work became a viral sensation in 2010 when it co-directed <a href="http://okgo.net" title="OK Go | The Official Website of OK Go">OK Go's</a> <a href="http://www.youtube.com/watch?v=qybUFnY7Y8w" title="OK Go - This Too Shall Pass - Rube Goldberg Machine version - Official - YouTube">This Too Shall Pass music video</a>, which has been viewed over 35 million times online. Its unique assembly builds creative contraptions and interactive installations that encourage audiences to play together by lowering social barriers.</p>
+
+      <p>The Syyn Labs members have designed and developed an elaborate portfolio of proprietary technological marvels including <a href="http://syynlabs.com/blog/glowing-in-santa-monica-with-the-dna-sequencer/" title="Syyn Labs / GLOWING in Santa Monica with the DNA Sequencer">the DNA Sequencer</a>, <a href="http://www.gradman.com/artfall" title="ArtFall  @  Eric Gradman">ArtFall</a>, an interactive whiteboard; <a href="http://www.youtube.com/watch?v=7Hp9H5C6He4" title="Swimming in Trees + Syyn Labs at TED! (2/2) - YouTube">Rubens Tubes</a>, a sound-reactive fire sculpture; <a href="http://syynlabs.com/blog/sonic-stalagmites/" title="Syyn Labs / Sonic Stalagmites">Sonic Stalagmites</a>, painting with sound and <a href="http://gradman.com/cloudmirror" title="The Cloud Mirror  @  Eric Gradman">the Cloud Mirror</a>, which uses augmented reality to bring an event's badges to life.</p>
+
+      <p>Their exhibits have been showcased in commercial spots for Comedy Central, Disney XD, Google and Young &amp; Rubicam, and exhibited at LACMA and the Santa Monica Glow Festival. Syyn Labs has also be featured extensively in the media, including WIRED, The Wall Street Journal, Rolling Stone, CNN, the Los Angeles Times.</p>
+    },
+    :talk => {
+      :title       => "There's No Map for Inventiveness",
+      :description => "Getting from an empty piece of paper to an interactive marvel is never as simple as going from point A to point B. The places you wind up on the journey are all part of the fun."
     }
   }
 ]
