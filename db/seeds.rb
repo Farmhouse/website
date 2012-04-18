@@ -166,8 +166,8 @@ people_2 = [
       <p>As an activist for sex positivity, Maggie also produces adult films that challenge gender and sexuality norms as well as unfair and exploitative industry practices. She works within a small community of queer identified indie performers and producers who are cultivating a sustainable model based on collaboration, communication, and authentic depictions of sexuality and desire. If you search for her <a href="http://google.com/search?q=maggie+mayhem" title="maggie mayhem - Google Search">on Google</a>, be prepared for links that are NSFW and for an 18+ audience.</p>
     },
     :talk => {
-      :title       => "&nbsp;",
-      :description => ""
+      :title       => "Navigating The Gender Landscape",
+      :description => "Do we have a gender orientation or are we gender orienteering? In this talk, Maggie Mayhem will talk about how the hardware and software behind our gender assignments, identity, and presentation and demonstrate how male and female are just two potential points on the compass."
     }
   },
   {
@@ -186,8 +186,8 @@ people_2 = [
       <p>Han's work has been featured all over the world including, <b>England</b>, <b>Ireland</b>, <b>Italy</b>, <b>France</b>, <b>Portugal</b>, <b>Japan</b>, <b>Guatemala</b>, and <b>Canada</b>.</p>
     },
     :talk => {
-      :title       => "How Einstein Taught Me to Follow My Bliss",
-      :description => "A discussion on the power of happiness."
+      :title       => "How Einstein Led Me to Bliss, a Carnie Kingdom, and Pioneering New Methods in Video Mapping",
+      :description => "In her talk, Nova will discuss how Einstein inspired her to follow her ultimate happiness and how that chain of events opened up door after door, leading her to her next destinations in life. She will discuss her adventures as a successful circus carnie and how that brought her to a place of pioneering new methods in performance art using interactive video mapping.  Nova will discuss where she sees the future of entertainment and how it will be changed forever using advanced technology. We are inventing the future now."
     }
   },
   {
