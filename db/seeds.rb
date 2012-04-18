@@ -169,6 +169,26 @@ people_2 = [
       :title       => "&nbsp;",
       :description => ""
     }
+  },
+  {
+    :name => "Nova Han",
+    :bio  => %s{
+      <p>To navigate and create, unique and explosive art has been the life quest of <a href="http://www.novahan.com/" title="NOVA HAN">Nova Han</a> since she was a little girl. From visions of ultimate beauty to the genuinely twisted and obscure, Han's curiosity takes her viewers past conventional horizons, and makes them step courageously past it, beckoning the brave to face their own truths.</p>
+
+      <p>Han now tours the world, shaking up the masses and bringing raw art to the stages. She has spent the last 7 years running the world renowned cirque troupe, <b><a href="http://lucentdossier.com" title="The Lucent Dossier Experience - LUCENT DOSSIER NEWS">Lucent Dossier Experience</a></b> as the Tech Director, Producer, Choreographer and Performer.  She has now started her own interactive video mapping performance art troupe called <b><a href="https://www.facebook.com/pages/Wilderbe/182284181881684">Wilderbe</a></b>.</p>
+
+      <p>Her work has been featured at the <b>Coachella: Music and Arts Festival</b> (6 yrs), <b>The Official Grammy's Celebration</b> (3 yrs),  <b>Electric Picnic</b> in Ireland (5 yrs), <b>Lightning in a Bottle</b> (6 yrs), <b>Boom Festival</b> in Portugal, <b>Optimus Alive</b> in Portugal, <b>Summer Sonic</b> in Japan, <b>Electric Daisy Carnival</b> (3 yrs).</p>
+
+      <p>She has also been seen on networks such as <b>MTV</b>, <b>BRAVO</b>, <b>VHI</b>, <b>Fuse TV</b>, <b>Spike TV</b>, <b>KTLA</b> and <b>Univision</b> as well as a featured guest on the <b>Ellen De Generes Show</b>.</p>
+
+      <p>Nova Han's Production background includes working for <b>Kevin Lyman</b> founder of the Van's <b>Warped Tour</b> and Billboard's top 50 most influential people in music history as a Producer and Office Manager, as well as working for <b>Madison House</b> as a Producer and Creative Consultant.</p>
+
+      <p>Han's work has been featured all over the world including, <b>England</b>, <b>Ireland</b>, <b>Italy</b>, <b>France</b>, <b>Portugal</b>, <b>Japan</b>, <b>Guatemala</b>, and <b>Canada</b>.</p>
+    },
+    :talk => {
+      :title       => "How Einstein Taught Me to Follow My Bliss",
+      :description => "A discussion on the power of happiness."
+    }
   }
 ]
 

@@ -9,7 +9,7 @@
 
             <% unless talk.nil? %>
               <div class="talk span6">
-                <h2>
+                <h2 id="<%= talk.people.first.slug %>">
                   <%= link_to year_talk_path(talk.conf.year, talk.slug) do %>
                     <b><%= talk.people.first.name %></b> <br />
                     <%= talk.title.html_safe %>
