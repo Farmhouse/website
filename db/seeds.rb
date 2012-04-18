@@ -202,7 +202,7 @@ people_2 = [
       <p>Their exhibits have been showcased in commercial spots for Comedy Central, Disney XD, Google and Young &amp; Rubicam, and exhibited at LACMA and the Santa Monica Glow Festival. Syyn Labs has also be featured extensively in the media, including WIRED, The Wall Street Journal, Rolling Stone, CNN, the Los Angeles Times.</p>
     },
     :talk => {
-      :title       => "There's No Map for Inventiveness",
+      :title       => "There&rsquo;s No Map for Inventiveness",
       :description => "Getting from an empty piece of paper to an interactive marvel is never as simple as going from point A to point B. The places you wind up on the journey are all part of the fun."
     }
   }
