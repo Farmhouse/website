@@ -9,17 +9,18 @@
 
             <% unless talk.nil? %>
               <div class="talk span6">
-                <h2 id="<%= talk.people.first.slug %>">
-                  <%= link_to talk.title, year_talk_path(talk.conf.year, talk.slug) %>
+                <h2>
+                  <%= link_to year_talk_path(talk.conf.year, talk.slug) do %>
+                    <b><%= talk.people.first.name %></b> <br />
+                    <%= talk.title.html_safe %>
+                  <% end %>
                 </h2>
 
                 <%= link_to remote_image_tag("speakers/#{talk.conf.year}/#{talk.people.first.slug}/#{talk.people.first.slug}"), year_talk_path(talk.conf.year, talk.slug) %>
 
-                <% if @conf.year == 2012 %>
                   <div class="notes">
-                    <%= simple_format talk.description %>
+                    <%= simple_format talk.try(:description) %>
                   </div>
-                <% end %>
 
                 <div class="bio">
                   <%= raw talk.people.first.try(:bio) %>

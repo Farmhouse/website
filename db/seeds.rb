@@ -55,7 +55,7 @@ people_1.each_with_index do |person, index|
     :conf_id      => farmhouse_conf_1.id,
     :title        => person.first,
     :subtitle     => "",
-    :description  => person.last,
+    :description  => "",
     :accepted     => true,
     :keynote      => false
   )
@@ -94,8 +94,9 @@ shane = Person.create!(
 # fhc1, adding people to talks
 Talk.all.each do |talk|
   person = Person.where(:name => talk.title).first
-
   talk.people << person
+
+  talk.update_attributes!(:title => "")
 end
 
 
@@ -158,12 +159,14 @@ people_2 = [
   {
     :name => "Maggie Mayhem",
     :bio  => %s{
-      <p><a href="http://missmaggiemayhem.com" title="Maggie Mayhem Speaks | Radical sex hacking">Maggie</a> <a href="http://psigasm.net" title="The Psigasm Project - Come for Science!">Mayhem</a> had no idea that when she signed up to volunteer 5 hours a week at an HIV testing clinic in 2003 that her experiences would disrupt her life plan to pursue a career in law and turn her into a full time sex educator, HIV prevention and harm reduction specialist, and activist. By 2006 she was coordinating the University of California Free and Anonymous HIV test program and setting her sights on lifetime pursuing social justice. After graduating from UC Santa Cruz she relocated to Oakland, CA and accepted a position as the HIV Senior Specialist at Larkin Street Youth Services in San Francisco. She spent the summer of 2009 doing grant work in HIV/AIDS prevention and care in Bagamoyo, Tanzania and resigned from her post at Larkin Street Youth Services to in 2010 to volunteer with disaster relief in Leogane, Haiti.</p>
+      <p><a href="http://missmaggiemayhem.com" title="Maggie Mayhem Speaks | Radical sex hacking">Maggie</a> <a href="http://psigasm.net" title="The Psigasm Project - Come for Science!">Mayhem</a> had no idea that when she signed up to volunteer 5 hours a week at an HIV testing clinic in 2003 that her experiences would disrupt her life plan to pursue a career in law and turn her into a full time sex educator, HIV prevention and harm reduction specialist, and activist. By 2006 she was coordinating the University of California Free and Anonymous HIV test program and setting her sights on lifetime pursuing social justice.</p>
+
+      <p>After graduating from UC Santa Cruz she relocated to Oakland, CA and accepted a position as the HIV Senior Specialist at Larkin Street Youth Services in San Francisco. She spent the summer of 2009 doing grant work in HIV/AIDS prevention and care in Bagamoyo, Tanzania and resigned from her post at Larkin Street Youth Services to in 2010 to volunteer with disaster relief in Leogane, Haiti.</p>
 
       <p>As an activist for sex positivity, Maggie also produces adult films that challenge gender and sexuality norms as well as unfair and exploitative industry practices. She works within a small community of queer identified indie performers and producers who are cultivating a sustainable model based on collaboration, communication, and authentic depictions of sexuality and desire. If you search for her <a href="http://google.com/search?q=maggie+mayhem" title="maggie mayhem - Google Search">on Google</a>, be prepared for links that are NSFW and for an 18+ audience.</p>
     },
     :talk => {
-      :title       => "Maggie Mayhem",
+      :title       => "&nbsp;",
       :description => ""
     }
   }
@@ -189,7 +192,7 @@ people_2.each do |person|
     :accepted     => true,
     :keynote      => false
   )
-  
+
   talk.people << speaker
 end
 
