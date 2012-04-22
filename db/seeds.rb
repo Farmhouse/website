@@ -205,6 +205,20 @@ people_2 = [
       :title       => "There&rsquo;s No Map for Inventiveness",
       :description => "Getting from an empty piece of paper to an interactive marvel is never as simple as going from point A to point B. The places you wind up on the journey are all part of the fun."
     }
+  },
+  {
+    :name => "Jenny Ryan",
+    :bio  => %s{
+      <p>An incorrigibly nomadic cyberanthropologist gone gonzo, <a href="http://jennyryan.net/" title="webnography">Jenny Ryan</a> recently dropped out of graduate school to more fully tune in to emerging movements rooted in the shared struggle to reclaim the commons, create public spheres through the cultivation of open spaces, and enable direct democracy through principles of federation and open source or Read/Write culture.</p>
+
+      <p>Her past research ranges from an extensive ethnography of online social networking (<a href="http://thevirtualcampfire.org/" title="The Virtual Campfire, by Jenny Ryan">The Virtual Campfire</a>), to digital literacy skills for the 21st century (with <a href="http://rheingold.com/" title="Howard Rheingold | Exploring mind amplifiers since 1964">Howard Rheingold</a>), to the legal and ethical dimensions of problematic online content (with <a href="http://www.danah.org/papers/2011/IS-ProSelfHarm.pdf" title="">danah boyd</a>), to posthuman anthropological explorations of how the dead live on online.</p>
+
+      <p>In her spare time, she makes websites for her superhero friends, helps to organize an emerging Oakland hackerspace (<a href="http://sudoroom.org/" title="Sudo Room | Building an East Bay creative community and hackerspace">Sudo Room</a>), and acts as a connector of aligned humans, groups and projects.</p>
+    },
+    :talk => {
+      :title       => "Culture Reboot: Mapping Open Spaces and Collaborative Practices in the Emergent Network Economy",
+      :description => %s{ We are entering an era that calls for an end to scarcity and individualism toward collaboration, communalism and a commons-based economy. Working together with hackers, makers, neotribalists, activists, technologists, and other edgy thinkers, Jenny seeks to create a new kind of ethnography founded in co-creation, mobility and multimodal documentation. Her current efforts are directed towards building the digital infrastructure for the project, as well as preparations for a 6-9 month multidisciplinary field study to initiate direct collaboration with primary partners and establish a network including all involved parties. (<a href="http://thepyre.org" title="The Pyre | free the means">thepyre.org</a>) }
+    }
   }
 ]
 
