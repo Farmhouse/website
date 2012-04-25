@@ -219,6 +219,26 @@ people_2 = [
       :title       => "Culture Reboot: Mapping Open Spaces and Collaborative Practices in the Emergent Network Economy",
       :description => %s{ We are entering an era that calls for an end to scarcity and individualism toward collaboration, communalism and a commons-based economy. Working together with hackers, makers, neotribalists, activists, technologists, and other edgy thinkers, Jenny seeks to create a new kind of ethnography founded in co-creation, mobility and multimodal documentation. Her current efforts are directed towards building the digital infrastructure for the project, as well as preparations for a 6-9 month multidisciplinary field study to initiate direct collaboration with primary partners and establish a network including all involved parties. (<a href="http://thepyre.org" title="The Pyre | free the means">thepyre.org</a>) }
     }
+  },
+  {
+    :name => "Simone Syed",
+    :bio  => %s{
+      <p><a href="http://twitter.com/SimoneSyed" title="@SimoneSyed">Simone Syed</a> is particularly interested in building better futures. As an entrepreneur, product storyteller, community builder, and technology forecaster, she has been able to create value in the industries she thinks are most interesting and impactful.</p>
+
+      <p>Simone has co-founded <a href="http://www.bilconference.com/" title="BIL Conference - Minds Set Free">BIL Conference</a>, H+ Club, and LA Space Salon. <a href="http://twitter.com/bilconf" title="@bilconf">BIL Conference</a> is the open source, participant powered answer to the TED Conference Series, wherein BIL pilfers <a href="http://ted.com" title="TED: Ideas worth spreading">TED&rsquo;s</a> attendees, sponsors, and format to Set Minds Free by merging innovation and community to change the world. Her other community building efforts are cool too.</p>
+
+      <p>Simone has disrupted the financial industry by co-founding a mobile payments system called <a href="http://bitcoin.com" title="Bitcoin - P2P digital currency">bitcoin.com</a>. The mobile app pivoted into GammaPay after getting funded and incorporated many different currencies to pay anyone, anywhere, with anything&hellip; including sheep! The project was abandoned when the founders decided that they didn&rsquo;t want to go to jail because the banking industry was annoyed that the app worked outside of the current financial system and government referred to bitcoin as a competing currency.</p>
+
+      <p>Simone likes disrupting popular notions of what health and science are. PaleoDream is seriously healthy ice cream made using liquid nitrogen and rocket power. WeScience crowd sources high-quality clinical trials performed by citizen scientists to find out what therapies actually work. GeneBook is a facebook/23andMe mashup to help you find a perfect partner through histocompatibility and social data.</p>
+
+      <p>Simone is busy with her new company <a href="http://blackstarrgroup.com" title="BlackStarr Group">BlackStarr</a>, which specializes in integrating space and biotechnology into popular culture. <a href="http://twitter.com/BlackStarrGroup" title="@BlackStarrGroup">BlackStarr</a> is currently working on producing a Discovery Channel show as well as collaborating with <a href="http://www.billnye.com/" title="Bill Nye the Science Guy">Bill Nye the Science Guy</a>, <a href="http://virgingalactic.com" title="Welcome | Virgin Galactic">Virgin Galactic</a>, and <a href="http://spacex.com" title="SpaceX">SpaceX</a> to disrupt Hollywood.</p>
+
+      <p>Many of Simone&rsquo;s antics are documented in Wired, The Wall Street Journal, The Los Angeles Times, Reason Magazine, NPR, Technology Review, and The Huffington Post.</p>
+    },
+    :talk => {
+      :title       => "Mapping a Way to the Stars by Disrupting the Status Quo",
+      :description => %s{ As the private sector gains momentum and mastery of the technology capable of continuing NASA&rsquo;s legacy of human space flight, we find that the general public has lost the awe and inspiration that space once held. By disrupting the standard ideology on what space means and who is engaging in this unfolding story, we can reinvigorate the human spirit of innovation and exploration&mdash; and in the near future give all who desire, a chance to explore the stars for themselves. }
+    }
   }
 ]
 
