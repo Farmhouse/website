@@ -239,6 +239,16 @@ people_2 = [
       :title       => "Mapping a Way to the Stars by Disrupting the Status Quo",
       :description => %s{ As the private sector gains momentum and mastery of the technology capable of continuing NASA&rsquo;s legacy of human space flight, we find that the general public has lost the awe and inspiration that space once held. By disrupting the standard ideology on what space means and who is engaging in this unfolding story, we can reinvigorate the human spirit of innovation and exploration&mdash; and in the near future give all who desire, a chance to explore the stars for themselves. }
     }
+  },
+  {
+    :name => "Mitch Artman",
+    :bio  => %s{
+      <p>Mitch Artman worked as a special education teacher for inner city children in Brooklyn before becoming a social worker in Los Angeles. He works for the county&rsquo;s Department of Mental Health as a &ldquo;Psychiatric Social Worker&rdquo;, which means doing therapy and case-management for 200 people with mental illnesses. He loves his job.</p>
+    },
+    :talk => {
+      :title       => "The Skid Row Life-Cycle",
+      :description => %s{ Skid Row is more than just the down-and-out neighborhood of Los Angeles: it is a necessary and nearly deliberate outcome of city planning. The intersection of poverty, racism, mental health, housing, drugs, violence, family breakdown and recovery create a sub-culture and governmental response that both eye each other with mutual suspicion and accusations of futility. This talk will consider some of the more common life-courses individuals in Skid Row take to obtain basic needs, particularly as they relate to mental illness, which for most is inextricably linked with their reasons for both not being able to escape Skid Row, and paradoxically, their best chance for escaping. }
+    }
   }
 ]
 
