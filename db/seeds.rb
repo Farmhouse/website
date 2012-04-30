@@ -249,6 +249,24 @@ people_2 = [
       :title       => "Falling Off the Map: The Skid Row Life-Cycle",
       :description => %s{ Skid Row is more than just the down-and-out neighborhood of Los Angeles: it is a necessary and nearly deliberate outcome of city planning. The intersection of poverty, racism, mental health, housing, drugs, violence, family breakdown and recovery create a sub-culture and governmental response that both eye each other with mutual suspicion and accusations of futility. This talk will consider some of the more common life-courses individuals in Skid Row take to obtain basic needs, particularly as they relate to mental illness, which for most is inextricably linked with their reasons for both not being able to escape Skid Row, and paradoxically, their best chance for escaping. }
     }
+  },
+  {
+    :name => "Marc Horowitz",
+    :bio  => %s{
+      <p><a href="http://twitter.com/marchorowitz" title="@marchorowitz">Marc Horowitz</a> is many things: a virtual cross country explorer, a comedic performance enthusiast, sheep shearer, social experimentalist, one of People Magazine&rsquo;s 50 most eligible bachelors, and possibly the first would-be inventor of a brick-house, diesel-truck, hybrid helicopter.</p>
+
+      <p>One of his most recent digital adventures landed him on NPR&rsquo;s Weekend Edition &mdash; discussing the Los Angeles to Richmond, Virginia road trip he and friend, Peter Baldes, took via Google Maps without ever leaving their homes. Prior to that, Marc was challenged to live 168 hours straight in a Nissan Sentra for the &ldquo;Seven Days in a Sentra&rdquo; national ad campaign.</p>
+
+      <p>Before his Nissan project, Marc spent the better part of an entire year traveling around the country having dinner with strangers he met out of a Crate &amp; Barrel catalog. After that, he drove the shape of his coast-to-coast signature on a US map, improving towns along the way. These improvements include starting an Anonymous Semi-Nudist Colony in Nampa, Idaho and burying an entire town&rsquo;s problems in Craig, Colorado.</p>
+
+      <p>Other projects include: the Talkshow247 internet broadcast, a 24/7 three month long lifecast; his involvement with The Center for Improved Living, The Me &amp; You Show, the Human Video Game experiment; and well, you get the idea. Marc is a busy man, with many talents.</p>
+
+      <p>His work can be seen at <a href="http://ineedtostopsoon.com" title="marc horowitz">ineedtostopsoon.com</a></p>
+    },
+    :talk => {
+      :title       => "Mapping with Wit(z)",
+      :description => %s{ Marc will discuss three of his projects that deal with the idea of mapping via travel, both physical and virtual. 1) <i>The National Dinner Tour</i>, a project where Marc wrote &ldquo;dinner w/ marc 510-872-7326,&rdquo; his name and cell phone, on a dry erase board featured in a Crate &amp; Barrel catalog. He eventually received over 30,000 calls from people wanting to dine with him. As a result, He traveled the US in a tiny RV for a year dining with strangers. 2) <i>The Signature Series</i>, where Marc signed his name on a US map and then drove that route, &ldquo;improving&rdquo; towns along the way. For example, he started the first ever Semi-anonymous Nudist Colony in Nampa, Idaho and buried an entire town's problems in Craig, Colorado. And 3) <i>Google Maps Road Trip</i>, where Marc and his friend Pete Baldes virtually traveled across the US entirely on Google Maps using the arrow keys to drive. }
+    }
   }
 ]
 
