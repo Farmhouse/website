@@ -1,7 +1,7 @@
 <% if @conf.year == 2012 %>
-  <div id="sponsors" class="row">
-    <div id="party" class="span12">
-      <h2>After Party Open Bar by</h2>
+  <div class="row">
+    <div class="span12">
+      <h2 id="party">After Party Open Bar by</h2>
 
       <div class="row">
         <%
@@ -17,8 +17,8 @@
     </div><!-- #party -->
 
 
-    <div id="sponsors" class="span12">
-      <h2>Sponsors</h2>
+    <div class="span12">
+      <h2 id="sponsors">Sponsors</h2>
 
       <div class="row">
         <div class="span6">
@@ -26,7 +26,8 @@
           [
             ["okcupid-labs",     "http://okcupidlabs.com"],
             ["github",           "http://github.com"     ],
-            ["the-hybrid-group", "http://hybridgroup.com"]
+            ["the-hybrid-group", "http://hybridgroup.com"],
+            ["znp-industries",   ""]
           ].each do |name, url| %>
             <%= link_to_sponsor_image_tag(2012, name, url) %>
           <% end %>
@@ -47,8 +48,8 @@
     </div><!-- #sponsors -->
 
 
-    <div id="meals" class="span12">
-      <h2>Food and Drinks Provided by</h2>
+    <div class="span12">
+      <h2 id="meals">Food and Drinks Provided by</h2>
 
       <div class="row">
         <div class="span6">
@@ -77,8 +78,8 @@
     </div><!-- #meals -->
 
 
-    <div id="goodies" class="span12">
-      <h2>Goodie Bag Goodies by</h2>
+    <div class="span12">
+      <h2 id="goodies">Goodie Bag Goodies by</h2>
 
       <div class="row">
         <div class="span6">
