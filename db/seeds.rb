@@ -295,6 +295,22 @@ people_2.each do |person|
 end
 
 
+
+# farmhouse conf 3, 2012
+farmhouse_conf_3 = Conf.create!(
+  :name             => "Farmhouse Conf 3",
+  :subtitle         => "Backyard Storytelling Under an Avocado Tree. Again.",
+  :year             => 2012,
+  :starts_at        => DateTime.parse("2012-11-03 10:00"),
+  :ends_at          => DateTime.parse("2012-11-03 23:00"),
+  :location_id      => location.id,
+  :twitter          => "farmhouse",
+  :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-3/register/"
+)
+
+
+
+
 __END__
 
 
