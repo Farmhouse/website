@@ -17,15 +17,24 @@
       <%= remote_image_tag("speakers/#{@talk.conf.year}/#{@talk.people.first.slug}/#{@talk.people.first.slug}") %>
 
       <%= simple_format @talk.description, :class => "notes" %>
-      
+
       <%= @talk.people.first.bio.html_safe %>
     </div>
 
     <div class="span6">
       <% unless @talk.videos.blank? %>
-        <video controls poster="<%= @talk.videos.first.poster_frame_url %>" preload="none">
-          <source src="<%= @talk.videos.first.mp4 %>" />
-        </video>
+        <% if @talk.videos.first.youtube %>
+          <iframe width="100%"
+                  height="360"
+                  src="http://www.youtube.com/embed/<%= @talk.videos.first.youtube %>"
+                  frameborder="0"
+                  allowfullscreen>
+          </iframe>
+        <% else %>
+          <video controls poster="<%= @talk.videos.first.poster_frame_url %>" preload="none">
+            <source src="<%= @talk.videos.first.mp4 %>" />
+          </video>
+        <% end %>
 
         <p class="notes">
           Video by <%= @talk.videos.first.videographer %>.

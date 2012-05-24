@@ -134,6 +134,10 @@ people_2 = [
     :talk => {
       :title       => "Mapping the LA Tech Scene",
       :description => "Recently Tara wrote a popular post on Forbes about how LA is going to take over the Silicon Valley as the hottest place to run a tech startup. This post received both positive cheers from the LA startup community and guffaws from Silicon Valley. In her talk Tara will talk about the history of the LA tech scene and map out where the startups and money guys (VCs, incubators) are within LA County."
+    },
+    :video => {
+      :youtube       => "aH8LBS16yMk",
+      :canonical_url => "http://confreaks.com/videos/944-farmhouseconf2-mapping-the-la-tech-scene"
     }
   },
   {
@@ -144,6 +148,10 @@ people_2 = [
     :talk => {
       :title       => "The Map from Trauma to Survival",
       :description => "Greg will be speaking about the map from trauma to survival that One Hundred For Haiti is exploring as it starts a new program called &ldquo;Moto Logistics&rdquo; as a development initiative in Haiti. The program might serve as a model to anyone doing development, social, or relief work anywhere in the world as a means of creating jobs and new opportunities from the standpoint of SELF empowerment rather than imposed empowerment."
+    },
+    :video => {
+      :youtube       => "oPl8agvot1U",
+      :canonical_url => "http://confreaks.com/videos/945-farmhouseconf2-the-map-from-trauma-survival"
     }
   },
   {
@@ -154,6 +162,10 @@ people_2 = [
     :talk => {
       :title       => "The Map versus the Territory",
       :description => "What does Twitter have to do with anarchist revolution? More than you might think, even if you think immediately of Egypt and Tunisia. Brian will discuss how the radical demands of the previous generation have been integrated into today's economy, how activism and technology influence one another, and how competing cartographies of power are racing to define the future."
+    },
+    :video => {
+      :youtube       => "h8sw2pgMJfI",
+      :canonical_url => "http://confreaks.com/videos/948-farmhouseconf2-the-map-versus-the-territory"
     }
   },
   {
@@ -168,6 +180,10 @@ people_2 = [
     :talk => {
       :title       => "Navigating The Gender Landscape",
       :description => "Do we have a gender orientation or are we gender orienteering? In this talk, Maggie Mayhem will talk about how the hardware and software behind our gender assignments, identity, and presentation and demonstrate how male and female are just two potential points on the compass."
+    },
+    :video => {
+      :youtube       => "puBXNYSXlMk",
+      :canonical_url => "http://confreaks.com/videos/949-farmhouseconf2-navigating-the-gender-landscape"
     }
   },
   {
@@ -188,6 +204,10 @@ people_2 = [
     :talk => {
       :title       => "How Einstein Led Me to Bliss, a Carnie Kingdom, and Pioneering New Methods in Video Mapping",
       :description => "In her talk, Nova will discuss how Einstein inspired her to follow her ultimate happiness and how that chain of events opened up door after door, leading her to her next destinations in life. She will discuss her adventures as a successful circus carnie and how that brought her to a place of pioneering new methods in performance art using interactive video mapping.  Nova will discuss where she sees the future of entertainment and how it will be changed forever using advanced technology. We are inventing the future now."
+    },
+    :video => {
+      :youtube       => "ASRk9tcrero",
+      :canonical_url => "http://confreaks.com/videos/953-farmhouseconf2-how-einstein-led-me-bliss-a-carnie-kingdom-and-pioneering-new-methods-in-video-mapping"
     }
   },
   {
@@ -204,6 +224,10 @@ people_2 = [
     :talk => {
       :title       => "There&rsquo;s No Map for Inventiveness",
       :description => "Getting from an empty piece of paper to an interactive marvel is never as simple as going from point A to point B. The places you wind up on the journey are all part of the fun."
+    },
+    :video => {
+      :youtube       => "D5PSm2KyKZY",
+      :canonical_url => "http://confreaks.com/videos/954-farmhouseconf2-there-s-no-map-for-inventiveness"
     }
   },
   {
@@ -218,6 +242,10 @@ people_2 = [
     :talk => {
       :title       => "Culture Reboot: Mapping Open Spaces and Collaborative Practices in the Emergent Network Economy",
       :description => %s{ We are entering an era that calls for an end to scarcity and individualism toward collaboration, communalism and a commons-based economy. Working together with hackers, makers, neotribalists, activists, technologists, and other edgy thinkers, Jenny seeks to create a new kind of ethnography founded in co-creation, mobility and multimodal documentation. Her current efforts are directed towards building the digital infrastructure for the project, as well as preparations for a 6-9 month multidisciplinary field study to initiate direct collaboration with primary partners and establish a network including all involved parties. (<a href="http://thepyre.org" title="The Pyre | free the means">thepyre.org</a>) }
+    },
+    :video => {
+      :youtube       => "esUObl38UbQ",
+      :canonical_url => "http://confreaks.com/videos/950-farmhouseconf2-culture-reboot-mapping-open-spaces-and-collaborative-practices-in-the-emergent-network-economy"
     }
   },
   {
@@ -238,6 +266,10 @@ people_2 = [
     :talk => {
       :title       => "Mapping a Way to the Stars by Disrupting the Status Quo",
       :description => %s{ As the private sector gains momentum and mastery of the technology capable of continuing NASA&rsquo;s legacy of human space flight, we find that the general public has lost the awe and inspiration that space once held. By disrupting the standard ideology on what space means and who is engaging in this unfolding story, we can reinvigorate the human spirit of innovation and exploration&mdash; and in the near future give all who desire, a chance to explore the stars for themselves. }
+    },
+    :video => {
+      :youtube       => "gOsDLMMKchs",
+      :canonical_url => "http://confreaks.com/videos/946-farmhouseconf2-mapping-a-way-the-stars-by-disrupting-the-status-quo"
     }
   },
   {
@@ -248,6 +280,10 @@ people_2 = [
     :talk => {
       :title       => "Falling Off the Map: The Skid Row Life-Cycle",
       :description => %s{ Skid Row is more than just the down-and-out neighborhood of Los Angeles: it is a necessary and nearly deliberate outcome of city planning. The intersection of poverty, racism, mental health, housing, drugs, violence, family breakdown and recovery create a sub-culture and governmental response that both eye each other with mutual suspicion and accusations of futility. This talk will consider some of the more common life-courses individuals in Skid Row take to obtain basic needs, particularly as they relate to mental illness, which for most is inextricably linked with their reasons for both not being able to escape Skid Row, and paradoxically, their best chance for escaping. }
+    },
+    :video => {
+      :youtube       => "eFx5hkpyLCk",
+      :canonical_url => "http://confreaks.com/videos/947-farmhouseconf2-falling-off-the-map-the-skid-row-life-cycle"
     }
   },
   {
@@ -266,6 +302,10 @@ people_2 = [
     :talk => {
       :title       => "Mapping with Wit(z)",
       :description => %s{ Marc will discuss three of his projects that deal with the idea of mapping via travel, both physical and virtual. 1) <i>The National Dinner Tour</i>, a project where Marc wrote &ldquo;dinner w/ marc 510-872-7326,&rdquo; his name and cell phone, on a dry erase board featured in a Crate &amp; Barrel catalog. He eventually received over 30,000 calls from people wanting to dine with him. As a result, He traveled the US in a tiny RV for a year dining with strangers. 2) <i>The Signature Series</i>, where Marc signed his name on a US map and then drove that route, &ldquo;improving&rdquo; towns along the way. For example, he started the first ever Semi-anonymous Nudist Colony in Nampa, Idaho and buried an entire town's problems in Craig, Colorado. And 3) <i>Google Maps Road Trip</i>, where Marc and his friend Pete Baldes virtually traveled across the US entirely on Google Maps using the arrow keys to drive. }
+    },
+    :video => {
+      :youtube       => "3J1UmZ-QNa4",
+      :canonical_url => "http://confreaks.com/videos/951-farmhouseconf2-mapping-with-wit-z"
     }
   }
 ]
@@ -292,6 +332,17 @@ people_2.each do |person|
   )
 
   talk.people << speaker
+
+  video = Video.create!(
+    :conf_id          => farmhouse_conf_2.id,
+    :talk_id          => talk.id,
+    :caption          => talk.description,
+    :videographer     => "Coby Randquist",
+    :youtube          => person[:video][:youtube],
+    :canonical_url    => person[:video][:canonical_url]
+  )
+
+  talk.videos << video
 end
 
 

@@ -132,6 +132,7 @@ ActiveRecord::Schema.define(:version => 20120202040735) do
     t.string   "videographer"
     t.string   "ogv"
     t.string   "mp4"
+    t.string   "youtube"
     t.string   "canonical_url"
     t.string   "poster_frame_url"
     t.datetime "created_at",       :null => false
