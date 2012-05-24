@@ -1,5 +1,13 @@
 module ApplicationHelper
 
+  def page_title
+    if @title
+      "The Farmhouse : #{@title}"
+    else
+      "The Farmhouse in Hollywood, California"
+    end
+  end
+
   def link_to_sponsor_image_tag(year, slug, url)
     link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/#{year}/#{slug}.png",
                       :alt => slug.gsub(/-/, " ")

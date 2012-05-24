@@ -4,15 +4,18 @@ class AboutController < ApplicationController
   end
 
   def house
-    @slug = "house"
+    @slug  = "house"
+    @title = "A Very Brief and Incomplete History"
   end
 
   def rules
-    @slug = "rules"
+    @slug  = "rules"
+    @title = "Rules"
   end
 
   def us
-    @slug = "us"
+    @slug  = "us"
+    @title = "Friends and Family"
   end
 
   def register
