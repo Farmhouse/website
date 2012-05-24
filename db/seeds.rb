@@ -350,14 +350,55 @@ end
 # farmhouse conf 3, 2012
 farmhouse_conf_3 = Conf.create!(
   :name             => "Farmhouse Conf 3",
-  :subtitle         => "Backyard Storytelling Under an Avocado Tree. Again.",
-  :year             => 2012,
+  :subtitle         => "<b>Disruption</b> Stories Under an Avocado Tree in Hollywood, California",
+  :year             => 2013,
   :starts_at        => DateTime.parse("2012-11-03 10:00"),
   :ends_at          => DateTime.parse("2012-11-03 23:00"),
   :location_id      => location.id,
   :twitter          => "farmhouse",
   :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-3/register/"
 )
+
+
+# farmhouse conf 2 speakers
+people_3 = [
+  {
+    :name => "Shepard Fairey",
+    :bio  => %q{
+      <p><a href="https://twitter.com/OBEYGIANT" title="@obeygiant">Shepard Fairey</a> was born in Charleston, SC in 1970. He received his B.F.A. at the <a href="http://risd.edu" title="Rhode Island School of Design | RISD">Rhode Island School of Design</a> in Providence. While at R.I.S.D. he created the <a href="http://en.wikipedia.org/wiki/Andre_the_Giant_Has_a_Posse" title="Andre the Giant Has a Posse - Wikipedia"><i>Andre the Giant has a Posse</i></a> sticker that transformed into the <a href="http://obeygiant.com/" title="OBEY GIANT - WORLDWIDE PROPAGANDA DELIVERY">OBEY GIANT</a> art campaign with imagery that has changed the way people see art and the urban landscape. His work has evolved into an acclaimed body of art, which includes the 2008 <a href="http://obeygiant.com/headlines/obama-hope" title="OBAMA HOPE - OBEY GIANT">&ldquop;Hope&rdqoup; portrait of Barack Obama</a> which can be <a href="http://npgportraits.si.edu/emuseumnpg/code/emuseum.asp?style=text&amp;currentrecord=1&amp;page=search&amp;profile=CAP&amp;searchdesc=Artist%20contains%20shepard%20fai...&amp;searchstring=Artist/,/contains/,/shepard%20fairey/,/false/,/false&amp;newvalues=1&amp;newaction=newpage&amp;newstyle=single&amp;newcurrentrecord=2" title="National Portrait Gallery,  Smithsonian Institution | Catalog of American Portraits | Portrait Search">found</a> in the <a href="http://npg.si.edu/" title="The National Portrait Gallery">Smithsonian&rsquo;s National Portrait</a> gallery.</p>
+
+      <p>Since the beginning of his career in 1989 he has exhibited in galleries and museums around the world, indoor and outdoor. His works are in the permanent collections of the MOMA, the Victoria and Albert Museum, the Boston ICA and many others. For more information, visit <a href="http://obeygiant.com" title="OBEY GIANT - WORLDWIDE PROPAGANDA DELIVERY">obeygiant.com</a>.</p>
+    },
+    :talk => {
+      :title       => "Meme, Myself, and Eye.",
+      :description => "<p>The physical and virtual approach to creating viral memes. The visceral reaction to the things that exist in, impact, and replicate in the real world helps to propel things to go viral in the virtual world. The digital tools help to achieve greater reach, but understanding the fundamentals of human emotional response to the tangible and powerful is essential.</p>"
+    }
+  }
+]
+
+# fhc2 people + talks
+people_3.each do |person|
+  slug = person[:name].downcase.gsub(/\s/, "_")
+
+  speaker = Person.create!(
+    :name       => person[:name],
+    :bio        => person[:bio],
+    :image      => "http://farmhouse.la/images/speakers/#{slug}/#{slug}.jpg",
+    :staff      => false,
+    :organizer  => false
+  )
+
+  talk = Talk.create!(
+    :conf_id      => farmhouse_conf_3.id,
+    :title        => person[:talk][:title],
+    :description  => person[:talk][:description],
+    :accepted     => true,
+    :keynote      => false
+  )
+
+  talk.people << speaker
+end
+
 
 
 

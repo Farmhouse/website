@@ -2,9 +2,9 @@
 
 <article>
   <header>
-    <h1><%= link_to_conf @conf %></h1>
+    <h1><%= link_to_conf @conf  %></h1>
 
-    <h2><%= @conf.subtitle %></h2>
+    <h2><%= @conf.subtitle.html_safe %></h2>
 
     <div class="row">
       <div class="span6">
