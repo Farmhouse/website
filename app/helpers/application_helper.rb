@@ -53,7 +53,7 @@ module ApplicationHelper
     last_piece = pieces.pop
     conf_name  = pieces.join(" ") + "&nbsp;" + last_piece
 
-    link_to_unless_current conf_name.html_safe, year_path(conf.year), :class => "org p-org"
+    link_to_unless_current conf_name.html_safe, conf_path(conf.year), :class => "org p-org"
   end
 
   def nav_to(link_text, link_path, options = {})

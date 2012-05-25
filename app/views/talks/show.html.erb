@@ -16,7 +16,7 @@
     <div class="span6">
       <%= remote_image_tag("speakers/#{@talk.conf.year}/#{@talk.people.first.slug}/#{@talk.people.first.slug}") %>
 
-      <%= simple_format @talk.description, :class => "notes" %>
+      <%= simple_format @talk.description.html_safe, :class => "notes" %>
 
       <%= @talk.people.first.bio.html_safe %>
     </div>
