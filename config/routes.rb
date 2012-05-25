@@ -27,16 +27,16 @@ Farmhouse::Application.routes.draw do
   match "/2012/talks/the-map-from-trauma-to-survival"                                                                 => redirect("/conf/2/the-map-from-trauma-to-survival")
   match "/2012/talks/navigating-the-gender-landscape"                                                                 => redirect("/conf/2/navigating-the-gender-landscape")
   match "/2012/talks/the-map-versus-the-territory"                                                                    => redirect("/conf/2/the-map-versus-the-territory")
-  match "/2012/talks/how-einstein-led-me-to-bliss--a-carnie-kingdom--and-pioneering-new-methods-in-video-mapping"     => redirect("/conf/2/how-einstein-led-me-to-bliss--a-carnie-kingdom--and-pioneering-new-methods-in-video-mapping")
-  match "/2012/talks/there-rsquo-s-no-map-for-inventiveness"                                                          => redirect("/conf/2/there-rsquo-s-no-map-for-inventiveness")
-  match "/2012/talks/mapping-a-way-to-the-stars-by-disrupting-the-status-quo"                                         => redirect("/conf/2/mapping-a-way-to-the-stars-by-disrupting-the-status-quo")
-  match "/2012/talks/culture-reboot--mapping-open-spaces-and-collaborative-practices-in-the-emergent-network-economy" => redirect("/conf/2/culture-reboot--mapping-open-spaces-and-collaborative-practices-in-the-emergent-network-economy")
-  match "/2012/talks/falling-off-the-map--the-skid-row-life-cycle"                                                    => redirect("/conf/2/falling-off-the-map--the-skid-row-life-cycle")
-  match "/2012/talks/mapping-with-wit-z-"                                                                             => redirect("/conf/2/mapping-with-wit-z-")
+  match "/2012/talks/how-einstein-led-me-to-bliss--a-carnie-kingdom--and-pioneering-new-methods-in-video-mapping"     => redirect("/conf/2/how-einstein-led-me-to-bliss")
+  match "/2012/talks/there-rsquo-s-no-map-for-inventiveness"                                                          => redirect("/conf/2/theres-no-map-for-inventiveness")
+  match "/2012/talks/mapping-a-way-to-the-stars-by-disrupting-the-status-quo"                                         => redirect("/conf/2/mapping-a-way-to-the-stars")
+  match "/2012/talks/culture-reboot--mapping-open-spaces-and-collaborative-practices-in-the-emergent-network-economy" => redirect("/conf/2/culture-reboot-mapping-open-spaces")
+  match "/2012/talks/falling-off-the-map--the-skid-row-life-cycle"                                                    => redirect("/conf/2/falling-off-the-map-skid-row-life-cycle")
+  match "/2012/talks/mapping-with-wit-z-"                                                                             => redirect("/conf/2/mapping-with-witz")
 
   # fhc3 talks
-  match "/2013/talks/meme--myself--and-eye-" => redirect("/conf/3/meme--myself--and-eye-")
-
+  match "/2013/talks/meme--myself--and-eye-" => redirect("/conf/3/meme-myself-and-eye")
+  
   # ...REDIRECTS
 
 

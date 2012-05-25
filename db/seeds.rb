@@ -132,6 +132,7 @@ people_2 = [
       <p>In her spare time she works on ridiculous things like: <a href='http://catworkout.com/' title='Cat Workout'>Cat Workout</a>; crowd-sourced music videos: <a href='http://wearethedoorways.com/' title='We Are The Doorways | by: The Insane Warrior'>We Are The Doorways</a>; and storytelling: <a href='http://transmediala.net/' title='Transmedia L.A.'>TransmediaLA</a>.</p>
     ",
     :talk => {
+      :slug        => "mapping-the-la-tech-scene",
       :title       => "Mapping the LA Tech Scene",
       :description => "Recently Tara wrote a popular post on Forbes about how LA is going to take over the Silicon Valley as the hottest place to run a tech startup. This post received both positive cheers from the LA startup community and guffaws from Silicon Valley. In her talk Tara will talk about the history of the LA tech scene and map out where the startups and money guys (VCs, incubators) are within LA County."
     },
@@ -146,6 +147,7 @@ people_2 = [
       <p>Greg Bennick is the singer of the hardcore bands <a href="http://en.wikipedia.org/wiki/Trial_(band)" title="Trial (band) - Wikipedia">Trial</a> and <a href="http://myspace.com/betweenearthandsky" title="Between Earth and Sky | Free Music, Tour Dates, Photos, Videos">Between Earth &amp; Sky</a>. He is the founder and executive director of <a href="http://onehundredforhaiti.org" title="ONE HUNDRED FOR HAITI">One Hundred For Haiti</a>, a development and relief organization focusing on bringing opportunities to people in post-earthquake Haiti. He co-founded <a href="http://www.thelegacyproject.com" title="Welcome to the Legacy Project Home Page">The Legacy Project</a> a multi-year initiative to explore how people transition from massive trauma on a social scale to a point of finding reconciliation and justice. He co-produced a number of documentaries which have been seen globally including the multi-award winning &ldquo;<a href="http://flightfromdeath.com/" title="Flight from Death: The Quest for Immortality">Flight From Death: The Quest For Immortality</a>&rdquo;. He speaks to audiences around the world, full time, and is based in Seattle WA.</p>
     },
     :talk => {
+      :slug        => "the-map-from-trauma-to-survival",
       :title       => "The Map from Trauma to Survival",
       :description => "Greg will be speaking about the map from trauma to survival that One Hundred For Haiti is exploring as it starts a new program called &ldquo;Moto Logistics&rdquo; as a development initiative in Haiti. The program might serve as a model to anyone doing development, social, or relief work anywhere in the world as a means of creating jobs and new opportunities from the standpoint of SELF empowerment rather than imposed empowerment."
     },
@@ -160,6 +162,7 @@ people_2 = [
       <p>A longtime contributor to the notorious underground publisher <a href="http://www.crimethinc.com/">CrimethInc.</a>, Brian has organized on a national level within the anarchist, anti-globalization, anti-war, and Occupy movements. In the course of the resulting adventures, he has breathed tear gas for days on end, faced felony rioting charges, and lost friends to the bullets of Mexican paramilitaries. Recently he has traveled the Americas and Europe speaking on grass-roots social movements and anti-capitalist strategies, appearing everywhere from the School of Fine Arts in Athens, Greece to the Universidade Federal de Minas Gerais in Belo Horizonte, but chiefly outside the academy at occupations, social centers, and union halls.</p>
     },
     :talk => {
+      :slug        => "the-map-versus-the-territory",
       :title       => "The Map versus the Territory",
       :description => "What does Twitter have to do with anarchist revolution? More than you might think, even if you think immediately of Egypt and Tunisia. Brian will discuss how the radical demands of the previous generation have been integrated into today's economy, how activism and technology influence one another, and how competing cartographies of power are racing to define the future."
     },
@@ -178,6 +181,7 @@ people_2 = [
       <p>As an activist for sex positivity, Maggie also produces adult films that challenge gender and sexuality norms as well as unfair and exploitative industry practices. She works within a small community of queer identified indie performers and producers who are cultivating a sustainable model based on collaboration, communication, and authentic depictions of sexuality and desire. If you search for her <a href="http://google.com/search?q=maggie+mayhem" title="maggie mayhem - Google Search">on Google</a>, be prepared for links that are NSFW and for an 18+ audience.</p>
     },
     :talk => {
+      :slug        => "navigating-the-gender-landscape",
       :title       => "Navigating The Gender Landscape",
       :description => "Do we have a gender orientation or are we gender orienteering? In this talk, Maggie Mayhem will talk about how the hardware and software behind our gender assignments, identity, and presentation and demonstrate how male and female are just two potential points on the compass."
     },
@@ -202,6 +206,7 @@ people_2 = [
       <p>Han's work has been featured all over the world including, <b>England</b>, <b>Ireland</b>, <b>Italy</b>, <b>France</b>, <b>Portugal</b>, <b>Japan</b>, <b>Guatemala</b>, and <b>Canada</b>.</p>
     },
     :talk => {
+      :slug        => "how-einstein-led-me-to-bliss",
       :title       => "How Einstein Led Me to Bliss, a Carnie Kingdom, and Pioneering New Methods in Video Mapping",
       :description => "In her talk, Nova will discuss how Einstein inspired her to follow her ultimate happiness and how that chain of events opened up door after door, leading her to her next destinations in life. She will discuss her adventures as a successful circus carnie and how that brought her to a place of pioneering new methods in performance art using interactive video mapping.  Nova will discuss where she sees the future of entertainment and how it will be changed forever using advanced technology. We are inventing the future now."
     },
@@ -222,6 +227,7 @@ people_2 = [
       <p>Their exhibits have been showcased in commercial spots for Comedy Central, Disney XD, Google and Young &amp; Rubicam, and exhibited at LACMA and the Santa Monica Glow Festival. Syyn Labs has also be featured extensively in the media, including WIRED, The Wall Street Journal, Rolling Stone, CNN, the Los Angeles Times.</p>
     },
     :talk => {
+      :slug        => "theres-no-map-for-inventiveness",
       :title       => "There&rsquo;s No Map for Inventiveness",
       :description => "Getting from an empty piece of paper to an interactive marvel is never as simple as going from point A to point B. The places you wind up on the journey are all part of the fun."
     },
@@ -240,6 +246,7 @@ people_2 = [
       <p>In her spare time, she makes websites for her superhero friends, helps to organize an emerging Oakland hackerspace (<a href="http://sudoroom.org/" title="Sudo Room | Building an East Bay creative community and hackerspace">Sudo Room</a>), and acts as a connector of aligned humans, groups and projects.</p>
     },
     :talk => {
+      :slug        => "culture-reboot-mapping-open-spaces",
       :title       => "Culture Reboot: Mapping Open Spaces and Collaborative Practices in the Emergent Network Economy",
       :description => %s{ We are entering an era that calls for an end to scarcity and individualism toward collaboration, communalism and a commons-based economy. Working together with hackers, makers, neotribalists, activists, technologists, and other edgy thinkers, Jenny seeks to create a new kind of ethnography founded in co-creation, mobility and multimodal documentation. Her current efforts are directed towards building the digital infrastructure for the project, as well as preparations for a 6-9 month multidisciplinary field study to initiate direct collaboration with primary partners and establish a network including all involved parties. (<a href="http://thepyre.org" title="The Pyre | free the means">thepyre.org</a>) }
     },
@@ -264,6 +271,7 @@ people_2 = [
       <p>Many of Simone&rsquo;s antics are documented in Wired, The Wall Street Journal, The Los Angeles Times, Reason Magazine, NPR, Technology Review, and The Huffington Post.</p>
     },
     :talk => {
+      :slug        => "mapping-a-way-to-the-stars",
       :title       => "Mapping a Way to the Stars by Disrupting the Status Quo",
       :description => %s{ As the private sector gains momentum and mastery of the technology capable of continuing NASA&rsquo;s legacy of human space flight, we find that the general public has lost the awe and inspiration that space once held. By disrupting the standard ideology on what space means and who is engaging in this unfolding story, we can reinvigorate the human spirit of innovation and exploration&mdash; and in the near future give all who desire, a chance to explore the stars for themselves. }
     },
@@ -278,6 +286,7 @@ people_2 = [
       <p>Mitch Artman worked as a special education teacher for inner city children in Brooklyn before becoming a social worker in Los Angeles. He works for the county&rsquo;s Department of Mental Health as a &ldquo;Psychiatric Social Worker&rdquo;, which means doing therapy and case-management for 200 people with mental illnesses. He loves his job.</p>
     },
     :talk => {
+      :slug        => "falling-off-the-map-skid-row-life-cycle",
       :title       => "Falling Off the Map: The Skid Row Life-Cycle",
       :description => %s{ Skid Row is more than just the down-and-out neighborhood of Los Angeles: it is a necessary and nearly deliberate outcome of city planning. The intersection of poverty, racism, mental health, housing, drugs, violence, family breakdown and recovery create a sub-culture and governmental response that both eye each other with mutual suspicion and accusations of futility. This talk will consider some of the more common life-courses individuals in Skid Row take to obtain basic needs, particularly as they relate to mental illness, which for most is inextricably linked with their reasons for both not being able to escape Skid Row, and paradoxically, their best chance for escaping. }
     },
@@ -300,6 +309,7 @@ people_2 = [
       <p>His work can be seen at <a href="http://ineedtostopsoon.com" title="marc horowitz">ineedtostopsoon.com</a></p>
     },
     :talk => {
+      :slug        => "mapping-with-witz",
       :title       => "Mapping with Wit(z)",
       :description => %s{ Marc will discuss three of his projects that deal with the idea of mapping via travel, both physical and virtual. 1) <i>The National Dinner Tour</i>, a project where Marc wrote &ldquo;dinner w/ marc 510-872-7326,&rdquo; his name and cell phone, on a dry erase board featured in a Crate &amp; Barrel catalog. He eventually received over 30,000 calls from people wanting to dine with him. As a result, He traveled the US in a tiny RV for a year dining with strangers. 2) <i>The Signature Series</i>, where Marc signed his name on a US map and then drove that route, &ldquo;improving&rdquo; towns along the way. For example, he started the first ever Semi-anonymous Nudist Colony in Nampa, Idaho and buried an entire town's problems in Craig, Colorado. And 3) <i>Google Maps Road Trip</i>, where Marc and his friend Pete Baldes virtually traveled across the US entirely on Google Maps using the arrow keys to drive. }
     },
@@ -327,6 +337,7 @@ people_2.each do |person|
     :title        => person[:talk][:title],
     :subtitle     => "",
     :description  => person[:talk][:description],
+    :slug         => person[:talk][:slug],
     :accepted     => true,
     :keynote      => false
   )
@@ -370,6 +381,7 @@ people_3 = [
       <p>Since the beginning of his career in 1989 he has exhibited in galleries and museums around the world, indoor and outdoor. His works are in the permanent collections of the MOMA, the Victoria and Albert Museum, the Boston ICA and many others. For more information, visit <a href="http://obeygiant.com" title="OBEY GIANT - WORLDWIDE PROPAGANDA DELIVERY">obeygiant.com</a>.</p>
     },
     :talk => {
+      :slug        => "meme-myself-and-eye",
       :title       => "Meme, Myself, and Eye.",
       :description => "<p>The physical and virtual approach to creating viral memes. The visceral reaction to the things that exist in, impact, and replicate in the real world helps to propel things to go viral in the virtual world. The digital tools help to achieve greater reach, but understanding the fundamentals of human emotional response to the tangible and powerful is essential.</p>"
     }
@@ -392,6 +404,7 @@ people_3.each do |person|
     :conf_id      => farmhouse_conf_3.id,
     :title        => person[:talk][:title],
     :description  => person[:talk][:description],
+    :slug         => person[:talk][:slug],
     :accepted     => true,
     :keynote      => false
   )
