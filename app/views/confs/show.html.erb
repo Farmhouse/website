@@ -23,10 +23,10 @@
 
           <div class="span6" id="description">
             <h3>Description</h3>
-            <%= render "/confs/descriptions/farmhouse_conf_#{@conf.year}" %>
+            <%= render "/confs/descriptions/#{sluggify @conf.name, '_'}" %>
           </div>
 
-          <%= render "/confs/extra_descriptions/farmhouse_conf_#{@conf.year}" %>
+          <%= render "/confs/extra_descriptions/#{sluggify @conf.name, '_'}" %>
         </div> <!-- .description -->
 
       </div> <!-- .span12 -->
@@ -34,6 +34,7 @@
   </header>
 
   <%= render "talks"    %>
+  <%= render "alumni"   %>
   <%= render "music"    %>
   <%= render "sponsors" %>
 </article>

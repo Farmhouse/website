@@ -1,4 +1,5 @@
-<% if @conf.year == 2012 %>
+<% if @conf.name == "Farmhouse Conf 2" %>
+
   <div class="row">
 
     <div class="span12">
@@ -15,7 +16,7 @@
         </div>
 
         <div class="span6">
-          <%= link_to_sponsor_image_tag(2012, "evil-twin-booking", "http://eviltwinbooking.com") %>
+          <%= link_to_sponsor_image_tag(2, "evil-twin-booking", "http://eviltwinbooking.com") %>
         </div>
       </div> <!-- .row -->
     </div><!-- #scott-beibin -->
@@ -31,7 +32,7 @@
           ["sendgrid",    "http://sendgrid.com"]
         ].each do |name, url| %>
           <div class="span6">
-            <%= link_to_sponsor_image_tag(2012, name, url) %>
+            <%= link_to_sponsor_image_tag(2, name, url) %>
           </div>
         <% end %>
       </div> <!-- .row -->
@@ -51,7 +52,7 @@
             ["znp-industries",   ""                      ],
             ["factual",          "http://factual.com"    ]
           ].each do |name, url| %>
-            <%= link_to_sponsor_image_tag(2012, name, url) %>
+            <%= link_to_sponsor_image_tag(2, name, url) %>
           <% end %>
         </div>
 
@@ -63,7 +64,7 @@
             ["spire-io",         "http://spire.io"       ],
             ["zaarly",           "http://zaarly.com"     ]
           ].each do |name, url| %>
-            <%= link_to_sponsor_image_tag(2012, name, url) %>
+            <%= link_to_sponsor_image_tag(2, name, url) %>
           <% end %>
         </div>
       </div> <!-- .row -->
@@ -82,7 +83,7 @@
             ["cruzer",            "http://cruzerpizza.com"    ],
             ["tonx",              "http://tonx.org"           ]
           ].each do |name, url| %>
-            <%= link_to_sponsor_image_tag(2012, name, url) %>
+            <%= link_to_sponsor_image_tag(2, name, url) %>
           <% end %>
         </div>
 
@@ -93,7 +94,7 @@
             ["pac-nw-kale-chips", "http://pacifickale.com"  ],
             ["c2o",               "http://c2o-cocowater.com"]
           ].each do |name, url| %>
-            <%= link_to_sponsor_image_tag(2012, name, url) %>
+            <%= link_to_sponsor_image_tag(2, name, url) %>
           <% end %>
         </div>
       </div> <!-- .row -->
@@ -111,7 +112,7 @@
             ["spacex",       "http://spacex.com"         ],
             ["luna-sandals", "http://lunasandals.com"    ]
           ].each do |name, url| %>
-            <%= link_to_sponsor_image_tag(2012, name, url) %>
+            <%= link_to_sponsor_image_tag(2, name, url) %>
           <% end %>
         </div>
 
@@ -122,10 +123,11 @@
             ["crimethinc", "http://crimethinc.com"],
             ["baggu",      "http://baggubag.com"  ]
           ].each do |name, url| %>
-            <%= link_to_sponsor_image_tag(2012, name, url) %>
+            <%= link_to_sponsor_image_tag(2, name, url) %>
           <% end %>
         </div>
       </div> <!-- .row -->
     </div><!-- #goodies -->
   </div>
+
 <% end %>

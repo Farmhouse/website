@@ -362,7 +362,7 @@ end
 farmhouse_conf_3 = Conf.create!(
   :name             => "Farmhouse Conf 3",
   :subtitle         => "<b>Disruption</b> Stories Under an Avocado Tree in Hollywood, California",
-  :year             => 2013,
+  :year             => 2012,
   :starts_at        => DateTime.parse("2012-11-03 10:00"),
   :ends_at          => DateTime.parse("2012-11-03 23:00"),
   :location_id      => location.id,
