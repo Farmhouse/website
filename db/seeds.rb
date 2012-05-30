@@ -105,7 +105,7 @@ end
 # farmhouse conf 2, 2012
 farmhouse_conf_2 = Conf.create!(
   :name             => "Farmhouse Conf 2",
-  :subtitle         => "Backyard Storytelling Under an Avocado Tree. Again.",
+  :subtitle         => "<b>Mapping</b> Stories in a Backyard Under an Avocado Tree",
   :year             => 2012,
   :starts_at        => DateTime.parse("2012-05-05 08:30"),
   :ends_at          => DateTime.parse("2012-05-05 23:00"),
