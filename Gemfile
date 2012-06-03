@@ -23,3 +23,4 @@ group :production do
 end
 
 gem "omniauth",  "~> 1.0.2"
+
