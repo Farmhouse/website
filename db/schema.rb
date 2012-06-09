@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20120202040735) do
     t.string   "registration_url"
     t.string   "registration_success_url"
     t.string   "registration_failure_url"
+    t.string   "theme"
     t.integer  "year"
     t.datetime "starts_at"
     t.datetime "ends_at"

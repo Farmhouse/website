@@ -10,7 +10,7 @@ location = Location.create!(
 )
 
 # farmhouse conf 1, 2011
-farmhouse_conf_1 = Conf.create!(
+farmhouse_conf_1    = Conf.create!(
   :name             => "Farmhouse Conf 1",
   :subtitle         => "Backyard Storytelling Under an Avocado Tree",
   :year             => 2011,
@@ -18,6 +18,7 @@ farmhouse_conf_1 = Conf.create!(
   :ends_at          => DateTime.parse("2011-05-07 23:00"),
   :location_id      => location.id,
   :twitter          => "farmhouse",
+  :theme            => "Dreams",
   :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-1/register/"
 )
 
@@ -111,6 +112,7 @@ farmhouse_conf_2 = Conf.create!(
   :ends_at          => DateTime.parse("2012-05-05 23:00"),
   :location_id      => location.id,
   :twitter          => "farmhouse",
+  :theme            => "Mapping",
   :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-2/register/"
 )
 
@@ -367,6 +369,7 @@ farmhouse_conf_3 = Conf.create!(
   :ends_at          => DateTime.parse("2012-11-03 23:00"),
   :location_id      => location.id,
   :twitter          => "farmhouse",
+  :theme            => "Disruption",
   :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-3/register/"
 )
 
@@ -413,6 +416,20 @@ people_3.each do |person|
 end
 
 
+
+
+# farmhouse conf 4, 2013
+farmhouse_conf_4 = Conf.create!(
+  :name             => "Farmhouse Conf 4",
+  :subtitle         => "<b>Future</b> Stories Under an Avocado Tree in Hollywood, California",
+  :year             => 2013,
+  :starts_at        => DateTime.parse("2013-05-04 10:00"),
+  :ends_at          => DateTime.parse("2013-05-04 23:00"),
+  :location_id      => location.id,
+  :twitter          => "farmhouse",
+  :theme            => "Future",
+  :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-4/register/"
+)
 
 
 
