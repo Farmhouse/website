@@ -36,14 +36,14 @@ Farmhouse::Application.routes.draw do
 
   # fhc3 talks
   match "/2013/talks/meme--myself--and-eye-" => redirect("/conf/3/meme-myself-and-eye")
-  
+
   # ...REDIRECTS
 
 
 
 
 
-
+  resources :labs
 
   root :to => "about#index"
 

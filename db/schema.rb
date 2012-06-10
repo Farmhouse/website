@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120202040735) do
+ActiveRecord::Schema.define(:version => 20120609221759) do
 
   create_table "confs", :force => true do |t|
     t.string   "name"
@@ -33,6 +33,21 @@ ActiveRecord::Schema.define(:version => 20120202040735) do
     t.string   "abbreviation"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "labs", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "title"
+    t.string   "person_twitter"
+    t.string   "project_twitter"
+    t.string   "phone"
+    t.string   "budget"
+    t.text     "description"
+    t.date     "starts_on"
+    t.date     "ends_on"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "links", :force => true do |t|
