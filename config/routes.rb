@@ -43,6 +43,7 @@ Farmhouse::Application.routes.draw do
 
 
 
+  match "/bs" => redirect("/labs")
   resources :labs
 
   root :to => "about#index"
