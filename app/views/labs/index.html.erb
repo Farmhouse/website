@@ -1,4 +1,16 @@
-<div class="hero-unit">
+<% if flash[:notice] %>
+  <div class="alert alert-success">
+    <h1 class="alert-heading">Thank you for submitting a Farmhouse Labs proposal</h1>
+    <p>
+      If you know other people that might be interested in this program, tell them about it.
+      If you have any questions, you can email us at
+      <a href="mailto:barn@farmhouse.la">barn@farmhouse.la</a>.
+      Otherwise, we&rsquo;ll be in touch soon.
+    </p>
+  </div> <!-- .alert.alert-success -->
+<% end %>
+
+<div class="hero-unit alert alert-info">
   <h1>Farmhouse Labs</h1>
   <p>
     A program to support
@@ -47,85 +59,7 @@
 
       <h3>About You</h3>
 
-      <%= form_for(@lab) do |f| %>
-        <% if @lab.errors.any? %>
-          <div id="error_explanation">
-            <h2><%= pluralize(@lab.errors.count, "error") %> prohibited this lab from being saved:</h2>
-
-            <ul>
-              <% @lab.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-              <% end %>
-            </ul>
-          </div>
-        <% end %>
-
-        <%= f.label :name, "Your Name" %>
-        <%= f.text_field :name %>
-
-        <%= f.label :email, "Your Email" %>
-        <%= f.text_field :email %>
-
-        <%= f.label :person_twitter, "Your Twitter" %>
-        <%= f.text_field :person_twitter %>
-
-        <%= f.label :phone, "Your Phone Number" %>
-        <%= f.text_field :phone %>
-
-        <%= f.label :bio, "Your Bio" %>
-        <%= f.text_area :bio %>
-
-
-        <h3>About the Project</h3>
-
-        <div class="input-prepend">
-          <%= f.label :project_twitter, "Project Twitter" %>
-          <%= f.text_field :project_twitter %>
-        </div>
-
-        <%= f.label :title, "Project Title" %>
-        <%= f.text_field :title %>
-
-        <%= f.label :description, "Project Description" %>
-        <%= f.text_area :description %>
-
-        <%= f.label :budget, "Project Budget <span class='label'>optional</span>".html_safe %>
-        <%= f.text_field :budget %>
-
-
-        <h3>Dates</h3>
-        <%= f.label :starts_on, "When do you want to start?" %>
-        <%= f.date_select :starts_on,
-                          {
-                            :start_year => Time.now.year,
-                            :end_year   => Time.now.year + 1,
-                            :order      => [:month, :day, :year],
-                            :prompt     => { :day => 'Select day', :month => 'Select month', :year => 'Select year' }
-                          },
-                          {
-                            :class => "span2"
-                          }
-                        %>
-
-        <%= f.label :ends_on, "How long will it take you?" %>
-        <%= f.date_select :ends_on,
-                          {
-                            :start_year => Time.now.year,
-                            :end_year   => Time.now.year + 1,
-                            :order      => [:month, :day, :year],
-                            :prompt     => { :day => 'Select day', :month => 'Select month', :year => 'Select year' }
-                          },
-                          {
-                            :class => "span2"
-                          }
-                        %>
-
-
-      <% end %>
+      <%= render "form" %>
     </div> <!-- .well -->
-
-    <div class="form-actions">
-      <button class="btn btn-large btn-primary" type="submit">Submit Your Labs Proposal</button>
-    </div>
   </div> <!-- .span6 -->
 </div> <!-- .row -->

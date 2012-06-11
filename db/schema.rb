@@ -36,19 +36,19 @@ ActiveRecord::Schema.define(:version => 20120609221759) do
   end
 
   create_table "labs", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "title"
-    t.string   "person_twitter"
+    t.string   "your_name"
+    t.string   "your_email"
+    t.string   "your_phone"
+    t.string   "your_twitter"
     t.string   "project_twitter"
-    t.string   "phone"
-    t.string   "budget"
-    t.text     "bio"
-    t.text     "description"
-    t.date     "starts_on"
-    t.date     "ends_on"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.string   "project_budget"
+    t.string   "project_title"
+    t.text     "your_bio"
+    t.text     "project_description"
+    t.date     "project_starts_on"
+    t.date     "project_ends_on"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
   end
 
   create_table "links", :force => true do |t|

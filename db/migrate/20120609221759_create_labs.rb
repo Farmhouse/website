@@ -1,9 +1,10 @@
 class CreateLabs < ActiveRecord::Migration
   def change
     create_table :labs do |t|
-      t.string :name, :email, :title, :person_twitter, :project_twitter, :phone, :budget
-      t.text :bio, :description
-      t.date :starts_on, :ends_on
+      t.string :your_name, :your_email, :your_phone, :your_twitter
+      t.string :project_twitter, :project_budget, :project_title
+      t.text :your_bio, :project_description
+      t.date :project_starts_on, :project_ends_on
 
       t.timestamps
     end

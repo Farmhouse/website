@@ -6,3 +6,64 @@ input[type=text] {
 textarea {
   height: 8em !important;
 }
+
+.actions {
+  margin-top: 2em;
+  clear: both;
+}
+
+.field_with_errors {
+  label {
+    /*
+    FIXME HACK TODO
+    copied from bootstrap.css
+    should be an @extend
+    */
+    color: #b94a48;
+    font-weight: bold;
+  }
+
+  textarea,
+  input {
+    /*
+    FIXME HACK TODO
+    copied from bootstrap.css
+    should be an @extend
+    */
+    color: #b94a48;
+    border-color: #b94a48;
+  }
+
+  input:focus, textarea:focus {
+    /*
+    FIXME HACK TODO
+    copied from bootstrap.css
+    should be an @extend
+    */
+    border-color: #953b39;
+    -webkit-box-shadow: 0 0 6px #d59392;
+    -moz-box-shadow: 0 0 6px #d59392;
+    box-shadow: 0 0 6px #d59392;
+  }
+}
+/*Style for the form fields and labels with errors.*/
+#error_explanation {
+  color: #b94a48;
+  border: 1px solid #b94a48;
+  margin: 1em 0;
+  background: white;
+}
+/*Style for the div element with the error messages.*/
+#error_explanation h2 {
+  background: #b94a48;
+  color: white;
+  margin: 0 0 .5em 0;
+  padding: 0 .5em;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+/*Style for the header of the div element.*/
+#error_explanation p {}
+/*Style for the paragraph holding the message that appears right below the header of the div element.*/
+#error_explanation ul li {}
+/*Style for the list items with individual error messages.*/
