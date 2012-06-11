@@ -7,27 +7,44 @@
   </p>
 </div>
 
+<h1>How It Works</h1>
+
 <div class="row">
   <div class="span6">
-    <h1>How It Works</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      This is a new experiment. The idea is simple:
+      <b>free room and board for you while you work on a project</b>.
+      If you&rsquo;re working on (or want to be working on) something great
+      and need a little support, maybe we can help you.
     </p>
 
-    <h1>Farmhousey Project Ideas</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      At The Farmhouse, there&rsquo;s an extra desk or two if you need co-working space,
+      an empty barn if you&rsquo;re a wood worker/metal smith/artist/etc,
+      a big fenced backyard with lots of gardening / building space and
+      an empty bedroom for you to live (if you need it).
     </p>
 
-    <h1>Non-Farmhouse Project Ideas</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <%= render "/labs/farmhouse_project_ideas" %>
+    <%= render "non_farmhouse_project_ideas" %>
   </div> <!-- .span6 -->
 
   <div class="span6">
-
     <div class="well">
+      <h3>Keep it secret. Keep it safe.</h3>
+      <p>
+        All information is totally private.
+        We&rsquo;ll never give it away / sell it / share it.
+      </p>
+
+      <p>
+        Submit a proposal about you and your project.
+        If it&rsquo;s a good fit for the house and the vision,
+        we can offer you a place to live and/or a place to work.
+        If your project has a budget and needs some money,
+        we <i>might</i> be able to help you with that too.
+      </p>
+
       <h3>About You</h3>
 
       <%= form_for(@lab) do |f| %>
@@ -46,20 +63,17 @@
         <%= f.label :name, "Your Name" %>
         <%= f.text_field :name %>
 
-        <div class="input-prepend">
-          <%= f.label :email, "Your Email" %>
-          <%= f.text_field :email %>
-        </div>
+        <%= f.label :email, "Your Email" %>
+        <%= f.text_field :email %>
 
-        <div class="input-prepend">
-          <%= f.label :person_twitter, "Your Twitter" %>
-          <%= f.text_field :person_twitter %>
-        </div>
+        <%= f.label :person_twitter, "Your Twitter" %>
+        <%= f.text_field :person_twitter %>
 
-        <div class="input-prepend">
-          <%= f.label :phone, "Your Phone Number" %>
-          <%= f.text_field :phone %>
-        </div>
+        <%= f.label :phone, "Your Phone Number" %>
+        <%= f.text_field :phone %>
+
+        <%= f.label :bio, "Your Bio" %>
+        <%= f.text_area :bio %>
 
 
         <h3>About the Project</h3>

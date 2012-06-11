@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20120609221759) do
     t.string   "project_twitter"
     t.string   "phone"
     t.string   "budget"
+    t.text     "bio"
     t.text     "description"
     t.date     "starts_on"
     t.date     "ends_on"
