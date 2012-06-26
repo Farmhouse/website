@@ -388,6 +388,17 @@ people_3 = [
       :title       => "Meme, Myself, and Eye.",
       :description => "<p>The physical and virtual approach to creating viral memes. The visceral reaction to the things that exist in, impact, and replicate in the real world helps to propel things to go viral in the virtual world. The digital tools help to achieve greater reach, but understanding the fundamentals of human emotional response to the tangible and powerful is essential.</p>"
     }
+  },
+  {
+    :name => "Andy Baio",
+    :bio  => %q{
+      <p>Andy Baio is a writer and coder who loves making things. His latest projects include <a href="http://xoxo.in/" title="Web Site: xoxo.in">XOXO</a>, a four-day conference and festival in Portland, and <a href="http://playfic.com/" title="Playfic">Playfic</a>, a community for writing and sharing interactive fiction games. He's an advisor and the former CTO of <a href="http://kickstarter.com/" title="Kickstarter">Kickstarter</a>, the largest crowdfunding site in the world, produced <a href="http://kindofbloop.com/" title="Kind of Bloop: An 8-Bit Tribute to Miles Davis' Kind of Blue">Kind of Bloop</a>, the first and only chiptune jazz album, and created <a href="http://en.wikipedia.org/wiki/Upcoming" title="Upcoming - Wikipedia, the free encyclopedia">Upcoming</a>, the collaborative events calendar acquired by Yahoo in 2005. He writes a weekly column for <a href="http://Wired.com/" title="Wired.com">Wired.com</a>, and original reporting on his blog <a href="http://waxy.org/" title="Waxy.org: Andy Baio lives here">Waxy.org</a> has been featured in the New York Times, Wired, NPR, Newsweek, and MSNBC.</p>
+    },
+    :talk => {
+      :slug        => "shut-up-and-take-my-money",
+      :title       => "Shut Up and Take My Money",
+      :description => "<p>Kickstarter&rsquo;s transformed the landscape for funding creative projects, but it's also launched a new movement of fans as producers &mdash; people commissioning work from artists directly instead of waiting for artists to come to them. This is the story of XOXO, an arts &amp; technology festival that became the most-funded event on Kickstarter, and the future of fans replacing traditional labels, publishers, and studios.</p>"
+    }
   }
 ]
 
