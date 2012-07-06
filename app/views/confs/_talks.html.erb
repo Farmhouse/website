@@ -20,6 +20,10 @@
 
                   <div class="notes">
                     <%= simple_format talk.try(:description) %>
+
+                    <% unless talk.videos.blank? %>
+                      <p><b><%= link_to "Watch the video &rarr;".html_safe, conf_talk_path(talk.conf, talk.slug) %></b></p>
+                    <% end %>
                   </div>
 
                 <div class="bio">
