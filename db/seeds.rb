@@ -399,6 +399,17 @@ people_3 = [
       :title       => "Shut Up and Take My Money",
       :description => "<p>Kickstarter&rsquo;s transformed the landscape for funding creative projects, but it's also launched a new movement of fans as producers &mdash; people commissioning work from artists directly instead of waiting for artists to come to them. This is the story of XOXO, an arts &amp; technology festival that became the most-funded event on Kickstarter, and the future of fans replacing traditional labels, publishers, and studios.</p>"
     }
+  },
+  {
+    :name => "Kate Darling",
+    :bio  => %q{
+      <p>Kate Darling is an IP Research Specialist at the MIT Media Lab and a Ph.D. candidate in Intellectual Property and Law &amp; Economics. After surviving law school, she went on to pursue her passion for innovation policy at the intersection of law and technology. Her work focuses on economic issues in copyright and patent systems. She also writes and lectures about robot ethics.</p>
+    },
+    :talk => {
+      :slug        => "adult-entertainment-in-the-digital-age",
+      :title       => "Adult Entertainment in the Digital Age",
+      :description => %q{ <p>Common lore tells us that porn drives technology. From the paperback book to home cinema to online payment systems, the adult industry has influenced new media adoption and pioneered technological innovation. True to the song "The Internet is for Porn", our new architecture for distributing information has caused an explosion of adult content online. But in an era of digital files and content aggregators, how is this socially stigmatized industry dealing with copyright protection issues? },
+    }
   }
 ]
 
