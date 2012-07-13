@@ -408,7 +408,18 @@ people_3 = [
     :talk => {
       :slug        => "adult-entertainment-in-the-digital-age",
       :title       => "Adult Entertainment in the Digital Age",
-      :description => %q{ <p>Common lore tells us that porn drives technology. From the paperback book to home cinema to online payment systems, the adult industry has influenced new media adoption and pioneered technological innovation. True to the song "The Internet is for Porn", our new architecture for distributing information has caused an explosion of adult content online. But in an era of digital files and content aggregators, how is this socially stigmatized industry dealing with copyright protection issues? },
+      :description => %q{ <p>Common lore tells us that porn drives technology. From the paperback book to home cinema to online payment systems, the adult industry has influenced new media adoption and pioneered technological innovation. True to the song "The Internet is for Porn", our new architecture for distributing information has caused an explosion of adult content online. But in an era of digital files and content aggregators, how is this socially stigmatized industry dealing with copyright protection issues?</p> },
+    }
+  },
+  {
+    :name => "Caroline Woolard",
+    :bio  => %q{
+      <p><a href="http://carolinewoolard.com" title="Caroline Woolard">Caroline Woolard</a> moves between art, design, and activism. After installing guerrilla <a href="http://www.deepcraft.org/deep/wp-content/uploads/2009/04/woolard_caroline_publicseat.jpg" title="">public seating</a> around New York City and producing a <a href="http://www.youtube.com/watch?v=BUaK4vA4srM" title="Subway Swing - YouTube">swing for the subway system</a>, she co-founded a global network of schools that run on barter (<a href="http://tradeschool.coop" title="Trade School">TradeSchool.coop</a>) and an alternative economy for creative people (<a href="https://ourgoods.org">OurGoods.org</a>). In the past year, Caroline has presented this work at the Whitney Museum, the Queens Museum, the Museum of Art and Design, California College of the Arts, Sotheby's Institute, and MIT's Center for Civic Media. Caroline also co-organizes a space for 30 artists in Brooklyn, teaches at the <a href="http://finearts.parsons.edu/home/?q=node/5" title="Parsons Fine Arts">New School</a>, is currently a Fellow at <a href="http://eyebeam.org/people/caroline-woolard" title="Caroline Woolard | eyebeam.org">Eyebeam</a>, and will be doing a project at MoMA in 2013.</p>
+    },
+    :talk => {
+      :slug        => "barter-with-me",
+      :title       => "Barter with Me",
+      :description => %q{ <p><a href="http://tradeschool.coop" title="Trade School">Trade School</a> is a self-organized learning model that runs on barter. No one has ever been paid to organize a Trade School or teach a class there, but the model is working in 18 cities around the world. How does barter build community? This is the story of Trade School, started by three friends from <a href="https://ourgoods.org">OurGoods.org</a> in NYC in 2010, and now running in Barcelona, Cologne, Milan, Singapore, London, Cardiff, Manila, Quito, Glasgow, Bangkok, Purchase, Paris, and new cities each month. Trade School is an all-volunteer led organization, for now.</p> },
     }
   }
 ]
