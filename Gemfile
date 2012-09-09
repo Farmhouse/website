@@ -4,6 +4,8 @@ gem "rails", "3.2.8"
 
 group :development do
   gem "sqlite3-ruby", :require => "sqlite3"
+  gem "heroku"
+  gem "taps"
 end
 
 gem "json"
