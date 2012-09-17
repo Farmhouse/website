@@ -421,6 +421,19 @@ people_3 = [
       :title       => "Barter with Me",
       :description => %q{ <p><a href="http://tradeschool.coop" title="Trade School">Trade School</a> is a self-organized learning model that runs on barter. No one has ever been paid to organize a Trade School or teach a class there, but the model is working in 18 cities around the world. How does barter build community? This is the story of Trade School, started by three friends from <a href="https://ourgoods.org">OurGoods.org</a> in NYC in 2010, and now running in Barcelona, Cologne, Milan, Singapore, London, Cardiff, Manila, Quito, Glasgow, Bangkok, Purchase, Paris, and new cities each month. Trade School is an all-volunteer led organization, for now.</p> },
     }
+  },
+  {
+    :name => "Michael Lopp (@rands)",
+    :bio  => %q{
+      <p><a href="http://twitter.com/rands" title="@rands on Twitter">Michael Lopp</a> is a Silicon Valley-based engineering leader who builds both people and software at companies such as <a href="http://borland.com" title="Open &amp; Agile Requirement, Test &amp; Change Management Solutions - Borland">Borland</a>, <a href="http://en.wikipedia.org/wiki/Netscape" title="Netscape - Wikipedia, the free encyclopedia">Netscape</a>, <a href="http://www.apple.com" title="Apple">Apple</a>, and <a href="http://www.palantir.com" title="Home | Palantir">Palantir</a>. While he's not worrying about staying relevant, he writers about <a href="http://www.randsinrepose.com/archives/2007/10/16/the_gel_dilemma.html" title="Rands In Repose: The Gel Dilemma">pens</a>, <a href="http://www.randsinrepose.com/archives/2009/03/23/the_makers_of_things.html" title="Rands In Repose: The Makers of Things">bridges</a>, <a href="http://www.randsinrepose.com/cat_management.html" title="Rands In Repose : Management Archives">people</a>, <a href="http://www.randsinrepose.com/archives/2004/11/09/rands_home_poke.html" title="Rands In Repose: Rands Home Poker System">poker</a>, and <a href="http://www.alistapart.com/articles/managing-werewolves/" title="A List Apart: Articles: Managing Werewolves">werewolves</a> at the popular weblog, <a href="http://randsinrepose.com" title="Rands In Repose">Rands in Repose</a>.</p>
+      <p>Michael has written two books. "<a href="http://www.beinggeek.com" title="Being Geek - The Software Developer's Career Handbook">Being Geek</a>" is a career handbook for geeks and nerds alike. His first book "<a href="http://www.managinghumans.com" title="Managing Humans - An Introduction">Managing Humans, 2nd Edition</a>" is a popular guide to the art of engineering leadership and clearly explains that while you might be rewarded for what you build, you will only be successful because of your people.</p>
+      <p>Michael surfs, plays hockey, and drinks red wine in the redwoods of Northern California whenever he can because staying sane is more important than staying busy.</p>
+    },
+    :talk => {
+      :slug        => "stables-and-volatiles",
+      :title       => "Stables and Volatiles",
+      :description => %q{ <p>On your team, there is an emerging war and if you want your team, company, and products to remain relevant, you need to encourage it.</p> },
+    }
   }
 ]
 
