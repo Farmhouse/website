@@ -23,6 +23,7 @@ class Talk < ActiveRecord::Base
       s = self.slug
     end
 
+    separator = "-"
     self.slug = s.downcase.gsub(/_|\s|\W/, separator).gsub(/-{2,}/, separator).gsub(/(-)+$/, "")
   end
 end
