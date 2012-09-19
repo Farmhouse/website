@@ -18,7 +18,7 @@ module ApplicationHelper
   end
 
   def sluggify(text, separator="-")
-    text.downcase.gsub(/-/, separator).gsub(/ /, separator)
+    text.downcase.gsub(/_|\s|\W/, separator).gsub(/-{2,}/, separator).gsub(/(-)+$/, "")
   end
 
   def remote_image_tag(path, options = {})
