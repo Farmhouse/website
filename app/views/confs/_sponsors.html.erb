@@ -131,3 +131,25 @@
   </div>
 
 <% end %>
+
+<% if @conf.name == "Farmhouse Conf 3" %>
+
+  <div class="row">
+
+    <div class="span12">
+      <h2 id="sponsors">Sponsors</h2>
+
+      <div class="row">
+        <div class="span6">
+          <%
+          [
+            ["the-hybrid-group", "http://hybridgroup.com"]
+          ].each do |name, url| %>
+            <%= link_to_sponsor_image_tag(2, name, url) %>
+          <% end %>
+        </div>
+      </div> <!-- .row -->
+    </div><!-- #sponsors -->
+
+<% end %>
+
