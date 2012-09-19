@@ -145,11 +145,37 @@
           [
             ["the-hybrid-group", "http://hybridgroup.com"]
           ].each do |name, url| %>
-            <%= link_to_sponsor_image_tag(2, name, url) %>
+            <%= link_to_sponsor_image_tag(3, name, url) %>
           <% end %>
         </div>
       </div> <!-- .row -->
     </div><!-- #sponsors -->
+
+
+    <div class="span12">
+      <h2 id="goodies">Goodie Bag Sponsors</h2>
+
+      <div class="row">
+        <div class="span6">
+          <%
+          [
+            # ["luna-sandals", "http://lunasandals.com"]
+          ].each do |name, url| %>
+            <%= link_to_sponsor_image_tag(3, name, url) %>
+          <% end %>
+        </div>
+
+        <div class="span6">
+          <%
+          [
+            ["johnny-cupcakes", "http://johnnycupcakes.com"]
+          ].each do |name, url| %>
+            <%= link_to_sponsor_image_tag(3, name, url) %>
+          <% end %>
+        </div>
+      </div> <!-- .row -->
+    </div><!-- #goodies -->
+  </div>
 
 <% end %>
 
