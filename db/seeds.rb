@@ -434,6 +434,17 @@ people_3 = [
       :title       => "Stables and Volatiles",
       :description => %q{ <p>On your team, there is an emerging war and if you want your team, company, and products to remain relevant, you need to encourage it.</p> },
     }
+  },
+  {
+    :name => "Zoetica Ebb",
+    :bio  => %q{
+      <p>Coming soon...</p>
+    },
+    :talk => {
+      :slug        => "coming-soon",
+      :title       => "Coming soon",
+      :description => %q{ <p>Coming soon...</p> },
+    }
   }
 ]
 
