@@ -445,6 +445,17 @@ people_3 = [
       :title       => "Coming soon",
       :description => %q{ <p>Coming soon...</p> },
     }
+  },
+  {
+    :name => "Justin Ouellette",
+    :bio  => %q{
+      <p>Justin Ouellette was born in Portland, Oregon in 1983. He left college in 2005 to pursue photography in New York City, but wound up falling in with a rough crowd and becoming a software designer instead. In 2008 he created a minimalist web site for sharing music called Muxtape, which exploded in popularity and was eventually shuttered by the RIAA after a spectacular summer of backroom negotiations. He has worked for Vimeo, Betaworks, the New York Times R&D Lab, and currently calls Tumblr home.</p>
+    },
+    :talk => {
+      :slug        => "the-record-industry-is-dying-and you-shouldnt-feel-bad",
+      :title       => "The Record Industry Is Dying And You Shouldn't Feel Bad",
+      :description => %q{ <p>The business of selling recorded sound on physical media may go down as one of culture's greatest bubble economies. Why is it no longer a viable business model and what's taking it so long to die? Record companies are quick to blame their customers, but the the reality lies in a long cycle of disruption that's been building for decades. We explore!</p> },
+    }
   }
 ]
 
