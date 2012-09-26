@@ -8,8 +8,8 @@ module ApplicationHelper
     end
   end
 
-  def link_to_sponsor_image_tag(year, slug, url)
-    link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/#{year}/#{slug}.png",
+  def link_to_sponsor_image_tag(slug, url)
+    link_to image_tag("http://farmhouse.s3.amazonaws.com/images/sponsors/#{slug}.png",
                       :alt => slug.gsub(/-/, " ")
                      ),
             url,
