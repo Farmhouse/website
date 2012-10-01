@@ -438,12 +438,17 @@ people_3 = [
   {
     :name => "Zoetica Ebb",
     :bio  => %q{
-      <p>Coming soon...</p>
+      <p> Zoetica Ebb is a Moscow-born, LA-raised artist, writer and photographer. She is dedicated to proving that life is as beautiful as we make it. On her blog, <a href="http://Biorequiem.com" title="Zoetica Ebb // Biorequiem.com &#8212; Art, style, space adventures">Biorequiem.com</a>, Zoetica offers unorthodox fashion advice, lifestyle tips, cultural commentary, and answers readers' questions about everything from ways to wear short skirts to quitting art school to learning to love the world. </p>
+      <p> Zoetica's current projects include <a href="http://www.kickstarter.com/projects/1080572418/the-secret-guide-to-alternative-beijing-0" title="The Secret Guide To Alternative Beijing by The Frei Group &mdash; Kickstarter">The Secret Guide to Alternative Beijing</a> - a video travel guide series giving insight into the alternative art, fashion, music, and nightlife culture in Beijing, and <a href="http://zoetica.tumblr.com/search/alien+botany" title="ZOETICA EBB, Search results for: alien botany">Alien Botany</a> - a painstaking and time-consuming art series dedicated to beastly flora and antique botanical illustration. </p>
+      <p> Last year, Zoetica launched <b>GHST RDR</b> in <a href="http://blogs.laweekly.com/arts/2011/05/zoetica_ebb_plastik_wrap_ghst.php" title="Zoetica Ebb and Plastik Wrap Join Forces for the Cyber Victorian Collaboration GHST RDR - Los Angeles - Arts - Public Spectacle">collaboration</a> with Adriana Fulop of Toronto label, Plastik Wrap. <a href="http://hautemacabre.com/2011/11/half-light-beach-limited-time-ghst-rdr-promotion/" title="Half-light Beach // Limited-time GHST RDR Promotion |">GHST RDR</a> is a jacket-and-skirt combo, inspired by Victorian riding fashion and anime robots. She also used Kickstarter to raise $8,400 for <a href="http://www.chinashopmag.com/?s=yantalo&amp;submit.x=0&amp;submit.y=0&amp;submit=Search" title="yantalo | Search Results | ChinaShop">D4RT</a> - a support project for a developing village in the Peruvian Amazon jungle, where Zoetica hand-delivered art supplies, taught a kids' introductory art workshop, and painted a mural with village locals. She'd like to do this again sometime. </p>
+      <p> In recent years, Zoetica worked as a culture <a href="http://www.chinashopmag.com/author/zoetica-ebb/">writer and photographer</a> for <b>RedBull's Chinashop Magazine</b>, specializing in urban exploration and art coverage. From 2007 to 2012 Zoetica was part of <b>Coilhouse</b> - a magazine and <a href="http://coilhouse.net/author/zoetica/" title="Coilhouse &raquo; Zoetica">blog</a> she co-founded, billed as "a love letter to alternative culture". </p>
     },
     :talk => {
-      :slug        => "coming-soon",
-      :title       => "Coming soon",
-      :description => %q{ <p>Coming soon...</p> },
+      :slug        => "the-2012-beijing-aesthetic",
+      :title       => "The 2012 Beijing Aesthetic",
+      :description => %q{
+        <p>In September, a small team and I went to China to film <i>The Secret Guide to Alternative Beijing</i> - part travel guide, part documentary, largely a time capsule of what's happening in the alternative culture of China's capital. Known as "the city of contrasts", Beijing earns its name now more than ever. I'll talk about the polarity between the creatives we interviewed, their work, how Beijing's striking aesthetic informs its culture and vice versa.</p>
+      },
     }
   },
   {
