@@ -461,6 +461,28 @@ people_3 = [
       :title       => "The Record Industry Is Dying And You Shouldn't Feel Bad",
       :description => %q{ <p>The business of selling recorded sound on physical media may go down as one of culture's greatest bubble economies. Why is it no longer a viable business model and what's taking it so long to die? Record companies are quick to blame their customers, but the the reality lies in a long cycle of disruption that's been building for decades. We explore!</p> },
     }
+  },
+  {
+    :name => "Megan Dean",
+    :bio  => %q{
+      <p>Megan Dean owns and runs Moth Attack custom building bike frames by hand in Los Angeles, California.</p>
+    },
+    :talk => {
+      :slug        => "coming-soon",
+      :title       => "Coming Soon...",
+      :description => %q{ <p>Coming Soon...</p> },
+    }
+  # },
+  # {
+  #   :name => "Peter Young",
+  #   :bio  => %q{
+  #     <p>Peter's Bio</p>
+  #   },
+  #   :talk => {
+  #     :slug        => "coming-soon",
+  #     :title       => "Coming Soon...",
+  #     :description => %q{ <p>Coming Soon...</p> },
+  #   }
   }
 ]
 
