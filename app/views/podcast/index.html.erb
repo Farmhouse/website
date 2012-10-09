@@ -1,2 +1,49 @@
-<h1>Podcast#index</h1>
-<p>Find me in app/views/podcast/index.html.erb</p>
+<article>
+  <div class="row">
+    <header class="span12">
+      <h1>The Farmhouse Podcast</h1>
+    </header>
+
+    <p class="span6">
+      Friends and Family of The Farmhouse in Hollywood, California. Occasionally, we talk about things and now we're sharing those with other people.
+    </p>
+  </div>
+
+  <div class="row">
+    <h2 class="span12">Season 1</h2>
+
+    <div class="span4">
+      <%= image_tag "http://farmhouse.s3.amazonaws.com/podcast/images/the-farmhouse-podcast-cover.jpg", :alt => "The Farmhouse Podcast, Season 1 cover" %>
+    </div>
+
+    <div class="span8">
+      <ol>
+        <li>
+          <h1>JSON vs HTML + Microformats</h1>
+
+          <time datetime="2012-10-08T21:13:18-0700">October 08, 2012</time>
+
+          <p>
+            <a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> and <a href="http://SteveKlabnik.com" title="Steve Klabnik">Steve Klabnik</a> discuss using <a href="http://www.json.org" title="JSON">JSON</a> vs HTML + <a href="http://microformats.org" title="Microformats">Microformats</a> as API output.
+          </p>
+
+          <audio controls>
+            <source src="http://farmhouse.s3.amazonaws.com/podcast/S01/01%20JSON%20vs%20HTML%20%2B%20Microformats.mp3"></source>
+          </audio>
+
+          <p>
+            <a href="http://farmhouse.s3.amazonaws.com/podcast/S01/01%20JSON%20vs%20HTML%20%2B%20Microformats.mp3" title="Download Episode 1 MP3">Download MP3</a>
+          </p>
+
+          <p><b>Show Notes</b></p>
+
+          <ul>
+            <li><a href="https://twitter.com/veganstraightedge/status/255149033834823680">Shane's initial question tweet</a></li>
+            <li><a href="http://Microformats.org" title="Microformats">Microformats.org</a></li>
+            <li><a href="http://JSON.org" title="JSON">JSON.org</a></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div> <!-- .row -->
+</article>
