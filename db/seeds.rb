@@ -472,17 +472,17 @@ people_3 = [
       :title       => "Coming Soon...",
       :description => %q{ <p>Coming Soon...</p> },
     }
-  # },
-  # {
-  #   :name => "Peter Young",
-  #   :bio  => %q{
-  #     <p>Peter's Bio</p>
-  #   },
-  #   :talk => {
-  #     :slug        => "coming-soon",
-  #     :title       => "Coming Soon...",
-  #     :description => %q{ <p>Coming Soon...</p> },
-  #   }
+  },
+  {
+    :name => "Peter Young",
+    :bio  => %q{
+      <p>Peter's Bio</p>
+    },
+    :talk => {
+      :slug        => "coming-soon",
+      :title       => "Coming Soon...",
+      :description => %q{ <p>Coming Soon...</p> },
+    }
   }
 ]
 
