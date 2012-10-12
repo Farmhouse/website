@@ -465,23 +465,27 @@ people_3 = [
   {
     :name => "Megan Dean",
     :bio  => %q{
-      <p>Megan Dean owns and runs Moth Attack custom building bike frames by hand in Los Angeles, California.</p>
+      <p>Before there were frames, there was a moth attack. Or at least a moth infestation one morning in the Los Angeles kitchen of <a href="https://twitter.com/mothattack">Megan Dean</a>. It was one of those situations where one could either get annoyed or motivated, and Megan choose the latter. Launching <a href="http://mothattack.com" title="mothattack">Moth Attack</a> after perfecting her skills with master frame builder <a href="http://en.wikipedia.org/wiki/Koichi_Yamaguchi">Koichi Yamaguchi</a>, she now applies this knowledge to <a href="http://en.wikipedia.org/wiki/Lugged_steel_frame_construction" title="Lugged steel frame construction - Wikipedia, the free encyclopedia">lugged</a> and <a href="http://en.wikipedia.org/wiki/Brazing" title="Brazing - Wikipedia, the free encyclopedia">fillet brazed</a> <a href="http://en.wikipedia.org/wiki/Bicycle_frame#Steel" title="Bicycle frame - Wikipedia, the free encyclopedia">steel frame sets</a>. Each one custom made with purpose, fit and love in mind.</p>
+      <p>When not fabricating frames, Megan is often track racing, road riding, or working part time at the Los Angeles Bicycle Coalition. Being immersed in bicycles all day in multiple ways translates into an omniscient approach to building that is reflected in every detail of her finished work. Megan&rsquo;s break from the cycling world is spent with her big dogs that share her love of the artesian life and a good walk.</p>
     },
     :talk => {
-      :slug        => "coming-soon",
+      :slug        => "megan-dean",
       :title       => "Coming Soon...",
       :description => %q{ <p>Coming Soon...</p> },
     }
   },
   {
     :name => "Peter Young",
-    :bio  => %q{
-      <p>Peter's Bio</p>
-    },
+    :bio  => %q{ <p>From his origins in Silicon Valley, Peter Young has worn the hat of activist, punk rocker, fugitive, hobo, speaker, author, entrepreneur, eco-terrorist, publisher, prisoner, and purveyor of unpopular opinions. He is a contributor, founder, and guilty party behind many projects guided by principles of freedom for the self and all life, many of which are anonymous and none of which will be listed here. He is not as proud of any of them as he is of heeding, almost without deviation, the advice once given to him personally by <a href="http://en.wikipedia.org/wiki/Bill_Nye" title="Bill Nye - Wikipedia, the free encyclopedia">Bill Nye</a>: &ldquo;Peter, don't ever work for another man&ldquo;.</p> },
     :talk => {
-      :slug        => "coming-soon",
-      :title       => "Coming Soon...",
-      :description => %q{ <p>Coming Soon...</p> },
+      :slug        => "fugitives-have-more-fun",
+      :title       => "Fugitives Have More Fun: Confessions of a Wanted Eco-Terrorist",
+      :description => %q{
+        <p>Convicted &ldquo;eco-terrorist&ldquo; and former fugitive tells his story &mdash; the whole story &mdash; for the first time.</p>
+        <p>In 1997, after <a href="http://en.wikipedia.org/wiki/Peter_Daniel_Young" title="Peter Daniel Young - Wikipedia, the free encyclopedia">Peter Young</a> was charged with <a href="http://en.wikipedia.org/wiki/Animal_Enterprise_Terrorism_Act" title="Animal Enterprise Terrorism Act - Wikipedia, the free encyclopedia">Animal Enterprise Terrorism</a> for freeing thousands of mink from fur farms, he was faced with a decision: submit to the court and face a possible life sentence, or run for it.</p>
+        <p>He chose the second one.</p>
+        <p>In an attempt to live his life to the fullest before the government took it away, Young spent 8 years perfecting the art (and science) of living well as a wanted man. From freight trains to book tours, these are the stories of one man's attempts to live a lifetime of adventure before a possible lifetime in prison.</p>
+      },
     }
   }
 ]
