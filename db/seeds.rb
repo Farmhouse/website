@@ -476,15 +476,15 @@ people_3 = [
   },
   {
     :name => "Peter Young",
-    :bio  => %q{ <p>From his origins in Silicon Valley, Peter Young has worn the hat of activist, punk rocker, fugitive, hobo, speaker, author, entrepreneur, eco-terrorist, publisher, prisoner, and purveyor of unpopular opinions. He is a contributor, founder, and guilty party behind many projects guided by principles of freedom for the self and all life, many of which are anonymous and none of which will be listed here. He is not as proud of any of them as he is of heeding, almost without deviation, the advice once given to him personally by <a href="http://en.wikipedia.org/wiki/Bill_Nye" title="Bill Nye - Wikipedia, the free encyclopedia">Bill Nye</a>: &ldquo;Peter, don't ever work for another man&ldquo;.</p> },
+    :bio  => %q{ <p>From his origins in Silicon Valley, Peter Young has worn the hat of activist, punk rocker, fugitive, hobo, speaker, author, entrepreneur, eco-terrorist, publisher, prisoner, and purveyor of unpopular opinions. He is a contributor, founder, and guilty party behind many projects guided by principles of freedom for the self and all life, many of which are anonymous and none of which will be listed here. Above (almost) all of them, he is most proud of heeding, almost without deviation, the advice once given to him personally by <a href="http://en.wikipedia.org/wiki/Bill_Nye" title="Bill Nye - Wikipedia, the free encyclopedia">Bill Nye</a>: &ldquo;Peter, don't ever work for another man&ldquo;.</p> },
     :talk => {
       :slug        => "fugitives-have-more-fun",
       :title       => "Fugitives Have More Fun: Confessions of a Wanted Eco-Terrorist",
       :description => %q{
         <p>Convicted &ldquo;eco-terrorist&ldquo; and former fugitive tells his story &mdash; the whole story &mdash; for the first time.</p>
-        <p>In 1997, after <a href="http://en.wikipedia.org/wiki/Peter_Daniel_Young" title="Peter Daniel Young - Wikipedia, the free encyclopedia">Peter Young</a> was charged with <a href="http://en.wikipedia.org/wiki/Animal_Enterprise_Terrorism_Act" title="Animal Enterprise Terrorism Act - Wikipedia, the free encyclopedia">Animal Enterprise Terrorism</a> for freeing thousands of mink from fur farms, he was faced with a decision: submit to the court and face a possible life sentence, or run for it.</p>
+        <p>In 1997, after <a href="http://en.wikipedia.org/wiki/Peter_Daniel_Young" title="Peter Daniel Young">Peter Young</a> was charged with <a href="http://en.wikipedia.org/wiki/Animal_Enterprise_Terrorism_Act" title="Animal Enterprise Terrorism Act">Animal Enterprise Terrorism</a> for freeing thousands of mink from fur farms, he was faced with a decision: submit to the court and face a possible life sentence, or run for it.</p>
         <p>He chose the second one.</p>
-        <p>In an attempt to live his life to the fullest before the government took it away, Young spent 8 years perfecting the art (and science) of living well as a wanted man. From freight trains to book tours, these are the stories of one man's attempts to live a lifetime of adventure before a possible lifetime in prison.</p>
+        <p>In an attempt to live his life to the fullest before the government took it away, Young spent 8 years perfecting the art (and science) of living well as a wanted man. For years lawyers told him never to discuss his years as a fugitive, and he never has - until now. From freight trains to book tours, these are the stories of one man's attempts to live a lifetime of adventure before a possible lifetime in prison.</p>
       },
     }
   }
