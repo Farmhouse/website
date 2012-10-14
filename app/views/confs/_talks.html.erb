@@ -17,17 +17,18 @@
                 </h2>
 
 
-                <%= link_to remote_image_tag("speakers/#{talk.people.first.slug}",
-                                             :alt => talk.people.first.name),
-                      conf_talk_path(talk.conf, talk.slug) %>
+                <%= link_to conf_talk_path(talk.conf, talk.slug) do %>
+                  <%= remote_image_tag("speakers/#{talk.people.first.slug}", :alt => talk.people.first.name) %>
+                <% end %>
 
-                  <div class="notes">
-                    <%= talk.try(:description).html_safe %>
 
-                    <% unless talk.videos.blank? %>
-                      <p><b><%= link_to "Watch the video &rarr;".html_safe, conf_talk_path(talk.conf, talk.slug) %></b></p>
-                    <% end %>
-                  </div>
+                <div class="notes">
+                  <%= talk.try(:description).html_safe %>
+
+                  <% unless talk.videos.blank? %>
+                    <p><b><%= link_to "Watch the video &rarr;".html_safe, conf_talk_path(talk.conf, talk.slug) %></b></p>
+                  <% end %>
+                </div>
 
                 <div class="bio">
                   <%= raw talk.people.first.try(:bio) %>
