@@ -471,7 +471,7 @@ people_3 = [
     :talk => {
       :slug        => "making-bikes-work",
       :title       => "Making Bikes Work",
-      :description => %q{ <p>After quitting a corporate job to ride bikes down the West coast of the US, Megan Dean returned knowing she couldn&rsquo;t go back. Through various bicycling related jobs she eventually found an affinity for turning a pile of steel tubes into a functioning piece of art.</p> },
+      :description => %q{ <p>After quitting a corporate job to ride bikes down the West coast of the US, Megan Dean returned knowing she couldn&rsquo;t go back. Through various bicycling related jobs she eventually found an affinity for turning a pile of steel tubes into a functioning piece of art. In this talk, Megan will regal the audience with extreme bike dork stoke.</p> },
     }
   },
   {
