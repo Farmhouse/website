@@ -476,7 +476,7 @@ people_3 = [
   },
   {
     :name => "Peter Young",
-    :bio  => %q{ <p>From his origins in Silicon Valley, Peter Young has worn the hat of activist, punk rocker, fugitive, hobo, speaker, author, entrepreneur, eco-terrorist, publisher, prisoner, and purveyor of unpopular opinions. He is a contributor, founder, and guilty party behind many projects guided by principles of freedom for the self and all life, many of which are anonymous and none of which will be listed here. Above (almost) all of them, he is most proud of heeding, almost without deviation, the advice once given to him personally by <a href="http://en.wikipedia.org/wiki/Bill_Nye" title="Bill Nye - Wikipedia, the free encyclopedia">Bill Nye</a>: &ldquo;Peter, don't ever work for another man&ldquo;.</p> },
+    :bio  => %q{ <p>From his origins in Silicon Valley, Peter Young has worn the hat of activist, punk rocker, fugitive, hobo, speaker, author, entrepreneur, eco-terrorist, publisher, prisoner, and purveyor of unpopular opinions. He is a contributor, founder, and guilty party behind many projects guided by principles of freedom for the self and all life, many of which are anonymous and none of which will be listed here. Above (almost) all of them, he is most proud of heeding, almost without deviation, the advice once given to him personally by <a href="http://en.wikipedia.org/wiki/Bill_Nye" title="Bill Nye - Wikipedia, the free encyclopedia">Bill Nye</a>: &ldquo;Peter, don't ever work for another man&rdquo;.</p> },
     :talk => {
       :slug        => "fugitives-have-more-fun",
       :title       => "Fugitives Have More Fun: Confessions of a Wanted Eco-Terrorist",
