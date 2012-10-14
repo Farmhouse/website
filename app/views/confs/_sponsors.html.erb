@@ -185,7 +185,32 @@
         </div>
       </div> <!-- .row -->
     </div><!-- #goodies -->
-  </div>
 
+
+    <div class="span12">
+      <h2 id="meals">Food and Drink Sponsors</h2>
+
+      <div class="row">
+        <div class="span6">
+          <%
+          [
+            ["tonx",              "http://tonx.org"]
+          ].each do |name, url| %>
+            <%= link_to_sponsor_image_tag(name, url) %>
+          <% end %>
+        </div>
+
+        <div class="span6">
+          <%
+          [
+            ["claras-cakes",      "http://ClaraCakes.com"]
+          ].each do |name, url| %>
+            <%= link_to_sponsor_image_tag(name, url) %>
+          <% end %>
+        </div>
+      </div> <!-- .row -->
+    </div><!-- #meals -->
+
+  </div>
 <% end %>
 
