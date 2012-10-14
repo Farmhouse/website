@@ -469,9 +469,9 @@ people_3 = [
       <p>When not fabricating frames, Megan is often track racing, road riding, or working part time at the Los Angeles Bicycle Coalition. Being immersed in bicycles all day in multiple ways translates into an omniscient approach to building that is reflected in every detail of her finished work. Megan&rsquo;s break from the cycling world is spent with her big dogs that share her love of the artisian life and a good walk.</p>
     },
     :talk => {
-      :slug        => "megan-dean",
-      :title       => "Coming Soon...",
-      :description => %q{ <p>Coming Soon...</p> },
+      :slug        => "making-bikes-work",
+      :title       => "Making Bikes Work",
+      :description => %q{ <p>After quitting a corporate job to ride bikes down the West coast of the US, Megan Dean returned knowing she couldn&rsquo;t go back. Through various bicycling related jobs she eventually found an affinity for turning a pile of steel tubes into a functioning piece of art.</p> },
     }
   },
   {
