@@ -28,8 +28,7 @@
         <% if @talk.videos.first.youtube %>
           <iframe width="100%"
                   height="360"
-                  src="http://www.youtube.com/embed/<%= @talk.videos.first.youtube %>"
-                  allowfullscreen>
+                  src="http://www.youtube.com/embed/<%= @talk.videos.first.youtube %>">
           </iframe>
         <% else %>
           <video controls poster="<%= @talk.videos.first.poster_frame_url %>" preload="none">
