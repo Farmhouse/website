@@ -1,5 +1,6 @@
 class PodcastController < ApplicationController
   def index
+    @slug = "podcast"
   end
 
   def feed
