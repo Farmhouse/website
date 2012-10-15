@@ -36,14 +36,6 @@ module ApplicationHelper
     link_to_unless_current person.name, person_slug_path(person.slug), :class => "fn n p-fn p-n"
   end
 
-  def link_to_conf(conf)
-    pieces     = conf.name.split
-    last_piece = pieces.pop
-    conf_name  = pieces.join(" ") + "&nbsp;" + last_piece
-
-    link_to_unless_current conf_name.html_safe, conf_path(conf.year), :class => "org p-org"
-  end
-
   def nav_to(link_text, link_path, options = {})
     if request.path == link_path
       options[:class] = "active"

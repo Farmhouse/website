@@ -2,10 +2,12 @@ Farmhouse::Application.routes.draw do
   # REDIRECTS...
 
   # conf by year redirects to conf by id
-  match "/2011" => redirect("/conf/1")
-  match "/2012" => redirect("/conf/2")
-  match "/2013" => redirect("/conf/3")
-
+  match "/2011"            => redirect("/conf/1")
+  match "/2012"            => redirect("/conf/2")
+  match "/2013"            => redirect("/conf/3")
+  match "/conf/2011"       => redirect("/conf/1")
+  match "/conf/2012"       => redirect("/conf/2")
+  match "/conf/2013"       => redirect("/conf/3")
   match "/conf/2011/talks" => redirect("/conf/1")
   match "/conf/2012/talks" => redirect("/conf/2")
   match "/conf/2013/talks" => redirect("/conf/3")

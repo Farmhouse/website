@@ -6,8 +6,7 @@
 
     <h2>
       By <%= @talk.people.first.name %>
-
-      at <%= link_to_conf(@talk.conf) %>
+      at <%= link_to @talk.conf.name, @talk.conf %>
     </h2>
   </header>
 
