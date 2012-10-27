@@ -531,6 +531,20 @@ farmhouse_conf_4 = Conf.create!(
 )
 
 
+# farmhouse conf 5, 2013
+farmhouse_conf_5 = Conf.create!(
+  :name             => "Farmhouse Conf 5",
+  :subtitle         => "Stories About The <b>Collapse</b> Under an Avocado Tree in Hollywood, California",
+  :year             => 2013,
+  :starts_at        => DateTime.parse("2013-11-02 10:00"),
+  :ends_at          => DateTime.parse("2013-11-02 23:00"),
+  :location_id      => location.id,
+  :twitter          => "farmhouse",
+  :theme            => "Collapse",
+  :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-5/register/"
+)
+
+
 
 __END__
 
