@@ -7,15 +7,17 @@
         <span class="icon-bar"></span>
       </a>
 
-      <h1 class="brand"><%= link_to_unless_current "The Farmhouse", root_path, :rel => "home" %></h1>
+      <h1 class="brand">
+        <%= link_to_unless_current "The Farmhouse", root_path, :rel => "home" %>
+      </h1>
 
       <div class="nav-collapse">
         <ul class="nav">
-          <%= nav_to "Farmhouse Conf",                                                 conf_path(3) %>
-          <%= nav_to "People",                                                         us_path %>
-          <%= nav_to "History",                                                        house_path %>
-          <%= nav_to "Rules",                                                          rules_path %>
-          <%= nav_to "Labs",                                                           labs_path %>
+          <%= nav_to "Farmhouse Conf", conf_path(4) %>
+          <%= nav_to "People",         us_path %>
+          <%= nav_to "History",        house_path %>
+          <%= nav_to "Rules",          rules_path %>
+          <%= nav_to "Labs",           labs_path %>
           <%= nav_to "Podcast <span class='label'>New</span>".html_safe, podcast_path %>
         </ul>
       </div>

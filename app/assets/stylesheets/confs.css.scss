@@ -36,6 +36,12 @@
   }
 }
 
+#conf {
+  .nav-pills li:nth-of-type(2) {
+    font-weight: bold;
+  }
+}
+
 #music iframe {
   margin-bottom: 25px;
   width: 100%;
