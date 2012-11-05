@@ -452,17 +452,6 @@ people_3 = [
     }
   },
   {
-    :name => "Justin Ouellette",
-    :bio  => %q{
-      <p>Justin Ouellette was born in Portland, Oregon in 1983. He left college in 2005 to pursue photography in New York City, but wound up falling in with a rough crowd and becoming a software designer instead. In 2008 he created a minimalist web site for sharing music called Muxtape, which exploded in popularity and was eventually shuttered by the RIAA after a spectacular summer of backroom negotiations. He has worked for Vimeo, Betaworks, the New York Times R&amp;D Lab, and currently calls Tumblr home.</p>
-    },
-    :talk => {
-      :slug        => "the-record-industry-is-dying-and you-shouldnt-feel-bad",
-      :title       => "The Record Industry Is Dying And You Shouldn't Feel Bad",
-      :description => %q{ <p>The business of selling recorded sound on physical media may go down as one of culture's greatest bubble economies. Why is it no longer a viable business model and what's taking it so long to die? Record companies are quick to blame their customers, but the the reality lies in a long cycle of disruption that's been building for decades. We explore!</p> },
-    }
-  },
-  {
     :name => "Megan Dean",
     :bio  => %q{
       <p>Before there were frames, there was a moth attack. Or at least a moth infestation one morning in the Los Angeles kitchen of <a href="https://twitter.com/mothattack">Megan Dean</a>. It was one of those situations where one could either get annoyed or motivated, and Megan choose the latter. Launching <a href="http://mothattack.com" title="mothattack">Moth Attack</a> after perfecting her skills with master frame builder <a href="http://en.wikipedia.org/wiki/Koichi_Yamaguchi">Koichi Yamaguchi</a>, she now applies this knowledge to <a href="http://en.wikipedia.org/wiki/Lugged_steel_frame_construction" title="Lugged steel frame construction - Wikipedia, the free encyclopedia">lugged</a> and <a href="http://en.wikipedia.org/wiki/Brazing" title="Brazing - Wikipedia, the free encyclopedia">fillet brazed</a> <a href="http://en.wikipedia.org/wiki/Bicycle_frame#Steel" title="Bicycle frame - Wikipedia, the free encyclopedia">steel frame sets</a>. Each one custom made with purpose, fit and love in mind.</p>
@@ -490,7 +479,7 @@ people_3 = [
   }
 ]
 
-# fhc2 people + talks
+# fhc3 people + talks
 people_3.each do |person|
   slug = person[:name].downcase.gsub(/\s/, "_")
 
@@ -529,6 +518,47 @@ farmhouse_conf_4 = Conf.create!(
   :theme            => "Future",
   :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-4/register/"
 )
+
+people_4 = [
+  {
+    :name => "Justin Ouellette",
+    :bio  => %q{
+      <p>Justin Ouellette was born in Portland, Oregon in 1983. He left college in 2005 to pursue photography in New York City, but wound up falling in with a rough crowd and becoming a software designer instead. In 2008 he created a minimalist web site for sharing music called Muxtape, which exploded in popularity and was eventually shuttered by the RIAA after a spectacular summer of backroom negotiations. He has worked for Vimeo, Betaworks, the New York Times R&amp;D Lab, and currently calls Tumblr home.</p>
+    },
+    :talk => {
+      :slug        => "the-record-industry-is-dying-and you-shouldnt-feel-bad",
+      :title       => "The Record Industry Is Dying And You Shouldn't Feel Bad",
+      :description => %q{ <p>The business of selling recorded sound on physical media may go down as one of culture's greatest bubble economies. Why is it no longer a viable business model and what's taking it so long to die? Record companies are quick to blame their customers, but the the reality lies in a long cycle of disruption that's been building for decades. We explore!</p> },
+    }
+  }
+]
+
+# fhc4 people + talks
+people_4.each do |person|
+  slug = person[:name].downcase.gsub(/\s/, "_")
+
+  speaker = Person.create!(
+    :name       => person[:name],
+    :bio        => person[:bio],
+    :image      => "http://farmhouse.la/images/speakers/#{slug}/#{slug}.jpg",
+    :staff      => false,
+    :organizer  => false
+  )
+
+  talk = Talk.create!(
+    :conf_id      => farmhouse_conf_4.id,
+    :title        => person[:talk][:title],
+    :description  => person[:talk][:description],
+    :slug         => person[:talk][:slug],
+    :accepted     => true,
+    :keynote      => false
+  )
+
+  talk.people << speaker
+end
+
+
+
 
 
 # farmhouse conf 5, 2013
