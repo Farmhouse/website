@@ -1,23 +1,47 @@
-<div id="register" class="alert">
-  <div class="span7">
-    <h1 class="alert-heading">
-      <%= link_to "REGISTER NOW", register_path %>
-    </h1>
-    <h2 class="alert-heading">
-      <b>for</b>
-      <%= link_to_unless_current "FARMHOUSE CONF 3", conf_path("3") %>
-    </h2>
-    <h3 class="alert-heading">November 3, 2012 in Hollywood, CA</h3>
+<div class="row">
+
+  <div class="span6">
+    <div id="fhc4" class="register alert alert-success">
+      <h1 class="alert-heading">
+        <%= link_to "REGISTER NOW", register_path %>
+      </h1>
+      <h2 class="alert-heading">
+        <b>for</b>
+        <%= link_to_unless_current "FARMHOUSE CONF 4", conf_path("4") %>
+      </h2>
+      <h3 class="alert-heading"><b>May 4, 2013</b> in Hollywood, CA</h3>
+
+      <%= link_to register_path, :class => "btn btn-success btn-large" do %>
+        <p>
+          Buy Now
+          <b>$100</b>
+        </p>
+      <% end %>
+
+      <p><b>Only <%= render "/layouts/available_tickets" %> tickets left</b></p>
+    </div>
+  </div> <!-- /div.span6 -->
+
+  <div class="span6">
+    <div id="fhc5" class="register alert alert-inverse">
+      <h1 class="alert-heading">
+        <%= link_to "REGISTER NOW", register_5_path %>
+      </h1>
+      <h2 class="alert-heading">
+        <b>for</b>
+        <%= link_to_unless_current "FARMHOUSE CONF 5", conf_path("5") %>
+      </h2>
+      <h3 class="alert-heading"><b>November 2, 2013</b> in Hollywood, CA</h3>
+
+      <%= link_to register_path, :class => "btn btn-inverse btn-large" do %>
+        <p>
+          Buy Now
+          <b>$100</b>
+        </p>
+      <% end %>
+
+      <p><b>Only <%= render "/layouts/available_tickets_5" %> tickets left</b></p>
+    </div>
   </div>
 
-  <div class="span4">
-    <%= link_to register_path, :class => "btn btn-warning btn-large" do %>
-      <p>
-        <span>Buy Now</span>
-        <b>$100</b>
-      </p>
-    <% end %>
-
-    <p><b>Only <%= render "/layouts/available_tickets" %> tickets left</b></p>
-  </div>
-</div> <!-- .alert -->
+</div> <!-- /div.row -->

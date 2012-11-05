@@ -100,6 +100,17 @@
   text-decoration: none;
 }
 
+/* bootstrap extension... */
+.alert-inverse {
+  background: #efefef;
+  color: #666;
+
+  .alert-heading {
+    color: #666;
+  }
+}
+/* ...bootstrap extension */
+
 /* admin only nav... */
 #admin nav ul {
   margin: 0;

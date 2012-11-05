@@ -6,50 +6,58 @@ iframe {
   border: 0;
 }
 
-#register {
-  margin: 3em 0;
-  overflow: hidden;
-  padding-top: 2em;
-  box-shadow: 0 0 15px rgba(0, 0, 0, .4);
-  background-image: url('http://farmhouse.s3.amazonaws.com/images/home/watercolor-cropped-top.png');
-  background-position: center top;
-  background-repeat: no-repeat;
+.row {
+  #fhc4 { background-position: left  bottom; }
+  #fhc5 { background-position: right bottom; }
 
-  h1 {
-    font-size: 400%;
-    letter-spacing: -0.06em;
-  }
+  .register {
+    margin-top: 3em ;
+    margin-bottom: 3em ;
+    overflow: hidden;
+    padding-top: 2em;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .4);
+    background-image: url('http://farmhouse.s3.amazonaws.com/images/home/watercolor-cropped-top.png');
+    background-repeat: no-repeat;
 
-  h2 b,
-  h3 {
-    font-weight: normal;
-  }
+    h1 {
+      font-size: 400%;
+      letter-spacing: -0.06em;
+      font-weight: bold;
+    }
 
-  .btn-large {
-    width: 100%;
-    padding: 0;
-
-    p {
-      text-align: left;
-      font-size: 150%;
+    h2 {
+      background: none;
       margin: 0;
-      padding: .5em 1em;
+      padding: 0;
     }
 
-    span {
-      display: block;
+    h2 b,
+    h3 {
+      font-weight: normal;
     }
 
-    b {
-      line-height: 150%;
-      display: block;
-      margin-top: .25em;
-    }
+    .btn-large {
+      width: 100%;
+      padding: 0;
+      margin-top: 1em;
 
-    & + p {
-      text-align: right;
-      margin-right: .5em;
-      margin-top:   .5em;
+      p {
+        text-align: left;
+        font-size: 150%;
+        margin: 0;
+        padding: .5em 1em;
+      }
+
+      b {
+        line-height: 150%;
+        margin-top: .25em;
+      }
+
+      & + p {
+        text-align: right;
+        margin-right: .5em;
+        margin-top:   .5em;
+      }
     }
   }
 }
