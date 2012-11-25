@@ -6,6 +6,7 @@ group :development do
   gem "sqlite3-ruby", :require => "sqlite3"
   gem "heroku"
   gem "taps"
+  gem "gx"
 end
 
 gem "json"
