@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  authors: MyString
+  duration: MyString
+  enclosure_length: MyString
+  episode: 1
+  itunes_summary: MyString
+  keywords: MyString
+  published_at: 2012-12-01 21:54:26
+  season: 1
+  subtitle: MyString
+  summary: MyString
+  title: MyString
+  url: MyString
+
+two:
+  authors: MyString
+  duration: MyString
+  enclosure_length: MyString
+  episode: 1
+  itunes_summary: MyString
+  keywords: MyString
+  published_at: 2012-12-01 21:54:26
+  season: 1
+  subtitle: MyString
+  summary: MyString
+  title: MyString
+  url: MyString

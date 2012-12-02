@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120609221759) do
+ActiveRecord::Schema.define(:version => 20121202055425) do
 
   create_table "confs", :force => true do |t|
     t.string   "name"
@@ -34,6 +34,23 @@ ActiveRecord::Schema.define(:version => 20120609221759) do
     t.string   "abbreviation"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "episodes", :force => true do |t|
+    t.string   "authors"
+    t.string   "duration"
+    t.string   "enclosure_length"
+    t.integer  "episode"
+    t.string   "itunes_summary"
+    t.string   "keywords"
+    t.datetime "published_at"
+    t.integer  "season"
+    t.string   "subtitle"
+    t.string   "summary"
+    t.string   "title"
+    t.string   "url"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "labs", :force => true do |t|

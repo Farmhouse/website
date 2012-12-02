@@ -558,9 +558,6 @@ people_4.each do |person|
 end
 
 
-
-
-
 # farmhouse conf 5, 2013
 farmhouse_conf_5 = Conf.create!(
   :name             => "Farmhouse Conf 5",
@@ -574,6 +571,71 @@ farmhouse_conf_5 = Conf.create!(
   :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-5/register/"
 )
 
+
+
+# podcast
+episodes = [
+  {
+    :title            => "JSON vs HTML + Microformats",
+    :subtitle         => "On the idea of serving HTML from your API",
+    :published_at     => Time.parse("2012-10-08T21:13 -0700"),
+    :summary          => %q{<a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> and <a href="http://SteveKlabnik.com" title="Steve Klabnik">Steve Klabnik</a> discuss using <a href="http://www.json.org" title="JSON">JSON</a> vs HTML + <a href="http://microformats.org" title="Microformats">Microformats</a> as API output.},
+    :season           => 1,
+    :episode          => 1,
+    :url              => "http://farmhouse.s3.amazonaws.com/podcast/S01/01%20JSON%20vs%20HTML%20%2B%20Microformats.mp3",
+    :authors          => "Shane Becker and Steve Klabnik",
+    :itunes_summary   => "Shane Becker and Steve Klabnik discuss using JSON vs HTML + Microformats as API output.",
+    :enclosure_length => "45212172",
+    :duration         => "22:51",
+    :keywords         => "api, computer science, farmhouse, hollywood, homesteading, html, hypermedia, microformats, nerdery, web"
+  },
+  {
+    :title            => %q{Push vs "Pull"},
+    :subtitle         => "On the respective merits of pushing and polling",
+    :published_at     => Time.parse("Mon Oct 15 19:29:16 -0700 2012"),
+    :summary          => %q{<a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> and <a href="http://SteveKlabnik.com" title="Steve Klabnik">Steve Klabnik</a> discuss the merits of <b>pushing</b> and <b>polling</b> (which Shane still thinks should be "pulling"). <b>Sponsored by: <a href="https://peepcode.com">PeepCode</a>.</b>},
+    :season           => 1,
+    :episode          => 2,
+    :url              => "http://farmhouse.s3.amazonaws.com/podcast/S01/02%20Push%20vs%20_Pull_.mp3",
+    :authors          => "Shane Becker and Steve Klabnik",
+    :itunes_summary   => "Shane Becker and Steve Klabnik discuss the difference between pushing and polling and their respective differences. Sponsored by: PeepCode.",
+    :enclosure_length => "45212172",
+    :duration         => "30:57",
+    :keywords         => "api, computer science, farmhouse, hollywood, homesteading, html, hypermedia, microformats, nerdery, web, push, pull, poll, tent, ostatus, rstatus, diaspora"
+  },
+  {
+    :title            => "Puma, Puma, Puma... with a dash of Rubinius",
+    :subtitle         => "Puma, the web server. Rubinius, the Ruby implementation.",
+    :published_at     => Time.parse("2012-10-25T17:57:23 -0700"),
+    :summary          => %q{<a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> and <a href="http://blog.fallingsnow.net" title="Evan Phoenix">Evan Phoenix</a> discuss using the <a href="http://puma.io" title="A Modern, Concurrent Web Server for Ruby - Puma">Puma web server</a> and <a href="http://rubini.us" title="Rubinius : Use Ruby&#8482;">Rubinius.</a> <b>Sponsored by: <a href="https://CodeClimate.com">Code Climate</a>.</b>},
+    :season           => 1,
+    :episode          => 3,
+    :url              => "http://farmhouse.s3.amazonaws.com/podcast/S01/03%20Puma,%20Puma,%20Puma...%20with%20a%20dash%20of%20Rubinius.mp3",
+    :authors          => "Shane Becker and Evan Phoenix",
+    :itunes_summary   => "Shane Becker and Evan Phoenix discuss using the Puma web server and Rubinius. Sponsored by: Code Climate.",
+    :enclosure_length => "41917511",
+    :duration         => "21:50",
+    :keywords         => "computer science, farmhouse, hollywood, homesteading, nerdery, web, web server, puma, rubinius, ruby"
+  },
+  {
+    :title            => "jQuery Mobile Talk with John Bender",
+    :subtitle         => "",
+    :published_at     => Time.parse("2012-11-24T19:10:44 -0800"),
+    :summary          => %q{<a href="http://iamshane.com" title="I'm Shane Becker">Shane Becker</a> and <a href="http://johnbender.us" title="johnbender.us">John Bender</a> discuss mobile web development and <a href="http://jquerymobile.com" title="jQuery Mobile | jQuery Mobile">jQuery Mobile</a>. Sponsored by: <a href="http://hybridgroup.com" title="Los Angeles Ruby on Rails, JavaScript, Cloud Computing, Mobile Development - The Hybrid Group">The Hybrid Group</a>.},
+    :season           => 1,
+    :episode          => 4,
+    :url              => "http://farmhouse.s3.amazonaws.com/podcast/S01/04%20jQuery%20Mobile%20Talk%20with%20John%20Bender.mp3",
+    :authors          => "Shane Becker and John Bender",
+    :itunes_summary   => "Shane Becker and John Bender discuss mobile web development and jQuery Mobile. Sponsored by: The Hybrid Group.",
+    :enclosure_length => "89742910",
+    :duration         => "46:44",
+    :keywords         => "javascript, jquery, jquerymobile, farmhouse, hollywood, nerdery, web"
+  }
+]
+
+episodes.each do |episode|
+  Episode.create!(episode)
+end
 
 
 __END__
