@@ -1,4 +1,8 @@
 <h1><%= link_to_unless_current episode.title, podcast_path(episode.id) %></h1>
+<p>
+  <% if show_action? %>Season <%= episode.season %> :<% end %>
+  <b>Episode <%= episode.episode %></b>
+</p>
 
 <%= time_tag episode.published_at, episode.published_at.strftime("%B %d, %Y") %>
 

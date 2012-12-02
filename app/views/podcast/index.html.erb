@@ -25,10 +25,9 @@
 
     <div class="span8">
       <ol class="h-feed">
-        <li class="h-entry"><%= render :partial => 'episode_4' %></li>
-        <li class="h-entry"><%= render :partial => 'episode_3' %></li>
-        <li class="h-entry"><%= render :partial => 'episode_2' %></li>
-        <li class="h-entry"><%= render :partial => 'episode_1' %></li>
+        <% @episodes.each do |episode| %>
+        <li class="h-entry"><%= render :partial => episode %></li>
+        <% end %>
       </ol>
     </div>
   </div> <!-- .row -->
