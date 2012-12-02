@@ -6,6 +6,7 @@ class PodcastController < ApplicationController
   end
 
   def show
+    @slug    = "podcast-episode"
     @episode = Episode.find(params[:id])
     @title   = "The Farmhouse Podcast : S01E#{@episode.episode} : #{@episode.title}"
   end
