@@ -3,10 +3,10 @@ location = Location.create!(
   :name             => "The Farmhouse",
   :street_address   => "1558 Gordon St",
   :extended_address => "",
-  :region_id        => Region.where(:name => "California").first,
+  :region_id        => Region.where(:name => "California").first.id,
   :locality         => "Hollywood",
   :postal_code      => "90028",
-  :country_id       => Country.where(:name => "United States").first
+  :country_id       => Country.where(:name => "United States").first.id
 )
 
 # farmhouse conf 1, 2011

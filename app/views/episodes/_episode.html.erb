@@ -1,8 +1,9 @@
-<h1><%= link_to_unless_current episode.title, podcast_path(episode.id) %></h1>
 <p>
   <% if show_action? %>Season <%= episode.season %> :<% end %>
   <b>Episode <%= episode.episode %></b>
 </p>
+
+<h1><%= link_to_unless_current episode.title, podcast_path(episode.id) %></h1>
 
 <%= time_tag episode.published_at, episode.published_at.strftime("%B %d, %Y") %>
 
@@ -10,7 +11,7 @@
 
 <% if show_action? %>
   <audio controls>
-    <!-- <source src="<%= episode.url %>" /> -->
+    <source src="<%= episode.url %>" type="audio/mpeg" />
   </audio>
 <% else %>
   <p><%= link_to "Listen to audio", podcast_path(episode) %></p>

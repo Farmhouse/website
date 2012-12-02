@@ -1,0 +1,19 @@
+<ul class="admin-nav">
+  <li><%= link_to "Episodes ADMIN", admin_episodes_path %></li>
+  <li><%= link_to "NEW Episode", new_admin_episode_path %></li>
+</ul>
+
+<p>
+  <%= flash[:notice] %>
+</p>
+
+<ol>
+  <% @episodes.each do |episode| %>
+    <li>
+      <%= link_to episode.title, admin_episode_path(episode) %>
+      :
+      <%= link_to "Edit", edit_admin_episode_path(episode) %>
+      <%= link_to "Delete", admin_episode_path(episode), :method => "delete" %>
+    </li>
+  <% end %>
+</ol>

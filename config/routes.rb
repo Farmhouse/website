@@ -71,4 +71,8 @@ Farmhouse::Application.routes.draw do
   match "/podcast/feed"    => "podcast#feed",            :as => "podcasts_feed"
   match "/podcast"         => "podcast#index",           :as => "podcasts"
   match "/podcast/:id"     => "podcast#show",            :as => "podcast"
+
+  namespace :admin do
+    resources :episodes
+  end
 end

@@ -1,0 +1,42 @@
+<%= form_for [:admin, @episode] do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :subtitle %>
+  <%= f.text_field :subtitle %>
+
+  <%= f.label :published_at, "Published At" %>
+  <%= f.datetime_select :published_at %>
+
+  <%= f.label :summary, "Summary (HTML allowed)" %>
+  <%= f.text_area :summary %>
+
+  <%= f.label :season %>
+  <%= f.number_field :season %>
+
+  <%= f.label :episode %>
+  <%= f.number_field :episode %>
+
+  <%= f.label :url, "Enclosure URL" %>
+  <%= f.url_field :url %>
+
+  <%= f.label :authors %>
+  <%= f.text_field :authors %>
+
+  <%= f.label :itunes_summary, "iTunes Summary (plain text)" %>
+  <%= f.text_area :itunes_summary %>
+
+  <%= f.label :enclosure_length, "Enclosure Length (in bytes)" %>
+  <%= f.text_field :enclosure_length %>
+
+  <%= f.label :duration %>
+  <%= f.text_field :duration %>
+
+  <%= f.label :keywords %>
+  <%= f.text_field :keywords %>
+
+  <%= f.label :show_notes, "Show Notes" %>
+  <%= f.text_area :show_notes %>
+
+  <%= f.submit "Save", :disable_with => 'Saving...', :class => "btn" %>
+<% end %>

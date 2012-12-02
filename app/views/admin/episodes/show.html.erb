@@ -1,0 +1,33 @@
+<ul class="admin-nav">
+  <li><%= link_to "Episodes ADMIN", admin_episodes_path %></li>
+  <li><%= link_to "NEW Episode", new_admin_episode_path %></li>
+  <li><%= link_to "Edit", edit_admin_episode_path(@episode) %></li>
+  <li><%= link_to "Delete", admin_episode_path(@episode), :method => "delete" %></li>
+</ul>
+
+<p>
+  <%= flash[:notice] %>
+</p>
+
+<h1>
+  <%= link_to "S#{@episode.season}E#{@episode.episode}", admin_episode_path(@episode) %> :
+  <%= link_to @episode.title,                            admin_episode_path(@episode) %>
+</h1>
+
+<%= time_tag @episode.published_at, @episode.published_at.strftime("%B %d, %Y") %>
+
+<p><%= @episode.summary.html_safe %></p>
+
+<p>
+  <%= link_to @episode.url, @episode.url, :title => "Download Season #{@episode.season} Episode #{@episode.episode} MP3" %>
+</p>
+
+<% if show_action? %>
+  <p><b>Show Notes</b></p>
+
+  <ul>
+    <% @episode.show_notes.strip.split("\n").each do |show_note| %>
+      <li><%= show_note.html_safe %></li>
+    <% end %>
+  </ul>
+<% end %>
