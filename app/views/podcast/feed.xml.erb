@@ -30,72 +30,23 @@
       <itunes:category text="Developers"/>
     </itunes:category>
 
-    <item>
-      <title>JSON vs HTML + Microformats</title>
-      <itunes:author>Shane Becker and Steve Klabnik</itunes:author>
-      <itunes:subtitle>On the idea of serving HTML from your API</itunes:subtitle>
+    <% @episodes.each do |episode| %>
+      <item>
+        <title><%= episode.title %></title>
+        <itunes:author><%= episode.authors %></itunes:author>
 
-      <itunes:summary>
-        Shane Becker and Steve Klabnik discuss using JSON vs HTML + Microformats as API output.
-      </itunes:summary>
+        <itunes:summary>
+          <%= episode.itunes_summary %>
+        </itunes:summary>
 
-      <enclosure url="http://farmhouse.s3.amazonaws.com/podcast/S01/01%20JSON%20vs%20HTML%20%2B%20Microformats.mp3" length="45212172" type="audio/mpeg"/>
-      <guid>http://farmhouse.s3.amazonaws.com/podcast/S01/01%20JSON%20vs%20HTML%20%2B%20Microformats.mp3</guid>
-      <pubDate>Mon, 08 Oct 2012 19:15:56 -0700</pubDate>
+        <enclosure url="<%= episode.url %>" length="<%= episode.enclosure_length %>" type="audio/mpeg"/>
+        <guid><%= podcast_path(episode) %></guid>
+        <pubDate>Sat, Nov 24 2012 19:10:44 -0800</pubDate>
 
-      <itunes:duration>22:51</itunes:duration>
-      <itunes:keywords>api, computer science, farmhouse, hollywood, homesteading, html, hypermedia, microformats, nerdery, web</itunes:keywords>
-    </item>
-
-    <item>
-      <title>Push vs "Pull"</title>
-      <itunes:author>Shane Becker and Steve Klabnik</itunes:author>
-      <itunes:subtitle>On the respective merits of pushing and polling</itunes:subtitle>
-
-      <itunes:summary>
-        Shane Becker and Steve Klabnik discuss the difference between pushing and polling and their respective differences. Sponsored by: PeepCode.
-      </itunes:summary>
-
-      <enclosure url="http://farmhouse.s3.amazonaws.com/podcast/S01/02%20Push%20vs%20_Pull_.mp3" length="45212172" type="audio/mpeg"/>
-      <guid>http://farmhouse.s3.amazonaws.com/podcast/S01/02%20Push%20vs%20_Pull_.mp3</guid>
-      <pubDate>Tue, 15 Oct 2012 19:29:53 -0700</pubDate>
-
-      <itunes:duration>30:57</itunes:duration>
-      <itunes:keywords>api, computer science, farmhouse, hollywood, homesteading, html, hypermedia, microformats, nerdery, web, push, pull, poll, tent, ostatus, rstatus, diaspora</itunes:keywords>
-    </item>
-
-    <item>
-      <title>Puma, Puma, Puma... with a dash of Rubinius</title>
-      <itunes:author>Shane Becker and Evan Phoenix</itunes:author>
-      <itunes:subtitle>Puma, the web server. Rubinius, the Ruby implementation.</itunes:subtitle>
-
-      <itunes:summary>
-        Shane Becker and Evan Phoenix discuss using the Puma web server and Rubinius. Sponsored by: Code Climate.
-      </itunes:summary>
-
-      <enclosure url="http://farmhouse.s3.amazonaws.com/podcast/S01/03%20Puma,%20Puma,%20Puma...%20with%20a%20dash%20of%20Rubinius.mp3" length="41917511" type="audio/mpeg"/>
-      <guid>http://farmhouse.s3.amazonaws.com/podcast/S01/03%20Puma,%20Puma,%20Puma...%20with%20a%20dash%20of%20Rubinius.mp3</guid>
-      <pubDate>Thu, Oct 25 2012 17:57:23 -0700</pubDate>
-
-      <itunes:duration>21:50</itunes:duration>
-      <itunes:keywords>computer science, farmhouse, hollywood, homesteading, nerdery, web, web server, puma, rubinius, ruby</itunes:keywords>
-    </item>
-
-    <item>
-      <title>jQuery Mobile Talk with John Bender</title>
-      <itunes:author>Shane Becker and John Bender</itunes:author>
-
-      <itunes:summary>
-        Shane Becker and John Bender discuss mobile web development and jQuery Mobile. Sponsored by: The Hybrid Group.
-      </itunes:summary>
-
-      <enclosure url="http://farmhouse.s3.amazonaws.com/podcast/S01/04%20jQuery%20Mobile%20Talk%20with%20John%20Bender.mp3" length="89742910" type="audio/mpeg"/>
-      <guid>http://farmhouse.s3.amazonaws.com/podcast/S01/04%20jQuery%20Mobile%20Talk%20with%20John%20Bender.mp3</guid>
-      <pubDate>Sat, Nov 24 2012 19:10:44 -0800</pubDate>
-
-      <itunes:duration>46:44</itunes:duration>
-      <itunes:keywords>javascript, jquery, jquerymobile, farmhouse, hollywood, nerdery, web</itunes:keywords>
-    </item>
+        <itunes:duration><%= episode.duration %></itunes:duration>
+        <itunes:keywords><%= episode.keywords %></itunes:keywords>
+      </item>
+    <% end %>
 
   </channel>
 </rss>
