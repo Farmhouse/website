@@ -378,7 +378,7 @@ farmhouse_conf_3 = Conf.create!(
 people_3 = [
   {
     :name => "Shepard Fairey",
-    :bio  => %q{
+    :bio  => %Q{
       <p><a href="https://twitter.com/OBEYGIANT" title="@obeygiant">Shepard Fairey</a> was born in Charleston, SC in 1970. He received his B.F.A. at the <a href="http://risd.edu" title="Rhode Island School of Design | RISD">Rhode Island School of Design</a> in Providence. While at R.I.S.D. he created the <a href="http://en.wikipedia.org/wiki/Andre_the_Giant_Has_a_Posse" title="Andre the Giant Has a Posse - Wikipedia"><i>Andre the Giant has a Posse</i></a> sticker that transformed into the <a href="http://obeygiant.com/" title="OBEY GIANT - WORLDWIDE PROPAGANDA DELIVERY">OBEY GIANT</a> art campaign with imagery that has changed the way people see art and the urban landscape. His work has evolved into an acclaimed body of art, which includes the 2008 <a href="http://obeygiant.com/headlines/obama-hope" title="OBAMA HOPE - OBEY GIANT">&ldquo;Hope&rdquo; portrait of Barack Obama</a> which can be <a href="http://npgportraits.si.edu/emuseumnpg/code/emuseum.asp?style=text&amp;currentrecord=1&amp;page=search&amp;profile=CAP&amp;searchdesc=Artist%20contains%20shepard%20fai...&amp;searchstring=Artist/,/contains/,/shepard%20fairey/,/false/,/false&amp;newvalues=1&amp;newaction=newpage&amp;newstyle=single&amp;newcurrentrecord=2" title="National Portrait Gallery,  Smithsonian Institution | Catalog of American Portraits | Portrait Search">found</a> in the <a href="http://npg.si.edu/" title="The National Portrait Gallery">Smithsonian&rsquo;s National Portrait</a> gallery.</p>
 
       <p>Since the beginning of his career in 1989 he has exhibited in galleries and museums around the world, indoor and outdoor. His works are in the permanent collections of the MOMA, the Victoria and Albert Museum, the Boston ICA and many others. For more information, visit <a href="http://obeygiant.com" title="OBEY GIANT - WORLDWIDE PROPAGANDA DELIVERY">obeygiant.com</a>.</p>
@@ -391,7 +391,7 @@ people_3 = [
   },
   {
     :name => "Andy Baio",
-    :bio  => %q{
+    :bio  => %Q{
       <p>Andy Baio is a writer and coder who loves making things. His latest projects include <a href="http://xoxo.in/" title="Web Site: xoxo.in">XOXO</a>, a four-day conference and festival in Portland, and <a href="http://playfic.com/" title="Playfic">Playfic</a>, a community for writing and sharing interactive fiction games. He's an advisor and the former CTO of <a href="http://kickstarter.com/" title="Kickstarter">Kickstarter</a>, the largest crowdfunding site in the world, produced <a href="http://kindofbloop.com/" title="Kind of Bloop: An 8-Bit Tribute to Miles Davis' Kind of Blue">Kind of Bloop</a>, the first and only chiptune jazz album, and created <a href="http://en.wikipedia.org/wiki/Upcoming" title="Upcoming - Wikipedia, the free encyclopedia">Upcoming</a>, the collaborative events calendar acquired by Yahoo in 2005. He writes a weekly column for <a href="http://Wired.com/" title="Wired.com">Wired.com</a>, and original reporting on his blog <a href="http://waxy.org/" title="Waxy.org: Andy Baio lives here">Waxy.org</a> has been featured in the New York Times, Wired, NPR, Newsweek, and MSNBC.</p>
     },
     :talk => {
@@ -402,29 +402,29 @@ people_3 = [
   },
   {
     :name => "Kate Darling",
-    :bio  => %q{
+    :bio  => %Q{
       <p>Kate Darling is an IP Research Specialist at the MIT Media Lab and a Ph.D. candidate in Intellectual Property and Law &amp; Economics. After surviving law school, she went on to pursue her passion for innovation policy at the intersection of law and technology. Her work focuses on economic issues in copyright and patent systems. She also writes and lectures about robot ethics.</p>
     },
     :talk => {
       :slug        => "adult-entertainment-in-the-digital-age",
       :title       => "Adult Entertainment in the Digital Age",
-      :description => %q{ <p>Common lore tells us that porn drives technology. From the paperback book to home cinema to online payment systems, the adult industry has influenced new media adoption and pioneered technological innovation. True to the song "The Internet is for Porn", our new architecture for distributing information has caused an explosion of adult content online. But in an era of digital files and content aggregators, how is this socially stigmatized industry dealing with copyright protection issues?</p> },
+      :description => %Q{ <p>Common lore tells us that porn drives technology. From the paperback book to home cinema to online payment systems, the adult industry has influenced new media adoption and pioneered technological innovation. True to the song "The Internet is for Porn", our new architecture for distributing information has caused an explosion of adult content online. But in an era of digital files and content aggregators, how is this socially stigmatized industry dealing with copyright protection issues?</p> },
     }
   },
   {
     :name => "Caroline Woolard",
-    :bio  => %q{
+    :bio  => %Q{
       <p><a href="http://carolinewoolard.com" title="Caroline Woolard">Caroline Woolard</a> moves between art, design, and activism. After installing guerrilla <a href="http://www.deepcraft.org/deep/wp-content/uploads/2009/04/woolard_caroline_publicseat.jpg" title="">public seating</a> around New York City and producing a <a href="http://www.youtube.com/watch?v=BUaK4vA4srM" title="Subway Swing - YouTube">swing for the subway system</a>, she co-founded a global network of schools that run on barter (<a href="http://tradeschool.coop" title="Trade School">TradeSchool.coop</a>) and an alternative economy for creative people (<a href="https://ourgoods.org">OurGoods.org</a>). In the past year, Caroline has presented this work at the Whitney Museum, the Queens Museum, the Museum of Art and Design, California College of the Arts, Sotheby's Institute, and MIT's Center for Civic Media. Caroline also co-organizes a space for 30 artists in Brooklyn, teaches at the <a href="http://finearts.parsons.edu/home/?q=node/5" title="Parsons Fine Arts">New School</a>, is currently a Fellow at <a href="http://eyebeam.org/people/caroline-woolard" title="Caroline Woolard | eyebeam.org">Eyebeam</a>, and will be doing a project at MoMA in 2013.</p>
     },
     :talk => {
       :slug        => "barter-with-me",
       :title       => "Barter with Me",
-      :description => %q{ <p><a href="http://tradeschool.coop" title="Trade School">Trade School</a> is a self-organized learning model that runs on barter. No one has ever been paid to organize a Trade School or teach a class there, but the model is working in 18 cities around the world. How does barter build community? This is the story of Trade School, started by three friends from <a href="https://ourgoods.org">OurGoods.org</a> in NYC in 2010, and now running in Barcelona, Cologne, Milan, Singapore, London, Cardiff, Manila, Quito, Glasgow, Bangkok, Purchase, Paris, and new cities each month. Trade School is an all-volunteer led organization, for now.</p> },
+      :description => %Q{ <p><a href="http://tradeschool.coop" title="Trade School">Trade School</a> is a self-organized learning model that runs on barter. No one has ever been paid to organize a Trade School or teach a class there, but the model is working in 18 cities around the world. How does barter build community? This is the story of Trade School, started by three friends from <a href="https://ourgoods.org">OurGoods.org</a> in NYC in 2010, and now running in Barcelona, Cologne, Milan, Singapore, London, Cardiff, Manila, Quito, Glasgow, Bangkok, Purchase, Paris, and new cities each month. Trade School is an all-volunteer led organization, for now.</p> },
     }
   },
   {
     :name => "Michael Lopp (@rands)",
-    :bio  => %q{
+    :bio  => %Q{
       <p><a href="http://twitter.com/rands" title="@rands on Twitter">Michael Lopp</a> is a Silicon Valley-based engineering leader who builds both people and software at companies such as <a href="http://borland.com" title="Open &amp; Agile Requirement, Test &amp; Change Management Solutions - Borland">Borland</a>, <a href="http://en.wikipedia.org/wiki/Netscape" title="Netscape - Wikipedia, the free encyclopedia">Netscape</a>, <a href="http://www.apple.com" title="Apple">Apple</a>, and <a href="http://www.palantir.com" title="Home | Palantir">Palantir</a>. While he's not worrying about staying relevant, he writes about <a href="http://www.randsinrepose.com/archives/2007/10/16/the_gel_dilemma.html" title="Rands In Repose: The Gel Dilemma">pens</a>, <a href="http://www.randsinrepose.com/archives/2009/03/23/the_makers_of_things.html" title="Rands In Repose: The Makers of Things">bridges</a>, <a href="http://www.randsinrepose.com/cat_management.html" title="Rands In Repose : Management Archives">people</a>, <a href="http://www.randsinrepose.com/archives/2004/11/09/rands_home_poke.html" title="Rands In Repose: Rands Home Poker System">poker</a>, and <a href="http://www.alistapart.com/articles/managing-werewolves/" title="A List Apart: Articles: Managing Werewolves">werewolves</a> at the popular weblog, <a href="http://randsinrepose.com" title="Rands In Repose">Rands in Repose</a>.</p>
       <p>Michael has written two books. "<a href="http://www.beinggeek.com" title="Being Geek - The Software Developer's Career Handbook">Being Geek</a>" is a career handbook for geeks and nerds alike. His first book "<a href="http://www.managinghumans.com" title="Managing Humans - An Introduction">Managing Humans, 2nd Edition</a>" is a popular guide to the art of engineering leadership and clearly explains that while you might be rewarded for what you build, you will only be successful because of your people.</p>
       <p>Michael surfs, plays hockey, and drinks red wine in the redwoods of Northern California whenever he can because staying sane is more important than staying busy.</p>
@@ -432,12 +432,12 @@ people_3 = [
     :talk => {
       :slug        => "stables-and-volatiles",
       :title       => "Stables and Volatiles",
-      :description => %q{ <p>On your team, there is an emerging war and if you want your team, company, and products to remain relevant, you need to encourage it.</p> },
+      :description => %Q{ <p>On your team, there is an emerging war and if you want your team, company, and products to remain relevant, you need to encourage it.</p> },
     }
   },
   {
     :name => "Zoetica Ebb",
-    :bio  => %q{
+    :bio  => %Q{
       <p> Zoetica Ebb is a Moscow-born, LA-raised artist, writer and photographer. She is dedicated to proving that life is as beautiful as we make it. On her blog, <a href="http://Biorequiem.com" title="Zoetica Ebb // Biorequiem.com &#8212; Art, style, space adventures">Biorequiem.com</a>, Zoetica offers unorthodox fashion advice, lifestyle tips, cultural commentary, and answers readers' questions about everything from ways to wear short skirts to quitting art school to learning to love the world. </p>
       <p> Zoetica's current projects include <a href="http://www.kickstarter.com/projects/1080572418/the-secret-guide-to-alternative-beijing-0" title="The Secret Guide To Alternative Beijing by The Frei Group &mdash; Kickstarter">The Secret Guide to Alternative Beijing</a> - a video travel guide series giving insight into the alternative art, fashion, music, and nightlife culture in Beijing, and <a href="http://zoetica.tumblr.com/search/alien+botany" title="ZOETICA EBB, Search results for: alien botany">Alien Botany</a> - a painstaking and time-consuming art series dedicated to beastly flora and antique botanical illustration. </p>
       <p> Last year, Zoetica launched <b>GHST RDR</b> in <a href="http://blogs.laweekly.com/arts/2011/05/zoetica_ebb_plastik_wrap_ghst.php" title="Zoetica Ebb and Plastik Wrap Join Forces for the Cyber Victorian Collaboration GHST RDR - Los Angeles - Arts - Public Spectacle">collaboration</a> with Adriana Fulop of Toronto label, Plastik Wrap. <a href="http://hautemacabre.com/2011/11/half-light-beach-limited-time-ghst-rdr-promotion/" title="Half-light Beach // Limited-time GHST RDR Promotion |">GHST RDR</a> is a jacket-and-skirt combo, inspired by Victorian riding fashion and anime robots. She also used Kickstarter to raise $8,400 for <a href="http://www.chinashopmag.com/?s=yantalo&amp;submit.x=0&amp;submit.y=0&amp;submit=Search" title="yantalo | Search Results | ChinaShop">D4RT</a> - a support project for a developing village in the Peruvian Amazon jungle, where Zoetica hand-delivered art supplies, taught a kids' introductory art workshop, and painted a mural with village locals. She'd like to do this again sometime. </p>
@@ -446,30 +446,30 @@ people_3 = [
     :talk => {
       :slug        => "the-2012-beijing-aesthetic",
       :title       => "The 2012 Beijing Aesthetic",
-      :description => %q{
+      :description => %Q{
         <p>In September, a small team and I went to China to film <i>The Secret Guide to Alternative Beijing</i> - part travel guide, part documentary, largely a time capsule of what's happening in the alternative culture of China's capital. Known as "the city of contrasts", Beijing earns its name now more than ever. I'll talk about the polarity between the creatives we interviewed, their work, how Beijing's striking aesthetic informs its culture and vice versa.</p>
       },
     }
   },
   {
     :name => "Megan Dean",
-    :bio  => %q{
+    :bio  => %Q{
       <p>Before there were frames, there was a moth attack. Or at least a moth infestation one morning in the Los Angeles kitchen of <a href="https://twitter.com/mothattack">Megan Dean</a>. It was one of those situations where one could either get annoyed or motivated, and Megan choose the latter. Launching <a href="http://mothattack.com" title="mothattack">Moth Attack</a> after perfecting her skills with master frame builder <a href="http://en.wikipedia.org/wiki/Koichi_Yamaguchi">Koichi Yamaguchi</a>, she now applies this knowledge to <a href="http://en.wikipedia.org/wiki/Lugged_steel_frame_construction" title="Lugged steel frame construction - Wikipedia, the free encyclopedia">lugged</a> and <a href="http://en.wikipedia.org/wiki/Brazing" title="Brazing - Wikipedia, the free encyclopedia">fillet brazed</a> <a href="http://en.wikipedia.org/wiki/Bicycle_frame#Steel" title="Bicycle frame - Wikipedia, the free encyclopedia">steel frame sets</a>. Each one custom made with purpose, fit and love in mind.</p>
       <p>When not fabricating frames, Megan is often track racing, road riding, or working part time at the Los Angeles Bicycle Coalition. Being immersed in bicycles all day in multiple ways translates into an omniscient approach to building that is reflected in every detail of her finished work. Megan&rsquo;s break from the cycling world is spent with her big dogs that share her love of the artisian life and a good walk.</p>
     },
     :talk => {
       :slug        => "making-bikes-work",
       :title       => "Making Bikes Work",
-      :description => %q{ <p>After quitting a corporate job to ride bikes down the West coast of the US, Megan Dean returned knowing she couldn&rsquo;t go back. Through various bicycling related jobs she eventually found an affinity for turning a pile of steel tubes into a functioning piece of art. In this talk, Megan will regal the audience with extreme bike dork stoke.</p> },
+      :description => %Q{ <p>After quitting a corporate job to ride bikes down the West coast of the US, Megan Dean returned knowing she couldn&rsquo;t go back. Through various bicycling related jobs she eventually found an affinity for turning a pile of steel tubes into a functioning piece of art. In this talk, Megan will regal the audience with extreme bike dork stoke.</p> },
     }
   },
   {
     :name => "Peter Young",
-    :bio  => %q{ <p>From his origins in Silicon Valley, Peter Young has worn the hat of activist, punk rocker, fugitive, hobo, speaker, author, entrepreneur, eco-terrorist, publisher, prisoner, and purveyor of unpopular opinions. He is a contributor, founder, and guilty party behind many projects guided by principles of freedom for the self and all life, many of which are anonymous and none of which will be listed here. Above (almost) all of them, he is most proud of heeding, almost without deviation, the advice once given to him personally by <a href="http://en.wikipedia.org/wiki/Bill_Nye" title="Bill Nye - Wikipedia, the free encyclopedia">Bill Nye</a>: &ldquo;Peter, don't ever work for another man&rdquo;.</p> },
+    :bio  => %Q{ <p>From his origins in Silicon Valley, Peter Young has worn the hat of activist, punk rocker, fugitive, hobo, speaker, author, entrepreneur, eco-terrorist, publisher, prisoner, and purveyor of unpopular opinions. He is a contributor, founder, and guilty party behind many projects guided by principles of freedom for the self and all life, many of which are anonymous and none of which will be listed here. Above (almost) all of them, he is most proud of heeding, almost without deviation, the advice once given to him personally by <a href="http://en.wikipedia.org/wiki/Bill_Nye" title="Bill Nye - Wikipedia, the free encyclopedia">Bill Nye</a>: &ldquo;Peter, don't ever work for another man&rdquo;.</p> },
     :talk => {
       :slug        => "fugitives-have-more-fun",
       :title       => "Fugitives Have More Fun: Confessions of a Wanted Eco-Terrorist",
-      :description => %q{
+      :description => %Q{
         <p>Convicted &ldquo;eco-terrorist&rdquo; and former fugitive tells his story &mdash; the whole story &mdash; for the first time.</p>
         <p>In 1997, after <a href="http://en.wikipedia.org/wiki/Peter_Daniel_Young" title="Peter Daniel Young">Peter Young</a> was charged with <a href="http://en.wikipedia.org/wiki/Animal_Enterprise_Terrorism_Act" title="Animal Enterprise Terrorism Act">Animal Enterprise Terrorism</a> for freeing thousands of mink from fur farms, he was faced with a decision: submit to the court and face a possible life sentence, or run for it.</p>
         <p>He chose the second one.</p>
@@ -522,13 +522,13 @@ farmhouse_conf_4 = Conf.create!(
 people_4 = [
   {
     :name => "Justin Ouellette",
-    :bio  => %q{
+    :bio  => %Q{
       <p>Justin Ouellette was born in Portland, Oregon in 1983. He left college in 2005 to pursue photography in New York City, but wound up falling in with a rough crowd and becoming a software designer instead. In 2008 he created a minimalist web site for sharing music called Muxtape, which exploded in popularity and was eventually shuttered by the RIAA after a spectacular summer of backroom negotiations. He has worked for Vimeo, Betaworks, the New York Times R&amp;D Lab, and currently calls Tumblr home.</p>
     },
     :talk => {
       :slug        => "the-record-industry-is-dying-and you-shouldnt-feel-bad",
       :title       => "The Record Industry Is Dying And You Shouldn't Feel Bad",
-      :description => %q{ <p>The business of selling recorded sound on physical media may go down as one of culture's greatest bubble economies. Why is it no longer a viable business model and what's taking it so long to die? Record companies are quick to blame their customers, but the the reality lies in a long cycle of disruption that's been building for decades. We explore!</p> },
+      :description => %Q{ <p>The business of selling recorded sound on physical media may go down as one of culture's greatest bubble economies. Why is it no longer a viable business model and what's taking it so long to die? Record companies are quick to blame their customers, but the the reality lies in a long cycle of disruption that's been building for decades. We explore!</p> },
     }
   }
 ]
@@ -579,7 +579,7 @@ episodes = [
     :title            => "JSON vs HTML + Microformats",
     :subtitle         => "On the idea of serving HTML from your API",
     :published_at     => Time.parse("2012-10-08T21:13 -0700"),
-    :summary          => %q{<a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> and <a href="http://SteveKlabnik.com" title="Steve Klabnik">Steve Klabnik</a> discuss using <a href="http://www.json.org" title="JSON">JSON</a> vs HTML + <a href="http://microformats.org" title="Microformats">Microformats</a> as API output.},
+    :summary          => %Q{<a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> and <a href="http://SteveKlabnik.com" title="Steve Klabnik">Steve Klabnik</a> discuss using <a href="http://www.json.org" title="JSON">JSON</a> vs HTML + <a href="http://microformats.org" title="Microformats">Microformats</a> as API output.},
     :season           => 1,
     :episode          => 1,
     :url              => "http://farmhouse.s3.amazonaws.com/podcast/S01/01%20JSON%20vs%20HTML%20%2B%20Microformats.mp3",
@@ -587,13 +587,19 @@ episodes = [
     :itunes_summary   => "Shane Becker and Steve Klabnik discuss using JSON vs HTML + Microformats as API output.",
     :enclosure_length => "45212172",
     :duration         => "22:51",
-    :keywords         => "api, computer science, farmhouse, hollywood, homesteading, html, hypermedia, microformats, nerdery, web"
+    :keywords         => "api, computer science, farmhouse, hollywood, homesteading, html, hypermedia, microformats, nerdery, web",
+    :show_notes       => %Q{
+      <a href="https://twitter.com/veganstraightedge/status/255149033834823680">Shane's initial question tweet</a>
+      <a href="http://Microformats.org" title="Microformats">Microformats.org</a>
+      <a href="http://JSON.org" title="JSON">JSON.org</a>
+      <a href="https://developer.mozilla.org/en-US/docs/HTML_in_XMLHttpRequest"><i>HTML in XMLHttpRequest</i> on the Mozilla Developer Network</a>
+    }
   },
   {
-    :title            => %q{Push vs "Pull"},
+    :title            => %Q{Push vs "Pull"},
     :subtitle         => "On the respective merits of pushing and polling",
     :published_at     => Time.parse("Mon Oct 15 19:29:16 -0700 2012"),
-    :summary          => %q{<a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> and <a href="http://SteveKlabnik.com" title="Steve Klabnik">Steve Klabnik</a> discuss the merits of <b>pushing</b> and <b>polling</b> (which Shane still thinks should be "pulling"). <b>Sponsored by: <a href="https://peepcode.com">PeepCode</a>.</b>},
+    :summary          => %Q{<a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> and <a href="http://SteveKlabnik.com" title="Steve Klabnik">Steve Klabnik</a> discuss the merits of <b>pushing</b> and <b>polling</b> (which Shane still thinks should be "pulling"). <b>Sponsored by: <a href="https://peepcode.com">PeepCode</a>.</b>},
     :season           => 1,
     :episode          => 2,
     :url              => "http://farmhouse.s3.amazonaws.com/podcast/S01/02%20Push%20vs%20_Pull_.mp3",
@@ -601,13 +607,58 @@ episodes = [
     :itunes_summary   => "Shane Becker and Steve Klabnik discuss the difference between pushing and polling and their respective differences. Sponsored by: PeepCode.",
     :enclosure_length => "45212172",
     :duration         => "30:57",
-    :keywords         => "api, computer science, farmhouse, hollywood, homesteading, html, hypermedia, microformats, nerdery, web, push, pull, poll, tent, ostatus, rstatus, diaspora"
+    :keywords         => "api, computer science, farmhouse, hollywood, homesteading, html, hypermedia, microformats, nerdery, web, push, pull, poll, tent, ostatus, rstatus, diaspora",
+    :show_notes       => %Q{
+      <a href="http://www.youtube.com/watch?v=vCadcBR95oU" title="Salt-N-Pepa - Push It - YouTube">Push It</a>
+      <a href="http://en.wikipedia.org/wiki/Push_technology" title="Push technology - Wikipedia, the free encyclopedia">Push</a>
+      <a href="http://en.wikipedia.org/wiki/Polling_(computer_science)" title="Polling (computer science) - Wikipedia, the free encyclopedia">Polling</a>
+      <a href="http://en.wikipedia.org/wiki/Pull_technology" title="Pull technology - Wikipedia, the free encyclopedia">Pull</a>
+      <a href="http://en.wikipedia.org/wiki/Interrupt" title="Interrupt - Wikipedia, the free encyclopedia">Interrupt</a>
+      <a href="http://developer.apple.com/library/mac/#documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/ApplePushService/ApplePushService.html" title="Loading&#133;">Apple Push Notification</a>
+      <a href="http://tent.io" title="Tent - the decentralized social web">tent.io</a>
+      <a href="https://tent.is">Tent.is</a>
+      <a href="http://en.wikipedia.org/wiki/Web_cache" title="Web cache - Wikipedia, the free encyclopedia">Caching</a>
+      <a href="http://nodejs.org" title="node.js">Node.js</a>
+      <a href="http://campfirenow.com" title="Business group chat, file sharing, group decision making: Campfire">Campfire</a>
+      <q>&ldquo;<a href="https://twitter.com/dhh/status/251006155906752513">Campfire, to this day, still uses a 3-second poll. And chat was supposed to be the poster-boy example for web sockets and friends. Ha.</a>&rdquo;</q> &mdash; <a href="https://twitter.com/dhh">@dhh</a>
+      <a href="http://en.wikipedia.org/wiki/High-frequency_trading" title="High-frequency trading - Wikipedia, the free encyclopedia">High Frequency Trading</a>
+      At 9:16 Steve said "a second or <i>less</i>". He meant "a second or <b>more</b>".
+      <a href="http://en.wikipedia.org/wiki/Client-server_model">Client Server</a>
+      <i><a href="http://www.amazon.com/Weaving-Web-Original-Ultimate-Destiny/dp/006251587X" title="Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web: Tim Berners-Lee: 9780062515872: Amazon.com: Books">Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web</a></i> by <a href="http://en.wikipedia.org/wiki/Tim_Berners-Lee" title="Tim Berners-Lee - Wikipedia, the free encyclopedia">Tim Berners-Lee</a>
+      <a href="https://google.com/search?q=unique+scaling+requirement">Unique Scaling Requirements</a>
+      <a href="https://twitter.com/steveklabnik/">5644 followers</a>
+      <q>&ldquo;<a href="https://twitter.com/steveklabnik/status/253609185256816641">hundreds. of thousands. of post requests.</a>&rdquo;</q> &mdash; <a href="https://twitter.com/steveklabnik">@steveklabnik</a>
+      <b>Sponsor</b> : <a href="https://peepcode.com">PeepCode</a>
+      <b>Sponsor</b> : <a href="https://peepcode.com/products/backbone-js">Backbone Basics</a>
+      <b>Sponsor</b> : <a href="https://peepcode.com/products">All (Ruby, Javascript, et al) PeepCodes</a>
+      <b>Sponsor</b> : <a href="https://peepcode.com/products/chef-i">Meet Chef</a>
+      <b>Sponsor</b> : <a href="https://peepcode.com/products/design-bundle">Design Bundle</a>
+      <b>Sponsor</b> : <a href="https://peepcode.com/products/ryan-singer-ux">RYAN SINGER (PART 1) : Sketching</a>
+      <b>Sponsor</b> : <a href="https://peepcode.com/products/ryan-singer-ii">RYAN SINGER (PART 2) : HTML/CSS Prototype</a>
+      <b>Sponsor</b> : <a href="https://peepcode.com/products/play-by-play-kneath">KYLE NEATH : Enhancing an application</a>
+      <b>Sponsor</b> : <a href="https://peepcode.com/products/play-by-play-mrgan">NEVEN MRGAN : Mobile UI</a>
+      <a href="http://en.wikipedia.org/wiki/PubSubHubbub" title="PubSubHubbub - Wikipedia, the free encyclopedia">PubSubHubbub on Wikipedia</a>
+      <a href="https://code.google.com/p/pubsubhubbub/">PubSubHubbub on Google Code</a>
+      <a href="http://pubsubhubbub.appspot.com" title="Hub - PubSubHubbub">PubSubHubbub reference Hub server</a>
+      <a href="https://rstat.us">rstat.us</a>
+      <a href="http://en.wikipedia.org/wiki/OStatus" title="OStatus - Wikipedia, the free encyclopedia">OStatus</a>
+      <a href="http://superfeedr.com" title="Real-time cloud feed parsing - PubSubHubbub, XMPP">Superfeedr</a>
+      <a href="http://en.wikipedia.org/wiki/RSS" title="RSS - Wikipedia, the free encyclopedia">RSS</a>
+      <a href="http://en.wikipedia.org/wiki/Atom_(standard)" title="Atom (standard) - Wikipedia, the free encyclopedia">ATOM</a>
+      <a href="http://steve.vinoski.net/blog/2008/01/05/serendipitous-reuse/" title="Serendipitous Reuse  ::  Steve Vinoski&#8217;s Blog">Serendipitous Reuse</a>
+      <a href="https://app.net/">App.net</a>
+      <a href="http://identi.ca" title="Public timeline - Identi.ca">identi.ca</a>
+      <a href="http://status.net" title="StatusNet">StatusNet</a>
+      <a href="http://slashdot.org" title="Slashdot: News for nerds, stuff that matters">Slashdot</a>
+      <a href="http://activitystrea.ms" title="Activity Streams - a format for syndicating social activities around the web">Activity Streams</a>
+      <a href="https://joindiaspora.com">Diaspora</a>
+    }
   },
   {
     :title            => "Puma, Puma, Puma... with a dash of Rubinius",
     :subtitle         => "Puma, the web server. Rubinius, the Ruby implementation.",
     :published_at     => Time.parse("2012-10-25T17:57:23 -0700"),
-    :summary          => %q{<a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> and <a href="http://blog.fallingsnow.net" title="Evan Phoenix">Evan Phoenix</a> discuss using the <a href="http://puma.io" title="A Modern, Concurrent Web Server for Ruby - Puma">Puma web server</a> and <a href="http://rubini.us" title="Rubinius : Use Ruby&#8482;">Rubinius.</a> <b>Sponsored by: <a href="https://CodeClimate.com">Code Climate</a>.</b>},
+    :summary          => %Q{<a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> and <a href="http://blog.fallingsnow.net" title="Evan Phoenix">Evan Phoenix</a> discuss using the <a href="http://puma.io" title="A Modern, Concurrent Web Server for Ruby - Puma">Puma web server</a> and <a href="http://rubini.us" title="Rubinius : Use Ruby&#8482;">Rubinius.</a> <b>Sponsored by: <a href="https://CodeClimate.com">Code Climate</a>.</b>},
     :season           => 1,
     :episode          => 3,
     :url              => "http://farmhouse.s3.amazonaws.com/podcast/S01/03%20Puma,%20Puma,%20Puma...%20with%20a%20dash%20of%20Rubinius.mp3",
@@ -615,13 +666,47 @@ episodes = [
     :itunes_summary   => "Shane Becker and Evan Phoenix discuss using the Puma web server and Rubinius. Sponsored by: Code Climate.",
     :enclosure_length => "41917511",
     :duration         => "21:50",
-    :keywords         => "computer science, farmhouse, hollywood, homesteading, nerdery, web, web server, puma, rubinius, ruby"
+    :keywords         => "computer science, farmhouse, hollywood, homesteading, nerdery, web, web server, puma, rubinius, ruby",
+    :show_notes       => %Q{
+      <a href="http://puma.io" title="A Modern, Concurrent Web Server for Ruby - Puma">Puma - A Modern, Concurrent Web Server for Ruby</a>
+      <a href="http://en.wikipedia.org/wiki/Mongrel_(web_server)" title="Mongrel (web server) - Wikipedia, the free encyclopedia">Mongrel</a>
+      <a href="http://unicorn.bogomips.org" title="File: README [Unicorn: Rack HTTP server for fast clients and Unix]">Unicorn</a>
+      <a href="http://www.w3.org/Protocols/rfc2616/rfc2616.html" title="Hypertext Transfer Protocol -- HTTP/1.1">Hypertext Transfer Protocol -- HTTP/1.1</a>
+      <a href="http://en.wikipedia.org/wiki/Ruby_MRI" title="Ruby MRI - Wikipedia, the free encyclopedia">MRI</a>
+      <a href="http://en.wikipedia.org/wiki/Green_threads" title="Green threads - Wikipedia, the free encyclopedia">Green Threads</a>
+      <a href="http://rubini.us" title="Rubinius : Use Ruby&#8482;">Rubinius</a>
+      <a href="http://en.wikipedia.org/wiki/Global_Interpreter_Lock" title="Global Interpreter Lock - Wikipedia, the free encyclopedia">GIL</a>
+      <a href="http://rack.github.com" title="Rack: a Ruby Webserver Interface">Rack</a>
+      <a href="http://en.wikipedia.org/wiki/Rack_(web_server_interface)" title="Rack (web server interface) - Wikipedia, the free encyclopedia">Rack on Wikipedia</a>
+      <a href="http://mongrel2.org" title="The Mongrel2 Web Server Project">Mongrel2</a>
+      <a href="https://devcenter.heroku.com/articles/cedar">Heroku Cedar Stack</a>
+      <a href="https://devcenter.heroku.com/articles/procfile">Procfile</a>
+      <code>gem "puma", :group => "production"</code>
+      <code>web: bundle exec puma -p $PORT</code>
+      <b>Sponsor:</b> <a href="https://codeclimate.com">Code Climate</a>
+      <a href="http://github.com/puma/puma/issues">Puma's GitHub Issues</a>
+      <a href="https://twitter.com/evanphx">@evanphx</a>
+      <a href="mailto:evan@phx.io">evan@phx.io</a>
+      <a href="http://github.com/puma/">Puma organization</a>
+      <a href="http://github.com/puma/puma">Puma on GitHub</a>
+      <a href="https://github.com/puma/puma.io">Puma.io website repo</a>
+      <a href="https://twitter.com/fixie">Jordan Isip (@fixie)</a>
+      <a href="http://devswag.com" title="DevSwag">Dev Swag</a>
+      <a href="http://devswag.com/products/puma-sticker" title="Puma Stickers (4) | DevSwag">Puma stickers on Dev Swag</a>
+      <a href="https://twitter.com/wifelette">Leah Silber (@wifelette)</a>
+      <a href="http://www.zenspider.com/ZSS/Products/RubyInline/" title="RubyInline |  zenspider.com by ryan davis">Ryan Davis' RubyInline</a>
+      <a href="http://betterruby.wordpress.com/2008/03/18/shotgun-the-rubinius-virtual-machine/" title="Shotgun: The Rubinius Virtual Machine &laquo; Building a Better Ruby">Rubinius Shotgun</a>
+      <a href="https://twitter.com/rubinius">@rubinius</a>
+      <a href="http://github.com/rubinius">Rubinius on GitHub</a>
+      <a href="https://twitter.com/gopumago">@gopumago on Twitter</a>
+      <a href="https://twitter.com/brynary">Bryan Helmkamp (@brynary)</a>
+    }
   },
   {
     :title            => "jQuery Mobile Talk with John Bender",
     :subtitle         => "",
     :published_at     => Time.parse("2012-11-24T19:10:44 -0800"),
-    :summary          => %q{<a href="http://iamshane.com" title="I'm Shane Becker">Shane Becker</a> and <a href="http://johnbender.us" title="johnbender.us">John Bender</a> discuss mobile web development and <a href="http://jquerymobile.com" title="jQuery Mobile | jQuery Mobile">jQuery Mobile</a>. Sponsored by: <a href="http://hybridgroup.com" title="Los Angeles Ruby on Rails, JavaScript, Cloud Computing, Mobile Development - The Hybrid Group">The Hybrid Group</a>.},
+    :summary          => %Q{<a href="http://iamshane.com" title="I'm Shane Becker">Shane Becker</a> and <a href="http://johnbender.us" title="johnbender.us">John Bender</a> discuss mobile web development and <a href="http://jquerymobile.com" title="jQuery Mobile | jQuery Mobile">jQuery Mobile</a>. Sponsored by: <a href="http://hybridgroup.com" title="Los Angeles Ruby on Rails, JavaScript, Cloud Computing, Mobile Development - The Hybrid Group">The Hybrid Group</a>.},
     :season           => 1,
     :episode          => 4,
     :url              => "http://farmhouse.s3.amazonaws.com/podcast/S01/04%20jQuery%20Mobile%20Talk%20with%20John%20Bender.mp3",
@@ -629,7 +714,46 @@ episodes = [
     :itunes_summary   => "Shane Becker and John Bender discuss mobile web development and jQuery Mobile. Sponsored by: The Hybrid Group.",
     :enclosure_length => "89742910",
     :duration         => "46:44",
-    :keywords         => "javascript, jquery, jquerymobile, farmhouse, hollywood, nerdery, web"
+    :keywords         => "javascript, jquery, jquerymobile, farmhouse, hollywood, nerdery, web",
+    :show_notes       => %Q{
+      <a href="https://twitter.com/johnbender">@johnbender</a>
+      <a href="http://johnbender.us" title="johnbender.us">johnbender.us</a>
+      <a href="http://jquerymobile.com" title="jQuery Mobile | jQuery Mobile">jquerymobile.com</a>
+      <a href="http://blogs.adobe.com/adobeandjquery/" title="Adobe &amp; jQuery">Adobe &amp; jQuery</a>
+      <a href="http://youtube.com/watch?v=yd8jh9QYfEs" title="Rihanna - Don&#39;t Stop The Music - YouTube">Rihanna - Don't Stop The Music</a>
+      <a href="https://github.com/jquery/jquery-mobile">jQuery Mobile on GitHub</a>
+      <a href="http://filamentgroup.com" title="Filament Group, Inc. | User Interface Design &amp; Development | Boston, MA">The Filament Group</a>
+      <a href="https://github.com/jquery/jquery-mobile/commit/1d0fd4a7d8b852e10dfe91cd2920579ea4c30cc3">First commit "all the mobiley goodness"</a>
+      <a href="http://scottjehl.com" title="Scott Jehl, Web Designer/Developer, Boston, MA | Website, Web Application, and User Interface Design and Development">Scott Jehl</a> : <a href="https://github.com/scottjehl">GitHub</a>. <a href="https://twitter.com/scottjehl">Twitter</a>.
+      <a href="http://futurefriend.ly" title="Future Friendly">Future Friendly</a>
+      Mitchell Hashimoto : <a href="https://github.com/mitchellh">GitHub</a>. <a href="https://twitter.com/mitchellh">Twitter</a>.
+      <a href="http://vagrantup.com" title="Vagrant - Virtualized development for the masses.">Vagrant</a>
+      <a href="http://tenderlovemaking.com" title="Tender Lovemaking |  tenderlovemaking.com">Aaron Patterson</a> : <a href="https://github.com/tenderlove">GitHub</a>. <a href="https://twitter.com/tenderlove">Twitter</a>.
+      <a href="http://phonegap.com" title="PhoneGap | Home">PhoneGap</a> / <a href="http://www.adobe.com/aboutadobe/pressroom/pressreleases/201110/AdobeAcquiresNitobi.html" title="Adobe Announces Agreement to Acquire Nitobi, Creator of PhoneGap">Adobe</a>.
+      <b>Sponsor: </b> <a href="http://hybridgroup.com" title="Los Angeles Ruby on Rails, JavaScript, Cloud Computing, Mobile Development - The Hybrid Group">The Hybrid Group</a>
+      <b>Sponsor: </b> <a href="https://twitter.com/deadprogram">Ron Evans</a>
+      <b>Sponsor: </b> <a href="https://twitter.com/dfischer">Daniel Fischer</a>
+      <b>Sponsor: </b> Ruby Hero Tenderlove: <a href="http://www.confreaks.com/videos/526-roa2011-ruby-hero-tenderlove" title="Ruby Hero Tenderlove! - Ron Evans, Jim Weirich, Aaron Patterson, Josh Susser - Ruby On Ales 2011">Ruby On Ales 2011</a>. <a href="http://www.confreaks.com/videos/529-farmhouseconf-ruby-hero-tenderlove" title="Ruby Hero Tenderlove! - Ron Evans - Farmhouse Conf 2011">Farmhouse Conf 1</a>.
+      <b>Sponsor: </b> <a href="https://twitter.com/hybrid_group">@Hybrid_Group</a>
+      <b>Sponsor: </b> <a href="https://www.clutchapp.com">Clutch</a>
+      <b>Sponsor: </b> <a href="https://www.kanbanpad.com">kanbanpad</a>
+      <a href="https://twitter.com/mitchellh/status/259162403739156481">Mitch's weird DNS knowledge</a>
+      <a href="http://www.android.com/about/jelly-bean/" title="Android - Android 4.1, Jelly Bean">Monkey Banana Split (aka "Jelly Bean")</a>
+      <a href="http://www.google.com/intl/en/chrome/browser/mobile/" title="Chrome for Mobile">Chrome for Mobile</a>
+      <a href="https://coderwall.com/p/bdxjzg">300ms delay between tap event and click event</a>
+      <a href="http://en.wikipedia.org/wiki/Haptic_technology" title="Haptic technology - Wikipedia, the free encyclopedia">Haptic feedback</a>
+      <a href="http://html5doctor.com/history-api/" title="Pushing and Popping with the History API | HTML5 Doctor">popState()</a> and <a href="http://diveinto.html5doctor.com/history.html" title="History API - Dive Into HTML5">the history API</a>
+      <a href="http://www.w3.org" title="World Wide Web Consortium (W3C)">W3C</a>
+      <a href="https://github.com/rails/turbolinks">Turbo Links for Rails</a>
+      <a href="https://github.com/defunkt/jquery-pjax">pjax</a>
+      <a href="http://tantek.com/2011/238/b1/many-ways-slice-url-name-pieces" title="How many ways can you slice a URL and name the pieces? - Tantek">Pieces of a URL</a>
+      <a href="https://developers.google.com/webmasters/ajax-crawling/docs/getting-started">#! - Hashbang URLs</a>
+      <a href="https://github.com/cowboy/jquery-hashchange">Ben Allman's jQuery plugin for URL hash changing</a>
+      <a href="http://jquerymobile.com/designs/" title="Designs | jQuery Mobile">jQuery Mobile UIkit</a>
+      <a href="http://www.sencha.com" title="HTML5 App Development Tools. Build Apps for Any Device with Sencha. | Home | Sencha">Sencha</a>
+      <a href="http://jquerymobile.com/test/docs/api/events.html" title="jQuery Mobile Docs - Events">jQuery Mobile vclick</a>
+      <a href="https://twitter.com/jquerymobile">@jquerymobile</a>
+    }
   }
 ]
 

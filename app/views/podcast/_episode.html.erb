@@ -1,0 +1,27 @@
+<h1><%= link_to_unless_current episode.title, podcast_path(episode.id) %></h1>
+
+<%= time_tag episode.published_at, episode.published_at.strftime("%B %d, %Y") %>
+
+<p><%= episode.summary.html_safe %></p>
+
+<% if show_action? %>
+  <audio controls>
+    <!-- <source src="<%= episode.url %>" /> -->
+  </audio>
+<% else %>
+  <p><%= link_to "Listen to audio", podcast_path(episode) %></p>
+<% end %>
+
+<p>
+  <%= link_to "Download MP3", episode.url, :title => "Download Season #{episode.season} Episode #{episode.episode} MP3" %>
+</p>
+
+<% if show_action? %>
+  <p><b>Show Notes</b></p>
+
+  <ul>
+    <% episode.show_notes.strip.split("\n").each do |show_note| %>
+      <li><%= show_note.html_safe %></li>
+    <% end %>
+  </ul>
+<% end %>

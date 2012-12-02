@@ -37,18 +37,19 @@ ActiveRecord::Schema.define(:version => 20121202055425) do
   end
 
   create_table "episodes", :force => true do |t|
+    t.datetime "published_at"
+    t.integer  "episode"
+    t.integer  "season"
     t.string   "authors"
     t.string   "duration"
     t.string   "enclosure_length"
-    t.integer  "episode"
     t.string   "itunes_summary"
     t.string   "keywords"
-    t.datetime "published_at"
-    t.integer  "season"
     t.string   "subtitle"
     t.string   "summary"
     t.string   "title"
     t.string   "url"
+    t.text     "show_notes"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
