@@ -17,7 +17,7 @@
   <link rel="profile" href="http://microformats.org/profile/hatom">
 
   <% if request.path =~ /podcast/ %>
-    <%= auto_discovery_link_tag(:rss, podcast_feed_path, { :title => "The Farmhouse Podcast" }) %>
+    <%= auto_discovery_link_tag(:rss, podcasts_feed_path, { :title => "The Farmhouse Podcast" }) %>
   <% end %>
 </head>
 

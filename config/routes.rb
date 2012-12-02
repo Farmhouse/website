@@ -68,6 +68,7 @@ Farmhouse::Application.routes.draw do
 
   match "/people/:slug"    => "people#show",             :as => "person_slug"
 
-  match "/podcast"         => "podcast#index",           :as => "podcast"
-  match "/podcast/feed"    => "podcast#feed",            :as => "podcast_feed"
+  match "/podcast/feed"    => "podcast#feed",            :as => "podcasts_feed"
+  match "/podcast"         => "podcast#index",           :as => "podcasts"
+  match "/podcast/:id"     => "podcast#show",            :as => "podcast"
 end

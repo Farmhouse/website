@@ -1,0 +1,65 @@
+<h1><%= link_to "jQuery Mobile Talk with John Bender", podcast_path(4) %></h1>
+
+<%= time_tag Time.parse("2012-11-24T19:10:44 -0800"), "November 24, 2012" %>
+
+<p>
+  <a href="http://iamshane.com" title="I'm Shane Becker">Shane Becker</a> and <a href="http://johnbender.us" title="johnbender.us">John Bender</a> discuss mobile web development and <a href="http://jquerymobile.com" title="jQuery Mobile | jQuery Mobile">jQuery Mobile</a>.
+
+  Sponsored by: <a href="http://hybridgroup.com" title="Los Angeles Ruby on Rails, JavaScript, Cloud Computing, Mobile Development - The Hybrid Group">The Hybrid Group</a>.
+</p>
+
+<% if show_action? %>
+  <audio controls>
+    <source src="http://farmhouse.s3.amazonaws.com/podcast/S01/04%20jQuery%20Mobile%20Talk%20with%20John%20Bender.mp3" />
+  </audio>
+<% else %>
+  <p><%= link_to "Listen to audio", podcast_path(1) %></p>
+<% end %>
+
+<p>
+  <a href="http://farmhouse.s3.amazonaws.com/podcast/S01/04%20jQuery%20Mobile%20Talk%20with%20John%20Bender.mp3mp3" title="Download Episode 1 MP3">Download MP3</a>
+</p>
+
+<% if show_action? %>
+  <p><b>Show Notes</b></p>
+
+  <ul>
+    <li><a href="https://twitter.com/johnbender">@johnbender</a></li>
+    <li><a href="http://johnbender.us" title="johnbender.us">johnbender.us</a></li>
+    <li><a href="http://jquerymobile.com" title="jQuery Mobile | jQuery Mobile">jquerymobile.com</a></li>
+    <li><a href="http://blogs.adobe.com/adobeandjquery/" title="Adobe &amp; jQuery">Adobe &amp; jQuery</a></li>
+    <li><a href="http://youtube.com/watch?v=yd8jh9QYfEs" title="Rihanna - Don&#39;t Stop The Music - YouTube">Rihanna - Don't Stop The Music</a></li>
+    <li><a href="https://github.com/jquery/jquery-mobile">jQuery Mobile on GitHub</a></li>
+    <li><a href="http://filamentgroup.com" title="Filament Group, Inc. | User Interface Design &amp; Development | Boston, MA">The Filament Group</a></li>
+    <li><a href="https://github.com/jquery/jquery-mobile/commit/1d0fd4a7d8b852e10dfe91cd2920579ea4c30cc3">First commit "all the mobiley goodness"</a></li>
+    <li><a href="http://scottjehl.com" title="Scott Jehl, Web Designer/Developer, Boston, MA | Website, Web Application, and User Interface Design and Development">Scott Jehl</a> : <a href="https://github.com/scottjehl">GitHub</a>. <a href="https://twitter.com/scottjehl">Twitter</a>.</li>
+    <li><a href="http://futurefriend.ly" title="Future Friendly">Future Friendly</a></li>
+    <li>Mitchell Hashimoto : <a href="https://github.com/mitchellh">GitHub</a>. <a href="https://twitter.com/mitchellh">Twitter</a>.</li>
+    <li><a href="http://vagrantup.com" title="Vagrant - Virtualized development for the masses.">Vagrant</a></li>
+    <li><a href="http://tenderlovemaking.com" title="Tender Lovemaking |  tenderlovemaking.com">Aaron Patterson</a> : <a href="https://github.com/tenderlove">GitHub</a>. <a href="https://twitter.com/tenderlove">Twitter</a>.</li>
+    <li><a href="http://phonegap.com" title="PhoneGap | Home">PhoneGap</a> / <a href="http://www.adobe.com/aboutadobe/pressroom/pressreleases/201110/AdobeAcquiresNitobi.html" title="Adobe Announces Agreement to Acquire Nitobi, Creator of PhoneGap">Adobe</a>.</li>
+    <li><b>Sponsor: </b> <a href="http://hybridgroup.com" title="Los Angeles Ruby on Rails, JavaScript, Cloud Computing, Mobile Development - The Hybrid Group">The Hybrid Group</a></li>
+    <li><b>Sponsor: </b> <a href="https://twitter.com/deadprogram">Ron Evans</a></li>
+    <li><b>Sponsor: </b> <a href="https://twitter.com/dfischer">Daniel Fischer</a></li>
+    <li><b>Sponsor: </b> Ruby Hero Tenderlove: <a href="http://www.confreaks.com/videos/526-roa2011-ruby-hero-tenderlove" title="Ruby Hero Tenderlove! - Ron Evans, Jim Weirich, Aaron Patterson, Josh Susser - Ruby On Ales 2011">Ruby On Ales 2011</a>. <a href="http://www.confreaks.com/videos/529-farmhouseconf-ruby-hero-tenderlove" title="Ruby Hero Tenderlove! - Ron Evans - Farmhouse Conf 2011">Farmhouse Conf 1</a>.</li>
+    <li><b>Sponsor: </b> <a href="https://twitter.com/hybrid_group">@Hybrid_Group</a></li>
+    <li><b>Sponsor: </b> <a href="https://www.clutchapp.com">Clutch</a></li>
+    <li><b>Sponsor: </b> <a href="https://www.kanbanpad.com">kanbanpad</a></li>
+    <li><a href="https://twitter.com/mitchellh/status/259162403739156481">Mitch's weird DNS knowledge</a></li>
+    <li><a href="http://www.android.com/about/jelly-bean/" title="Android - Android 4.1, Jelly Bean">Monkey Banana Split (aka "Jelly Bean")</a></li>
+    <li><a href="http://www.google.com/intl/en/chrome/browser/mobile/" title="Chrome for Mobile">Chrome for Mobile</a></li>
+    <li><a href="https://coderwall.com/p/bdxjzg">300ms delay between tap event and click event</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Haptic_technology" title="Haptic technology - Wikipedia, the free encyclopedia">Haptic feedback</a></li>
+    <li><a href="http://html5doctor.com/history-api/" title="Pushing and Popping with the History API | HTML5 Doctor">popState()</a> and <a href="http://diveinto.html5doctor.com/history.html" title="History API - Dive Into HTML5">the history API</a></li>
+    <li><a href="http://www.w3.org" title="World Wide Web Consortium (W3C)">W3C</a></li>
+    <li><a href="https://github.com/rails/turbolinks">Turbo Links for Rails</a></li>
+    <li><a href="https://github.com/defunkt/jquery-pjax">pjax</a></li>
+    <li><a href="http://tantek.com/2011/238/b1/many-ways-slice-url-name-pieces" title="How many ways can you slice a URL and name the pieces? - Tantek">Pieces of a URL</a></li>
+    <li><a href="https://developers.google.com/webmasters/ajax-crawling/docs/getting-started">#! - Hashbang URLs</a></li>
+    <li><a href="https://github.com/cowboy/jquery-hashchange">Ben Allman's jQuery plugin for URL hash changing</a></li>
+    <li><a href="http://jquerymobile.com/designs/" title="Designs | jQuery Mobile">jQuery Mobile UIkit</a></li>
+    <li><a href="http://www.sencha.com" title="HTML5 App Development Tools. Build Apps for Any Device with Sencha. | Home | Sencha">Sencha</a></li>
+    <li><a href="http://jquerymobile.com/test/docs/api/events.html" title="jQuery Mobile Docs - Events">jQuery Mobile vclick</a></li>
+    <li><a href="https://twitter.com/jquerymobile">@jquerymobile</a></li>
+  </ul>
+<% end %>

@@ -46,4 +46,12 @@ module ApplicationHelper
     end
   end
 
+  def show_action?
+    action_name == "show"
+  end
+
+  def index_action?
+    action_name == "index"
+  end
+
 end

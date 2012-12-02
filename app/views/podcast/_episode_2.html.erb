@@ -1,0 +1,69 @@
+<h1><%= link_to 'Push vs "Pull"', podcast_path(2) %></h1>
+
+<%= time_tag Time.parse("Mon Oct 15 19:29:16 -0700 2012"), "October 15, 2012" %>
+
+<p>
+  <a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> and <a href="http://SteveKlabnik.com" title="Steve Klabnik">Steve Klabnik</a> discuss the merits of <b>pushing</b> and <b>polling</b> (which Shane still thinks should be "pulling"). <b>Sponsored by: <a href="https://peepcode.com">PeepCode</a>.</b>
+</p>
+
+<% if show_action? %>
+  <audio controls>
+    <source src="http://farmhouse.s3.amazonaws.com/podcast/S01/02%20Push%20vs%20_Pull_.mp3" />
+  </audio>
+<% else %>
+  <p><%= link_to "Listen to audio", podcast_path(2) %></p>
+<% end %>
+
+<p>
+  <a href="http://farmhouse.s3.amazonaws.com/podcast/S01/02%20Push%20vs%20_Pull_.mp3" title="Download Episode 2 MP3">Download MP3</a>
+</p>
+
+<% if show_action? %>
+  <p><b>Show Notes</b></p>
+
+  <ul>
+    <li><a href="http://www.youtube.com/watch?v=vCadcBR95oU" title="Salt-N-Pepa - Push It - YouTube">Push It</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Push_technology" title="Push technology - Wikipedia, the free encyclopedia">Push</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Polling_(computer_science)" title="Polling (computer science) - Wikipedia, the free encyclopedia">Polling</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Pull_technology" title="Pull technology - Wikipedia, the free encyclopedia">Pull</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Interrupt" title="Interrupt - Wikipedia, the free encyclopedia">Interrupt</a></li>
+    <li><a href="http://developer.apple.com/library/mac/#documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/ApplePushService/ApplePushService.html" title="Loading&#133;">Apple Push Notification</a></li>
+    <li><a href="http://tent.io" title="Tent - the decentralized social web">tent.io</a></li>
+    <li><a href="https://tent.is">Tent.is</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Web_cache" title="Web cache - Wikipedia, the free encyclopedia">Caching</a></li>
+    <li><a href="http://nodejs.org" title="node.js">Node.js</a></li>
+    <li><a href="http://campfirenow.com" title="Business group chat, file sharing, group decision making: Campfire">Campfire</a></li>
+    <li><q>&ldquo;<a href="https://twitter.com/dhh/status/251006155906752513">Campfire, to this day, still uses a 3-second poll. And chat was supposed to be the poster-boy example for web sockets and friends. Ha.</a>&rdquo;</q> &mdash; <a href="https://twitter.com/dhh">@dhh</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/High-frequency_trading" title="High-frequency trading - Wikipedia, the free encyclopedia">High Frequency Trading</a></li>
+    <li>At 9:16 Steve said "a second or <i>less</i>". He meant "a second or <b>more</b>".</li>
+    <li><a href="http://en.wikipedia.org/wiki/Client–server_model">Client Server</a></li>
+    <li><i><a href="http://www.amazon.com/Weaving-Web-Original-Ultimate-Destiny/dp/006251587X" title="Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web: Tim Berners-Lee: 9780062515872: Amazon.com: Books">Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web</a></i> by <a href="http://en.wikipedia.org/wiki/Tim_Berners-Lee" title="Tim Berners-Lee - Wikipedia, the free encyclopedia">Tim Berners-Lee</a></li>
+    <li><a href="https://google.com/search?q=unique+scaling+requirement">Unique Scaling Requirements</a></li>
+    <li><a href="https://twitter.com/steveklabnik/">5644 followers</a></li>
+    <li><q>&ldquo;<a href="https://twitter.com/steveklabnik/status/253609185256816641">hundreds. of thousands. of post requests.</a>&rdquo;</q> &mdash; <a href="https://twitter.com/steveklabnik">@steveklabnik</a></li>
+    <li><b>Sponsor</b> : <a href="https://peepcode.com">PeepCode</a></li>
+    <li><b>Sponsor</b> : <a href="https://peepcode.com/products/backbone-js">Backbone Basics</a></li>
+    <li><b>Sponsor</b> : <a href="https://peepcode.com/products">All (Ruby, Javascript, et al) PeepCodes</a></li>
+    <li><b>Sponsor</b> : <a href="https://peepcode.com/products/chef-i">Meet Chef</a></li>
+    <li><b>Sponsor</b> : <a href="https://peepcode.com/products/design-bundle">Design Bundle</a></li>
+    <li><b>Sponsor</b> : <a href="https://peepcode.com/products/ryan-singer-ux">RYAN SINGER (PART 1) : Sketching</a></li>
+    <li><b>Sponsor</b> : <a href="https://peepcode.com/products/ryan-singer-ii">RYAN SINGER (PART 2) : HTML/CSS Prototype</a></li>
+    <li><b>Sponsor</b> : <a href="https://peepcode.com/products/play-by-play-kneath">KYLE NEATH : Enhancing an application</a></li>
+    <li><b>Sponsor</b> : <a href="https://peepcode.com/products/play-by-play-mrgan">NEVEN MRGAN : Mobile UI</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/PubSubHubbub" title="PubSubHubbub - Wikipedia, the free encyclopedia">PubSubHubbub on Wikipedia</a></li>
+    <li><a href="https://code.google.com/p/pubsubhubbub/">PubSubHubbub on Google Code</a></li>
+    <li><a href="http://pubsubhubbub.appspot.com" title="Hub - PubSubHubbub">PubSubHubbub reference Hub server</a></li>
+    <li><a href="https://rstat.us">rstat.us</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/OStatus" title="OStatus - Wikipedia, the free encyclopedia">OStatus</a></li>
+    <li><a href="http://superfeedr.com" title="Real-time cloud feed parsing - PubSubHubbub, XMPP">Superfeedr</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/RSS" title="RSS - Wikipedia, the free encyclopedia">RSS</a></li>
+    <li><a href="http://en.wikipedia.org/wiki/Atom_(standard)" title="Atom (standard) - Wikipedia, the free encyclopedia">ATOM</a></li>
+    <li><a href="http://steve.vinoski.net/blog/2008/01/05/serendipitous-reuse/" title="Serendipitous Reuse  ::  Steve Vinoski&#8217;s Blog">Serendipitous Reuse</a></li>
+    <li><a href="https://app.net/">App.net</a></li>
+    <li><a href="http://identi.ca" title="Public timeline - Identi.ca">identi.ca</a></li>
+    <li><a href="http://status.net" title="StatusNet">StatusNet</a></li>
+    <li><a href="http://slashdot.org" title="Slashdot: News for nerds, stuff that matters">Slashdot</a></li>
+    <li><a href="http://activitystrea.ms" title="Activity Streams - a format for syndicating social activities around the web">Activity Streams</a></li>
+    <li><a href="https://joindiaspora.com">Diaspora</a></li>
+  </ul>
+<% end %>
