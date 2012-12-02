@@ -20,7 +20,7 @@ gem "jquery-rails"
 
 group :production do
   gem "pg"
-  gem "puma"
+  gem "puma", "~> 1.6.3"
   gem "newrelic_rpm"
 end
 

@@ -74,7 +74,7 @@ GEM
     pg (0.14.0)
     polyglot (0.3.3)
     posix-spawn (0.3.6)
-    puma (1.6.1)
+    puma (1.6.3)
       rack (~> 1.2)
     rack (1.4.1)
     rack-cache (1.2)
@@ -145,7 +145,7 @@ DEPENDENCIES
   newrelic_rpm
   omniauth (~> 1.0.2)
   pg
-  puma
+  puma (~> 1.6.3)
   rails (= 3.2.8)
   sass-rails
   sqlite3-ruby
