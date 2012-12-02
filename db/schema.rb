@@ -43,13 +43,13 @@ ActiveRecord::Schema.define(:version => 20121202055425) do
     t.string   "authors"
     t.string   "duration"
     t.string   "enclosure_length"
-    t.string   "itunes_summary"
-    t.string   "keywords"
     t.string   "subtitle"
-    t.string   "summary"
     t.string   "title"
-    t.string   "url"
     t.text     "show_notes"
+    t.text     "summary"
+    t.text     "itunes_summary"
+    t.text     "url"
+    t.text     "keywords"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end

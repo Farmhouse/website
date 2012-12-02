@@ -6,13 +6,14 @@ class CreateEpisodes < ActiveRecord::Migration
       t.string   :authors,
                  :duration,
                  :enclosure_length,
-                 :itunes_summary,
-                 :keywords,
                  :subtitle,
+                 :title
+
+      t.text     :show_notes,
                  :summary,
-                 :title,
-                 :url
-      t.text     :show_notes
+                 :itunes_summary,
+                 :url,
+                 :keywords
 
       t.timestamps
     end
