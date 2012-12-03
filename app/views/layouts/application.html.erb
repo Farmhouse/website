@@ -33,9 +33,17 @@
   </div> <!-- .container -->
 
   <footer role="contentinfo" id="site" class="container">
-    <ul>
-      <li><a href="mailto:barn@farmhouse.la">barn@farmhouse.la</a></li>
-      <li><%= link_to "1558 Gordon St / LA, CA / 90028", "http://goo.gl/maps/tmWX", :rel => "external" %></li>
+    <ul class="h-card vcard">
+      <li><a href="mailto:barn@farmhouse.la" class="email u-email">barn@farmhouse.la</a> | </li>
+      <li><a href="http://twitter.com/farmhouse" class="url u-url" rel="me">@farmhouse</a></li>
+      <li>
+        <%= link_to "http://goo.gl/maps/tmWX", :rel => "external" do %>
+          <span class="street-address p-street-address">1558 Gordon St</span> /
+          <span class="locality p-locality">LA</span>,
+          <span class="region p-region">CA</span> /
+          <span class="postal-code p-postal-code">90028</span>
+        <% end %>
+      </li>
     </ul>
   </footer>
 
