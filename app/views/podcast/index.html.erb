@@ -4,7 +4,7 @@
       <h1>The Farmhouse Podcast</h1>
     </header>
 
-    <div class="span6">
+    <div id="meta" class="span6">
       <p>
         Friends and Family of The Farmhouse in Hollywood, California. Occasionally, we talk about things and now we're sharing those with other people.
       </p>
@@ -13,6 +13,10 @@
         <%= link_to "the RSS Feed", podcasts_feed_path %> or
         <%= link_to "in iTunes", "https://itunes.apple.com/us/podcast/the-farmhouse-podcast/id569067242" %>.
       </p>
+    </div>
+
+    <div id="sponsor" class="span6">
+      <%= link_to "Sponsor an episode", podcast_sponsor_path, :class => "btn btn-primary btn-large" %>
     </div>
   </div>
 
