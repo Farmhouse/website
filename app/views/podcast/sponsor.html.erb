@@ -1,0 +1,43 @@
+<div class="row">
+  <article class="span6">
+    <h1>Sponsor The Farmhouse Podcast</h1>
+    <h2>$250 per episode</h2>
+
+    <p>
+      Sponsorships are available for the next four episodes of
+      <%= link_to "The Farmhouse Podcast", podcasts_path, :title => "The Farmhouse Podcast" %>.
+      Past guests include:
+        <%= link_to "Steve", podcasts_path(1), :title => "The Farmhouse Podcast : S01E01" %>
+        <%= link_to "Klabnik", podcasts_path(2), :title => "The Farmhouse Podcast : S01E02" %>
+        (<%= link_to "@steveklabnik", "https://twitter.com/steveklabnik/", :title => "@steveklabnik on Twitter" %>),
+        <%= link_to "Evan Phoenix", podcasts_path(3), :title => "The Farmhouse Podcast : S01E03" %>
+        (<%= link_to "@evanphx", "https://twitter.com/evanphx", :title => "@evanphx on Twitter" %>) and
+        <%= link_to "John Bender", podcasts_path(4), :title => "John Bender" %>
+        (<%= link_to "@johnbender", "http://twitter.com/johnbender", :title => "@johnbender on Twitter" %>).
+      And of course, hosted by
+        <%= link_to "Shane Becker", "http://iamshane.com", :title => "Shane Becker" %>
+        (<%= link_to "@veganstraightedge", "https://twitter.com/veganstraightedge/", :title => "@veganstraightedge on Twitter" %>).
+    </p>
+
+    <p>For $250, you&rsquo;ll get:</p>
+    <ul>
+      <li>Mentioned at the beginning of the podcast episode</li>
+      <li>
+        <ul>
+          Mid-episode &ldquo;commercial&rdquo;:
+          <li>We can talk about your company / product / service</li>
+          <li>Or we can read some copy text that you send over</li>
+          <li>Or both</li>
+        </ul>
+      </li>
+      <li>Mentioned at the beginning of the podcast episode</li>
+      <li>Thanked in a tweet about the podcast episode</li>
+      <li>Listed in the episode&rsquo;s show notes</li>
+      <li>No more than two sponsors per episode</li>
+      <li>My undying gratitude!</li>
+    </ul>
+
+    If you&rsquo;re interested, email
+    <b><%= mail_to "barn@farmhouse.la?subject=Podcast+Sponsorship", "barn@farmhouse.la", :title => "Email barn@farmhouse.la" %></b>.
+  </article>
+</div> <!-- /div.row -->
