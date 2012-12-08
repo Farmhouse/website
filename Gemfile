@@ -23,5 +23,3 @@ group :production do
   gem "puma", "~> 1.6.3"
   gem "newrelic_rpm"
 end
-
-gem "omniauth",  "~> 1.0.2"
