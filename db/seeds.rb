@@ -754,40 +754,25 @@ episodes = [
       <a href="http://jquerymobile.com/test/docs/api/events.html" title="jQuery Mobile Docs - Events">jQuery Mobile vclick</a>
       <a href="https://twitter.com/jquerymobile">@jquerymobile</a>
     }
+  },
+  {
+    :title            => "Roundtable discussion: Evan Phoenix, John Bender, Steve Klabnik and Shane Becker. Sponsored by: Hashicorp.",
+    :subtitle         => "On DDOS attacks on data structures, Veggie Grill and Ruby 2.0 / Refinements. ",
+    :published_at     => Time.parse("2012-12-08T10:50 -0800"),
+    :summary          => %Q{ <a href="https://twitter.com/evanphx">Evan Phoenix</a>, <a href="http://johnbender.us" title="johnbender.us">John Bender</a>, <a href="http://SteveKlabnik.com" title="Steve Klabnik">Steve Klabnik</a> and and <a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> "discuss": DDOS attacks on fundamental data structures(... bullshit or not?), Veggie Grill (pros and cons), Paleo / paleo, Ruby 2.0 / Refinements. },
+    :season           => 1,
+    :episode          => 5,
+    :url              => "http://farmhouse.s3.amazonaws.com/podcast/S01/05%20Roundtable%20discussion_%20Evan%20Phoenix,%20John%20Bender,%20Steve%20Klabnik%20and%20Shane%20Becker.%20Sponsored%20by_%20Hashicorp..mp3",
+    :authors          => "Shane Becker, Steve Klabnik, Evan Phoenix and John Bender",
+    :itunes_summary   => "Evan Phoenix, John Bender, Steve Klabnik and and Shane Becker 'discuss': DDOS attacks on fundamental data structures(... bullshit or not?), Veggie Grill (pros and cons), Paleo / paleo, Ruby 2.0 / Refinements.",
+    :enclosure_length => "124544062",
+    :duration         => "1:04:52",
+    :keywords         => "ruby, computer science, farmhouse, hollywood, nerdery, veggie grill, refinements, paleo, ddos, hash",
+    :show_notes       => %Q{
+    }
   }
 ]
 
 episodes.each do |episode|
   Episode.create!(episode)
 end
-
-
-__END__
-
-
-
-website = Website.create!(
-  :url  => "http://twitter.com/evanphx",
-  :name => "twitter"
-)
-
-evan.websites << website
-
-photo_1 = Photo.create!(
-  :conf_id        => farmhouse_conf_1.id,
-  :talk_id        => nil,
-  :caption        => "Painting the dining room in preparation.",
-  :photographer   => "Tj Nelson Jr",
-  :url            => "http://farm6.staticflickr.com/5252/5685043441_aef320ec03_b.jpg",
-  :canonical_url  => "http://www.flickr.com/photos/veganstraightedge/5685043441/"
-)
-
-photo_2 = Photo.create!(
-  :conf_id        => farmhouse_conf_1.id,
-  :talk_id        => talk.id,
-  :caption        => "Evan Phoenix in mid-talk.",
-  :photographer   => "Tj Nelson Jr",
-  :url            => "http://www.flickr.com/photos/veganstraightedge/5697216997/",
-  :canonical_url  => "http://farm6.staticflickr.com/5224/5697216997_671abb4f0f_b.jpg"
-)
-
