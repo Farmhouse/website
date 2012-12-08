@@ -27,7 +27,6 @@
     <itunes:explicit>yes</itunes:explicit>
 
     <itunes:category text="Technology">
-      <itunes:category text="Developers"/>
     </itunes:category>
 
     <% @episodes.each do |episode| %>
@@ -40,8 +39,8 @@
         </itunes:summary>
 
         <enclosure url="<%= episode.url %>" length="<%= episode.enclosure_length %>" type="audio/mpeg"/>
-        <guid><%= podcast_path(episode) %></guid>
-        <pubDate>Sat, Nov 24 2012 19:10:44 -0800</pubDate>
+        <guid><%= podcast_url(episode) %></guid>
+        <pubDate><%= episode.published_at.strftime("%a, %e %b %Y %H:%M:%S %z") %></pubDate>
 
         <itunes:duration><%= episode.duration %></itunes:duration>
         <itunes:keywords><%= episode.keywords %></itunes:keywords>
