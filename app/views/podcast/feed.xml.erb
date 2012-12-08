@@ -44,7 +44,7 @@
 
         <enclosure url="<%= episode.url %>" length="<%= episode.enclosure_length %>" type="audio/mpeg"/>
         <guid><%= podcast_url(episode) %></guid>
-        <pubDate><%= episode.published_at.strftime("%a, %e %b %Y %H:%M:%S %z") %></pubDate>
+        <pubDate><%= episode.published_at.strftime("%a, %e %b %Y %H:%M:%S %z").gsub(/  /, " ") %></pubDate>
 
         <itunes:duration><%= episode.duration %></itunes:duration>
         <itunes:keywords><%= episode.keywords %></itunes:keywords>
