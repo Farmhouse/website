@@ -1,65 +1,6 @@
-<% if flash[:notice] %>
-  <div class="alert alert-success">
-    <h1 class="alert-heading">Thank you for submitting a Farmhouse Labs proposal</h1>
-    <p>
-      If you know other people that might be interested in this program, tell them about it.
-      If you have any questions, you can email us at
-      <a href="mailto:barn@farmhouse.la">barn@farmhouse.la</a>.
-      Otherwise, we&rsquo;ll be in touch soon.
-    </p>
-  </div> <!-- .alert.alert-success -->
-<% end %>
-
 <div class="hero-unit alert alert-info">
   <h1>Farmhouse Labs</h1>
   <p>
-    A program to support
-    <strong>amazing people</strong> and
-    <strong>incredible projects</strong>
+    We're rethinking Labs. More later.
   </p>
 </div>
-
-<h1>How It Works</h1>
-
-<div class="row">
-  <div class="span6">
-    <p>
-      This is a new experiment. The idea is simple:
-      <b>free room and board for you while you work on a project</b>.
-      If you&rsquo;re working on (or want to be working on) something great
-      and need a little support, maybe we can help you.
-    </p>
-
-    <p>
-      At The Farmhouse, there&rsquo;s an extra desk or two if you need co-working space,
-      an empty barn if you&rsquo;re a wood worker/metal smith/artist/etc,
-      a big fenced backyard with lots of gardening / building space and
-      an empty bedroom for you to live (if you need it).
-    </p>
-
-    <%= render "/labs/farmhouse_project_ideas" %>
-    <%= render "non_farmhouse_project_ideas" %>
-  </div> <!-- .span6 -->
-
-  <div class="span6">
-    <div class="well">
-      <h3>Keep it secret. Keep it safe.</h3>
-      <p>
-        All information is totally private.
-        We&rsquo;ll never give it away / sell it / share it.
-      </p>
-
-      <p>
-        Submit a proposal about you and your project.
-        If it&rsquo;s a good fit for the house and the vision,
-        we can offer you a place to live and/or a place to work.
-        If your project has a budget and needs some money,
-        we <i>might</i> be able to help you with that too.
-      </p>
-
-      <h3>About You</h3>
-
-      <%= render "form" %>
-    </div> <!-- .well -->
-  </div> <!-- .span6 -->
-</div> <!-- .row -->
