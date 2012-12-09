@@ -2,7 +2,7 @@ class PodcastController < ApplicationController
   def index
     @slug     = "podcast"
     @title    = "The Farmhouse Podcast - Subscribe Now"
-    @episodes = Episode.all
+    @episodes = Episode.all.reverse
   end
 
   def show
