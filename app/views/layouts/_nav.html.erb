@@ -13,11 +13,12 @@
 
       <div class="nav-collapse">
         <ul class="nav">
-          <%= nav_to "Farmhouse Conf", conf_path(4) %>
-          <%= nav_to "People",         us_path %>
-          <%= nav_to "History",        house_path %>
-          <%= nav_to "Rules",          rules_path %>
-          <%= nav_to "Podcast",        podcasts_path %>
+          <%= nav_to "Farmhouse Conf <span class='label label-success'>4</span>".html_safe, conf_path(4) %>
+          <%= nav_to "People",                                      us_path %>
+          <%= nav_to "History",                                     house_path %>
+          <%= nav_to "Rules",                                       rules_path %>
+          <%= nav_to "Podcast",                                     podcasts_path %>
+          <%= nav_to "<span class='label'>coming soon :</span> Publishing".html_safe,                    publishing_path %>
         </ul>
       </div>
     </div>

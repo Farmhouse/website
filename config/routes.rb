@@ -73,7 +73,10 @@ Farmhouse::Application.routes.draw do
   match "/podcast/sponsor" => "podcast#sponsor",         :as => "podcast_sponsor"
   match "/podcast/:id"     => "podcast#show",            :as => "podcast"
 
+  match "/publishing"         => "publishing#index",     :as => "publishing"
+  match "/publishing/:id"     => "publishing#show",      :as => "publication"
+
   namespace :admin do
-    resources :episodes
+    resources :episodes #podcast admin
   end
 end
