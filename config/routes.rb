@@ -50,11 +50,12 @@ Farmhouse::Application.routes.draw do
 
   root :to => "about#index"
 
-  match "/rules"           => "about#rules",             :as => "rules"
-  match "/register"        => "about#register_4",        :as => "register"
-  match "/register/5"      => "about#register_5",        :as => "register_5"
-  match "/us"              => "about#us",                :as => "us"
-  match "/house"           => "about#house",             :as => "house"
+  match "/rules"            => "about#rules",            :as => "rules"
+  match "/register"         => "about#register_4",       :as => "register"
+  match "/register/5"       => "about#register_5",       :as => "register_5"
+  match "/us"               => "about#us",               :as => "us"
+  match "/house"            => "about#house",            :as => "house"
+  match "/sandwiches"       => "about#sandwiches",       :as => "sandwiches"
 
   match "/prospectus"      => redirect("/conf/sponsor"), :as => "prospectus"
   match "/conf/sponsor"    => "confs#sponsor",           :as => "sponsor"
