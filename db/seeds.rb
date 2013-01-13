@@ -757,18 +757,66 @@ episodes = [
   },
   {
     :title            => "Roundtable discussion: Evan Phoenix, John Bender, Steve Klabnik and Shane Becker. Sponsored by: Hashicorp.",
-    :subtitle         => "On DDOS attacks on data structures, Veggie Grill and Ruby 2.0 / Refinements. ",
+    :subtitle         => "On DOS attacks on data structures, Veggie Grill and Ruby 2.0 / Refinements. ",
     :published_at     => Time.parse("2012-12-08T10:50 -0800"),
-    :summary          => %Q{ <a href="https://twitter.com/evanphx">Evan Phoenix</a>, <a href="http://johnbender.us" title="johnbender.us">John Bender</a>, <a href="http://SteveKlabnik.com" title="Steve Klabnik">Steve Klabnik</a> and and <a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> "discuss": DDOS attacks on fundamental data structures(... bullshit or not?), Veggie Grill (pros and cons), Paleo / paleo, Ruby 2.0 / Refinements. },
+    :summary          => %Q{ <a href="https://twitter.com/evanphx">Evan Phoenix</a>, <a href="http://johnbender.us" title="johnbender.us">John Bender</a>, <a href="http://SteveKlabnik.com" title="Steve Klabnik">Steve Klabnik</a> and and <a href="http://iamshane.com" title="The Internet Home Site of Shane Becker">Shane Becker</a> "discuss": DOS attacks on fundamental data structures(... bullshit or not?), Veggie Grill (pros and cons), Paleo / paleo, Ruby 2.0 / Refinements. },
     :season           => 1,
     :episode          => 5,
     :url              => "http://farmhouse.s3.amazonaws.com/podcast/S01/05%20Roundtable%20discussion_%20Evan%20Phoenix,%20John%20Bender,%20Steve%20Klabnik%20and%20Shane%20Becker.%20Sponsored%20by_%20Hashicorp..mp3",
     :authors          => "Shane Becker, Steve Klabnik, Evan Phoenix and John Bender",
-    :itunes_summary   => "Evan Phoenix, John Bender, Steve Klabnik and and Shane Becker 'discuss': DDOS attacks on fundamental data structures(... bullshit or not?), Veggie Grill (pros and cons), Paleo / paleo, Ruby 2.0 / Refinements.",
-    :enclosure_length => "124544062",
+    :itunes_summary   => "Evan Phoenix, John Bender, Steve Klabnik and and Shane Becker 'discuss': DOS attacks on fundamental data structures(... bullshit or not?), Veggie Grill (pros and cons), Paleo / paleo, Ruby 2.0 / Refinements.",
+    :enclosure_length => "124706313",
     :duration         => "1:04:52",
-    :keywords         => "ruby, computer science, farmhouse, hollywood, nerdery, veggie grill, refinements, paleo, ddos, hash",
+    :keywords         => "ruby, computer science, farmhouse, hollywood, nerdery, veggie grill, refinements, paleo, dos, hash",
     :show_notes       => %Q{
+      <b>Topic idea:</b> <q><a href="https://twitter.com/jlsuttles/status/276764180848189440">Veggie Grill, pros and cons</a></q>. By <a href="https://twitter.com/jlsuttles">Jessica Suttles</a>.
+      <b>Topic idea:</b> <q><a href="https://twitter.com/eywu/status/276566665657991169">Thoughts on building a community or being active in 1 eg ruby brigade,nerd club. I want to build 1 around my passion. Tips?</a></q>. By <a href="https://twitter.com/eywu">Eric Wu</a>.
+      <b>Topic idea:</b> <q><a href="https://twitter.com/johnbender/status/276526662886248449">Ruby 2.0/Refinements, presenting tips, favorite books.</q>. By <a href="https://twitter.com/johnbender/">John Bender</a>.
+      <b>Topic idea:</b> <a href="https://twitter.com/joeatwork/status/276524304961781760">The socially responsibilities of technologists? Creating liberating tech?</a>. By <a href="https://twitter.com/joeatwork/">Joe Bowers</a>.
+      <b>Topic idea:</b> DOS attacks on fundamental algorithms. Bullshit or not? By Evan Phoenix.
+      <a href="http://emboss.github.com/blog/2012/12/14/breaking-murmur-hash-flooding-dos-reloaded/" title="Breaking Murmur: Hash-flooding DoS reloaded">Breaking Murmur: Hash-flooding DoS Reloaded</a>
+      <a href="http://www.cs.cornell.edu/courses/cs312/2008sp/lectures/lec20.html" title="Lecture 20: Hash tables and amortized analysis">Big O notations</a>
+      <a href="http://www.ruby-lang.org/en/news/2012/11/09/ruby19-hashdos-cve-2012-5371/" title="Hash-flooding DoS vulnerability for ruby 1.9 (CVE-2012-5371)">Hash-flooding DoS vulnerability for ruby 1.9 (CVE-2012-5371)</a>
+      <a href="http://www.ruby-lang.org/en/news/2011/12/28/denial-of-service-attack-was-found-for-rubys-hash-algorithm-cve-2011-4815/" title="Denial of service attack was found for Ruby's Hash algorithm (CVE-2011-4815)">Denial of service attack was found for Ruby's Hash algorithm (CVE-2011-4815)</a>
+      <a href="http://www.veggiegrill.com" title="VeggieGrill - Home Page">Veggie Grill (not a sponsor)</a>
+      <a href="http://goo.gl/maps/Fhs1c" title="1558 Gordon St, Los Angeles, CA 90028 to Veggie Grill, 6374 Sunset Boulevard, Hollywood, CA 90028 - Google Maps">Distance from The Farmhouse to Veggie Grill</a>
+      <a href="http://www.imdb.com/title/tt1742336/" title="Your Sister&#x27;s Sister (2011) - IMDb">Your Sister's Sister</a>
+      <a href="http://jennifersway.org/gluten-free-vegan-friendly-soy-free-and-yum-e-buckwheat-teff-pancakes/" title="Gluten-Free, Vegan Friendly, Soy Free, and Yum-E Buckwheat Teff Pancakes | Jennifer&#039;s Way">Vegan, Soy Free, Gluten-Free</a>
+      <a href="http://en.wikipedia.org/wiki/Atkins_diet" title="Atkins diet - Wikipedia, the free encyclopedia">Atkins Diet</a>
+      <a href="http://en.wikipedia.org/wiki/Paleolithic_diet" title="Paleolithic diet - Wikipedia, the free encyclopedia">Paleo Diet</a>
+      <a href="http://www.marksdailyapple.com/primal-blueprint-101/#axzz2HS2q3E00" title="Primal Blueprint 101 | Mark&#039;s Daily Apple">Primal Diet</a>
+      <a href="http://en.wikipedia.org/wiki/Ketogenic_diet" title="Ketogenic diet - Wikipedia, the free encyclopedia">Ketogenic diet</a>
+      <a href="http://en.wikipedia.org/wiki/Nightshade" title="Solanaceae - Wikipedia, the free encyclopedia">Nightshades (foods)</a>
+      <a href="http://en.wikipedia.org/wiki/Atropa_belladonna" title="Atropa belladonna - Wikipedia, the free encyclopedia">Deadly Nightshade</a>
+      <a href="http://www.crossfitpulse.com/chocolate-paleo-cupcakes-with-icing/" title="Chocolate Paleo Cupcakes with Icing &#8211; CrossFit Pulse: Real People, Real Workouts, Real Results">"Paleo cupcakes"</a>
+      <a href="http://www.youtube.com/watch?v=YUAiTxqBRqE" title="How to Use a Throwing or Rabbit Stick to Hunt Samll Game - YouTube">How to Use a Throwing or Rabbit Stick to Hunt Small Game</a>
+      <a href="http://en.wikipedia.org/wiki/American_bison" title="American bison - Wikipedia, the free encyclopedia">American bison</a>
+      <a href="http://en.wikipedia.org/wiki/Paleolithic" title="Paleolithic - Wikipedia, the free encyclopedia">The Paleolithic Age</a>
+      <a href="http://en.wikipedia.org/wiki/Hunter-gatherer" title="Hunter-gatherer - Wikipedia, the free encyclopedia">Foraging</a>
+      <a href="http://en.wikipedia.org/wiki/History_of_agriculture" title="History of agriculture - Wikipedia, the free encyclopedia">History of agriculture</a>
+      <a href="https://www.salesforce.com">Salesforce (not a sponsor)</a>
+      <a href="http://techcrunch.com/2010/12/08/breaking-salesforce-buys-heroku-for-212-million-in-cash/" title="Salesforce.com Buys Heroku For $212 Million In Cash  |  TechCrunch">Salesforce, a subsidiary of Heroku</a>
+      <a href="http://www.crossfit.com" title="Welcome to CrossFit: Forging Elite Fitness">Crossfit</a>
+      <a href="https://twitter.com/kennethreitz">Kenneth Reitz</a>
+      <a href="http://www.hashicorp.com" title="HashiCorp"><b>Sponsor:</b> Hashicorp</a>
+      <a href="https://twitter.com/mitchellh"><b>Sponsor:</b> Mitchell Hashimoto</a>
+      <a href="http://www.vagrantup.com" title="Vagrant"><b>Sponsor:</b> Vagrant</a>
+      <a href="http://www.hashicorp.com/blog/announcing-hashicorp.html" title="HashiCorp"><b>Sponsor:</b> Announcing HashiCorp</a>
+      At 30:30 Steve mistakenly claimed that Shugo only committed the Refinements patch, and that Shugo did not write it. <a href="http://bugs.ruby-lang.org/issues/4085#note-95" title="Feature #4085: Refinements and nested methods - ruby-trunk - Ruby Issue Tracking System">Steve was wrong.</a>
+      <a href="http://bugs.ruby-lang.org/issues/show/4085" title="Feature #4085: Refinements and nested methods - ruby-trunk - Ruby Issue Tracking System">Ruby Refinements and nested methods (in Redmine)</a>
+      <a href="http://www.rubyinside.com/ruby-refinements-an-overview-of-a-new-proposed-ruby-feature-3978.html" title="Ruby Refinements: An Overview of a New Proposed Ruby Feature">Ruby Refinements: An Overview of a New Proposed Ruby Feature</a>
+      <a href="http://en.wikipedia.org/wiki/Monkey_patch" title="Monkey patch - Wikipedia, the free encyclopedia">Monkey patching</a>
+      <a href="http://rubylearning.com/satishtalim/ruby_open_classes.html" title="Ruby Open Classes: Ruby Study Notes - Best Ruby Guide, Ruby Tutorial">Ruby Open Classes</a>
+      <a href="http://branch.com/b/should-jruby-aim-to-support-ruby-s-c-api" title="Should JRuby aim to support Ruby's C API? - Branch">Should JRuby aim to support Ruby's C API? by Erik Michaels-Ober</a>
+      <a href="https://github.com/jruby/jruby/wiki/C-Extension-Alternatives">JRuby C Extension Alternatives</a>
+      <a href="http://guides.rubyonrails.org/active_support_core_extensions.html" title="Ruby on Rails Guides: Active Support Core Extensions">ActiveSupport</a>
+      <a href="http://blog.headius.com/2012/11/refining-ruby.html" title="Headius: Refining Ruby">Charles Nutter on Refinements</a>
+      <a href="http://yehudakatz.com/2010/11/30/ruby-2-0-refinements-in-practice/" title="Ruby 2.0 Refinements in Practice &laquo;  Katz Got Your Tongue?">Yehuda Katz on Refinements</a>
+      <a href="http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/40301" title="[ruby-core:40301] A rough release schedule for 2.0.0">Ruby 2.0 freeze schedule</a>
+      <a href="https://github.com/drapergem/draper">Draper</a>
+      <a href="https://github.com/johnbender/rquery">John Bender's excursion into the Devil's Playground of metaprogramming : RQuery</a>
+      <a href="http://en.wikipedia.org/wiki/Helicopter_parent" title="Helicopter parent - Wikipedia, the free encyclopedia">Helicopter parenting</a>
+      <a href="https://github.com/rubinius/rubinius/issues/1006">Flip Flop in Rubinius</a>
     }
   }
 ]
