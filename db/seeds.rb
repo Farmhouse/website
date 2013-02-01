@@ -818,6 +818,23 @@ episodes = [
       <a href="http://en.wikipedia.org/wiki/Helicopter_parent" title="Helicopter parent - Wikipedia, the free encyclopedia">Helicopter parenting</a>
       <a href="https://github.com/rubinius/rubinius/issues/1006">Flip Flop in Rubinius</a>
     }
+  },
+  {
+    :title            => "Interview: Mitchell Hashimoto",
+    :subtitle         => "Creator of Vagrant. Founder of HashiCorp.",
+    :published_at     => Time.parse("Fri Feb 01 12:44:50 -0800 2013"),
+    :summary          => %Q{ Shane Becker talks with Mitchell Hashimoto about Vagrant, HashiCorp, open source and community. },
+    :season           => 1,
+    :episode          => 6,
+    :url              => "http://farmhouse.s3.amazonaws.com/podcast/S01/06%20Interview_%20Mitchell%20Hashimoto.mp3",
+    :authors          => "Shane Becker and Mitchell Hashimoto",
+    :itunes_summary   => "Shane Becker talks with Mitchell Hashimoto about Vagrant, HashiCorp, open source and community.",
+    :enclosure_length => "68270555",
+    :duration         => "35:33",
+    :keywords         => "ruby, computer science, farmhouse, hollywood, nerdery, vagrant, open source, hashicorp, mitchell hashimoto",
+    :show_notes       => %Q{
+      Coming soon...
+    }
   }
 ]
 
