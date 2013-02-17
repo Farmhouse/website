@@ -1,0 +1,20 @@
+<div id="alumni" class="row">
+  <div class="span12">
+    <h2>Farmhouse Conf 5 Alumni Follow-Up</h2>
+
+    <div class="row">
+      <div id="greg-bennick" class="span3">
+        <h1>Greg&nbsp;Bennick</h1>
+
+        <%= link_to conf_talk_path(1, "greg-bennick") do %>
+          <%= remote_image_tag("speakers/greg-bennick", :alt => "Greg Bennick") %>
+        <% end %>
+
+        <p>
+          <%= link_to "Greg Bennick&rsquo;s Farmhouse Conf 2 Talk".html_safe, conf_talk_path(2, "the-map-from-trauma-to-survival") %>
+        </p>
+      </div>
+    </div> <!-- .row -->
+
+  </div><!-- #alumni -->
+</div>
