@@ -10,46 +10,6 @@ location = Location.create!(
 )
 
 
-# sponsors
-[
-  ["baggu", "http://baggubag.com"],
-  ["blueboxgroup", "http://bluebox.net"],
-  ["c2o", "http://c2o-cocowater.com"],
-  ["claras-cakes", "http://ClaraCakes.com"],
-  ["cloud-city", "http://cloudcitydevelopment.com"],
-  ["code-climate", "http://codeclimate.com"],
-  ["crimethinc", "http://crimethinc.com"],
-  ["cruzer", "http://cruzerpizza.com"],
-  ["doomies", "http://twitter.com/doomies"],
-  ["engine-yard", "http://engineyard.com"],
-  ["factual", "http://factual.com"],
-  ["field-notes", "http://fieldnotesbrand.com"],
-  ["github", "http://github.com"],
-  ["graft-concepts", "http://graftconcepts.com"],
-  ["heroku", "http://heroku.com"],
-  ["johnny-cupcakes", "http://johnnycupcakes.com"],
-  ["logical-reality-design", "http://lrdesign.com"],
-  ["luna-sandals", "http://lunasandals.com"],
-  ["moth-attack", "http://mothattack.com"],
-  ["noisivelvet", "http://noisivelvet.com"],
-  ["okcupid-labs", "http://okcupidlabs.com"],
-  ["pac-nw-kale-chips", "http://pacifickale.com"],
-  ["sendgrid", "http://sendgrid.com"],
-  ["spacex", "http://spacex.com"],
-  ["spire-io", "http://spire.io"],
-  ["square", "http://squareup.com"],
-  ["the-frontier-group", "http://thefrontiergroup.com.au"],
-  ["the-hub-la", "http://thehubla.com"],
-  ["the-hybrid-group", "http://hybridgroup.com"],
-  ["tonx", "http://tonx.org"],
-  ["veggie-grill", "http://veggiegrill.com"],
-  ["zaarly", "http://zaarly.com"],
-  ["znp-industries", ""]
-].each do |sponsor|
-  Sponsor.create!(:slug => sponsor.first, :url => sponsor.last)
-end
-
-
 # farmhouse conf 1, 2011
 farmhouse_conf_1    = Conf.create!(
   :name             => "Farmhouse Conf 1",
@@ -611,6 +571,108 @@ farmhouse_conf_5 = Conf.create!(
   :theme            => "Collapse",
   :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-5/register/"
 )
+
+
+# sponsors
+[
+  ["baggu", "http://baggubag.com"],
+  ["blueboxgroup", "http://bluebox.net"],
+  ["c2o", "http://c2o-cocowater.com"],
+  ["claras-cakes", "http://ClaraCakes.com"],
+  ["cloud-city", "http://cloudcitydevelopment.com"],
+  ["code-climate", "http://codeclimate.com"],
+  ["crimethinc", "http://crimethinc.com"],
+  ["cruzer", "http://cruzerpizza.com"],
+  ["doomies", "http://twitter.com/doomies"],
+  ["engine-yard", "http://engineyard.com"],
+  ["factual", "http://factual.com"],
+  ["field-notes", "http://fieldnotesbrand.com"],
+  ["github", "http://github.com"],
+  ["graft-concepts", "http://graftconcepts.com"],
+  ["heroku", "http://heroku.com"],
+  ["johnny-cupcakes", "http://johnnycupcakes.com"],
+  ["logical-reality-design", "http://lrdesign.com"],
+  ["luna-sandals", "http://lunasandals.com"],
+  ["moth-attack", "http://mothattack.com"],
+  ["noisivelvet", "http://noisivelvet.com"],
+  ["okcupid-labs", "http://okcupidlabs.com"],
+  ["pac-nw-kale-chips", "http://pacifickale.com"],
+  ["sendgrid", "http://sendgrid.com"],
+  ["spacex", "http://spacex.com"],
+  ["spire-io", "http://spire.io"],
+  ["square", "http://squareup.com"],
+  ["the-frontier-group", "http://thefrontiergroup.com.au"],
+  ["the-hub-la", "http://thehubla.com"],
+  ["the-hybrid-group", "http://hybridgroup.com"],
+  ["tonx", "http://tonx.org"],
+  ["veggie-grill", "http://veggiegrill.com"],
+  ["zaarly", "http://zaarly.com"],
+  ["znp-industries", ""]
+].each do |sponsor|
+  Sponsor.create!(:slug => sponsor.first, :url => sponsor.last)
+end
+
+
+# sponsorships
+conf_2 = Conf.find(2)
+conf_3 = Conf.find(3)
+conf_4 = Conf.find(4)
+conf_5 = Conf.find(5)
+
+# levels
+# acknowledgment party standard food goodie
+
+
+# FHC2 sponsorships
+# after-party
+%w(engine-yard sendgrid).each do |sponsor|
+  Sponsorship.create!(
+    :conf_id    => conf_2.id,
+    :sponsor_id => Sponsor.where(:slug => sponsor).first.id,
+    :level      => :party
+  )
+end
+
+# standard
+%w(okcupid-labs square github blueboxgroup spire-io the-hybrid-group zaarly znp-industries factual).each do |sponsor|
+  Sponsorship.create!(
+    :conf_id    => conf_2.id,
+    :sponsor_id => Sponsor.where(:slug => sponsor).first.id,
+    :level      => :standard
+  )
+end
+
+# food and drink
+%w(doomies claras-cakes veggie-grill pac-nw-kale-chips cruzer c2o tonx).each do |sponsor|
+  Sponsorship.create!(
+    :conf_id    => conf_2.id,
+    :sponsor_id => Sponsor.where(:slug => sponsor).first.id,
+    :level      => :food
+  )
+end
+
+# goodie bags
+%w(field-notes heroku spacex crimethinc baggu luna-sandals).each do |sponsor|
+  Sponsorship.create!(
+    :conf_id    => conf_2.id,
+    :sponsor_id => Sponsor.where(:slug => sponsor).first.id,
+    :level      => :goodie
+  )
+end
+
+
+
+
+
+# Sponsorship.create!(:conf => conf_2, :sponsor => sponsor, :level => :standard)
+# Sponsorship.create!(:conf => conf_2, :sponsor => sponsor, :level => :food)
+# Sponsorship.create!(:conf => conf_2, :sponsor => sponsor, :level => :goodie)
+
+
+
+
+
+
 
 
 
