@@ -1,3 +1,28 @@
+# memberships
+desk = Membership.create!(
+  :name        => "Desk",
+  :description => "",
+  :price       => 2500,
+  :slug        => "desk"
+)
+
+barn = Membership.create!(
+  :name        => "Barn",
+  :description => "",
+  :price       => 2500,
+  :slug        => "barn"
+)
+
+desk = Membership.create!(
+  :name        => "Van",
+  :description => "",
+  :price       => 5000,
+  :slug        => "van"
+)
+
+
+
+
 # the farmhouse location
 location = Location.create!(
   :name             => "The Farmhouse",
