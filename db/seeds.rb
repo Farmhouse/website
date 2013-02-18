@@ -594,6 +594,7 @@ farmhouse_conf_5 = Conf.create!(
   ["logical-reality-design", "http://lrdesign.com"],
   ["luna-sandals", "http://lunasandals.com"],
   ["moth-attack", "http://mothattack.com"],
+  ["native-foods", "http://nativefoods.com"],
   ["noisivelvet", "http://noisivelvet.com"],
   ["okcupid-labs", "http://okcupidlabs.com"],
   ["pac-nw-kale-chips", "http://pacifickale.com"],
@@ -620,53 +621,77 @@ conf_4 = Conf.find(4)
 conf_5 = Conf.find(5)
 
 # levels
-# acknowledgment party standard food goodie
+# acknowledgment party standard food goodie scholarship
 
 
 # FHC2 sponsorships
-# after-party
-%w(engine-yard sendgrid).each do |sponsor|
-  Sponsorship.create!(
-    :conf_id    => conf_2.id,
-    :sponsor_id => Sponsor.where(:slug => sponsor).first.id,
-    :level      => :party
-  )
+[
+  [:party,    %w(engine-yard sendgrid)],
+  [:standard, %w(okcupid-labs square github blueboxgroup spire-io the-hybrid-group zaarly znp-industries factual)],
+  [:food,     %w(doomies claras-cakes veggie-grill pac-nw-kale-chips cruzer c2o tonx)],
+  [:goodie,   %w(field-notes heroku spacex crimethinc baggu luna-sandals)]
+].each do |level|
+  level.last.each do |sponsor|
+    Sponsorship.create!(
+      :conf_id    => conf_2.id,
+      :sponsor_id => Sponsor.where(:slug => sponsor).first.id,
+      :level      => level.first
+    )
+  end
 end
 
-# standard
-%w(okcupid-labs square github blueboxgroup spire-io the-hybrid-group zaarly znp-industries factual).each do |sponsor|
-  Sponsorship.create!(
-    :conf_id    => conf_2.id,
-    :sponsor_id => Sponsor.where(:slug => sponsor).first.id,
-    :level      => :standard
-  )
+# FHC3 sponsorships
+[
+  [:party,       %w(github)],
+  [:standard,    %w(okcupid-labs the-hybrid-group the-hub-la cloud-city logical-reality-design code-climate the-frontier-group)],
+  [:food,        %w(claras-cakes native-foods cruzer tonx)],
+  [:goodie,      %w(johnny-cupcakes moth-attack graft-concepts luna-sandals)],
+  [:scholarship, %w(noisivelvet)]
+].each do |level|
+  level.last.each do |sponsor|
+    Sponsorship.create!(
+      :conf_id    => conf_3.id,
+      :sponsor_id => Sponsor.where(:slug => sponsor).first.id,
+      :level      => level.first
+    )
+  end
 end
 
-# food and drink
-%w(doomies claras-cakes veggie-grill pac-nw-kale-chips cruzer c2o tonx).each do |sponsor|
-  Sponsorship.create!(
-    :conf_id    => conf_2.id,
-    :sponsor_id => Sponsor.where(:slug => sponsor).first.id,
-    :level      => :food
-  )
+# FHC4 sponsorships
+[
+  [:standard,    %w(github the-hybrid-group)],
+  [:food,        %w(claras-cakes tonx)],
+  [:goodie,      %w(luna-sandals)],
+  [:scholarship, %w(noisivelvet)]
+].each do |level|
+  level.last.each do |sponsor|
+    Sponsorship.create!(
+      :conf_id    => conf_4.id,
+      :sponsor_id => Sponsor.where(:slug => sponsor).first.id,
+      :level      => level.first
+    )
+  end
 end
 
-# goodie bags
-%w(field-notes heroku spacex crimethinc baggu luna-sandals).each do |sponsor|
-  Sponsorship.create!(
-    :conf_id    => conf_2.id,
-    :sponsor_id => Sponsor.where(:slug => sponsor).first.id,
-    :level      => :goodie
-  )
+# FHC5 sponsorships
+[
+  [:party,       %w(github)],
+  [:standard,    %w(the-hybrid-group)],
+  [:food,        %w(claras-cakes tonx)],
+  [:goodie,      %w(luna-sandals)],
+  [:scholarship, %w(noisivelvet)]
+].each do |level|
+  level.last.each do |sponsor|
+    Sponsorship.create!(
+      :conf_id    => conf_5.id,
+      :sponsor_id => Sponsor.where(:slug => sponsor).first.id,
+      :level      => level.first
+    )
+  end
 end
 
 
 
-
-
-# Sponsorship.create!(:conf => conf_2, :sponsor => sponsor, :level => :standard)
-# Sponsorship.create!(:conf => conf_2, :sponsor => sponsor, :level => :food)
-# Sponsorship.create!(:conf => conf_2, :sponsor => sponsor, :level => :goodie)
 
 
 
