@@ -40,6 +40,11 @@
   .nav-pills li:nth-of-type(2) {
     font-weight: bold;
   }
+
+  #conf-1 #sponsors,
+  #conf-2 #scholarship-sponsors {
+    display: none;
+  }
 }
 
 #music iframe {

@@ -1,8 +1,9 @@
 class ConfsController < ApplicationController
   def show
-    @slug  = "conf"
-    @conf  = Conf.find params[:id]
-    @title = @conf.name
+    @slug     = "conf"
+    @conf     = Conf.find params[:id]
+    @sub_slug = "conf-#{@conf.id}"
+    @title    = @conf.name
   end
 
   def sponsor

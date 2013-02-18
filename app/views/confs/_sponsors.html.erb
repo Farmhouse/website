@@ -1,0 +1,31 @@
+<div id="sponsors" class="row">
+  <%
+  [
+    [:party,       "After Party Sponsors"],
+    [:standard,    "Conference Sponsors"],
+    [:goodie,      "Goodie Bag Sponsors"],
+    [:food,        "Food and Drink Sponsors"],
+    [:scholarship, "Scholarship Sponsors"]
+  ].each do |sponsorship_level, sponsorship_title|
+  %>
+
+  <div class="span12">
+    <h2 id="<%= sponsorship_level %>-sponsors"><%= sponsorship_title %></h2>
+
+    <div class="row">
+      <% @conf.sponsorships.send(sponsorship_level).in_groups_of(2).each do |group| %>
+
+        <div class="span6">
+          <% group.each do |sponsorship| %>
+            <% unless sponsorship.nil? %>
+              <%= link_to_sponsor_image_tag(sponsorship.sponsor.slug, sponsorship.sponsor.url) %>
+            <% end %>
+          <% end %>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+
+  <% end %>
+</div>
