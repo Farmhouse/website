@@ -45,18 +45,22 @@ Farmhouse::Application.routes.draw do
 
 
 
-  match "/bs" => redirect("/labs")
-  resources :labs
-
   root :to => "about#index"
 
+  # labs
+  match "/bs"   => redirect("/labs")
+  match "/labs" => ("labs#index")
+
+  # about
   match "/rules"            => "about#rules",            :as => "rules"
   match "/register"         => "about#register_4",       :as => "register"
   match "/register/5"       => "about#register_5",       :as => "register_5"
   match "/us"               => "about#us",               :as => "us"
   match "/house"            => "about#house",            :as => "house"
   match "/sandwiches"       => "about#sandwiches",       :as => "sandwiches"
+  match "/barn"             => "about#barn",             :as => "barn"
 
+  # conf
   match "/prospectus"      => redirect("/conf/sponsor"), :as => "prospectus"
   match "/conf/sponsor"    => "confs#sponsor",           :as => "sponsor"
 
@@ -67,15 +71,19 @@ Farmhouse::Application.routes.draw do
   match "/conf/:id/talks"  => "talks#index",             :as => "conf_talks"
   match "/conf/:id/:slug"  => "talks#show",              :as => "conf_talk"
 
+  # ??? delete
   match "/people/:slug"    => "people#show",             :as => "person_slug"
 
+  # podcast
   match "/podcast/feed"    => "podcast#feed",            :as => "podcasts_feed"
   match "/podcast"         => "podcast#index",           :as => "podcasts"
   match "/podcast/sponsor" => "podcast#sponsor",         :as => "podcast_sponsor"
   match "/podcast/:id"     => "podcast#show",            :as => "podcast"
 
+  # publishing
   match "/publishing"         => "publishing#index",     :as => "publishing"
   match "/publishing/:id"     => "publishing#show",      :as => "publication"
+
 
   namespace :admin do
     resources :episodes #podcast admin
