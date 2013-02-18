@@ -7,7 +7,8 @@ class Conf < ActiveRecord::Base
   has_many :tweets
   has_many :links
 
-  scope :latest, :order => "year DESC", :limit => 1
+  has_many :sponsorships
+  has_many :sponsors, :through => :sponsorships
 
   class << self
     def options_for_select

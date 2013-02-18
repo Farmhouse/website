@@ -9,6 +9,47 @@ location = Location.create!(
   :country_id       => Country.where(:name => "United States").first.id
 )
 
+
+# sponsors
+[
+  ["baggu", "http://baggubag.com"],
+  ["blueboxgroup", "http://bluebox.net"],
+  ["c2o", "http://c2o-cocowater.com"],
+  ["claras-cakes", "http://ClaraCakes.com"],
+  ["cloud-city", "http://cloudcitydevelopment.com"],
+  ["code-climate", "http://codeclimate.com"],
+  ["crimethinc", "http://crimethinc.com"],
+  ["cruzer", "http://cruzerpizza.com"],
+  ["doomies", "http://twitter.com/doomies"],
+  ["engine-yard", "http://engineyard.com"],
+  ["factual", "http://factual.com"],
+  ["field-notes", "http://fieldnotesbrand.com"],
+  ["github", "http://github.com"],
+  ["graft-concepts", "http://graftconcepts.com"],
+  ["heroku", "http://heroku.com"],
+  ["johnny-cupcakes", "http://johnnycupcakes.com"],
+  ["logical-reality-design", "http://lrdesign.com"],
+  ["luna-sandals", "http://lunasandals.com"],
+  ["moth-attack", "http://mothattack.com"],
+  ["noisivelvet", "http://noisivelvet.com"],
+  ["okcupid-labs", "http://okcupidlabs.com"],
+  ["pac-nw-kale-chips", "http://pacifickale.com"],
+  ["sendgrid", "http://sendgrid.com"],
+  ["spacex", "http://spacex.com"],
+  ["spire-io", "http://spire.io"],
+  ["square", "http://squareup.com"],
+  ["the-frontier-group", "http://thefrontiergroup.com.au"],
+  ["the-hub-la", "http://thehubla.com"],
+  ["the-hybrid-group", "http://hybridgroup.com"],
+  ["tonx", "http://tonx.org"],
+  ["veggie-grill", "http://veggiegrill.com"],
+  ["zaarly", "http://zaarly.com"],
+  ["znp-industries", ""]
+].each do |sponsor|
+  Sponsor.create!(:slug => sponsor.first, :url => sponsor.last)
+end
+
+
 # farmhouse conf 1, 2011
 farmhouse_conf_1    = Conf.create!(
   :name             => "Farmhouse Conf 1",
@@ -570,48 +611,6 @@ farmhouse_conf_5 = Conf.create!(
   :theme            => "Collapse",
   :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-5/register/"
 )
-
-
-# sponsors
-[
-  ["baggu", "http://baggubag.com"],
-  ["blueboxgroup", "http://bluebox.net"],
-  ["c2o", "http://c2o-cocowater.com"],
-  ["claras-cakes", "http://ClaraCakes.com"],
-  ["cloud-city", "http://cloudcitydevelopment.com"],
-  ["code-climate", "http://codeclimate.com"],
-  ["crimethinc", "http://crimethinc.com"],
-  ["cruzer", "http://cruzerpizza.com"],
-  ["doomies", "http://twitter.com/doomies"],
-  ["engine-yard", "http://engineyard.com"],
-  ["factual", "http://factual.com"],
-  ["field-notes", "http://fieldnotesbrand.com"],
-  ["github", "http://github.com"],
-  ["graft-concepts", "http://graftconcepts.com"],
-  ["heroku", "http://heroku.com"],
-  ["johnny-cupcakes", "http://johnnycupcakes.com"],
-  ["logical-reality-design", "http://lrdesign.com"],
-  ["luna-sandals", "http://lunasandals.com"],
-  ["moth-attack", "http://mothattack.com"],
-  ["noisivelvet", "http://noisivelvet.com"],
-  ["okcupid-labs", "http://okcupidlabs.com"],
-  ["pac-nw-kale-chips", "http://pacifickale.com"],
-  ["sendgrid", "http://sendgrid.com"],
-  ["spacex", "http://spacex.com"],
-  ["spire-io", "http://spire.io"],
-  ["square", "http://squareup.com"],
-  ["the-frontier-group", "http://thefrontiergroup.com.au"],
-  ["the-hub-la", "http://thehubla.com"],
-  ["the-hybrid-group", "http://hybridgroup.com"],
-  ["tonx", "http://tonx.org"],
-  ["veggie-grill", "http://veggiegrill.com"],
-  ["zaarly", "http://zaarly.com"],
-  ["znp-industries", ""]
-].each do |sponsor|
-  Sponsor.create!(:slug => sponsor.first, :url => sponsor.last)
-end
-
-
 
 
 
