@@ -70,8 +70,8 @@ GEM
     pg (0.14.1)
     polyglot (0.3.3)
     posix-spawn (0.3.6)
-    puma (1.6.3)
-      rack (~> 1.2)
+    puma (2.0.0.b6)
+      rack (>= 1.1, < 2.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -141,7 +141,7 @@ DEPENDENCIES
   json
   newrelic_rpm
   pg
-  puma (~> 1.6.3)
+  puma (~> 2.0.0.b6)
   rails (~> 3.2.12)
   sass-rails
   sqlite3-ruby
