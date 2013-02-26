@@ -61,7 +61,8 @@ Farmhouse::Application.routes.draw do
   match "/barn"             => "about#barn",             :as => "barn"
 
   # memberships
-  resources :memberships, :only => [:show, :index]
+  match "/memberships"       => "memberships#index",     :as => "memberships"
+  match "/memberships/:slug" => "memberships#show",      :as => "membership"
 
   # conf
   match "/prospectus"      => redirect("/conf/sponsor"), :as => "prospectus"

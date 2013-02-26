@@ -1,11 +1,40 @@
-<article id="barn">
+<article>
 
-  <div class="hero-unit alert alert-info">
+  <div class="page-header">
     <h1>Membership</h1>
     <h2>Monthly Subscriptions to The Farmhouse Resources</h2>
-    <p>
-      Coming soon&hellip;
-    </p>
-  </div>
+  </div> <!-- .page-header -->
+
+  <ul class="thumbnails">
+    <% @memberships.each do |membership| %>
+
+      <li class="span4">
+        <div class="thumbnail">
+          <%= image_tag "http://farmhouse.s3.amazonaws.com/images/memberships/#{membership.slug}.jpg" %>
+
+          <div class="caption">
+            <h3><%= membership.name %> Membership</h3>
+            <h4><%= number_to_currency membership.price, :precision => 0 %> / month</h4>
+
+            <p class="muted"><%= membership.description %></p>
+          </div> <!-- .caption -->
+        </div>
+      </li>
+
+    <% end %>
+
+
+    <!-- remove this when 3rd membership level ships -->
+    <li class="span4">
+      <div class="thumbnail">
+        <%= image_tag "http://farmhouse.s3.amazonaws.com/images/memberships/van.jpg" %>
+
+        <div class="caption">
+          <h3>Coming Soon...</h3>
+          <p class="muted">Another membership level that we're not quite ready to talk about.</p>
+        </div> <!-- .caption -->
+      </div> <!-- /div.thumbnail -->
+    </li>
+  </ul><!-- .thumbnail -->
 
 </article>

@@ -1,24 +1,24 @@
 # memberships
 desk = Membership.create!(
   :name        => "Desk",
-  :description => "",
-  :price       => 2500,
+  :description => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  :price       => 25,
   :slug        => "desk"
 )
 
 barn = Membership.create!(
   :name        => "Barn",
-  :description => "",
-  :price       => 2500,
+  :description => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  :price       => 25,
   :slug        => "barn"
 )
 
-desk = Membership.create!(
-  :name        => "Van",
-  :description => "",
-  :price       => 5000,
-  :slug        => "van"
-)
+# desk = Membership.create!(
+#   :name        => "Van",
+#   :description => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+#   :price       => 50,
+#   :slug        => "van"
+# )
 
 
 
@@ -614,6 +614,7 @@ farmhouse_conf_5 = Conf.create!(
   ["field-notes", "http://fieldnotesbrand.com"],
   ["github", "http://github.com"],
   ["graft-concepts", "http://graftconcepts.com"],
+  ["hashicorp", "http://hashicorp.com"],
   ["heroku", "http://heroku.com"],
   ["johnny-cupcakes", "http://johnnycupcakes.com"],
   ["logical-reality-design", "http://lrdesign.com"],
@@ -684,7 +685,7 @@ end
 
 # FHC4 sponsorships
 [
-  [:standard,    %w(github the-hybrid-group)],
+  [:standard,    %w(github the-hybrid-group the-hub-la hashicorp)],
   [:food,        %w(claras-cakes tonx)],
   [:goodie,      %w(luna-sandals)],
   [:scholarship, %w(noisivelvet)]
