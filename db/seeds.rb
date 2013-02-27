@@ -621,6 +621,7 @@ farmhouse_conf_5 = Conf.create!(
   ["luna-sandals", "http://lunasandals.com"],
   ["moth-attack", "http://mothattack.com"],
   ["native-foods", "http://nativefoods.com"],
+  ["new-relic", "http://newrelic.com"],
   ["noisivelvet", "http://noisivelvet.com"],
   ["okcupid-labs", "http://okcupidlabs.com"],
   ["pac-nw-kale-chips", "http://pacifickale.com"],
@@ -685,6 +686,7 @@ end
 
 # FHC4 sponsorships
 [
+  [:party,       %w(new-relic)],
   [:standard,    %w(github the-hybrid-group the-hub-la hashicorp)],
   [:food,        %w(claras-cakes tonx)],
   [:goodie,      %w(luna-sandals)],
