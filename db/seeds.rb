@@ -687,7 +687,7 @@ end
 # FHC4 sponsorships
 [
   [:party,       %w(new-relic)],
-  [:standard,    %w(github the-hybrid-group the-hub-la hashicorp)],
+  [:standard,    %w(github the-hybrid-group the-hub-la hashicorp pivotal-labs)],
   [:food,        %w(claras-cakes tonx)],
   [:goodie,      %w(luna-sandals)],
   [:scholarship, %w(noisivelvet)]
