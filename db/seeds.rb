@@ -625,6 +625,7 @@ farmhouse_conf_5 = Conf.create!(
   ["noisivelvet", "http://noisivelvet.com"],
   ["okcupid-labs", "http://okcupidlabs.com"],
   ["pac-nw-kale-chips", "http://pacifickale.com"],
+  ["pivotal-labs", "http://pivotallabs.com"],
   ["sendgrid", "http://sendgrid.com"],
   ["spacex", "http://spacex.com"],
   ["spire-io", "http://spire.io"],
