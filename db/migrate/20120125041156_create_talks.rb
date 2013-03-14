@@ -4,7 +4,6 @@ class CreateTalks < ActiveRecord::Migration
       t.belongs_to :conf
       t.string :title, :subtitle, :slug
       t.text :description
-      t.boolean :accepted, :keynote
 
       t.timestamps
     end

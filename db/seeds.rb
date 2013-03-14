@@ -82,9 +82,7 @@ people_1.each_with_index do |person, index|
     :conf_id      => farmhouse_conf_1.id,
     :title        => person.first,
     :subtitle     => "",
-    :description  => "",
-    :accepted     => true,
-    :keynote      => false
+    :description  => ""
   )
 
   Video.create!(
@@ -365,9 +363,7 @@ people_2.each do |person|
     :title        => person[:talk][:title],
     :subtitle     => "",
     :description  => person[:talk][:description],
-    :slug         => person[:talk][:slug],
-    :accepted     => true,
-    :keynote      => false
+    :slug         => person[:talk][:slug]
   )
 
   talk.people << speaker
@@ -521,9 +517,7 @@ people_3.each do |person|
     :conf_id      => farmhouse_conf_3.id,
     :title        => person[:talk][:title],
     :description  => person[:talk][:description],
-    :slug         => person[:talk][:slug],
-    :accepted     => true,
-    :keynote      => false
+    :slug         => person[:talk][:slug]
   )
 
   talk.people << speaker
@@ -575,9 +569,7 @@ people_4.each do |person|
     :conf_id      => farmhouse_conf_4.id,
     :title        => person[:talk][:title],
     :description  => person[:talk][:description],
-    :slug         => person[:talk][:slug],
-    :accepted     => true,
-    :keynote      => false
+    :slug         => person[:talk][:slug]
   )
 
   talk.people << speaker
@@ -596,6 +588,41 @@ farmhouse_conf_5 = Conf.create!(
   :theme            => "Collapse",
   :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-5/register/"
 )
+
+people_5 = [
+  {
+    :name => "John Barnette",
+    :bio  => %Q{
+    },
+    :talk => {
+      :slug        => "total-collapse",
+      :title       => "Total Collapse",
+      :description => %Q{  },
+    }
+  }
+]
+
+# fhc5 people + talks
+people_5.each do |person|
+  slug = person[:name].downcase.gsub(/\s/, "_")
+
+  speaker = Person.create!(
+    :name       => person[:name],
+    :bio        => person[:bio],
+    :image      => "http://farmhouse.la/images/speakers/#{slug}/#{slug}.jpg",
+    :staff      => false,
+    :organizer  => false
+  )
+
+  talk = Talk.create!(
+    :conf_id      => farmhouse_conf_5.id,
+    :title        => person[:talk][:title],
+    :description  => person[:talk][:description],
+    :slug         => person[:talk][:slug]
+  )
+
+  talk.people << speaker
+end
 
 
 # sponsors

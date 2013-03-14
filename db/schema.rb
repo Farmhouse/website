@@ -167,8 +167,6 @@ ActiveRecord::Schema.define(:version => 20130218042008) do
     t.string   "subtitle"
     t.string   "slug"
     t.text     "description"
-    t.boolean  "accepted"
-    t.boolean  "keynote"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
