@@ -3,13 +3,12 @@ source "http://rubygems.org"
 ruby "1.9.3", :engine => "rbx", :engine_version => "2.0.0.rc1"
 
 gem "rails", "~> 3.2.12"
-gem "puma", "~> 2.0.0.b6"
+gem "puma",  "~> 2.0.0.b6"
 gem "json"
 gem "jquery-rails"
 
 group :development do
-  gem "sqlite3-ruby", :require => "sqlite3"
-  gem "heroku"
+  gem "sqlite3"
   gem "taps"
   gem "gx"
 end
