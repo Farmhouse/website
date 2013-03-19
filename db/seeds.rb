@@ -716,7 +716,7 @@ end
 [
   [:party,       %w(new-relic)],
   [:standard,    %w(github the-hybrid-group the-hub-la hashicorp pivotal-labs)],
-  [:food,        %w(claras-cakes tonx)],
+  [:food,        %w(claras-cakes tonx native-foods)],
   [:goodie,      %w(luna-sandals)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
