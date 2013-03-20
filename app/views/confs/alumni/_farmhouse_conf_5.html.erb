@@ -3,17 +3,33 @@
     <h2>Farmhouse Conf 5 Alumni Follow-Up</h2>
 
     <div class="row">
+
       <div id="greg-bennick" class="span3">
         <h1>Greg&nbsp;Bennick</h1>
 
-        <%= link_to conf_talk_path(1, "greg-bennick") do %>
+        <%= link_to conf_talk_path(2, "the-map-from-trauma-to-survival") do %>
           <%= remote_image_tag("speakers/greg-bennick", :alt => "Greg Bennick") %>
         <% end %>
 
         <p>
-          <%= link_to "Greg Bennick&rsquo;s Farmhouse Conf 2 Talk".html_safe, conf_talk_path(2, "the-map-from-trauma-to-survival") %>
+          <%= link_to "Greg Bennick&rsquo;s Farmhouse Conf 2 Talk".html_safe,
+                      conf_talk_path(2, "the-map-from-trauma-to-survival") %>
         </p>
-      </div>
+      </div><!-- #greg-bennick -->
+
+      <div id="tj-nelson-jr" class="span3">
+        <h1>Tj&nbsp;Nelson&nbsp;Jr</h1>
+
+        <%= link_to conf_talk_path(1, "tj-nelson-jr") do %>
+          <%= remote_image_tag("speakers/tj-nelson-jr", :alt => "Tj Nelson Jr") %>
+        <% end %>
+
+        <p>
+          <%= link_to "Tj Nelson Jr&rsquo;s Farmhouse Conf 1 Talk".html_safe,
+                      conf_talk_path(1, "tj-nelson-jr") %>
+        </p>
+      </div><!-- #tj-nelson-jr -->
+
     </div> <!-- .row -->
 
   </div><!-- #alumni -->
