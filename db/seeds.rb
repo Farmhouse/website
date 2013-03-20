@@ -660,6 +660,7 @@ end
   ["the-frontier-group", "http://thefrontiergroup.com.au"],
   ["the-hub-la", "http://thehubla.com"],
   ["the-hybrid-group", "http://hybridgroup.com"],
+  ["thunderbolt-labs", "http://thunderboltlabs.com"],
   ["tonx", "http://tonx.org"],
   ["veggie-grill", "http://veggiegrill.com"],
   ["zaarly", "http://zaarly.com"],
@@ -716,7 +717,7 @@ end
 [
   [:party,       %w(new-relic)],
   [:standard,    %w(github the-hybrid-group the-hub-la hashicorp pivotal-labs)],
-  [:food,        %w(claras-cakes tonx native-foods)],
+  [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs)],
   [:goodie,      %w(luna-sandals)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
