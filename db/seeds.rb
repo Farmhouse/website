@@ -593,11 +593,12 @@ people_5 = [
   {
     :name => "John Barnette",
     :bio  => %Q{
+      <p>John Barnette works at GitHub. He's slow at delivery speaker bios to conference organizers.</p>
     },
     :talk => {
       :slug        => "total-collapse",
       :title       => "Total Collapse",
-      :description => %Q{  },
+      :description => %Q{ <p>John spoke at <a href="http://2011.cascadiaruby.com" title="Cascadia Ruby Conf | Ruby Without Borders | July 29-30 2011">Cascadia Ruby 2011</a> about the dark times. This will be roughly a follow up to <a href="http://confreaks.com/videos/611-cascadiaruby2011-keynote" title="Keynote - John Barnette - Cascadia Ruby 2011">that talk</a>.</p> },
     }
   }
 ]
