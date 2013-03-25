@@ -1,4 +1,4 @@
-<div class="navbar">
+<div class="navbar navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -7,11 +7,9 @@
         <span class="icon-bar"></span>
       </a>
 
-      <h1 class="brand">
-        <%= link_to_unless_current "The Farmhouse", root_path, :rel => "home" %>
-      </h1>
+      <%= link_to "The Farmhouse", root_path, :rel => "home", :class => "brand" %>
 
-      <div class="nav-collapse">
+      <div class="nav-collapse collapse">
         <ul class="nav">
           <%= nav_to "Farmhouse Conf <span class='label label-success'>4</span>".html_safe, conf_path(4) %>
           <%= nav_to "People",                                      us_path %>
