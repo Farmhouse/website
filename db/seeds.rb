@@ -557,8 +557,8 @@ people_4 = [
       <p>Zach Klein is co-founder of DIY, a movement for kids to learn skills, though he&rsquo;s also known for co-founding and once designing Vimeo. He&rsquo;s a partner at Founder Collective, the seed-stage venture capital firm based in New York City, and formerly a faculty member at the School of Visual Arts&rsquo; MFA program in Interaction Design. He&rsquo;s passionate about communities, homesteading, self-reliance, and creative literacy.</p>
     },
     :talk => {
-      :slug        => "we-will-build-offline",
-      :title       => "We Will Build Offline",
+      :slug        => "we-will-build-offline-in-the-future",
+      :title       => "We Will Build Offline In The Future",
       :description => %Q{ <p>We&rsquo;re the first generation to grow up online and soon we&rsquo;ll inherit the physical world.</p> },
     }
   }
@@ -651,6 +651,7 @@ end
   ["engine-yard", "http://engineyard.com"],
   ["factual", "http://factual.com"],
   ["field-notes", "http://fieldnotesbrand.com"],
+  ["g5", "http://getg5.com"],
   ["github", "http://github.com"],
   ["graft-concepts", "http://graftconcepts.com"],
   ["hashicorp", "http://hashicorp.com"],
@@ -728,7 +729,7 @@ end
 # FHC4 sponsorships
 [
   [:party,       %w(new-relic)],
-  [:standard,    %w(github the-hybrid-group the-hub-la hashicorp pivotal-labs)],
+  [:standard,    %w(github the-hybrid-group the-hub-la hashicorp pivotal-labs g5)],
   [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs)],
   [:goodie,      %w(luna-sandals)],
   [:scholarship, %w(noisivelvet)]
