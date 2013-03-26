@@ -547,8 +547,19 @@ people_4 = [
     },
     :talk => {
       :slug        => "the-record-industry-is-dying-and you-shouldnt-feel-bad",
-      :title       => "The Record Industry Is Dying And You Shouldn't Feel Bad",
-      :description => %Q{ <p>The business of selling recorded sound on physical media may go down as one of culture's greatest bubble economies. Why is it no longer a viable business model and what's taking it so long to die? Record companies are quick to blame their customers, but the the reality lies in a long cycle of disruption that's been building for decades. We explore!</p> },
+      :title       => "The Record Industry Is Dying And You Shouldn&rsquo;t Feel Bad",
+      :description => %Q{ <p>The business of selling recorded sound on physical media may go down as one of culture&rsquo;s greatest bubble economies. Why is it no longer a viable business model and what&rsquo;s taking it so long to die? Record companies are quick to blame their customers, but the the reality lies in a long cycle of disruption that&rsquo;s been building for decades. We explore!</p> },
+    }
+  },
+  {
+    :name => "Zach Klein",
+    :bio  => %Q{
+      <p>Zach Klein is co-founder of DIY, a movement for kids to learn skills, though he&rsquo;s also known for co-founding and once designing Vimeo. He&rsquo;s a partner at Founder Collective, the seed-stage venture capital firm based in New York City, and formerly a faculty member at the School of Visual Arts&rsquo; MFA program in Interaction Design. He&rsquo;s passionate about communities, homesteading, self-reliance, and creative literacy.</p>
+    },
+    :talk => {
+      :slug        => "we-will-build-offline",
+      :title       => "We Will Build Offline",
+      :description => %Q{ <p>We&rsquo;re the first generation to grow up online and soon we&rsquo;ll inherit the physical world.</p> },
     }
   }
 ]
@@ -593,7 +604,7 @@ people_5 = [
   {
     :name => "John Barnette",
     :bio  => %Q{
-      <p>John Barnette works at GitHub. He's slow at delivery speaker bios to conference organizers.</p>
+      <p>John Barnette works at GitHub. He&rsquo;s slow at delivery speaker bios to conference organizers.</p>
     },
     :talk => {
       :slug        => "total-collapse",
