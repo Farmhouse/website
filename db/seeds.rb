@@ -731,7 +731,7 @@ end
   [:party,       %w(new-relic)],
   [:standard,    %w(github the-hybrid-group the-hub-la hashicorp pivotal-labs g5)],
   [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs)],
-  [:goodie,      %w(luna-sandals)],
+  [:goodie,      %w(luna-sandals crimethinc)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
   level.last.each do |sponsor|
