@@ -546,9 +546,9 @@ people_4 = [
       <p>Justin Ouellette was born in Portland, Oregon in 1983. He left college in 2005 to pursue photography in New York City, but wound up falling in with a rough crowd and becoming a software designer instead. In 2008 he created a minimalist web site for sharing music called Muxtape, which exploded in popularity and was eventually shuttered by the RIAA after a spectacular summer of backroom negotiations. He has worked for Vimeo, Betaworks, the New York Times R&amp;D Lab, and currently calls Tumblr home.</p>
     },
     :talk => {
-      :slug        => "the-record-industry-is-dying-and you-shouldnt-feel-bad",
-      :title       => "The Record Industry Is Dying And You Shouldn&rsquo;t Feel Bad",
-      :description => %Q{ <p>The business of selling recorded sound on physical media may go down as one of culture&rsquo;s greatest bubble economies. Why is it no longer a viable business model and what&rsquo;s taking it so long to die? Record companies are quick to blame their customers, but the the reality lies in a long cycle of disruption that&rsquo;s been building for decades. We explore!</p> },
+      :slug        => "designing-forever",
+      :title       => "Designing Forever",
+      :description => %Q{ <p>The future will be inhabited by people who live much longer lives than we know today, lives potentially without end. How will society cope as parts of it begin to think along much longer timescales than ever before? What does it mean for creativity and copyright when creators last as long as their creations? How will the discipline of product design evolve as humans evolve to last forever, and what lessons can we learn today?</p> },
     }
   },
   {
@@ -731,7 +731,7 @@ end
 [
   [:party,       %w(new-relic)],
   [:standard,    %w(github the-hybrid-group the-hub-la hashicorp pivotal-labs g5)],
-  [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs mighty-o)],
+  [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs mighty-o pac-nw-kale-chips)],
   [:goodie,      %w(luna-sandals crimethinc)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
