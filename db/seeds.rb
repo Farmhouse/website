@@ -659,6 +659,7 @@ end
   ["johnny-cupcakes", "http://johnnycupcakes.com"],
   ["logical-reality-design", "http://lrdesign.com"],
   ["luna-sandals", "http://lunasandals.com"],
+  ["mighty-o", "http://mightyo.com"],
   ["moth-attack", "http://mothattack.com"],
   ["native-foods", "http://nativefoods.com"],
   ["new-relic", "http://newrelic.com"],
@@ -730,7 +731,7 @@ end
 [
   [:party,       %w(new-relic)],
   [:standard,    %w(github the-hybrid-group the-hub-la hashicorp pivotal-labs g5)],
-  [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs)],
+  [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs mighty-o)],
   [:goodie,      %w(luna-sandals crimethinc)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
