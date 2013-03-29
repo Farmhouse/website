@@ -12,9 +12,15 @@
   <div class="span12">
     <h2 id="<%= sponsorship_level %>-sponsors"><%= sponsorship_title %></h2>
 
-    <div class="row">
-      <% @conf.sponsorships.send(sponsorship_level).in_groups_of(2).each do |group| %>
+    <%# splits each sponsor level into two groups for columns %>
+    <% sponsors    = @conf.sponsorships.send(sponsorship_level) %>
+    <% median      = sponsors.length / 2     %>
+    <% first_half  = sponsors[0..median - 1] %>
+    <% second_half = sponsors.length == 1 ? [] : sponsors[median..-1]  %>
 
+    <div class="row">
+
+      <% [first_half, second_half].each do |group| %>
         <div class="span6">
           <% group.each do |sponsorship| %>
             <% unless sponsorship.nil? %>
@@ -22,10 +28,10 @@
             <% end %>
           <% end %>
         </div>
-
       <% end %>
-    </div>
-  </div>
+
+    </div><!-- .row -->
+  </div><!-- .span12 -->
 
   <% end %>
 </div>
