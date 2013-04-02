@@ -561,6 +561,21 @@ people_4 = [
       :title       => "We Will Build Offline In The Future",
       :description => %Q{ <p>We&rsquo;re the first generation to grow up online and soon we&rsquo;ll inherit the physical world.</p> },
     }
+  },
+  {
+    :name => "Erika Brooks Adickman",
+    :bio  => %Q{
+      <p>Erika Brooks Adickman<sup>*</sup> is a monologist, performer and creator living in Los Angeles. She is also the host of Idolator.com&rsquo;s &lsquo;At Your Request&rsquo;. Her love of pop culture led to the creation of a hand-drawn web series &lsquo;Pop Waffle&rsquo;, an interactive screening event Troop Beverly Hills: The Experience and the website &lsquo;Oh Crap. My Parents Joined Facebook&rsquo;.</p>
+
+      <p>Erika has loved performing stories about her life and family since she won a school-wide storytelling contest at eight-years-old. However, her fascination with TV and 80s movies led her to film school at NYU. Her goal is to continue to pour herself into ideas that excite her &mdash; and to master all the hip-hop dance tutorials she obsessively watches on YouTube.</p>
+
+      <p>* &mdash; rhymes with &ldquo;attic fan&rdquo;.</p>
+    },
+    :talk => {
+      :slug        => "a-neurotic-gal-attempts-a-fearless-look-into-the-future",
+      :title       => "A Neurotic Gal Attempts A Fearless Look Into The Future",
+      :description => %Q{ <p>If you want to know about the future, ask a neurotic person. No one thinks about the future more than they do.</p> },
+    }
   }
 ]
 
