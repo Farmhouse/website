@@ -690,6 +690,7 @@ end
   ["the-hub-la", "http://thehubla.com"],
   ["the-hybrid-group", "http://hybridgroup.com"],
   ["thunderbolt-labs", "http://thunderboltlabs.com"],
+  ["tilde", "http://tilde.io"],
   ["tonx", "http://tonx.org"],
   ["veggie-grill", "http://veggiegrill.com"],
   ["zaarly", "http://zaarly.com"],
@@ -745,7 +746,7 @@ end
 # FHC4 sponsorships
 [
   [:party,       %w(new-relic)],
-  [:standard,    %w(github the-hybrid-group the-hub-la hashicorp pivotal-labs g5)],
+  [:standard,    %w(github the-hybrid-group the-hub-la hashicorp pivotal-labs g5 tilde)],
   [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs mighty-o pac-nw-kale-chips)],
   [:goodie,      %w(luna-sandals crimethinc)],
   [:scholarship, %w(noisivelvet)]
@@ -762,7 +763,7 @@ end
 # FHC5 sponsorships
 [
   [:party,       %w(github)],
-  [:standard,    %w(the-hybrid-group)],
+  [:standard,    %w(the-hybrid-group tilde)],
   [:food,        %w(claras-cakes tonx)],
   [:goodie,      %w(luna-sandals)],
   [:scholarship, %w(noisivelvet)]
