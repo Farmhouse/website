@@ -576,6 +576,17 @@ people_4 = [
       :title       => "A Neurotic Gal Attempts A Fearless Look Into The Future",
       :description => %Q{ <p>If you want to know about the future, ask a neurotic person. No one thinks about the future more than they do.</p> },
     }
+  },
+  {
+    :name => "Ron Evans",
+    :bio  => %Q{
+      <p><a href="https://twitter.com/deadprogram">Ron Evans</a> co-founded <a href="http://www.hybridgroup.com" title="Los Angeles Ruby on Rails, JavaScript, Cloud Computing, Mobile Development - The Hybrid Group">The Hybrid Group</a> and made <a href="http://artoo.io" title="Artoo">Artoo</a>.</p>
+    },
+    :talk => {
+      :slug        => "our-robot-future",
+      :title       => "Our Robot Future",
+      :description => %Q{ <p>There will be robots in action.</p> },
+    }
   }
 ]
 
