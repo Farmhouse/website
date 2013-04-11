@@ -602,6 +602,17 @@ people_4 = [
       :title       => "The Children Are Our Future",
       :description => %Q{ <p>In five years&rsquo; time, kids will look at everything you and I are making today and think it&rsquo;s unconscionably lame, and if you don&rsquo;t think that&rsquo;s the most fun thing in the world then I don&rsquo;t know what.</p> },
     }
+  },
+  {
+    :name => "Jacob Applebaum",
+    :bio  => %Q{
+      <p>Jacob Applebaum is <a href="https://twitter.com/ioerror">@ioerror</a> on Twitter.</p>
+    },
+    :talk => {
+      :slug        => "TBA",
+      :title       => "TBA",
+      :description => %Q{ <p></p> },
+    }
   }
 ]
 
