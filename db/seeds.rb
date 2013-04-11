@@ -598,8 +598,8 @@ people_4 = [
       <p>Above all else, he&rsquo;s a product man who gets excited about good products, and wants to tell you all about them.</p>
     },
     :talk => {
-      :slug        => "the-children-are-the-future",
-      :title       => "The Children are the Future",
+      :slug        => "the-children-are-our-future",
+      :title       => "The Children Are Our Future",
       :description => %Q{ <p></p> },
     }
   }
