@@ -600,7 +600,7 @@ people_4 = [
     :talk => {
       :slug        => "the-children-are-our-future",
       :title       => "The Children Are Our Future",
-      :description => %Q{ <p>In five years time, kids will look at everything you and I are making today and think it&rsquo;s completely lame, and if you don&rsquo;t think that&rsquo;s the most fun thing in the world then I don&rsquo;t know what.</p> },
+      :description => %Q{ <p>In five years&rsquo; time, kids will look at everything you and I are making today and think it&rsquo;s unconscionably lame, and if you don&rsquo;t think that&rsquo;s the most fun thing in the world then I don&rsquo;t know what.</p> },
     }
   }
 ]
