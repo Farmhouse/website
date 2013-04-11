@@ -604,9 +604,9 @@ people_4 = [
     }
   },
   {
-    :name => "Jacob Applebaum",
+    :name => "Jacob Appelbaum",
     :bio  => %Q{
-      <p>Jacob Applebaum is <a href="https://twitter.com/ioerror">@ioerror</a> on Twitter.</p>
+      <p>Jacob Appelbaum is <a href="https://twitter.com/ioerror">@ioerror</a> on Twitter.</p>
     },
     :talk => {
       :slug        => "TBA",
