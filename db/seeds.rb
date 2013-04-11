@@ -587,6 +587,21 @@ people_4 = [
       :title       => "Our Robot Future",
       :description => %Q{ <p>There will be robots in action.</p> },
     }
+  },
+  {
+    :name => "Adam Lisagor",
+    :bio  => %Q{
+      <p>Trained as a filmmaker, but enamored of technology, Adam Lisagor started his company Sandwich Video somewhat by accident in late 2010 to address a need for compelling video in the tech industry. His first video was shot in his backyard with no crew, for the purpose of demonstrating and promoting his own iPhone app. With the positive reception of the video, he quickly discovered a hunger in the startup and corporate world for video that could engage as well as inform. And the work started rolling in.</p>
+
+      <p>He&rsquo;s made a name for himself making video for innovative companies like Square, Summly, Flipboard, Airbnb, eBay, Rdio, and others, who have (by some incredible luck) embraced his unconventional methods of promotional storytelling.</p>
+
+      <p>Above all else, he&rsquo;s a product man who gets excited about good products, and wants to tell you all about them.</p>
+    },
+    :talk => {
+      :slug        => "the-children-are-the-future",
+      :title       => "The Children are the Future",
+      :description => %Q{ <p></p> },
+    }
   }
 ]
 
