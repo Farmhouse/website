@@ -606,12 +606,22 @@ people_4 = [
   {
     :name => "Jacob Appelbaum",
     :bio  => %Q{
-      <p>Jacob Appelbaum is <a href="https://twitter.com/ioerror">@ioerror</a> on Twitter.</p>
+      <p>Jacob Appelbaum works as a photographer, and as a developer and researcher with The Tor Project. He trains interested parties globally on how to effectively use and contribute to the Tor network.</p>
+
+      <p>He is a founding member of the hacklab Noisebridge in San Francisco where he indulges his interests in magnetics, cryptography and consensus based governance.</p>
+
+      <p>He is also a photographer and ambassador for the art group monochrom.</p>
     },
     :talk => {
-      :slug        => "TBA",
-      :title       => "TBA",
-      :description => %Q{ <p></p> },
+      :slug        => "cointelpro-past-present-and-our-shared-future",
+      :title       => "COINTELPRO &mdash; past, present and our shared future",
+      :description => %Q{
+        <p>Thanks to the brave efforts of an anonymous group known only as the <a href="https://en.wikipedia.org/wiki/Citizens%27_Commission_to_Investigate_the_FBI" title="Citizens' Commission to Investigate the FBI - Wikipedia, the free encyclopedia">Citizens&rsquo; Commission to Investigate the FBI</a> a sustained political campaign known as <a href="http://en.wikipedia.org/wiki/COINTELPRO" title="COINTELPRO - Wikipedia, the free encyclopedia">COINTELPRO/Counter Intelligence Program</a> came to light in the 1970s. The FBI&rsquo;s stated goal was &ldquo;expose, disrupt, misdirect, or otherwise neutralize&rdquo; groups that they targeted.</p>
+
+        <p>In the 1975, <a href="http://en.wikipedia.org/wiki/Church_Committee" title="Church Committee - Wikipedia, the free encyclopedia">the Church Committee</a>, also known by its more formal name of the &ldquo;United States Senate Select Committee to Study Governmental Operations with Respect to Intelligence Activities&rdquo; was formed in response to the leaks, Watergate and other activities revealed to the public. It sent waves through the so-called law enforcement and intelligence world as it attempted to reign in the abuses of power.</p>
+
+        <p>This talk will discuss the background of COINTELPRO, some of the results of the Church Committee and the current state of new programs that are achieving similar results as the original COINTELPRO. I&rsquo;ll discuss my own personal experiences, some of my coping strategies and other issues relating to my association with WikiLeaks.</p>
+      },
     }
   }
 ]
