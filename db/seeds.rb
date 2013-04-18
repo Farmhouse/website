@@ -692,7 +692,7 @@ people_5 = [
   {
     :name => "Claire Evans",
     :bio  => %Q{
-      <p><a href="http://www.youtube.com/watch?v=1O_We7NTihA" title="Converse x Filter: Claire Evans from YACHT talks Science Fiction - YouTube">Claire Evans</a> is the singer of <a href="http://en.wikipedia.org/wiki/Yacht_(band)" title="Yacht - Wikipedia">Yacht</a>.</p>
+      <p>Claire L. Evans is a writer and artist working in Los Angeles, California. Her &ldquo;day job&rdquo; is as the singer and co-author of the conceptual disco-pop band YACHT, which recently released its fifth album Shangri-La, on DFA Records. A science journalist and science fiction critic, her blog, Universe, addressing synchronies between art, science, technology, and the cultural world, was recently anthologized in Best Science Writing on the Web 2012 (Scientific American Books/Farrar, Straus & Giroux), and she regularly participates in panels, conferences, and screenings on the subject of science and culture. She has performed earnestly cosmic presentations at the Kitchen, MoMA PS1, and the Hirshhorn Museum, spoken about extraterrestrial life at the Rubin Museum&rsquo;s BRAINWAVE series, and co-authored a book on interdisciplinarity in the arts, NA/SA: New Art Science Affinities. A collected book of her essays, High Frontiers, is now available from Publication Studio.</p>
     },
     :talk => {
       :slug        => "TBA",
