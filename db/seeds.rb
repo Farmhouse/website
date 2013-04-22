@@ -854,7 +854,7 @@ end
   [:party,       %w(new-relic)],
   [:standard,    %w(github the-hybrid-group the-hub-la hashicorp pivotal-labs g5 tilde)],
   [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs mighty-o pac-nw-kale-chips)],
-  [:goodie,      %w(luna-sandals crimethinc)],
+  [:goodie,      %w(luna-sandals crimethinc field-notes)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
   level.last.each do |sponsor|
@@ -871,7 +871,7 @@ end
   [:party,       %w(github)],
   [:standard,    %w(the-hybrid-group tilde)],
   [:food,        %w(claras-cakes tonx)],
-  [:goodie,      %w(luna-sandals)],
+  [:goodie,      %w(luna-sandals crimethinc field-notes)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
   level.last.each do |sponsor|
