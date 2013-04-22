@@ -54,7 +54,20 @@
           <%= link_to "Evan Phoenix&rsquo;s Farmhouse Conf 1 Talk".html_safe,
                       conf_talk_path(1, "evan-phoenix") %>
         </p>
-      </div><!-- #leah-silber -->
+      </div><!-- #evan-phoenix -->
+
+      <div id="eli-duke" class="span3">
+        <h1>Evan&nbsp;Phoenix</h1>
+
+        <%= link_to conf_talk_path(1, "eli-duke") do %>
+          <%= remote_image_tag("speakers/eli-duke", :alt => "Eli Duke") %>
+        <% end %>
+
+        <p>
+          <%= link_to "Eli Duke&rsquo;s Farmhouse Conf 1 Talk".html_safe,
+                      conf_talk_path(1, "eli-duke") %>
+        </p>
+      </div><!-- #eli-duke -->
 
     </div> <!-- .row -->
 
