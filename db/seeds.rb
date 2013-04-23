@@ -627,7 +627,7 @@ people_4 = [
   {
     :name => "Jessica Lord",
     :bio  => %Q{
-      <p>Jessica is mostly an architect and urban designer, previously for the City of Boston, who spent 2012 as a Code for America Fellow and is currently still (willingly) swimming in JavaScript in the Bay area.</p>
+      <p>Jessica Lord is mostly an architect and urban designer, previously for the City of Boston, who spent 2012 as a Code for America Fellow and is currently still (willingly) swimming in JavaScript in the Bay area.</p>
 
       <p>Hyper currently, she's working on a JavaScript grant project for Mozilla-Knight Foundation's Open News, lending a hand with Knight's Open Gov News Challenge, building hacker skills at <a href="http://DIY.org">DIY.org</a>.</p>
     },
@@ -635,7 +635,34 @@ people_4 = [
       :slug        => "future-commonwealth",
       :title       => "Future Commonwealth",
       :description => %Q{
-        <p>What does a city of the future look like, what are the people in it like and who runs it? How far behind are we right now?</p>      },
+        <p>What does a city of the future look like, what are the people in it like and who runs it? How far behind are we right now?</p>
+      },
+    }
+  },
+  {
+    :name => "Starlee Kine",
+    :bio  => %Q{
+      <p><a href="https://twitter.com/StarleeKine">Starlee Kine</a> is a contributor to <a href="http://www.thisamericanlife.org/contributors/starlee-kine" title="Starlee Kine | This American Life">This American Life</a>.</p>
+    },
+    :talk => {
+      :slug        => "TBA",
+      :title       => "TBA",
+      :description => %Q{
+        <p></p>
+      },
+    }
+  },
+  {
+    :name => "Colleen Jordan",
+    :bio  => %Q{
+      <p><a href="http://colleenjordan.com" title="Colleen Jordan">Colleen Jordan</a> makes 3D printed jewelry at <a href="http://www.wearableplanter.com" title="Wearable Planter">Wearable Planter</a>.</p>
+    },
+    :talk => {
+      :slug        => "TBA",
+      :title       => "TBA",
+      :description => %Q{
+        <p></p>
+      },
     }
   }
 ]
