@@ -623,6 +623,20 @@ people_4 = [
         <p>This talk will discuss the background of COINTELPRO, some of the results of the Church Committee and the current state of new programs that are achieving similar results as the original COINTELPRO. I&rsquo;ll discuss my own personal experiences, some of my coping strategies and other issues relating to my association with WikiLeaks.</p>
       },
     }
+  },
+  {
+    :name => "Jessica Lord",
+    :bio  => %Q{
+      <p>Jessica is mostly an architect and urban designer, previously for the City of Boston, who spent 2012 as a Code for America Fellow and is currently still (willingly) swimming in JavaScript in the Bay area.</p>
+
+      <p>Hyper currently, she's working on a JavaScript grant project for Mozilla-Knight Foundation's Open News, lending a hand with Knight's Open Gov News Challenge, building hacker skills at <a href="http://DIY.org">DIY.org</a>.</p>
+    },
+    :talk => {
+      :slug        => "future-commonwealth",
+      :title       => "Future Commonwealth",
+      :description => %Q{
+        <p>What does a city of the future look like, what are the people in it like and who runs it? How far behind are we right now?</p>      },
+    }
   }
 ]
 
