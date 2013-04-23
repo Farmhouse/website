@@ -409,6 +409,14 @@ people_3 = [
       :slug        => "meme-myself-and-eye",
       :title       => "Meme, Myself, and Eye.",
       :description => "<p>The physical and virtual approach to creating viral memes. The visceral reaction to the things that exist in, impact, and replicate in the real world helps to propel things to go viral in the virtual world. The digital tools help to achieve greater reach, but understanding the fundamentals of human emotional response to the tangible and powerful is essential.</p>"
+    },
+    :video => {
+      :youtube       => "",
+      :canonical_url => ""
+    },
+    :video => {
+      :youtube       => "",
+      :canonical_url => ""
     }
   },
   {
@@ -420,6 +428,10 @@ people_3 = [
       :slug        => "shut-up-and-take-my-money",
       :title       => "Shut Up and Take My Money",
       :description => "<p>Kickstarter&rsquo;s transformed the landscape for funding creative projects, but it's also launched a new movement of fans as producers &mdash; people commissioning work from artists directly instead of waiting for artists to come to them. This is the story of XOXO, an arts &amp; technology festival that became the most-funded event on Kickstarter, and the future of fans replacing traditional labels, publishers, and studios.</p>"
+    },
+    :video => {
+      :youtube       => "rmrrapKyKN8",
+      :canonical_url => "http://confreaks.com/videos/2412-fhc3-shut-up-and-take-my-money"
     }
   },
   {
@@ -431,6 +443,10 @@ people_3 = [
       :slug        => "adult-entertainment-in-the-digital-age",
       :title       => "Adult Entertainment in the Digital Age",
       :description => %Q{ <p>Common lore tells us that porn drives technology. From the paperback book to home cinema to online payment systems, the adult industry has influenced new media adoption and pioneered technological innovation. True to the song "The Internet is for Porn", our new architecture for distributing information has caused an explosion of adult content online. But in an era of digital files and content aggregators, how is this socially stigmatized industry dealing with copyright protection issues?</p> },
+    },
+    :video => {
+      :youtube       => "FbPouKxLIM4",
+      :canonical_url => "http://confreaks.com/videos/2413-fhc3-adult-entertainment-in-the-digital-age"
     }
   },
   {
@@ -442,6 +458,10 @@ people_3 = [
       :slug        => "barter-with-me",
       :title       => "Barter with Me",
       :description => %Q{ <p><a href="http://tradeschool.coop" title="Trade School">Trade School</a> is a self-organized learning model that runs on barter. No one has ever been paid to organize a Trade School or teach a class there, but the model is working in 18 cities around the world. How does barter build community? This is the story of Trade School, started by three friends from <a href="https://ourgoods.org">OurGoods.org</a> in NYC in 2010, and now running in Barcelona, Cologne, Milan, Singapore, London, Cardiff, Manila, Quito, Glasgow, Bangkok, Purchase, Paris, and new cities each month. Trade School is an all-volunteer led organization, for now.</p> },
+    },
+    :video => {
+      :youtube       => "pv4pUHRjdno",
+      :canonical_url => "http://confreaks.com/videos/2414-fhc3-barter-with-me"
     }
   },
   {
@@ -455,6 +475,10 @@ people_3 = [
       :slug        => "stables-and-volatiles",
       :title       => "Stables and Volatiles",
       :description => %Q{ <p>On your team, there is an emerging war and if you want your team, company, and products to remain relevant, you need to encourage it.</p> },
+    },
+    :video => {
+      :youtube       => "sTNMAVfd0rQ",
+      :canonical_url => "http://confreaks.com/videos/2415-fhc3-stables-and-volatiles"
     }
   },
   {
@@ -471,6 +495,10 @@ people_3 = [
       :description => %Q{
         <p>In September, a small team and I went to China to film <i>The Secret Guide to Alternative Beijing</i> - part travel guide, part documentary, largely a time capsule of what's happening in the alternative culture of China's capital. Known as "the city of contrasts", Beijing earns its name now more than ever. I'll talk about the polarity between the creatives we interviewed, their work, how Beijing's striking aesthetic informs its culture and vice versa.</p>
       },
+    },
+    :video => {
+      :youtube       => "5RMjHllI2z0",
+      :canonical_url => "http://confreaks.com/videos/2416-fhc3-the-2012-beijing-aesthetic"
     }
   },
   {
@@ -483,6 +511,10 @@ people_3 = [
       :slug        => "making-bikes-work",
       :title       => "Making Bikes Work",
       :description => %Q{ <p>After quitting a corporate job to ride bikes down the West coast of the US, Megan Dean returned knowing she couldn&rsquo;t go back. Through various bicycling related jobs she eventually found an affinity for turning a pile of steel tubes into a functioning piece of art. In this talk, Megan will regal the audience with extreme bike dork stoke.</p> },
+    },
+    :video => {
+      :youtube       => "rsf7C2GyH0Y",
+      :canonical_url => "http://confreaks.com/videos/2417-fhc3-making-bikes-work"
     }
   },
   {
@@ -497,6 +529,10 @@ people_3 = [
         <p>He chose the second one.</p>
         <p>In an attempt to live his life to the fullest before the government took it away, Young spent 8 years perfecting the art (and science) of living well as a wanted man. For years lawyers told him never to discuss his years as a fugitive, and he never has - until now. From freight trains to book tours, these are the stories of one man's attempts to live a lifetime of adventure before a possible lifetime in prison.</p>
       },
+    },
+    :video => {
+      :youtube       => "JZaaYu3wSPo",
+      :canonical_url => "http://confreaks.com/videos/2418-fhc3-fugitives-have-more-fun-confessions-of-a-wanted-eco-terrorist"
     }
   }
 ]
@@ -521,6 +557,17 @@ people_3.each do |person|
   )
 
   talk.people << speaker
+
+  video = Video.create!(
+    :conf_id          => farmhouse_conf_3.id,
+    :talk_id          => talk.id,
+    :caption          => talk.description,
+    :videographer     => "Nate Cornett, Austin Brown and Omar de Armas",
+    :youtube          => person[:video][:youtube],
+    :canonical_url    => person[:video][:canonical_url]
+  )
+
+  talk.videos << video
 end
 
 
