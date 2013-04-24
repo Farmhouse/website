@@ -24,20 +24,28 @@
 
     <div class="span6">
       <% unless @talk.videos.blank? %>
-        <% if @talk.videos.first.youtube %>
-          <iframe height="360" src="http://www.youtube.com/embed/<%= @talk.videos.first.youtube %>"></iframe>
-        <% else %>
-          <video controls poster="<%= @talk.videos.first.poster_frame_url %>" preload="none">
-            <source src="<%= @talk.videos.first.mp4 %>" />
-          </video>
-        <% end %>
+        <% @talk.videos.each do |video| %>
 
-        <p class="notes">
-          Video by <%= @talk.videos.first.videographer %>.
-          <%= link_to "Higher resolutions", @talk.videos.first.canonical_url, :rel => "external" %>
-          available at
-          <%= link_to "Confreaks.", "http://confreaks.com", :rel => "external" %>
-        </p>
+          <div class="video">
+
+            <% if video.youtube %>
+              <iframe height="360" src="http://www.youtube.com/embed/<%= video.youtube %>"></iframe>
+            <% else %>
+              <video controls poster="<%= video.poster_frame_url %>" preload="none">
+                <source src="<%= video.mp4 %>" />
+              </video>
+            <% end %>
+
+            <p class="notes">
+              Video by <%= video.videographer %>.
+              <%= link_to "Higher resolutions", video.canonical_url, :rel => "external" %>
+              available at
+              <%= link_to "Confreaks.", "http://confreaks.com", :rel => "external" %>
+            </p>
+
+          </div> <!-- .video -->
+
+        <% end %>
       <% end %>
     </div>
   </div> <!-- .row -->

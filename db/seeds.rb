@@ -380,6 +380,29 @@ people_2.each do |person|
   talk.videos << video
 end
 
+# fhc2 alumni talks
+fhc2_sean_talk = Talk.where(:slug => "sean-bonner").first
+fhc2_sean_video = Video.create!(
+  :conf_id          => farmhouse_conf_2.id,
+  :talk_id          => fhc2_sean_talk.id,
+  :caption          => fhc2_sean_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "XVmm1PG9yG0",
+  :canonical_url    => "http://confreaks.com/videos/952-farmhouseconf2-alumni-re-caps"
+)
+fhc2_sean_talk.videos << fhc2_sean_video
+
+fhc2_eli_talk = Talk.where(:slug => "eli-duke").first
+fhc2_eli_video = Video.create!(
+  :conf_id          => farmhouse_conf_2.id,
+  :talk_id          => fhc2_eli_talk.id,
+  :caption          => fhc2_eli_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "XVmm1PG9yG0",
+  :canonical_url    => "http://confreaks.com/videos/952-farmhouseconf2-alumni-re-caps"
+)
+fhc2_eli_talk.videos << fhc2_eli_video
+
 
 
 # farmhouse conf 3, 2012
@@ -569,6 +592,44 @@ people_3.each do |person|
 
   talk.videos << video
 end
+
+# fhc3 alumni talks
+# Sean Bonner
+fhc3_sean_talk = Talk.where(:slug => "sean-bonner").first
+fhc3_sean_video = Video.create!(
+  :conf_id          => farmhouse_conf_3.id,
+  :talk_id          => fhc3_sean_talk.id,
+  :caption          => fhc3_sean_talk.description,
+  :videographer     => "Nate Cornett, Austin Brown and Omar de Armas",
+  :youtube          => "_b9G0sqZzUc",
+  :canonical_url    => "http://confreaks.com/videos/2419-fhc3-alumni-follow-up-sean-bonner"
+)
+fhc3_sean_talk.videos << fhc3_sean_video
+
+# Tara Brown
+fhc3_tara_talk = Talk.where(:slug => "mapping-the-la-tech-scene").first
+fhc3_tara_video = Video.create!(
+  :conf_id          => farmhouse_conf_3.id,
+  :talk_id          => fhc3_tara_talk.id,
+  :caption          => fhc3_tara_talk.description,
+  :videographer     => "Nate Cornett, Austin Brown and Omar de Armas",
+  :youtube          => "BNP_FGm_Vlg",
+  :canonical_url    => "http://confreaks.com/videos/2420-fhc3-alumni-follow-up-tara-brown"
+)
+fhc3_tara_talk.videos << fhc3_tara_video
+
+# Mitch Artman
+fhc3_mitch_talk = Talk.where(:slug => "falling-off-the-map-skid-row-life-cycle").first
+fhc3_mitch_video = Video.create!(
+  :conf_id          => farmhouse_conf_3.id,
+  :talk_id          => fhc3_mitch_talk.id,
+  :caption          => fhc3_mitch_talk.description,
+  :videographer     => "Nate Cornett, Austin Brown and Omar de Armas",
+  :youtube          => "Gcv1avqHzaw",
+  :canonical_url    => "http://confreaks.com/videos/2421-fhc3-alumni-follow-up-mitch-artman"
+)
+fhc3_mitch_talk.videos << fhc3_mitch_video
+
 
 
 
