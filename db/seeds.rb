@@ -688,12 +688,12 @@ people_4 = [
   {
     :name => "Ron Evans",
     :bio  => %Q{
-      <p><a href="https://twitter.com/deadprogram">Ron Evans</a> co-founded <a href="http://www.hybridgroup.com" title="Los Angeles Ruby on Rails, JavaScript, Cloud Computing, Mobile Development - The Hybrid Group">The Hybrid Group</a> and made <a href="http://artoo.io" title="Artoo">Artoo</a>.</p>
+      <p><a href="https://twitter.com/deadprogram">Ron Evans</a> is a well-known software developer who has been very active in the free and open source community for over 20 years. As ringleader of The Hybrid Group, he has been helping clients solve some of their most difficult technical and business problems. Ron has been a very active speaker, presenting at conferences such as RubyConf, FutureRuby, Ignite, 140 THE Twitter Conference, Los Angeles Ruby Conference, Conferencia Rails, and MagmaConf. He was featured in Computerworld Magazine in the article "Rock Star Coders" for his popular blog post "I'd Rather Be A Jazz Programmer", as well as having written articles for MSNBC, BYTE Magazine, and the Direct Marketing Association, Ron is an active code contributor to many open source projects, including being the creator of the award-winning KidsRuby, free software to help teach Ruby programming to kids.</p>
     },
     :talk => {
       :slug        => "our-robot-future",
       :title       => "Our Robot Future",
-      :description => %Q{ <p>There will be robots in action.</p> },
+      :description => %Q{ <p><a href="https://twitter.com/deadprogram">Ron Evans</a> is a well-known software developer who has been very active in the free and open source community for over 20 years. As ringleader of The Hybrid Group, he has been helping clients solve some of their most difficult technical and business problems. Ron has been a very active speaker, presenting at conferences such as RubyConf, FutureRuby, Ignite, 140 THE Twitter Conference, Los Angeles Ruby Conference, Conferencia Rails, and MagmaConf. He was featured in Computerworld Magazine in the article &ldquo;Rock Star Coders&rdquo; for his popular blog post &ldquo;I&rsquo;d Rather Be A Jazz Programmer&rdquo;, as well as having written articles for MSNBC, BYTE Magazine, and the Direct Marketing Association, Ron is an active code contributor to many open source projects, including being the creator of the award-winning KidsRuby, free software to help teach Ruby programming to kids.</p> },
     }
   },
   {
@@ -722,7 +722,7 @@ people_4 = [
     },
     :talk => {
       :slug        => "cointelpro-past-present-and-our-shared-future",
-      :title       => "COINTELPRO &mdash; past, present and our shared future",
+      :title       => "COINTELPRO &mdash; Past, Present and Our Shared Future",
       :description => %Q{
         <p>Thanks to the brave efforts of an anonymous group known only as the <a href="https://en.wikipedia.org/wiki/Citizens%27_Commission_to_Investigate_the_FBI" title="Citizens' Commission to Investigate the FBI - Wikipedia, the free encyclopedia">Citizens&rsquo; Commission to Investigate the FBI</a> a sustained political campaign known as <a href="http://en.wikipedia.org/wiki/COINTELPRO" title="COINTELPRO - Wikipedia, the free encyclopedia">COINTELPRO/Counter Intelligence Program</a> came to light in the 1970s. The FBI&rsquo;s stated goal was &ldquo;expose, disrupt, misdirect, or otherwise neutralize&rdquo; groups that they targeted.</p>
 
@@ -763,13 +763,13 @@ people_4 = [
   {
     :name => "Colleen Jordan",
     :bio  => %Q{
-      <p><a href="http://colleenjordan.com" title="Colleen Jordan">Colleen Jordan</a> makes 3D printed jewelry at <a href="http://www.wearableplanter.com" title="Wearable Planter">Wearable Planter</a>.</p>
+      <p>Colleen was born in rural Louisiana and spent her childhood moving around the country. Today she works as a designer and maker who likes to create objects that make life more interesting. After graduating from Georgia Tech, she founded her company, Wearable Planter, creating 3D printed jewelry. She&rsquo;s exhibited her work and spoken publicly about the present state of digital creation.</p>
     },
     :talk => {
-      :slug        => "TBA",
-      :title       => "TBA",
+      :slug        => "what-we-will-make-in-the-future",
+      :title       => "What We Will Make in the Future",
       :description => %Q{
-        <p></p>
+        <p>Emerging manufacturing techniques like 3D printing are shifting the way that we make, buy, and consume products. We&rsquo;re still in an era of mass production, but it is giving way to mass customization of consumer goods. What will we make in the future when we can make anything we wish on demand?</p>
       },
     }
   }
