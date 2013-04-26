@@ -750,13 +750,13 @@ people_4 = [
   {
     :name => "Starlee Kine",
     :bio  => %Q{
-      <p><a href="https://twitter.com/StarleeKine">Starlee Kine</a> is a contributor to <a href="http://www.thisamericanlife.org/contributors/starlee-kine" title="Starlee Kine | This American Life">This American Life</a>.</p>
+      <p><a href="https://twitter.com/StarleeKine">Starlee Kine</a> is a radio producer and writer. She is a regular contributor to This American Life. She loves very good or very bad television. She writes about the good shows at <a href="http://www.capitalnewyork.com/article/culture/2013/04/8529340/don-draper-hollow-man" title="Don Draper, the Hollow Man | Capital New York">Capital New York</a> and the bad ones at <a href="http://www.vulture.com/2013/04/following-recap-season-1-the-end-is-near.html" title="The Following Recap: Take My Wife, Please -- Vulture">Vulture</a>. She&rsquo;s co-created an animated series <a href="http://www.hulu.com/watch/100046" title="Watch Starlee &amp; Arthur Review | Creative Process online | Free | Hulu">"Starlee and Arthur Review"</a> with illustrator Arthur Jones, designed a cutting board for the <a href="http://www.thethingquarterly.com/issue-10-starlee-kine.html" title="">Thing Quarterly</a> and written a <a href="http://www.thisamericanlife.org/radio-archives/episode/339/break-up" title="Break-Up | This American Life">break-up song with the guidance of Phil Collins</a>. She is working on her first book, It IS Your Fault, a series of essays on the self-help industry as well as a new radio show about mysteries.</p>
     },
     :talk => {
-      :slug        => "TBA",
-      :title       => "TBA",
+      :slug        => "past-present-future-tense",
+      :title       => "Past, Present, Future; Tense.",
       :description => %Q{
-        <p></p>
+        <p>An attempt to get to the bottom of whether the future we were promised as kids &mdash; flying cars, emotionally fragile domestic robots, video phones, quantum leaping &mdash; is better, worse or pretty close to the one we'll actually get.</p>
       },
     }
   },
