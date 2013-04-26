@@ -3,6 +3,7 @@
     <h2>Farmhouse Conf 4 Alumni Follow-Up</h2>
 
     <div class="row">
+
       <div id="tara-brown" class="span3">
         <h1>Tara&nbsp;Brown</h1>
 
@@ -14,6 +15,19 @@
           <%= link_to "Tara Brown&rsquo;s Farmhouse Conf 2 Talk".html_safe, conf_talk_path(2, "mapping-the-la-tech-scene") %>
         </p>
       </div>
+
+      <div id="mitch-artman" class="span3">
+        <h1>Mitch&nbsp;Artman</h1>
+
+        <%= link_to conf_talk_path(2, "falling-off-the-map-skid-row-life-cycle") do %>
+          <%= remote_image_tag("speakers/mitch-artman", :alt => "Mitch Artman") %>
+        <% end %>
+
+        <p>
+          <%= link_to "Mitch Artman&rsquo;s Farmhouse Conf 2 Talk".html_safe, conf_talk_path(2, "falling-off-the-map-skid-row-life-cycle") %>
+        </p>
+      </div>
+
     </div> <!-- .row -->
 
   </div><!-- #alumni -->
