@@ -691,9 +691,9 @@ people_4 = [
       <p><a href="https://twitter.com/deadprogram">Ron Evans</a> is a well-known software developer who has been very active in the free and open source community for over 20 years. As ringleader of The Hybrid Group, he has been helping clients solve some of their most difficult technical and business problems. Ron has been a very active speaker, presenting at conferences such as RubyConf, FutureRuby, Ignite, 140 THE Twitter Conference, Los Angeles Ruby Conference, Conferencia Rails, and MagmaConf. He was featured in Computerworld Magazine in the article "Rock Star Coders" for his popular blog post "I'd Rather Be A Jazz Programmer", as well as having written articles for MSNBC, BYTE Magazine, and the Direct Marketing Association, Ron is an active code contributor to many open source projects, including being the creator of the award-winning KidsRuby, free software to help teach Ruby programming to kids.</p>
     },
     :talk => {
-      :slug        => "our-robot-future",
-      :title       => "Our Robot Future",
-      :description => %Q{ <p><a href="https://twitter.com/deadprogram">Ron Evans</a> is a well-known software developer who has been very active in the free and open source community for over 20 years. As ringleader of The Hybrid Group, he has been helping clients solve some of their most difficult technical and business problems. Ron has been a very active speaker, presenting at conferences such as RubyConf, FutureRuby, Ignite, 140 THE Twitter Conference, Los Angeles Ruby Conference, Conferencia Rails, and MagmaConf. He was featured in Computerworld Magazine in the article &ldquo;Rock Star Coders&rdquo; for his popular blog post &ldquo;I&rsquo;d Rather Be A Jazz Programmer&rdquo;, as well as having written articles for MSNBC, BYTE Magazine, and the Direct Marketing Association, Ron is an active code contributor to many open source projects, including being the creator of the award-winning KidsRuby, free software to help teach Ruby programming to kids.</p> },
+      :slug        => "future-current-the-robot-r-evolution",
+      :title       => "Future Current: The Robot (R)Evolution",
+      :description => %Q{ <p>This is a talk about robots.<br/>This is a talk about humanity.<br/>This is a talk about technology.<br/>This is a talk about evolution.<br/>This is a talk about the future.<br/>This is a talk about atemporality.<br/>This is a talk about robots.</p> },
     }
   },
   {
