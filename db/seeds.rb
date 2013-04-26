@@ -772,6 +772,19 @@ people_4 = [
         <p>Emerging manufacturing techniques like 3D printing are shifting the way that we make, buy, and consume products. We&rsquo;re still in an era of mass production, but it is giving way to mass customization of consumer goods. What will we make in the future when we can make anything we wish on demand?</p>
       },
     }
+  },
+  {
+    :name => "willowbl00",
+    :bio  => %Q{
+      <p>willowbl00 got involved with transhumanism in the wilds of university, organizing and moderating discussion groups and writing a thesis on therapy and advancement in medical technology. Later wb0 became an advocate for building the future out of community workshop spaces and educational initiatives, and strengthening that global community through unity. In 2010, they co-launched Geeks Without Bounds as a way for people of the technical persuasion to perform mutual aid in disasters (both the slow and sudden sorts). wb0 continues to organize, facilitate, and interconnect a wide array of folk who have chosen to be active in their lives, from Chaos Congress to Port-au-Prince to the Whitehouse, and has most recently re-entered academia as an affiliate at the Center for Civic Media at MIT. Find this bot just about anywhere on the internet as willowbl00.</p>
+    },
+    :talk => {
+      :slug        => "replacing-uppercase-f-fucked-with-uppercase-future-active-participation-in-response",
+      :title       => "Replacing Uppercase &ldquo;F&rdquo; Fucked with Uppercase Future : Active Participation in Response",
+      :description => %Q{
+        <p><p>Now that the beautiful promise of the internet has worn off, and we understand that it is not inherently equalizing, we can begin to realize our true roles as activists in closing social, economic, and opportunity gaps. The protocols we once thought were neutral are being used by established hierarchies to reenforce and strengthen their holds, to further detriments to the people at the bottom of those structures. willowbl00 will tell a story of hackerspaces and education, of technology in disaster response and civic voices, of tempered negotiations and paced arms races. With lots of examples of deployed initiatives, their downfalls and triumphs, this talk shows the future that is being built to prevent and amend continued atrocities. The future is here, but we have to fight to make it evenly distributed.</p></p>
+      },
+    }
   }
 ]
 
