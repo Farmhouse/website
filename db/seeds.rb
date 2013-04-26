@@ -647,70 +647,8 @@ farmhouse_conf_4 = Conf.create!(
   :registration_url => "https://farmhouse.eventwax.com/farmhouse-conf-4/register/"
 )
 
+
 people_4 = [
-  {
-    :name => "Justin Ouellette",
-    :bio  => %Q{
-      <p>Justin Ouellette was born in Portland, Oregon in 1983. He left college in 2005 to pursue photography in New York City, but wound up falling in with a rough crowd and becoming a software designer instead. In 2008 he created a minimalist web site for sharing music called Muxtape, which exploded in popularity and was eventually shuttered by the RIAA after a spectacular summer of backroom negotiations. He has worked for Vimeo, Betaworks, the New York Times R&amp;D Lab, and currently calls Tumblr home.</p>
-    },
-    :talk => {
-      :slug        => "designing-forever",
-      :title       => "Designing Forever",
-      :description => %Q{ <p>The future will be inhabited by people who live much longer lives than we know today, lives potentially without end. How will society cope as parts of it begin to think along much longer timescales than ever before? What does it mean for creativity and copyright when creators last as long as their creations? How will the discipline of product design evolve as humans evolve to last forever, and what lessons can we learn today?</p> },
-    }
-  },
-  {
-    :name => "Zach Klein",
-    :bio  => %Q{
-      <p>Zach Klein is co-founder of DIY, a movement for kids to learn skills, though he&rsquo;s also known for co-founding and once designing Vimeo. He&rsquo;s a partner at Founder Collective, the seed-stage venture capital firm based in New York City, and formerly a faculty member at the School of Visual Arts&rsquo; MFA program in Interaction Design. He&rsquo;s passionate about communities, homesteading, self-reliance, and creative literacy.</p>
-    },
-    :talk => {
-      :slug        => "we-will-build-offline-in-the-future",
-      :title       => "We Will Build Offline In The Future",
-      :description => %Q{ <p>We&rsquo;re the first generation to grow up online and soon we&rsquo;ll inherit the physical world.</p> },
-    }
-  },
-  {
-    :name => "Erika Brooks Adickman",
-    :bio  => %Q{
-      <p>Erika Brooks Adickman<sup>*</sup> is a monologist, performer and creator living in Los Angeles. She is also the host of Idolator.com&rsquo;s &lsquo;At Your Request&rsquo;. Her love of pop culture led to the creation of a hand-drawn web series &lsquo;Pop Waffle&rsquo;, an interactive screening event Troop Beverly Hills: The Experience and the website &lsquo;Oh Crap. My Parents Joined Facebook&rsquo;.</p>
-
-      <p>Erika has loved performing stories about her life and family since she won a school-wide storytelling contest at eight-years-old. However, her fascination with TV and 80s movies led her to film school at NYU. Her goal is to continue to pour herself into ideas that excite her &mdash; and to master all the hip-hop dance tutorials she obsessively watches on YouTube.</p>
-
-      <p>* &mdash; rhymes with &ldquo;attic fan&rdquo;.</p>
-    },
-    :talk => {
-      :slug        => "a-neurotic-gal-attempts-a-fearless-look-into-the-future",
-      :title       => "A Neurotic Gal Attempts A Fearless Look Into The Future",
-      :description => %Q{ <p>If you want to know about the future, ask a neurotic person. No one thinks about the future more than they do.</p> },
-    }
-  },
-  {
-    :name => "Ron Evans",
-    :bio  => %Q{
-      <p><a href="https://twitter.com/deadprogram">Ron Evans</a> is a well-known software developer who has been very active in the free and open source community for over 20 years. As ringleader of The Hybrid Group, he has been helping clients solve some of their most difficult technical and business problems. Ron has been a very active speaker, presenting at conferences such as RubyConf, FutureRuby, Ignite, 140 THE Twitter Conference, Los Angeles Ruby Conference, Conferencia Rails, and MagmaConf. He was featured in Computerworld Magazine in the article "Rock Star Coders" for his popular blog post "I'd Rather Be A Jazz Programmer", as well as having written articles for MSNBC, BYTE Magazine, and the Direct Marketing Association, Ron is an active code contributor to many open source projects, including being the creator of the award-winning KidsRuby, free software to help teach Ruby programming to kids.</p>
-    },
-    :talk => {
-      :slug        => "future-current-the-robot-r-evolution",
-      :title       => "Future Current: The Robot (R)Evolution",
-      :description => %Q{ <p>This is a talk about robots.<br/>This is a talk about humanity.<br/>This is a talk about technology.<br/>This is a talk about evolution.<br/>This is a talk about the future.<br/>This is a talk about atemporality.<br/>This is a talk about robots.</p> },
-    }
-  },
-  {
-    :name => "Adam Lisagor",
-    :bio  => %Q{
-      <p>Trained as a filmmaker, but enamored of technology, Adam Lisagor started his company Sandwich Video somewhat by accident in late 2010 to address a need for compelling video in the tech industry. His first video was shot in his backyard with no crew, for the purpose of demonstrating and promoting his own iPhone app. With the positive reception of the video, he quickly discovered a hunger in the startup and corporate world for video that could engage as well as inform. And the work started rolling in.</p>
-
-      <p>He&rsquo;s made a name for himself making video for innovative companies like Square, Summly, Flipboard, Airbnb, eBay, Rdio, and others, who have (by some incredible luck) embraced his unconventional methods of promotional storytelling.</p>
-
-      <p>Above all else, he&rsquo;s a product man who gets excited about good products, and wants to tell you all about them.</p>
-    },
-    :talk => {
-      :slug        => "the-children-are-our-future",
-      :title       => "The Children Are Our Future",
-      :description => %Q{ <p>In five years&rsquo; time, kids will look at everything you and I are making today and think it&rsquo;s unconscionably lame, and if you don&rsquo;t think that&rsquo;s the most fun thing in the world then I don&rsquo;t know what.</p> },
-    }
-  },
   {
     :name => "Jacob Appelbaum",
     :bio  => %Q{
@@ -733,6 +671,60 @@ people_4 = [
     }
   },
   {
+    :name => "Starlee Kine",
+    :bio  => %Q{
+      <p><a href="https://twitter.com/StarleeKine">Starlee Kine</a> is a radio producer and writer. She is a regular contributor to This American Life. She loves very good or very bad television. She writes about the good shows at <a href="http://www.capitalnewyork.com/article/culture/2013/04/8529340/don-draper-hollow-man" title="Don Draper, the Hollow Man | Capital New York">Capital New York</a> and the bad ones at <a href="http://www.vulture.com/2013/04/following-recap-season-1-the-end-is-near.html" title="The Following Recap: Take My Wife, Please -- Vulture">Vulture</a>. She&rsquo;s co-created an animated series <a href="http://www.hulu.com/watch/100046" title="Watch Starlee &amp; Arthur Review | Creative Process online | Free | Hulu">"Starlee and Arthur Review"</a> with illustrator Arthur Jones, designed a cutting board for the <a href="http://www.thethingquarterly.com/issue-10-starlee-kine.html" title="">Thing Quarterly</a> and written a <a href="http://www.thisamericanlife.org/radio-archives/episode/339/break-up" title="Break-Up | This American Life">break-up song with the guidance of Phil Collins</a>. She is working on her first book, It IS Your Fault, a series of essays on the self-help industry as well as a new radio show about mysteries.</p>
+    },
+    :talk => {
+      :slug        => "past-present-future-tense",
+      :title       => "Past, Present, Future; Tense.",
+      :description => %Q{
+        <p>An attempt to get to the bottom of whether the future we were promised as kids &mdash; flying cars, emotionally fragile domestic robots, video phones, quantum leaping &mdash; is better, worse or pretty close to the one we'll actually get.</p>
+      },
+    }
+  },
+  {
+    :name => "Adam Lisagor",
+    :bio  => %Q{
+      <p>Trained as a filmmaker, but enamored of technology, Adam Lisagor started his company Sandwich Video somewhat by accident in late 2010 to address a need for compelling video in the tech industry. His first video was shot in his backyard with no crew, for the purpose of demonstrating and promoting his own iPhone app. With the positive reception of the video, he quickly discovered a hunger in the startup and corporate world for video that could engage as well as inform. And the work started rolling in.</p>
+
+      <p>He&rsquo;s made a name for himself making video for innovative companies like Square, Summly, Flipboard, Airbnb, eBay, Rdio, and others, who have (by some incredible luck) embraced his unconventional methods of promotional storytelling.</p>
+
+      <p>Above all else, he&rsquo;s a product man who gets excited about good products, and wants to tell you all about them.</p>
+    },
+    :talk => {
+      :slug        => "the-children-are-our-future",
+      :title       => "The Children Are Our Future",
+      :description => %Q{ <p>In five years&rsquo; time, kids will look at everything you and I are making today and think it&rsquo;s unconscionably lame, and if you don&rsquo;t think that&rsquo;s the most fun thing in the world then I don&rsquo;t know what.</p> },
+    }
+  },
+  {
+    :name => "Erika Brooks Adickman",
+    :bio  => %Q{
+      <p>Erika Brooks Adickman<sup>*</sup> is a monologist, performer and creator living in Los Angeles. She is also the host of Idolator.com&rsquo;s &lsquo;At Your Request&rsquo;. Her love of pop culture led to the creation of a hand-drawn web series &lsquo;Pop Waffle&rsquo;, an interactive screening event Troop Beverly Hills: The Experience and the website &lsquo;Oh Crap. My Parents Joined Facebook&rsquo;.</p>
+
+      <p>Erika has loved performing stories about her life and family since she won a school-wide storytelling contest at eight-years-old. However, her fascination with TV and 80s movies led her to film school at NYU. Her goal is to continue to pour herself into ideas that excite her &mdash; and to master all the hip-hop dance tutorials she obsessively watches on YouTube.</p>
+
+      <p>* &mdash; rhymes with &ldquo;attic fan&rdquo;.</p>
+    },
+    :talk => {
+      :slug        => "a-neurotic-gal-attempts-a-fearless-look-into-the-future",
+      :title       => "A Neurotic Gal Attempts A Fearless Look Into The Future",
+      :description => %Q{ <p>If you want to know about the future, ask a neurotic person. No one thinks about the future more than they do.</p> },
+    }
+  },
+  {
+    :name => "Zach Klein",
+    :bio  => %Q{
+      <p>Zach Klein is co-founder of DIY, a movement for kids to learn skills, though he&rsquo;s also known for co-founding and once designing Vimeo. He&rsquo;s a partner at Founder Collective, the seed-stage venture capital firm based in New York City, and formerly a faculty member at the School of Visual Arts&rsquo; MFA program in Interaction Design. He&rsquo;s passionate about communities, homesteading, self-reliance, and creative literacy.</p>
+    },
+    :talk => {
+      :slug        => "we-will-build-offline-in-the-future",
+      :title       => "We Will Build Offline In The Future",
+      :description => %Q{ <p>We&rsquo;re the first generation to grow up online and soon we&rsquo;ll inherit the physical world.</p> },
+    }
+  },
+  {
     :name => "Jessica Lord",
     :bio  => %Q{
       <p>Jessica Lord is mostly an architect and urban designer, previously for the City of Boston, who spent 2012 as a Code for America Fellow and is currently still (willingly) swimming in JavaScript in the Bay area.</p>
@@ -748,16 +740,14 @@ people_4 = [
     }
   },
   {
-    :name => "Starlee Kine",
+    :name => "Ron Evans",
     :bio  => %Q{
-      <p><a href="https://twitter.com/StarleeKine">Starlee Kine</a> is a radio producer and writer. She is a regular contributor to This American Life. She loves very good or very bad television. She writes about the good shows at <a href="http://www.capitalnewyork.com/article/culture/2013/04/8529340/don-draper-hollow-man" title="Don Draper, the Hollow Man | Capital New York">Capital New York</a> and the bad ones at <a href="http://www.vulture.com/2013/04/following-recap-season-1-the-end-is-near.html" title="The Following Recap: Take My Wife, Please -- Vulture">Vulture</a>. She&rsquo;s co-created an animated series <a href="http://www.hulu.com/watch/100046" title="Watch Starlee &amp; Arthur Review | Creative Process online | Free | Hulu">"Starlee and Arthur Review"</a> with illustrator Arthur Jones, designed a cutting board for the <a href="http://www.thethingquarterly.com/issue-10-starlee-kine.html" title="">Thing Quarterly</a> and written a <a href="http://www.thisamericanlife.org/radio-archives/episode/339/break-up" title="Break-Up | This American Life">break-up song with the guidance of Phil Collins</a>. She is working on her first book, It IS Your Fault, a series of essays on the self-help industry as well as a new radio show about mysteries.</p>
+      <p><a href="https://twitter.com/deadprogram">Ron Evans</a> is a well-known software developer who has been very active in the free and open source community for over 20 years. As ringleader of The Hybrid Group, he has been helping clients solve some of their most difficult technical and business problems. Ron has been a very active speaker, presenting at conferences such as RubyConf, FutureRuby, Ignite, 140 THE Twitter Conference, Los Angeles Ruby Conference, Conferencia Rails, and MagmaConf. He was featured in Computerworld Magazine in the article "Rock Star Coders" for his popular blog post "I'd Rather Be A Jazz Programmer", as well as having written articles for MSNBC, BYTE Magazine, and the Direct Marketing Association, Ron is an active code contributor to many open source projects, including being the creator of the award-winning KidsRuby, free software to help teach Ruby programming to kids.</p>
     },
     :talk => {
-      :slug        => "past-present-future-tense",
-      :title       => "Past, Present, Future; Tense.",
-      :description => %Q{
-        <p>An attempt to get to the bottom of whether the future we were promised as kids &mdash; flying cars, emotionally fragile domestic robots, video phones, quantum leaping &mdash; is better, worse or pretty close to the one we'll actually get.</p>
-      },
+      :slug        => "future-current-the-robot-r-evolution",
+      :title       => "Future Current: The Robot (R)Evolution",
+      :description => %Q{ <p>This is a talk about robots.<br/>This is a talk about humanity.<br/>This is a talk about technology.<br/>This is a talk about evolution.<br/>This is a talk about the future.<br/>This is a talk about atemporality.<br/>This is a talk about robots.</p> },
     }
   },
   {
@@ -774,6 +764,17 @@ people_4 = [
     }
   },
   {
+    :name => "Justin Ouellette",
+    :bio  => %Q{
+      <p>Justin Ouellette was born in Portland, Oregon in 1983. He left college in 2005 to pursue photography in New York City, but wound up falling in with a rough crowd and becoming a software designer instead. In 2008 he created a minimalist web site for sharing music called Muxtape, which exploded in popularity and was eventually shuttered by the RIAA after a spectacular summer of backroom negotiations. He has worked for Vimeo, Betaworks, the New York Times R&amp;D Lab, and currently calls Tumblr home.</p>
+    },
+    :talk => {
+      :slug        => "designing-forever",
+      :title       => "Designing Forever",
+      :description => %Q{ <p>The future will be inhabited by people who live much longer lives than we know today, lives potentially without end. How will society cope as parts of it begin to think along much longer timescales than ever before? What does it mean for creativity and copyright when creators last as long as their creations? How will the discipline of product design evolve as humans evolve to last forever, and what lessons can we learn today?</p> },
+    }
+  },
+  {
     :name => "willowbl00",
     :bio  => %Q{
       <p>willowbl00 got involved with transhumanism in the wilds of university, organizing and moderating discussion groups and writing a thesis on therapy and advancement in medical technology. Later wb0 became an advocate for building the future out of community workshop spaces and educational initiatives, and strengthening that global community through unity. In 2010, they co-launched Geeks Without Bounds as a way for people of the technical persuasion to perform mutual aid in disasters (both the slow and sudden sorts). wb0 continues to organize, facilitate, and interconnect a wide array of folk who have chosen to be active in their lives, from Chaos Congress to Port-au-Prince to the Whitehouse, and has most recently re-entered academia as an affiliate at the Center for Civic Media at MIT. Find this bot just about anywhere on the internet as willowbl00.</p>
@@ -787,6 +788,7 @@ people_4 = [
     }
   }
 ]
+
 
 # fhc4 people + talks
 people_4.each do |person|
