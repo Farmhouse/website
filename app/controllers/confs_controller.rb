@@ -6,6 +6,11 @@ class ConfsController < ApplicationController
     @title    = @conf.name
   end
 
+  def code_of_conduct
+    @slug  = "code-of-conduct"
+    @title = "Farmhouse Conf Code of Conduct"
+  end
+
   def sponsor
     @slug = "sponsor"
     @title = "Farmhouse Conf Sponsor Prospectus"
