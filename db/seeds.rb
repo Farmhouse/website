@@ -720,7 +720,7 @@ people_4 = [
     },
     :talk => {
       :slug        => "we-will-build-offline-in-the-future",
-      :title       => "We Will Build Offline In The Future",
+      :title       => "We Will Build Offline in the Future",
       :description => %Q{ <p>We&rsquo;re the first generation to grow up online and soon we&rsquo;ll inherit the physical world.</p> },
     }
   },
