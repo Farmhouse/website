@@ -962,6 +962,7 @@ end
   ["thunderbolt-labs", "http://thunderboltlabs.com"],
   ["tilde", "http://tilde.io"],
   ["tonx", "http://tonx.org"],
+  ["uncharted", "http://uncharteddigital.com"],
   ["veggie-grill", "http://veggiegrill.com"],
   ["zaarly", "http://zaarly.com"],
   ["znp-industries", ""]
@@ -1019,7 +1020,7 @@ end
   [:standard,    %w(github the-hybrid-group the-hub-la heroku hashicorp pivotal-labs g5 tilde)],
   [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs mighty-o pac-nw-kale-chips cruzer)],
   [:goodie,      %w(luna-sandals crimethinc field-notes)],
-  [:scholarship, %w(noisivelvet)]
+  [:scholarship, %w(noisivelvet uncharted)]
 ].each do |level|
   level.last.each do |sponsor|
     Sponsorship.create!(
