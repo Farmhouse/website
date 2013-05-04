@@ -33,9 +33,9 @@
     </div> <!-- .row -->
   </header>
 
+  <%= render "/confs/schedule/farmhouse_conf_#{@conf.id}" %>
   <%= render "talks"    %>
   <%= render "/confs/alumni/farmhouse_conf_#{@conf.id}" %>
   <%= render "/confs/music/farmhouse_conf_#{@conf.id}" %>
-  <%= render "/confs/schedule/farmhouse_conf_#{@conf.id}" %>
   <%= render "/confs/sponsors" %>
 </article>
