@@ -18,11 +18,7 @@ class AboutController < ApplicationController
     @title = "Friends and Family"
   end
 
-  def register_4
-    redirect_to "https://farmhouse.eventwax.com/farmhouse-conf-4/register/"
-  end
-
-  def register_5
+  def register
     redirect_to "https://farmhouse.eventwax.com/farmhouse-conf-5/register/"
   end
 end
