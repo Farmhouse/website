@@ -1018,7 +1018,7 @@ end
 [
   [:party,       %w(new-relic)],
   [:standard,    %w(github the-hybrid-group the-hub-la heroku hashicorp pivotal-labs g5 tilde)],
-  [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs mighty-o pac-nw-kale-chips cruzer)],
+  [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs mighty-o cruzer)],
   [:goodie,      %w(luna-sandals crimethinc field-notes)],
   [:scholarship, %w(noisivelvet uncharted)]
 ].each do |level|
@@ -1035,7 +1035,7 @@ end
 [
   [:party,       %w(github)],
   [:standard,    %w(the-hybrid-group tilde)],
-  [:food,        %w(claras-cakes tonx)],
+  [:food,        %w(claras-cakes tonx pac-nw-kale-chips)],
   [:goodie,      %w(luna-sandals crimethinc field-notes)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
