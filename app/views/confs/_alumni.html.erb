@@ -1,0 +1,27 @@
+<div id="alumni" class="row">
+  <div class="span12">
+    <h2>Farmhouse Conf <%= @conf.id %> Alumni Follow-Up</h2>
+
+    <div class="row">
+
+      <% @alumni.each do |speaker| %>
+
+        <div id="<%= sluggify speaker.name %>" class="span3">
+          <h1><%= speaker.name.gsub(/ /, "&nbsp;").html_safe %></h1>
+
+          <%= link_to conf_talk_path(speaker.talks.first.conf.id, speaker.talks.first.slug) do %>
+            <%= remote_image_tag("speakers/#{sluggify speaker.name}", :alt => speaker.name) %>
+          <% end %>
+
+          <p>
+            <%= link_to "#{speaker.name.gsub(/ /, "&nbsp;")}&rsquo;s Farmhouse Conf #{speaker.talks.first.conf.id} Talk".html_safe,
+                        conf_talk_path(speaker.talks.first.conf.id, speaker.talks.first.slug) %>
+          </p>
+        </div>
+
+      <% end %>
+
+    </div> <!-- .row -->
+
+  </div><!-- #alumni -->
+</div>
