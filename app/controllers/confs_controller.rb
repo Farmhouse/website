@@ -14,7 +14,7 @@ class ConfsController < ApplicationController
     when 4
       ["Eric Gradman", "Megan Dean", "Mitch Artman", "Tara Brown"]
     when 5
-      ["Eli Duke", "Evan Phoenix", "Leah Silber", "Sarah Mei", "Tj Nelson Jr", "Greg Bennick", "Brian", "Mitch Artman", "Tara Brown", "Ron Evans", "willowbl00", "Megan Dean", "Jacob Appelbaum"]
+      ["Eli Duke", "Evan Phoenix", "Leah Silber", "Sarah Mei", "Tj Nelson Jr", "Greg Bennick", "Brian", "Mitch Artman", "Tara Brown", "Ron Evans", "willowbl00", "Megan Dean", "Jacob Appelbaum", "Jessica Lord"]
     else
       []
     end
