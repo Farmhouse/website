@@ -68,7 +68,7 @@ Farmhouse::Application.routes.draw do
   match "/prospectus"           => redirect("/conf/sponsor"), :as => "prospectus"
   match "/conf/sponsor"         => "confs#sponsor",           :as => "sponsor"
 
-  match "/conf"            => redirect("/conf/4")
+  match "/conf"            => redirect("/conf/5")
 
   match "/conf/:id"        => "confs#show",              :as => "conf"
   match "/conf/:id/photos" => "photos#index",            :as => "conf_photos"
