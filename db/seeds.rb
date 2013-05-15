@@ -832,20 +832,38 @@ farmhouse_conf_5 = Conf.create!(
 
 people_5 = [
   {
-    :name => "John Barnette",
-    :bio  => %Q{
-      <p><a href="https://github.com/jbarnette">John Barnette</a> works at GitHub. He&rsquo;s slow at delivery speaker bios to conference organizers.</p>
-    },
-    :talk => {
-      :slug        => "total-collapse",
-      :title       => "Total Collapse",
-      :description => %Q{ <p>John spoke at <a href="http://2011.cascadiaruby.com" title="Cascadia Ruby Conf | Ruby Without Borders | July 29-30 2011">Cascadia Ruby 2011</a> about the dark times. This will be roughly a follow up to <a href="http://confreaks.com/videos/611-cascadiaruby2011-keynote" title="Keynote - John Barnette - Cascadia Ruby 2011">that talk</a>.</p> },
-    }
-  },
-  {
     :name => "Claire Evans",
     :bio  => %Q{
       <p>Claire L. Evans is a writer and artist working in Los Angeles, California. Her &ldquo;day job&rdquo; is as the singer and co-author of the conceptual disco-pop band YACHT, which recently released its fifth album Shangri-La, on DFA Records. A science journalist and science fiction critic, her blog, Universe, addressing synchronies between art, science, technology, and the cultural world, was recently anthologized in Best Science Writing on the Web 2012 (Scientific American Books/Farrar, Straus & Giroux), and she regularly participates in panels, conferences, and screenings on the subject of science and culture. She has performed earnestly cosmic presentations at the Kitchen, MoMA PS1, and the Hirshhorn Museum, spoken about extraterrestrial life at the Rubin Museum&rsquo;s BRAINWAVE series, and co-authored a book on interdisciplinarity in the arts, NA/SA: New Art Science Affinities. A collected book of her essays, High Frontiers, is now available from Publication Studio.</p>
+    },
+    :talk => {
+      :slug        => "TBA",
+      :title       => "TBA",
+      :description => %Q{ <p></p> },
+    }
+  },
+  {
+    :name => "Richard Heinberg",
+    :bio  => %Q{
+      <p>Richard Heinberg is the author of ten books including:</p>
+
+      <ul>
+        <li><i>The End of Growth</i> (August 2011)</li>
+        <li><i>The Post Carbon Reader</i> (2010) (editor)</li>
+        <li><i>Blackout: Coal, Climate, and the Last Energy Crisis</i> (2009)</li>
+        <li><i>Peak Everything: Waking Up to the Century of Declines</i> (2007)</li>
+        <li><i>The Oil Depletion Protocol: A Plan to Avert Oil Wars, Terrorism &amp; Economic Collapse</i> (2006)</li>
+        <li><i>Powerdown: Options &amp; Actions for a Post-Carbon World</i> (2004)</li>
+        <li><i>The Party's Over: Oil, War &amp; the Fate of Industrial Societies</i> (2003)</li>
+      </ul>
+
+      <p>Richard is a Senior Fellow of the Post Carbon Institute and is widely regarded as one of the world&rsquo;s foremost Peak Oil educators. He has authored scores of essays and articles that have appeared in such journals as Nature, The American Prospect, Public Policy Research, Quarterly Review, The Ecologist, Resurgence, The Futurist, European Business Review, Earth Island Journal, Yes!, and The Sun; and on web sites such as <a href="http://EnergyBulletin.net" title="Resilience.org">EnergyBulletin.net</a>, <a href="http://TheOilDrum.com" title="The Oil Drum | Discussions about Energy and Our Future">TheOilDrum.com</a>, <a href="http://Alternet.org" title="Alternet | Alternative News and Information">Alternet.org</a>, <a href="http://ProjectCensored.com" title="ProjectCensored.com: The Leading Human Rights Site on the Net">ProjectCensored.com</a>, and <a href="http://Counterpunch.com" title="Counterpunch: Tells the Facts, Names the Names">Counterpunch.com</a>.</p>
+
+      <p>He has been quoted in Time Magazine and has spoken to hundreds of audiences in 14 countries, including members of the European Parliament.  He has appeared in many film and television documentaries, including Leonardo DiCaprio&rsquo;s 11th Hour, is a recipient of the M. King Hubbert Award for Excellence in Energy Education, and in 2012 was appointed to His Majesty the King of Bhutan's International Expert Working Group for the New Development Paradigm initiative.</p>
+
+      <p>Richard&rsquo;s animations <a href="http://www.youtube.com/watch?v=4uKgU7krWzE" title="DON&#39;T WORRY, DRIVE ON: Fossil Fools &amp; Fracking Lies - YouTube"><i>Don&rsquo;t Worry, Drive On</i></a>, <a href="http://www.youtube.com/watch?v=EQqDS9wGsxQ" title="Who Killed Economic Growth? - YouTube"><i>Who Killed Economic Growth?</i></a> and <a href="http://www.youtube.com/watch?v=cJ-J91SwP8w" title="300 Years of FOSSIL FUELS in 300 Seconds - YouTube"><i>300 Years of Fossil Fuels in 300 Minutes</i></a> (winner of a YouTubes&rsquo;s/DoGooder Video of the Year Award) have been viewed by 1.5 million people.</p>
+
+      <p>Since 2002, he has delivered more than four hundred lectures to a wide variety of audiences &mdash; from insurance executives to peace activists, from local and national elected officials to Jesuit volunteers.</p>
     },
     :talk => {
       :slug        => "TBA",
@@ -862,6 +880,17 @@ people_5 = [
       :slug        => "TBA",
       :title       => "TBA",
       :description => %Q{ <p></p> },
+    }
+  },
+  {
+    :name => "John Barnette",
+    :bio  => %Q{
+      <p><a href="https://github.com/jbarnette">John Barnette</a> works at GitHub. He&rsquo;s slow at delivery speaker bios to conference organizers.</p>
+    },
+    :talk => {
+      :slug        => "total-collapse",
+      :title       => "Total Collapse",
+      :description => %Q{ <p>John spoke at <a href="http://2011.cascadiaruby.com" title="Cascadia Ruby Conf | Ruby Without Borders | July 29-30 2011">Cascadia Ruby 2011</a> about the dark times. This will be roughly a follow up to <a href="http://confreaks.com/videos/611-cascadiaruby2011-keynote" title="Keynote - John Barnette - Cascadia Ruby 2011">that talk</a>.</p> },
     }
   },
   {
