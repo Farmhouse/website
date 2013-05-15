@@ -7,7 +7,6 @@ iframe {
 }
 
 .row {
-  #fhc4 { background-position: left  bottom; }
   #fhc5 { background-position: right bottom; }
 
   .register {
@@ -60,6 +59,10 @@ iframe {
       }
     }
   }
+}
+
+#location img {
+  width: 100%;
 }
 
 @media (max-width: 480px) {

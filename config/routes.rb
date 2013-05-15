@@ -58,6 +58,7 @@ Farmhouse::Application.routes.draw do
   match "/house"            => "about#house",            :as => "house"
   match "/sandwiches"       => "about#sandwiches",       :as => "sandwiches"
   match "/barn"             => "about#barn",             :as => "barn"
+  match "/location"         => "about#location",         :as => "location"
 
   # memberships
   match "/memberships"       => "memberships#index",     :as => "memberships"
