@@ -837,7 +837,7 @@ people_5 = [
       <p>Claire L. Evans is a writer and artist working in Los Angeles, California. Her &ldquo;day job&rdquo; is as the singer and co-author of the conceptual disco-pop band YACHT, which recently released its fifth album Shangri-La, on DFA Records. A science journalist and science fiction critic, her blog, Universe, addressing synchronies between art, science, technology, and the cultural world, was recently anthologized in Best Science Writing on the Web 2012 (Scientific American Books/Farrar, Straus & Giroux), and she regularly participates in panels, conferences, and screenings on the subject of science and culture. She has performed earnestly cosmic presentations at the Kitchen, MoMA PS1, and the Hirshhorn Museum, spoken about extraterrestrial life at the Rubin Museum&rsquo;s BRAINWAVE series, and co-authored a book on interdisciplinarity in the arts, NA/SA: New Art Science Affinities. A collected book of her essays, High Frontiers, is now available from Publication Studio.</p>
     },
     :talk => {
-      :slug        => "TBA",
+      :slug        => "claire-evans-tba",
       :title       => "TBA",
       :description => %Q{ <p></p> },
     }
@@ -866,7 +866,7 @@ people_5 = [
       <p>Since 2002, he has delivered more than four hundred lectures to a wide variety of audiences &mdash; from insurance executives to peace activists, from local and national elected officials to Jesuit volunteers.</p>
     },
     :talk => {
-      :slug        => "TBA",
+      :slug        => "richard-heinberg-tba",
       :title       => "TBA",
       :description => %Q{ <p></p> },
     }
@@ -877,7 +877,7 @@ people_5 = [
       <p>Drew Hoolhorst is <a href="http://www.rocket-shoes.com/about/" title="hi, i&#8217;m drew.">@drewber</a></p>
     },
     :talk => {
-      :slug        => "TBA",
+      :slug        => "drew-hoolhorst-tba",
       :title       => "TBA",
       :description => %Q{ <p></p> },
     }
@@ -899,7 +899,7 @@ people_5 = [
       <p><a href="http://jessicahische.is/awesome" title="Jessica Hische - Awesome">Jessica Hische</a> draws type.</p>
     },
     :talk => {
-      :slug        => "TBA",
+      :slug        => "jessica-hische-tba",
       :title       => "TBA",
       :description => %Q{ <p></p> },
     }
@@ -910,7 +910,7 @@ people_5 = [
       <p><a href="http://julieannhorvath.com" title="Julie Ann Horvath is not a robot.">Julie Ann Horvath</a> is @nrrrdcore on <a href="https://github.com/nrrrdcore/">GitHub</a>, <a href="https://twitter.com/nrrrdcore/">Twitter</a> et al.</p>
     },
     :talk => {
-      :slug        => "TBA",
+      :slug        => "julie-ann-horvath-tba",
       :title       => "TBA",
       :description => %Q{ <p></p> },
     }
