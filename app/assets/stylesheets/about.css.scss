@@ -61,8 +61,16 @@ iframe {
   }
 }
 
-#location img {
-  width: 100%;
+#location {
+  h3 {
+    font-weight: normal;
+    margin-top:    .5em;
+    margin-bottom: .5em;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
