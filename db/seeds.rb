@@ -866,9 +866,9 @@ people_5 = [
       <p>Since 2002, he has delivered more than four hundred lectures to a wide variety of audiences &mdash; from insurance executives to peace activists, from local and national elected officials to Jesuit volunteers.</p>
     },
     :talk => {
-      :slug        => "richard-heinberg-tba",
-      :title       => "TBA",
-      :description => %Q{ <p></p> },
+      :slug        => "near-term-collapse-why-industrial-society-is-more-vulnerable-than-you-may-think",
+      :title       => "Near-Term Collapse: Why Industrial Society Is More Vulnerable Than You May Think",
+      :description => %Q{ <p>Rising energy costs, crushing debt burdens, resource depletion, and climate change are converging to undermine the global economy. Our political system appears incapable of responding. Previous civilizations have collapsed in the face of similar challenges. What does collapse look like? Is it likely within the next two decades? If so, what should we be doing?</p> },
     }
   },
   {
