@@ -970,6 +970,7 @@ end
   ["okcupid-labs", "http://okcupidlabs.com"],
   ["pac-nw-kale-chips", "http://pacifickale.com"],
   ["pivotal-labs", "http://pivotallabs.com"],
+  ["printstagram", "http://printstagram.com"],
   ["sendgrid", "http://sendgrid.com"],
   ["spacex", "http://spacex.com"],
   ["spire-io", "http://spire.io"],
@@ -1035,7 +1036,7 @@ end
 # FHC4 sponsorships
 [
   [:party,       %w(new-relic)],
-  [:standard,    %w(github the-hybrid-group the-hub-la heroku hashicorp pivotal-labs g5 tilde)],
+  [:standard,    %w(github the-hybrid-group the-hub-la heroku hashicorp pivotal-labs g5 tilde printstagram)],
   [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs mighty-o cruzer)],
   [:goodie,      %w(luna-sandals crimethinc field-notes)],
   [:scholarship, %w(noisivelvet uncharted)]
