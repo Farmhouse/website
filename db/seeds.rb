@@ -1036,9 +1036,9 @@ end
 # FHC4 sponsorships
 [
   [:party,       %w(new-relic)],
-  [:standard,    %w(github the-hybrid-group the-hub-la heroku hashicorp pivotal-labs g5 tilde printstagram)],
+  [:standard,    %w(github the-hybrid-group the-hub-la heroku hashicorp pivotal-labs g5 tilde)],
   [:food,        %w(claras-cakes tonx native-foods thunderbolt-labs mighty-o cruzer)],
-  [:goodie,      %w(luna-sandals crimethinc field-notes)],
+  [:goodie,      %w(luna-sandals crimethinc field-notes printstagram)],
   [:scholarship, %w(noisivelvet uncharted)]
 ].each do |level|
   level.last.each do |sponsor|
