@@ -872,12 +872,12 @@ people_5 = [
     }
   },
   {
-    :name => "Drew Hoolhorst",
+    :name => "Jessica Hische",
     :bio  => %Q{
-      <p>Drew Hoolhorst is <a href="http://www.rocket-shoes.com/about/" title="hi, i&#8217;m drew.">@drewber</a></p>
+      <p><a href="http://jessicahische.is/awesome" title="Jessica Hische - Awesome">Jessica Hische</a> draws type.</p>
     },
     :talk => {
-      :slug        => "drew-hoolhorst-tba",
+      :slug        => "jessica-hische-tba",
       :title       => "TBA",
       :description => %Q{ <p></p> },
     }
@@ -894,23 +894,34 @@ people_5 = [
     }
   },
   {
-    :name => "Jessica Hische",
-    :bio  => %Q{
-      <p><a href="http://jessicahische.is/awesome" title="Jessica Hische - Awesome">Jessica Hische</a> draws type.</p>
-    },
-    :talk => {
-      :slug        => "jessica-hische-tba",
-      :title       => "TBA",
-      :description => %Q{ <p></p> },
-    }
-  },
-  {
     :name => "Julie Ann Horvath",
     :bio  => %Q{
       <p><a href="http://julieannhorvath.com" title="Julie Ann Horvath is not a robot.">Julie Ann Horvath</a> is @nrrrdcore on <a href="https://github.com/nrrrdcore/">GitHub</a>, <a href="https://twitter.com/nrrrdcore/">Twitter</a> et al.</p>
     },
     :talk => {
       :slug        => "julie-ann-horvath-tba",
+      :title       => "TBA",
+      :description => %Q{ <p></p> },
+    }
+  },
+  {
+    :name => "Drew Hoolhorst",
+    :bio  => %Q{
+      <p>Drew Hoolhorst is <a href="http://www.rocket-shoes.com/about/" title="hi, i&#8217;m drew.">@drewber</a></p>
+    },
+    :talk => {
+      :slug        => "drew-hoolhorst-tba",
+      :title       => "TBA",
+      :description => %Q{ <p></p> },
+    }
+  },
+  {
+    :name => "Eleanor Saitta",
+    :bio  => %Q{
+      <p><a href="http://dymaxion.org" title="Dymaxion">Eleanor Saitta</a> is a hacker, designer, artist, writer, and barbarian. She makes a living and a vocation of understanding how complex, transdisciplinary systems operate and redesigning them to work, or at least fail, better. Among other things, Eleanor is a co-founder of <a href="http://octotrike.org" title="Trike: Trike">the Trike project</a> and the <a href="http://const.is">Constitutional Analysis Support Team</a>, Technical Director at the <a href="http://immi.is">International Modern Media Institute</a>, Principal Security Engineer at the <a href="http://openitp.org" title="openitp.org">Open Internet Tools Project</a>, a member of the advisory board at <a href="http://gwob.org" title="Geeks Without Bounds">Geeks Without Bounds</a>, a contributor to the <a href="http://briar.sf.net" title="Briar: A Secure News and Discussion System">Briar project</a>, and a Senior Security Associate with <a href="http://stachliu.com" title="Home &laquo; Stach &amp; Liu">Stach &amp; Liu</a>. She is nomadic and lives mostly in airports and occasionally in New York, London, and Stockholm. She can be found at <a href="http://dymaxion.org" title="Dymaxion">http://dymaxion.org</a> and on Twitter as <a href="https://twitter.com/dymaxion">@dymaxion</a>.</p>
+    },
+    :talk => {
+      :slug        => "eleanor-saitta-tba",
       :title       => "TBA",
       :description => %Q{ <p></p> },
     }
