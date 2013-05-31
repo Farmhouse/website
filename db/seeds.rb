@@ -668,6 +668,10 @@ people_4 = [
 
         <p>This talk will discuss the background of COINTELPRO, some of the results of the Church Committee and the current state of new programs that are achieving similar results as the original COINTELPRO. I&rsquo;ll discuss my own personal experiences, some of my coping strategies and other issues relating to my association with WikiLeaks.</p>
       },
+    },
+    :video => {
+      :youtube       => "3ftfEXxFC4Q",
+      :canonical_url => "http://confreaks.com/videos/2505-farmhouseconf4-cointelpro-past-present-and-our-shared-future"
     }
   },
   {
@@ -681,6 +685,10 @@ people_4 = [
       :description => %Q{
         <p>An attempt to get to the bottom of whether the future we were promised as kids &mdash; flying cars, emotionally fragile domestic robots, video phones, quantum leaping &mdash; is better, worse or pretty close to the one we'll actually get.</p>
       },
+    },
+    :video => {
+      :youtube       => "vAHiloN7apQ",
+      :canonical_url => "http://confreaks.com/videos/2502-farmhouseconf4-past-present-future-tense"
     }
   },
   {
@@ -696,6 +704,10 @@ people_4 = [
       :slug        => "the-children-are-our-future",
       :title       => "The Children Are Our Future",
       :description => %Q{ <p>In five years&rsquo; time, kids will look at everything you and I are making today and think it&rsquo;s unconscionably lame, and if you don&rsquo;t think that&rsquo;s the most fun thing in the world then I don&rsquo;t know what.</p> },
+    },
+    :video => {
+      :youtube       => "SQPMfK275UI",
+      :canonical_url => "http://confreaks.com/videos/2497-farmhouseconf4-the-children-are-our-future"
     }
   },
   {
@@ -711,6 +723,10 @@ people_4 = [
       :slug        => "a-neurotic-gal-attempts-a-fearless-look-into-the-future",
       :title       => "A Neurotic Gal Attempts A Fearless Look Into The Future",
       :description => %Q{ <p>If you want to know about the future, ask a neurotic person. No one thinks about the future more than they do.</p> },
+    },
+    :video => {
+      :youtube       => "VDHDTujrUhs",
+      :canonical_url => "http://confreaks.com/videos/2499-farmhouseconf4-a-neurotic-gal-attempts-a-fearless-look-into-the-future"
     }
   },
   {
@@ -722,6 +738,10 @@ people_4 = [
       :slug        => "we-will-build-offline-in-the-future",
       :title       => "We Will Build Offline in the Future",
       :description => %Q{ <p>We&rsquo;re the first generation to grow up online and soon we&rsquo;ll inherit the physical world.</p> },
+    },
+    :video => {
+      :youtube       => "O4C4-l8w80E",
+      :canonical_url => "http://confreaks.com/videos/2500-farmhouseconf4-we-will-build-offline-in-the-future"
     }
   },
   {
@@ -737,6 +757,10 @@ people_4 = [
       :description => %Q{
         <p>What does a city of the future look like, what are the people in it like and who runs it? How far behind are we right now?</p>
       },
+    },
+    :video => {
+      :youtube       => "8yrLK2ZjnxM",
+      :canonical_url => "http://confreaks.com/videos/2496-farmhouseconf4-future-commonwealth"
     }
   },
   {
@@ -748,6 +772,10 @@ people_4 = [
       :slug        => "future-current-the-robot-r-evolution",
       :title       => "Future Current: The Robot (R)Evolution",
       :description => %Q{ <p>This is a talk about robots.<br/>This is a talk about humanity.<br/>This is a talk about technology.<br/>This is a talk about evolution.<br/>This is a talk about the future.<br/>This is a talk about atemporality.<br/>This is a talk about robots.</p> },
+    },
+    :video => {
+      :youtube       => "KQ4QJ5G30Wg",
+      :canonical_url => "http://confreaks.com/videos/2503-farmhouseconf4-future-current-the-robot-r-evolution"
     }
   },
   {
@@ -761,6 +789,10 @@ people_4 = [
       :description => %Q{
         <p>Emerging manufacturing techniques like 3D printing are shifting the way that we make, buy, and consume products. We&rsquo;re still in an era of mass production, but it is giving way to mass customization of consumer goods. What will we make in the future when we can make anything we wish on demand?</p>
       },
+    },
+    :video => {
+      :youtube       => "Uska9uuDTno",
+      :canonical_url => "http://confreaks.com/videos/2501-farmhouseconf4-what-we-will-make-in-the-future"
     }
   },
   {
@@ -772,6 +804,10 @@ people_4 = [
       :slug        => "designing-forever",
       :title       => "Designing Forever",
       :description => %Q{ <p>The future will be inhabited by people who live much longer lives than we know today, lives potentially without end. How will society cope as parts of it begin to think along much longer timescales than ever before? What does it mean for creativity and copyright when creators last as long as their creations? How will the discipline of product design evolve as humans evolve to last forever, and what lessons can we learn today?</p> },
+    },
+    :video => {
+      :youtube       => "YJZ7fF1gSdU",
+      :canonical_url => "http://confreaks.com/videos/2495-farmhouseconf4-designing-forever"
     }
   },
   {
@@ -785,6 +821,10 @@ people_4 = [
       :description => %Q{
         <p><p>Now that the beautiful promise of the internet has worn off, and we understand that it is not inherently equalizing, we can begin to realize our true roles as activists in closing social, economic, and opportunity gaps. The protocols we once thought were neutral are being used by established hierarchies to reenforce and strengthen their holds, to further detriments to the people at the bottom of those structures. willowbl00 will tell a story of hackerspaces and education, of technology in disaster response and civic voices, of tempered negotiations and paced arms races. With lots of examples of deployed initiatives, their downfalls and triumphs, this talk shows the future that is being built to prevent and amend continued atrocities. The future is here, but we have to fight to make it evenly distributed.</p></p>
       },
+    },
+    :video => {
+      :youtube       => "jePY1xFrJuk",
+      :canonical_url => "http://confreaks.com/videos/2504-farmhouseconf4-replacing-uppercase-f-fucked-with-uppercase-future-active-participation-in-response"
     }
   }
 ]
@@ -810,7 +850,74 @@ people_4.each do |person|
   )
 
   talk.people << speaker
+
+  video = Video.create!(
+    :conf_id          => farmhouse_conf_4.id,
+    :talk_id          => talk.id,
+    :caption          => talk.description,
+    :videographer     => "Cindy Denison",
+    :youtube          => person[:video][:youtube],
+    :canonical_url    => person[:video][:canonical_url]
+  )
+
+  talk.videos << video
 end
+
+
+# fhc4 alumni talks
+# Tara Brown
+fhc4_tara_talk = Talk.where(:slug => "mapping-the-la-tech-scene").first
+fhc4_tara_video = Video.create!(
+  :conf_id          => farmhouse_conf_4.id,
+  :talk_id          => fhc4_tara_talk.id,
+  :caption          => fhc4_tara_talk.description,
+  :videographer     => "Cindy Denison",
+  :youtube          => "tm2JKbDn18Q",
+  :canonical_url    => "http://confreaks.com/videos/2508-farmhouseconf4-alumni-follow-up"
+)
+fhc4_tara_talk.videos << fhc4_tara_video
+
+# Mitch Artman
+fhc4_mitch_talk = Talk.where(:slug => "falling-off-the-map-skid-row-life-cycle").first
+fhc4_mitch_video = Video.create!(
+  :conf_id          => farmhouse_conf_4.id,
+  :talk_id          => fhc4_mitch_talk.id,
+  :caption          => fhc4_mitch_talk.description,
+  :videographer     => "Cindy Denison",
+  :youtube          => "P-57TYxfY-U",
+  :canonical_url    => "http://confreaks.com/videos/2507-farmhouseconf4-alumni-follow-up"
+)
+fhc4_mitch_talk.videos << fhc4_mitch_video
+
+# Eric Gradman
+fhc4_eric_talk = Talk.where(:slug => "theres-no-map-for-inventiveness").first
+fhc4_eric_video = Video.create!(
+  :conf_id          => farmhouse_conf_4.id,
+  :talk_id          => fhc4_eric_talk.id,
+  :caption          => fhc4_eric_talk.description,
+  :videographer     => "Cindy Denison",
+  :youtube          => "3AduRok11Jg",
+  :canonical_url    => "http://confreaks.com/videos/2498-farmhouseconf4-alumni-follow-up"
+)
+fhc4_eric_talk.videos << fhc4_eric_video
+
+# Megan Dean
+fhc4_megan_talk = Talk.where(:slug => "making-bikes-work").first
+fhc4_megan_video = Video.create!(
+  :conf_id          => farmhouse_conf_4.id,
+  :talk_id          => fhc4_megan_talk.id,
+  :caption          => fhc4_megan_talk.description,
+  :videographer     => "Cindy Denison",
+  :youtube          => "ZgMNk-jJlgI",
+  :canonical_url    => "http://confreaks.com/videos/2506-farmhouseconf4-alumni-follow-up"
+)
+fhc4_megan_talk.videos << fhc4_megan_video
+
+
+
+
+
+
 
 
 # farmhouse conf 5, 2013
