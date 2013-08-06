@@ -1,4 +1,8 @@
-people_5 = [
+farmhouse_conf_5 = Conf.where( :name => "Farmhouse Conf 5" ).first
+
+
+
+people_5 =[
   {
     :name => "Nirvan Mullick",
     :bio  => %Q{
@@ -33,10 +37,6 @@ people_5.each do |person|
 
   talk.people << speaker
 end
-
-
-__END__
-
 
 
 # memberships
