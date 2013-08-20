@@ -29,7 +29,10 @@ module ApplicationHelper
   end
 
   def link_to_twitter(thing)
-    link_to "@#{thing.twitter}", "http://twitter.com/#{thing.twitter}", :rel => "external"
+    rels  = "external"
+    rels << " me" if thing.twitter =~ /farmhouse|veganstraightedge/
+
+    link_to "@#{thing.twitter}", "http://twitter.com/#{thing.twitter}", :rel => rels
   end
 
   def link_to_person(person)

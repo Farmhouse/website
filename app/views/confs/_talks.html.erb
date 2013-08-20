@@ -8,29 +8,27 @@
           <% row.each do |talk| %>
 
             <% unless talk.nil? %>
-              <div class="talk span6">
+              <div class="talk span6 h-card vcard p-speaker speaker">
                 <h2 id="<%= talk.people.first.slug %>">
                   <%= link_to conf_talk_path(talk.conf, talk.slug) do %>
-                    <b><%= talk.people.first.name %></b> <br />
+                    <b class="p-name fn n"><%= talk.people.first.name %></b> <br />
                     <%= talk.title.html_safe %>
                   <% end %>
                 </h2>
 
-
-                <%= link_to conf_talk_path(talk.conf, talk.slug) do %>
-                  <%= remote_image_tag("speakers/#{talk.people.first.slug}", :alt => talk.people.first.name) %>
+                <%= link_to conf_talk_path(talk.conf, talk.slug), :class => "u-url url" do %>
+                  <%= remote_image_tag("speakers/#{talk.people.first.slug}", :alt => talk.people.first.name, :class => "u-photo photo") %>
                 <% end %>
 
-
-                <div class="notes">
+                <div class="p-note note">
                   <%= talk.try(:description).html_safe %>
 
                   <% unless talk.videos.blank? %>
-                    <p><b><%= link_to "Watch the video &rarr;".html_safe, conf_talk_path(talk.conf, talk.slug) %></b></p>
+                    <p><b><%= link_to "Watch the video &rarr;".html_safe, conf_talk_path(talk.conf, talk.slug), :class => "u-url url" %></b></p>
                   <% end %>
                 </div>
 
-                <div class="bio">
+                <div class="bio p-note note">
                   <%= raw talk.people.first.try(:bio) %>
                 </div> <!-- .bio -->
               </div> <!-- .talk -->

@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row h-event vevent">
   <div class="span12">
 
     <div id="fhc5" class="register alert alert-inverse">
@@ -9,15 +9,14 @@
 
       <div class="span6">
         <h2 class="alert-heading">
-          <b>for</b>
-          <%= link_to_unless_current "FARMHOUSE CONF 5", conf_path("5") %>
+          <%= link_to_unless_current "FARMHOUSE CONF 5", conf_path("5"), :class => "p-name summary u-url url" %>
         </h2>
-        <h3 class="alert-heading"><b>November 2, 2013</b> in Hollywood, CA</h3>
+        <h3 class="alert-heading"><b><time datetime="2013-11-02" class="dt-start dtstart">November 2, 2013</time></b> in <span class="p-location location h-adr adr"><span class="p-locality locality">Hollywood</span>, <span class="p-region region" title="California">CA</span></span></h3>
       </div> <!-- .span6 -->
 
 
       <div class="span5">
-        <%= link_to register_path, :class => "btn btn-inverse btn-large" do %>
+        <%= link_to register_path, :class => "btn btn-inverse btn-large u-url url" do %>
         <p>
           Buy Now
           <b>$100</b>

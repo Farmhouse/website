@@ -1,18 +1,18 @@
 <%= render "nav" %>
 
-<article>
+<article class="vevent h-event">
   <header>
-    <h1><%= @conf.name %></h1>
+    <h1 class="p-name summary"><%= @conf.name %></h1>
 
-    <h2><%= @conf.subtitle.html_safe %></h2>
+    <h2 class="p-description description"><%= @conf.subtitle.html_safe %></h2>
 
     <div class="row">
       <div class="span6">
-        <h3>At <%= @conf.location.name %></h3>
+        <h3>At <span class="p-location location"><%= @conf.location.name %></span></h3>
         <h4>
-          <%= time_tag @conf.starts_at %>
-          &mdash;
-          <%= time_tag @conf.ends_at %>
+          <%= time_tag @conf.starts_at, :class => "dt-start dtstart" %>
+          &ndash;
+          <%= time_tag @conf.ends_at, :class => "dt-end dtend"  %>
         </h4>
 
         <p class="twitter"><%= link_to_twitter(@conf) %></p>
@@ -23,10 +23,14 @@
 
           <div class="span6" id="description">
             <h3>Description</h3>
-            <%= render "/confs/descriptions/#{sluggify @conf.name, '_'}" %>
+            <div class="p-description description">
+              <%= render "/confs/descriptions/#{sluggify @conf.name, '_'}" %>
+            </div>
           </div>
 
-          <%= render "/confs/extra_descriptions/#{sluggify @conf.name, '_'}" %>
+          <div class="span6 p-description description more-description">
+            <%= render "/confs/extra_descriptions/#{sluggify @conf.name, '_'}" %>
+          </div>
         </div> <!-- .description -->
 
       </div> <!-- .span12 -->

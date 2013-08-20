@@ -1,25 +1,27 @@
 <%= render "/confs/nav" %>
 
-<article>
+<article class="vevent h-event">
   <header>
-    <h1><%= @talk.title.html_safe %></h1>
+    <h1 class="p-name summary"><%= @talk.title.html_safe %></h1>
 
     <h2>
-      By <%= @talk.people.first.name %>
-      at <%= link_to @talk.conf.name, @talk.conf %>
+      By <span class="h-card vcard"><span class="p-name fn n"><%= @talk.people.first.name %></span></span>
+      at <%= link_to @talk.conf.name, @talk.conf, :class => "u-url url p-location location" %>
     </h2>
   </header>
 
 
   <div class="row">
     <div class="span6">
-      <%= remote_image_tag("speakers/#{@talk.people.first.slug}", :alt => @talk.people.first.name) %>
+      <%= remote_image_tag("speakers/#{@talk.people.first.slug}", :alt => @talk.people.first.name, :class => "u-photo photo") %>
 
-      <div class="notes">
+      <div class="p-note note">
         <%= simple_format @talk.description.html_safe %>
-      </div> <!-- .notes -->
+      </div> <!-- .note -->
 
-      <%= @talk.people.first.bio.html_safe %>
+      <div class="p-note note">
+        <%= @talk.people.first.bio.html_safe %>
+      </div>
     </div>
 
     <div class="span6">
