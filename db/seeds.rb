@@ -1119,6 +1119,7 @@ end
   ["pac-nw-kale-chips", "http://pacifickale.com"],
   ["pivotal-labs", "http://pivotallabs.com"],
   ["printstagram", "http://printstagram.com"],
+  ["pure-luck", "https://www.facebook.com/pureluckpopup"],
   ["sendgrid", "http://sendgrid.com"],
   ["spacex", "http://spacex.com"],
   ["spire-io", "http://spire.io"],
@@ -1202,7 +1203,7 @@ end
 [
   [:party,       %w(github)],
   [:standard,    %w(the-hybrid-group tilde)],
-  [:food,        %w(claras-cakes tonx pac-nw-kale-chips)],
+  [:food,        %w(claras-cakes pure-luck tonx pac-nw-kale-chips)],
   [:goodie,      %w(luna-sandals crimethinc field-notes)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
