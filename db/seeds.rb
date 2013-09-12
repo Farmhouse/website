@@ -1043,6 +1043,25 @@ people_5 = [
       :title       => "Collapse of an Education System Not Designed for Creativity",
       :description => %Q{ <p></p> },
     }
+  },
+  {
+    :name => "Barefoot Ted",
+    :bio  => %Q{
+      <p></p>
+    },
+    :talk => {
+      :slug        => "barefoot-ted-TBA",
+      :title       => "TBA",
+      :description => %Q{
+        <p>An independent athlete committed to re-discovering primal natural human capacities and encouraging others to do the same.</p>
+        <p>Having spent the last 7 years focused on mastering barefoot long distance running, BFT now focuses on sharing his insights through coaching clinics and speaking engagements.</p>
+        <p>Many have come to know about him through the pages of Christopher McDougall's best-selling book "Born to Run", a book BFT likes to call his quirky PhD. thesis that he didn't have to write.</p>
+        <p>Ted has been featured in numerous articles and frequently interviewed. He enjoys sharing his philosophy of running and life to audiences large and small.</p>
+        <p>As "Barefoot Ted", he has played a major role in defining and popularizing the new/old concept of barefoot running and minimalist footwear to a new generation, being an early adopter of the current trend.</p>
+        <p>Ted's research and adventures have been regularly shared on his popular blog, Barefoot Ted's Adventures. He also hosts an online forum dedicated to minimalist/barefoot running and runs a sandal company, Luna Sandals.</p>
+        <p>These days Ted enjoys coaching and speaking. His Introduction to Barefoot Running clinics are designed to communicate his personal discoveries about barefoot running to individuals and groups.</p>
+      },
+    }
   }
 ]
 
