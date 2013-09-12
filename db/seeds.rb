@@ -1202,7 +1202,7 @@ end
 # FHC5 sponsorships
 [
   [:party,       %w(github)],
-  [:standard,    %w(the-hybrid-group tilde)],
+  [:standard,    %w(the-hybrid-group tilde the-hub-la)],
   [:food,        %w(claras-cakes pure-luck tonx pac-nw-kale-chips)],
   [:goodie,      %w(luna-sandals crimethinc field-notes)],
   [:scholarship, %w(noisivelvet)]
