@@ -1053,13 +1053,14 @@ people_5 = [
       :slug        => "barefoot-ted-TBA",
       :title       => "TBA",
       :description => %Q{
-        <p>An independent athlete committed to re-discovering primal natural human capacities and encouraging others to do the same.</p>
-        <p>Having spent the last 7 years focused on mastering barefoot long distance running, BFT now focuses on sharing his insights through coaching clinics and speaking engagements.</p>
-        <p>Many have come to know about him through the pages of Christopher McDougall's best-selling book "Born to Run", a book BFT likes to call his quirky PhD. thesis that he didn't have to write.</p>
+        <p><a href="http://www.barefootted.com" title="Barefoot Ted's Adventures">Barefoot Ted (BFT)
+        </a> is an independent athlete committed to re-discovering primal natural human capacities and encouraging others to do the same.</p>
+        <p>Having spent the last 7 years focused on mastering barefoot long distance running, <a href="https://twitter.com/barefootted">BFT</a> now focuses on sharing his insights through coaching clinics and speaking engagements.</p>
+        <p>Many have come to know about him through the pages of <a href="http://www.chrismcdougall.com" title="Christopher McDougall | Born to Run | National Bestseller">Christopher McDougall</a>'s best-selling book "<a href="http://www.amazon.com/Born-Run-Superathletes-Greatest-Vintage/dp/0307279189/" title="Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen: Christopher McDougall: 9780307279187: Amazon.com: Books">Born to Run</a>", a book BFT likes to call his quirky PhD. thesis that he didn't have to write.</p>
         <p>Ted has been featured in numerous articles and frequently interviewed. He enjoys sharing his philosophy of running and life to audiences large and small.</p>
         <p>As "Barefoot Ted", he has played a major role in defining and popularizing the new/old concept of barefoot running and minimalist footwear to a new generation, being an early adopter of the current trend.</p>
-        <p>Ted's research and adventures have been regularly shared on his popular blog, Barefoot Ted's Adventures. He also hosts an online forum dedicated to minimalist/barefoot running and runs a sandal company, Luna Sandals.</p>
-        <p>These days Ted enjoys coaching and speaking. His Introduction to Barefoot Running clinics are designed to communicate his personal discoveries about barefoot running to individuals and groups.</p>
+        <p>Ted's research and adventures have been regularly shared on his popular blog, <a href="http://www.barefootted.com" title="Barefoot Ted's Adventures">Barefoot Ted's Adventures</a>. He also hosts an <a href="https://groups.google.com/forum/?hl=en#!forum/huaraches">online forum</a> dedicated to minimalist/barefoot running and runs a sandal company, <a href="https://www.lunasandals.com">Luna Sandals</a>.</p>
+        <p>These days Ted enjoys <a href="http://barefootted.com/coach/" title="Barefoot Ted: Barefoot Running Coach">coaching</a> and speaking. His Introduction to Barefoot Running clinics are designed to communicate his personal discoveries about barefoot running to individuals and groups.</p>
       },
     }
   }
