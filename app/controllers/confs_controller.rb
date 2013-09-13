@@ -32,7 +32,7 @@ class ConfsController < ApplicationController
   end
 
   def sponsor
-    @slug = "sponsor"
+    @slug  = "sponsor"
     @title = "Farmhouse Conf Sponsor Prospectus"
   end
 
