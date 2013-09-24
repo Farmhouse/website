@@ -5,7 +5,6 @@ ruby "1.9.3", :engine => "rbx", :engine_version => "2.0.0.m8"
 
 gem "rails", "~> 3.2.14"
 gem "puma",  "~> 2.5.0"
-gem "dang",  "~> 1.0.0"
 
 gem "json"
 gem "jquery-rails"
