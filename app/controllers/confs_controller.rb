@@ -14,7 +14,12 @@ class ConfsController < ApplicationController
     when 4
       ["Eric Gradman", "Megan Dean", "Mitch Artman", "Tara Brown"]
     when 5
-      ["Eli Duke", "Evan Phoenix", "Leah Silber", "Aaron Patterson", "Sarah Mei", "Tj Nelson Jr", "Suzan Bond", "Greg Bennick", "Brian", "Mitch Artman", "Tara Brown", "Marc Horowitz", "Nova Han", "Megan Dean", "Peter Young", "Caroline Woolard", "Ron Evans", "willowbl00", "Jacob Appelbaum", "Jessica Lord", "Justin Ouellette", "Starlee Kine"]
+      [
+        "Eli Duke", "Evan Phoenix", "Leah Silber", "Aaron Patterson", "Sarah Mei", "Tj Nelson Jr", "Suzan Bond",
+        "Greg Bennick", "Brian", "Mitch Artman", "Tara Brown", "Marc Horowitz", "Nova Han",
+        "Megan Dean", "Peter Young", "Caroline Woolard",
+        "Ron Evans", "willowbl00", "Jacob Appelbaum", "Jessica Lord", "Justin Ouellette", "Starlee Kine"
+      ]
     else
       []
     end
