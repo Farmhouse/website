@@ -1,0 +1,23 @@
+<div.navbar.navbar-inverse
+  <div.navbar-inner
+    <div.container
+      <a.btn.btn-navbar[data-toggle=collapse][data-target=.nav-collapse]
+        <span.icon-bar span>
+        <span.icon-bar span>
+        <span.icon-bar span>
+       a>
+
+      <= link_to "The Farmhouse", root_path, rel: "home", class: "brand" =>
+
+      <div.nav-collapse.collapse
+        <ul.nav
+          <= nav_to "Farmhouse Conf", conf_path(5)    =>
+          <= nav_to "History",        house_path      =>
+          <= nav_to "Rules",          rules_path      =>
+          <= nav_to "Podcast",        podcasts_path   =>
+          <= nav_to "Publishing",     publishing_path =>
+        ul>
+      div>
+    div>
+  div>
+div>
