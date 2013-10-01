@@ -1093,6 +1093,7 @@ end
   ["baggu", "http://baggubag.com"],
   ["blueboxgroup", "http://bluebox.net"],
   ["c2o", "http://c2o-cocowater.com"],
+  ["carbon-five", "http://carbonfive.com"],
   ["claras-cakes", "http://ClaraCakes.com"],
   ["cloud-city", "http://cloudcitydevelopment.com"],
   ["code-climate", "http://codeclimate.com"],
@@ -1201,7 +1202,7 @@ end
 
 # FHC5 sponsorships
 [
-  [:party,       %w(github pivotal-labs)],
+  [:party,       %w(github pivotal-labs carbon-five)],
   [:standard,    %w(the-hybrid-group tilde the-hub-la cloud-city)],
   [:food,        %w(claras-cakes pure-luck tonx pac-nw-kale-chips)],
   [:goodie,      %w(luna-sandals crimethinc field-notes)],
