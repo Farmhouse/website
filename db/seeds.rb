@@ -1205,7 +1205,7 @@ end
 [
   [:party,       %w(github pivotal-labs carbon-five)],
   [:standard,    %w(the-hybrid-group tilde the-hub-la cloud-city seed-and-spark)],
-  [:food,        %w(claras-cakes pure-luck tonx pac-nw-kale-chips)],
+  [:food,        %w(claras-cakes pure-luck tonx pac-nw-kale-chips thunderbolt-labs veggie-grill)],
   [:goodie,      %w(luna-sandals crimethinc field-notes)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
