@@ -1121,6 +1121,7 @@ end
   ["pivotal-labs", "http://pivotallabs.com"],
   ["printstagram", "http://printstagram.com"],
   ["pure-luck", "https://www.facebook.com/pureluckpopup"],
+  ["seed-and-spark", "http://seedandspark.com"],
   ["sendgrid", "http://sendgrid.com"],
   ["spacex", "http://spacex.com"],
   ["spire-io", "http://spire.io"],
@@ -1203,7 +1204,7 @@ end
 # FHC5 sponsorships
 [
   [:party,       %w(github pivotal-labs carbon-five)],
-  [:standard,    %w(the-hybrid-group tilde the-hub-la cloud-city)],
+  [:standard,    %w(the-hybrid-group tilde the-hub-la cloud-city seed-and-spark)],
   [:food,        %w(claras-cakes pure-luck tonx pac-nw-kale-chips)],
   [:goodie,      %w(luna-sandals crimethinc field-notes)],
   [:scholarship, %w(noisivelvet)]
