@@ -1121,6 +1121,7 @@ end
   ["pivotal-labs", "http://pivotallabs.com"],
   ["printstagram", "http://printstagram.com"],
   ["pure-luck", "https://www.facebook.com/pureluckpopup"],
+  ["ronalds", "https://google.com/search?q=ronald's+donuts+vegan&tbm=isch"],
   ["seed-and-spark", "http://seedandspark.com"],
   ["sendgrid", "http://sendgrid.com"],
   ["spacex", "http://spacex.com"],
@@ -1205,7 +1206,7 @@ end
 [
   [:party,       %w(github pivotal-labs carbon-five)],
   [:standard,    %w(the-hybrid-group tilde the-hub-la cloud-city seed-and-spark)],
-  [:food,        %w(claras-cakes pure-luck tonx pac-nw-kale-chips thunderbolt-labs veggie-grill)],
+  [:food,        %w(ronalds tonx veggie-grill pac-nw-kale-chips claras-cakes pure-luck thunderbolt-labs)],
   [:goodie,      %w(luna-sandals crimethinc field-notes)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
