@@ -1059,7 +1059,7 @@ people_5 = [
       :slug        => "barefoot-ted-TBA",
       :title       => "Gravitational Collapse, Energetic Wheels, Ape Locomotion: a history",
       :description => %Q{
-        <p></p>
+        <p>A quick look at strategies used by the genus Homo to enhance and extend the joy of mobility past and present.  Starting with the evolution of bipedalism and the radical growth of the brain, I will catalog what I see as the most important behaviors, capacities and inventions that propelled humans into the now..., and I will demonstrate where I think we are going next.</p>
       },
     }
   }
