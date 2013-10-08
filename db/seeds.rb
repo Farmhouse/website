@@ -1047,19 +1047,19 @@ people_5 = [
   {
     :name => "Barefoot Ted",
     :bio  => %Q{
-      <p></p>
+      <p><a href="http://barefootted.com" title="Barefoot Ted's Adventures">Barefoot Ted</a> is an independent athlete committed to re-discovering primal natural human capacities and encouraging others to do the same.</p>
+      <p>Having spent the last 10 years focused on mastering barefoot long distance running, BFT now focuses on sharing his insights through speaking engagements, social networking and acting as the Spokesmonkey for <a href="http://www.lunasandals.com">LUNA</a>, the adventure sandal company he founded in Seattle.</p>
+      <p>Many have come to know about him through the pages of <a href="http://www.chrismcdougall.com" title="Christopher McDougall | Born to Run | National Bestseller">Christopher McDougall's</a> best-selling book "<a href="http://www.amazon.com/Born-Run-Superathletes-Greatest-Vintage/dp/0307279189" title="Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen: Christopher McDougall: 9780307279187: Amazon.com: Books">Born to Run</a>", a book BFT likes to call his quirky PhD. thesis that he didn't have to write.</p>
+      <p>Ted has been featured in numerous articles and frequently interviewed. He enjoys sharing his philosophy of running and life to audiences large and small.</p>
+      <p>As "Barefoot Ted", he has played a major role in defining and popularizing the new/old concept of barefoot running and minimalist footwear to a new generation, being an early adopter of the current trend.</p>
+      <p>Ted's research and adventures have been regularly shared on his popular blog, <a href="http://barefootted.com">Barefoot Ted's Adventures</a> on his <a href="https://www.facebook.com/barefootted">Facebook Fan Page</a> and on <a href="https://twitter.com/BarefootTed">Twitter</a>. He also hosts an online <a href="http://groups.google.com/group/huaraches?hl=en">forum dedicated to minimalist/barefoot running</a>.</p>
+      <p>These days Ted enjoys spreading the news about his favorite sandals and telling stories of his adventures. Projects for 2014 include more Barefoot Ted's Adventures active vacations in Mexico, Turkey and Japan and a LUNA USA TOUR visiting retailers across the country.</p>
     },
     :talk => {
       :slug        => "barefoot-ted-TBA",
-      :title       => "TBA",
+      :title       => "Gravitational Collapse, Energetic Wheels, Ape Locomotion: a history",
       :description => %Q{
-        <p><a href="http://barefootted.com" title="Barefoot Ted's Adventures">Barefoot Ted</a> is an independent athlete committed to re-discovering primal natural human capacities and encouraging others to do the same.</p>
-        <p>Having spent the last 10 years focused on mastering barefoot long distance running, BFT now focuses on sharing his insights through speaking engagements, social networking and acting as the Spokesmonkey for <a href="http://www.lunasandals.com">LUNA</a>, the adventure sandal company he founded in Seattle.</p>
-        <p>Many have come to know about him through the pages of <a href="http://www.chrismcdougall.com" title="Christopher McDougall | Born to Run | National Bestseller">Christopher McDougall's</a> best-selling book "<a href="http://www.amazon.com/Born-Run-Superathletes-Greatest-Vintage/dp/0307279189" title="Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen: Christopher McDougall: 9780307279187: Amazon.com: Books">Born to Run</a>", a book BFT likes to call his quirky PhD. thesis that he didn't have to write.</p>
-        <p>Ted has been featured in numerous articles and frequently interviewed. He enjoys sharing his philosophy of running and life to audiences large and small.</p>
-        <p>As "Barefoot Ted", he has played a major role in defining and popularizing the new/old concept of barefoot running and minimalist footwear to a new generation, being an early adopter of the current trend.</p>
-        <p>Ted's research and adventures have been regularly shared on his popular blog, <a href="http://barefootted.com">Barefoot Ted's Adventures</a> on his <a href="https://www.facebook.com/barefootted">Facebook Fan Page</a> and on <a href="https://twitter.com/BarefootTed">Twitter</a>. He also hosts an online <a href="http://groups.google.com/group/huaraches?hl=en">forum dedicated to minimalist/barefoot running</a>.</p>
-        <p>These days Ted enjoys spreading the news about his favorite sandals and telling stories of his adventures. Projects for 2014 include more Barefoot Ted's Adventures active vacations in Mexico, Turkey and Japan and a LUNA USA TOUR visiting retailers across the country.</p>
+        <p></p>
       },
     }
   }
