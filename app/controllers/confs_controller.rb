@@ -18,7 +18,7 @@ class ConfsController < ApplicationController
         "Eli Duke", "Evan Phoenix", "Leah Silber", "Aaron Patterson", "Sarah Mei", "Tj Nelson Jr", "Suzan Bond",
         "Greg Bennick", "Brian", "Mitch Artman", "Tara Brown", "Marc Horowitz", "Nova Han",
         "Megan Dean", "Peter Young", "Caroline Woolard",
-        "Ron Evans", "willowbl00", "Jacob Appelbaum", "Jessica Lord", "Justin Ouellette", "Starlee Kine"
+        "Ron Evans", "willowbl00", "Jessica Lord", "Justin Ouellette", "Starlee Kine", "Jacob Appelbaum"
       ]
     else
       []
