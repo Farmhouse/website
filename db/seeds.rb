@@ -1115,7 +1115,9 @@ end
   ["johnny-cupcakes", "http://johnnycupcakes.com"],
   ["logical-reality-design", "http://lrdesign.com"],
   ["luna-sandals", "http://lunasandals.com"],
+  ["mailchimp", "http://mailchimp.com"],
   ["mighty-o", "http://mightyo.com"],
+  ["montgomery-distillery", "http://montgomerydistillery.com"],
   ["moth-attack", "http://mothattack.com"],
   ["native-foods", "http://nativefoods.com"],
   ["new-relic", "http://newrelic.com"],
@@ -1208,9 +1210,9 @@ end
 
 # FHC5 sponsorships
 [
-  [:party,       %w(github pivotal-labs carbon-five)],
+  [:party,       %w(github pivotal-labs carbon-five mailchimp)],
   [:standard,    %w(the-hybrid-group tilde the-hub-la cloud-city seed-and-spark)],
-  [:food,        %w(ronalds tonx veggie-grill pac-nw-kale-chips claras-cakes pure-luck thunderbolt-labs)],
+  [:food,        %w(ronalds tonx veggie-grill pac-nw-kale-chips claras-cakes pure-luck thunderbolt-labs montgomery-distillery)],
   [:goodie,      %w(luna-sandals crimethinc field-notes)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
