@@ -1033,8 +1033,11 @@ people_5 = [
     },
     :talk => {
       :slug        => "eleanor-saitta-tba",
-      :title       => "TBA",
-      :description => %Q{ <p></p> },
+      :title       => "The Collapse of Trust",
+      :description => %Q{
+        <p>When we think about collapse, the narrative that comes to mind is that of the massive environmental challenges facing us as a species, as we attempt to recover from variously boiling, acid-bathing, and poisoning ourselves. Just as real, though, is the collapse of trust that's led us to be on such a direct collision path with the end of our future. We have placed a trust in our governments to act in our interests and in our institutions to think on the kind of timescales that lone individuals often fail to, but that trust has completely collapsed. The problem of ecological collapse in the large is really a failure of governance and timescale, an issue of state capture, a failure of fundamental ethics and vision on the part of the super-empowered, a systemic, emergent nightmare.</p>
+        <p>Let's walk into that nightmare, sit with it for a while, and then see how we can walk back out.</p>
+      },
     }
   },
   {
