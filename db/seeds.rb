@@ -988,9 +988,9 @@ people_5 = [
       <p>Jessica&rsquo;s clients includes Wes Anderson, Tiffany &amp; Co., The New York Times, Penguin Books, Target, Leo Burnett, American Express, and Wired Magazine. She has also released several commercial typefaces which are available in <a href="http://jessicahische.is/sellingyoustuff" title="Jessica Hische - Shop">her store</a>. Jessica has been named a Print Magazine New Visual Artist (20 under 30), one of Forbes 30 under 30 in Art and Design, an ADC Young Gun, a &ldquo;Person to Watch&rdquo; by GD USA, and one of 25 Emerging Artists by STEP Magazine. She&rsquo;s been personally profiled in many magazines including Eye Magazine (UK), Communication Arts, Grafik Magazine (UK), and Novum Magazine (Germany). She is currently serving on the <a href="http://tdc.org" title="The Type Directors Club | Promoting excellence in typography for over 65 years.">Type Directors Club</a> <a href="http://tdc.org/our-board/" title="About: Board of Directors | The Type Directors Club">Board of Directors</a> and divides her time fairly evenly between San Francisco, Brooklyn, and airports en route to design and illustration conferences.</p>
     },
     :talk => {
-      :slug        => "jessica-hische-tba",
-      :title       => "TBA",
-      :description => %Q{ <p></p> },
+      :slug        => "the-collapse-of-the-personal-professional-separation",
+      :title       => "The Collapse of The Personal/Professional Separation",
+      :description => %Q{ <p>Why would you tell 70,000 strangers your every waking thought? What effect does over-sharing have on your career. Does anyone care about your shitty tattoos in the workplace anymore? What would happen if you could just be yourself, unfiltered, all the time?</p> },
     }
   },
   {
