@@ -1126,6 +1126,7 @@ end
   ["new-relic", "http://newrelic.com"],
   ["noisivelvet", "http://noisivelvet.com"],
   ["okcupid-labs", "http://okcupidlabs.com"],
+  ["opal", "https://opal.io"],
   ["pac-nw-kale-chips", "http://pacifickale.com"],
   ["pivotal-labs", "http://pivotallabs.com"],
   ["printstagram", "http://printstagram.com"],
@@ -1213,9 +1214,9 @@ end
 
 # FHC5 sponsorships
 [
-  [:party,       %w(github pivotal-labs carbon-five mailchimp)],
-  [:standard,    %w(the-hybrid-group tilde the-hub-la cloud-city seed-and-spark)],
-  [:food,        %w(ronalds tonx veggie-grill pac-nw-kale-chips claras-cakes pure-luck thunderbolt-labs montgomery-distillery)],
+  [:party,       %w(github pivotal-labs carbon-five mailchimp thunderbolt-labs)],
+  [:standard,    %w(the-hybrid-group tilde the-hub-la cloud-city seed-and-spark opal)],
+  [:food,        %w(ronalds tonx veggie-grill pac-nw-kale-chips claras-cakes pure-luck montgomery-distillery)],
   [:goodie,      %w(luna-sandals crimethinc field-notes)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
