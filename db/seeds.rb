@@ -994,17 +994,6 @@ people_5 = [
     }
   },
   {
-    :name => "John Barnette",
-    :bio  => %Q{
-      <p><a href="https://github.com/jbarnette">John Barnette</a> works at GitHub. He&rsquo;s slow at delivery speaker bios to conference organizers.</p>
-    },
-    :talk => {
-      :slug        => "total-collapse",
-      :title       => "Total Collapse",
-      :description => %Q{ <p>John spoke at <a href="http://2011.cascadiaruby.com" title="Cascadia Ruby Conf | Ruby Without Borders | July 29-30 2011">Cascadia Ruby 2011</a> about the dark times. This will be roughly a follow up to <a href="http://confreaks.com/videos/611-cascadiaruby2011-keynote" title="Keynote - John Barnette - Cascadia Ruby 2011">that talk</a>.</p> },
-    }
-  },
-  {
     :name => "Julie Ann Horvath",
     :bio  => %Q{
       <p><a href="http://julieannhorvath.com" title="Julie Ann Horvath is not a robot.">Julie Ann Horvath</a> is @nrrrdcore on <a href="https://github.com/nrrrdcore/">GitHub</a>, <a href="https://twitter.com/nrrrdcore/">Twitter</a> et al.</p>
