@@ -1097,6 +1097,7 @@ end
   ["logical-reality-design", "http://lrdesign.com"],
   ["luna-sandals", "http://lunasandals.com"],
   ["mailchimp", "http://mailchimp.com"],
+  ["beyond-meat", "http://beyondmeat.com"],
   ["mighty-o", "http://mightyo.com"],
   ["montgomery-distillery", "http://montgomerydistillery.com"],
   ["moth-attack", "http://mothattack.com"],
@@ -1194,7 +1195,7 @@ end
 [
   [:party,       %w(github pivotal-labs carbon-five mailchimp thunderbolt-labs)],
   [:standard,    %w(the-hybrid-group tilde the-hub-la cloud-city seed-and-spark opal)],
-  [:food,        %w(ronalds tonx veggie-grill pac-nw-kale-chips claras-cakes pure-luck montgomery-distillery)],
+  [:food,        %w(ronalds tonx veggie-grill pac-nw-kale-chips claras-cakes pure-luck montgomery-distillery beyond-meat)],
   [:goodie,      %w(luna-sandals crimethinc field-notes)],
   [:scholarship, %w(noisivelvet)]
 ].each do |level|
