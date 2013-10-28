@@ -996,12 +996,16 @@ people_5 = [
   {
     :name => "Julie Ann Horvath",
     :bio  => %Q{
-      <p><a href="http://julieannhorvath.com" title="Julie Ann Horvath is not a robot.">Julie Ann Horvath</a> is @nrrrdcore on <a href="https://github.com/nrrrdcore/">GitHub</a>, <a href="https://twitter.com/nrrrdcore/">Twitter</a> et al.</p>
+      <p><a href="http://julieannhorvath.com" title="Julie Ann Horvath is not a robot.">Julie Ann Horvath</a> is  a designer and frontend developer at <a href="http://example.com/">GitHub</a>. She likes to think of herself as an open source advocate with a big heart for making mockups in markup. She spends a lot of her time speaking at conferences and volunteering to teach (more) women to code.</p>
+      <p>She&rsquo;s also the creator and organizer of <a href="http://passion-projects.github.com" title="Passion Projects">Passion Projects</a>, a monthly talk series designed to help surface and celebrate the work of incredible women in the tech industry.</p>
     },
     :talk => {
-      :slug        => "julie-ann-horvath-tba",
-      :title       => "TBA",
-      :description => %Q{ <p></p> },
+      :slug        => "resilience-in-the-face-of-total-collapse",
+      :title       => "Resilience in the Face of Total Collapse",
+      :description => %Q{
+        <p>Every <s>end</s> collapse marks a new beginning. But where does momentum to start something new come from? Where does resilence originate?</p>
+        <p>I want to tell you all my own story of personal resilience and how the best of things can come from the worst of situations. Or, how I learned to take power away from those who thrive on negativity and conflict and use it to create beautfiul movements of empowerment for those of us who deserve a better world.</p>
+      },
     }
   },
   {
