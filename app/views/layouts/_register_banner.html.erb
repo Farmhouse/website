@@ -4,28 +4,12 @@
     <div id="fhc5" class="register alert alert-inverse">
 
       <h1 class="alert-heading span11">
-        <%= link_to "REGISTER NOW for the Final Show", register_path %>
+        <%= link_to "FARMHOUSE CONF 5 is SOLD OUT", conf_path(5) %>
       </h1>
 
       <div class="span6">
-        <h2 class="alert-heading">
-          <%= link_to_unless_current "FARMHOUSE CONF 5", conf_path("5"), :class => "p-name summary u-url url" %>
-        </h2>
         <h3 class="alert-heading"><b><time datetime="2013-11-02" class="dt-start dtstart">November 2, 2013</time></b> in <span class="p-location location h-adr adr"><span class="p-locality locality">Hollywood</span>, <span class="p-region region" title="California">CA</span></span></h3>
       </div> <!-- .span6 -->
-
-
-      <div class="span5">
-        <%= link_to register_path, :class => "btn btn-inverse btn-large u-url url" do %>
-        <p>
-          Buy Now
-          <b>$100</b>
-        </p>
-        <% end %>
-
-        <p><b>Only <%= render "/layouts/available_tickets" %> ticket left</b></p>
-      </div> <!-- .span6 -->
-
     </div> <!-- #fhc5 -->
 
   </div> <!-- .span12 -->
