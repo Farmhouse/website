@@ -1045,10 +1045,25 @@ people_5 = [
       <p>These days Ted enjoys spreading the news about his favorite sandals and telling stories of his adventures. Projects for 2014 include more Barefoot Ted's Adventures active vacations in Mexico, Turkey and Japan and a LUNA USA TOUR visiting retailers across the country.</p>
     },
     :talk => {
-      :slug        => "barefoot-ted-TBA",
+      :slug        => "gravitational-collapse-energetic-wheels-ape-locomotion-a-history",
       :title       => "Gravitational Collapse, Energetic Wheels, Ape Locomotion: a history",
       :description => %Q{
         <p>A quick look at strategies used by the genus Homo to enhance and extend the joy of mobility past and present.  Starting with the evolution of bipedalism and the radical growth of the brain, I will catalog what I see as the most important behaviors, capacities and inventions that propelled humans into the now..., and I will demonstrate where I think we are going next.</p>
+      },
+    }
+  },
+  {
+    :name => "Willo O'Brien",
+    :bio  => %Q{
+      <p><a href="http://willolovesyou.com/about/" title="About | Willo O&#039;Brien">Willo O&rsquo;Brien</a> has made a career out of creativity. A prolific artist, tech geek, and <a href="http://willolovesyou.com/work/" title="Work With Me | Willo O&#039;Brien">creative business consultant/coach</a> for over a decade, she knows what works and what doesn&rsquo;t in the ever-changing world of startups and innovative small business.</p>
+      <p>After founding several businesses of her own, and serving as co-founder of two successful startups, she now shares her expertise <a href="http://willolovesyou.com/courses/" title="Course Offerings | Willo O&#039;Brien">teaching</a> and coaching other multi-hyphenated professionals (like you) to find that elusive <a href="http://willolovesyou.com/2013/07/the-joy-of-work-whats-your-guiding-compass/" title="The Joy of Work: What's your Guiding Compass? | Willo O&#039;Brien">sweet spot</a>.</p>
+      <p>Well versed in the heart-wrenching art of letting go, she&rsquo;s made big, bold leaps in her career, many of which took a fierce dedication to her motto of &ldquo;feel the fear &amp; follow your heart anyway.&rdquo; Willo can be found at <a href="http://willolovesyou.com" title="Willo O&#039;Brien | Inspiring Creative Sustainability in Life &amp; Business">WilloLovesYou.com</a> and <a href="https://twitter.com/WilloLovesYou">@WilloLovesYou</a> on every social platform out there&hellip; say hello!</p>
+    },
+    :talk => {
+      :slug        => "the-collapse-of-hope-and-letting-go-of-what-could-have-been",
+      :title       => "The Collapse of Hope & Letting Go of What Could Have Been",
+      :description => %Q{
+        <p>Launching our big ideas into the world takes courage & moxy. We dive in, our eyes twinkling with possibility and hope, and if we&rsquo;re lucky we catalyze collaborators, supportive fans, customers and a community along the way. But what happens when you&rsquo;ve lost that loving feeling? Or when you realize it&rsquo;s time to let go of the baby you&rsquo;ve put your blood, sweat & tears into and move on? Letting go of what could have been may just take more courage & moxy than getting the idea off the ground in the first place.</p>
       },
     }
   }
