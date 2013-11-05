@@ -1,130 +1,98 @@
 <article>
   <div class="row">
+    <header class="span12">
+      <h1>A Live / Work Space in Hollywood, CA</h1>
+    </header>
+
+    <p class="span6">
+      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/home/avocado-tree-at-night-at-the-farmhouse-by-heather-peterson.jpg",    :alt => "100+ year old avocado tree at The Farmhouse by @hrrrthrrr" %>
+
+      <span class="photo-attribution">
+        <%= link_to "by", "http://flickr.com/milllkmaid/6258380370/", :rel => "external" %>
+        <%= link_to "Heather Peterson", "http://hrrrthrrr.com", :rel => "external" %>
+      </span>
+    </p>
+
+    <p class="span6">
+      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/home/civ-in-the-shed-at-night-at-the-farmhouse-by-heather-peterson.jpg", :alt => "The Farmhouse backyard by @hrrrthrrr" %>
+
+      <span class="photo-attribution">
+        <%= link_to "by", "http://flickr.com/milllkmaid/6257853097/", :rel => "external" %>
+        <%= link_to "Heather Peterson", "http://hrrrthrrr.com", :rel => "external" %>
+      </span>
+    </p>
+  </div>
+
+  <div class="row">
     <div class="span6">
-      <h2 id="code-of-conduct">Code of Conduct</h2>
-      <%= link_to "Code of Conduct", code_of_conduct_path %>
+      <h2>Co-Working</h2>
+      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/home/living-room-office-at-the-farmhouse-by-shane-becker.jpg", :alt => "The Office at The Farmhouse in Hollywood, CA" %>
 
-      <div id="contact" class="h-card vcard">
-        <h2>Contact Info</h2>
+      <p class="photo-attribution">
+        <%= link_to "by", "http://flickr.com/veganstraightedge/6711133615/", :rel => "external" %>
+        <%= link_to "Shane Becker", "http://twitter.com/veganstraightedge", :rel => "external" %>
+      </p>
 
-        <p>
-          <a href="mailto:barn@farmhouse.la" class="email u-email">barn@farmhouse.la</a><br>
-          <span class="tel p-tel">(801) 898-9481</span>
-        </p>
-
-        <%= link_to "http://goo.gl/maps/tmWX", :rel => "external" do %>
-          <span class="street-address p-street-address">1558 Gordon St</span><br>
-          <span class="locality p-locality">LA</span>,
-          <span class="region p-region">CA</span><br>
-          <span class="postal-code p-postal-code">90028</span>
-        <% end %>
-
-        <h2 id="social-media">Social Media Bits</h2>
-
-        <a href="http://twitter.com/farmhouse" class="url u-url" rel="me">@farmhouse</a><br>
-        <a href="https://twitter.com/search?q=farmhouseconf5" rel="external">#FarmhouseConf5 on Twitter</a><br>
-        <a href="http://web.stagram.com/tag/farmhouseconf5/" rel="external"> #FarmhouseConf5 on Intstagram</a>
-      </div>
+      <p class="notes">
+        The living room is really more office than anything else.
+        Currently, it's occupied by <a href="http://twitter.com/veganstraightedge" title="Twitter">Shane Becker</a>,
+        <a href="http://twitter.com/evanphx" title="@evanphx on Twitter">Evan Phoenix</a>,
+        <a href="http://twitter.com/johnbender" title="Twitter">John Bender</a> and
+        <a href="http://hrrrthrrr.com" title="Twitter">Heather Peterson</a>.
+        Overflow guest seating is available at the 10 person dining room table.
+      </p>
     </div>
 
     <div class="span6">
-      <h2>Schedule</h2>
+      <h2>Co-Living</h2>
+      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/home/civ-in-the-backyard-grass-at-the-farmhouse-by-heather-peterson.jpg", :alt => "Civ holding down the backyard at the Farmhouse in Hollywood, CA" %>
 
-      <table id="schedule" border="0" cellspacing="5" cellpadding="5" class="table table-striped">
-        <tr>
-          <th>8:30 &ndash;9:30</th>
-          <td>Breakfast &amp; Registration</td>
-        </tr>
-        <tr>
-          <th>9:30 &ndash;9:45</th>
-          <td>Opening Remarks</td>
-        </tr>
-        <tr>
-          <th>9:45 &ndash;10:15</th>
-          <td>TALK: Claire Evans</td>
-        </tr>
-        <tr>
-          <th>10:15 &ndash;10:45</th>
-          <td>TALK: Eleanor Saitta</td>
-        </tr>
-        <tr>
-          <th>10:45 &ndash;11:15</th>
-          <td>Break</td>
-        </tr>
-        <tr>
-          <th>11:15 &ndash;12:00</th>
-          <td>FHC1 Alumni (Sean Bonner, Eli Duke, Evan Phoenix, Aaron Patterson, Tj Nelson Jr, Leah Silber, Nate Duke)</td>
-        </tr>
-        <tr>
-          <th>12:00 &ndash;1:15</th>
-          <td>LUNCH!</td>
-        </tr>
-        <tr>
-          <th>1:15 &ndash;1:45</th>
-          <td>TALK: Willo O'Brien</td>
-        </tr>
-        <tr>
-          <th>1:45 &ndash;2:15</th>
-          <td>TALK: Nirvan Mullick</td>
-        </tr>
-        <tr>
-          <th>2:15 &ndash;2:45</th>
-          <td>FHC2 Alumni (Greg Bennick, Brian, Mitch Artman, Tara Brown, Marc Horowitz, Nova Han)</td>
-        </tr>
-        <tr>
-          <th>2:45 &ndash;3:15</th>
-          <td>Break</td>
-        </tr>
-        <tr>
-          <th>3:15 &ndash;3:45</th>
-          <td>TALK: Julie Ann Horvath</td>
-        </tr>
-        <tr>
-          <th>3:45 &ndash;4:15</th>
-          <td>TALK: Richard Heinberg</td>
-        </tr>
-        <tr>
-          <th>4:15 &ndash;4:30</th>
-          <td>Break</td>
-        </tr>
-        <tr>
-          <th>4:30 &ndash;5:00</th>
-          <td>FHC3 Alumni (Megan Dean, Peter Young, Caroline Woolard)</td>
-        </tr>
-        <tr>
-          <th>5:00 &ndash;5:30</th>
-          <td>FHC4 Alumni (Ron Evans, Justin Ouellette, Starlee Kine)</td>
-        </tr>
-        <tr>
-          <th>5:30 &ndash;6:45</th>
-          <td>DINNER</td>
-        </tr>
-        <tr>
-          <th>6:45 &ndash;7:15</th>
-          <td>TALK: Jessica Hische</td>
-        </tr>
-        <tr>
-          <th>7:15 &ndash;7:45</th>
-          <td>TALK: Barefoot Ted</td>
-        </tr>
-        <tr>
-          <th>7:45 &ndash;8:00</th>
-          <td>Closing Remarks</td>
-        </tr>
-        <tr>
-          <th>8:00 &ndash;8:45</th>
-          <td>MUSIC: Blue Ribbon Glee Club</td>
-        </tr>
-        <tr>
-          <th>8:45  &ndash;9:30</th>
-          <td>MUSIC: Mates of State</td>
-        </tr>
-        <tr>
-          <th>Midnight</th>
-          <td>GO HOME!</td>
-        </tr>
-      </table>
-    </div> <!-- .span6 -->
+      <p class="photo-attribution">
+        <%= link_to "by", "http://flickr.com/veganstraightedge/5533623778/", :rel => "external" %>
+        <%= link_to "Heather Peterson", "http://hrrrthrrr.com", :rel => "external" %>
+      </p>
+
+      <p class="notes">
+        Let's be honest. It's <a href="http://twitter.com/civthedog" title="Twitter">Civ's</a> house and yard.
+        She just lets us use the place. She keeps the raccoons and possums at bay.
+        She also helps with avocado cleanup duty.
+      </p>
+
+    </div>
+  </div> <!-- .row -->
+
+  <div class="row">
+    <div class="span6">
+      <h2>Conferences</h2>
+      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/home/farmhouse-conf-frontyard-sign-by-tj-nelson.jpg", :alt => "Farmhouse Conf Front Yard Sign by Tj Nelson" %>
+
+      <p class="photo-attribution">
+        <%= link_to "by", "http://flickr.com/veganstraightedge/5696302641/", :rel => "external" %>
+        <%= link_to "Tj Nelson Jr", "http://twitter.com/tjnelsonjr", :rel => "external" %>
+      </p>
+
+      <p class="notes">
+        The Farmhouse is home to <%= link_to "Farmhouse Conf", conf_path("") %> which happens once a year in May.
+        The format is simple: <b>no projector</b>, <b>no slides</b>, just <b>incredible stories</b> told by <b>amazing people</b>.
+        Oh yeah, it's under a <a href="http://flickr.com/veganstraightedge/6143359534/" title="The shed and avocado tree in the backyard at the Farmhouse in Hollywood, CA">100 year old avocado tree</a>.
+      </p>
+    </div>
+
+    <div class="span6">
+      <h2>Potlucks</h2>
+      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/home/farmhouse-conf-food-setup-by-tj-nelson.jpg", :alt => "Farmhouse Conf Food Setup by Tj Nelson" %>
+
+      <p class="photo-attribution">
+        <%= link_to "by", "http://flickr.com/veganstraightedge/5696880416/", :rel => "external" %>
+        <%= link_to "Tj Nelson Jr", "http://twitter.com/tjnelsonjr", :rel => "external" %>
+      </p>
+
+      <p class="notes">
+        At The Farmhouse, all food is both <%= link_to "vegan and communal", rules_path %>.
+        If you're a Farmhouse guest or an attendee of the conference, all house food is up for grabs.
+        From time to time we have potlucks where everyone brings something.
+      </p>
+    </div>
   </div> <!-- .row -->
 
   <div id="map" class="row">
