@@ -15,8 +15,8 @@ class ConfsController < ApplicationController
       ["Eric Gradman", "Megan Dean", "Mitch Artman", "Tara Brown"]
     when 5
       [
-        "Sean Bonner", "Eli Duke", "Evan Phoenix", "Leah Silber", "Aaron Patterson", "Tj Nelson Jr",
-        "Greg Bennick", "Brian", "Mitch Artman", "Tara Brown", "Marc Horowitz", "Nova Han",
+        "Eli Duke", "Evan Phoenix", "Leah Silber", "Aaron Patterson",
+        "Greg Bennick", "Brian", "Mitch Artman", "Marc Horowitz",
         "Megan Dean", "Peter Young", "Caroline Woolard",
         "Ron Evans", "Justin Ouellette", "Starlee Kine"
       ]
