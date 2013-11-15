@@ -16,7 +16,7 @@ class ConfsController < ApplicationController
     when 5
       [
         "Eli Duke", "Evan Phoenix", "Leah Silber", "Aaron Patterson",
-        "Greg Bennick", "Brian", "Mitch Artman", "Marc Horowitz",
+        "Greg Bennick", "Brian", "Mitch Artman",
         "Megan Dean", "Peter Young", "Caroline Woolard",
         "Ron Evans", "Justin Ouellette", "Starlee Kine"
       ]
