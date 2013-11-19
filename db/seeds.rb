@@ -107,6 +107,8 @@ people_1.each_with_index do |person, index|
 end
 
 
+
+
 # me
 shane = Person.create!(
   :name       => "Shane Becker",
@@ -124,6 +126,38 @@ Talk.all.each do |talk|
   talk.update_attributes!(:title => "")
 end
 
+
+
+
+# fhc1 lightning talks
+fhc1_lightning_talks_speaker = Person.create!(
+  :name       => "Damien Evans, Yehuda Katz, Ron Evans, J.R. Fent, Obie Fernandez, Giles Bowkett, Max Salzberg, Ilya Zhitomirskiy, Daniel Grippi, and Nate Duke",
+  :bio        => "All of the lightning talks were given by Farmhouse Conf 1 attendees.",
+  :staff      => false,
+  :organizer  => false
+)
+
+fhc1_lightning_talks_talk = Talk.create!(
+  :conf_id      => farmhouse_conf_1.id,
+  :title        => "Impromptu Lightning Talks",
+  :subtitle     => "",
+  :description  => "There was some room in the schedule, so I opened the 'stage' to attendees to give a lightning talk of no more than five minutes. This is what transpired.",
+  :slug         => "impromptu-lightning-talks"
+)
+
+fhc1_lightning_talks_talk.people << fhc1_lightning_talks_speaker
+
+fhc1_lightning_talks_video = Video.create!(
+  :conf_id          => farmhouse_conf_1.id,
+  :talk_id          => fhc1_lightning_talks_talk.id,
+  :caption          => fhc1_lightning_talks_talk.description,
+  :videographer     => "Coby Randquist",
+  :canonical_url    => "http://www.confreaks.com/videos/537-farmhouseconf-lightning-talks",
+  :mp4              => "http://cdn.confreaks.com/system/assets/datas/1416/original/537-farmhouseconf-lightning-talks-small.mp4",
+  :poster_frame_url => "http://www.confreaks.com/system/videos/images/537/preview/vlcsnap-2011-05-10-11h49m32s114.png"
+)
+
+fhc1_lightning_talks_talk.videos << fhc1_lightning_talks_video
 
 
 
@@ -914,12 +948,6 @@ fhc4_megan_video = Video.create!(
 fhc4_megan_talk.videos << fhc4_megan_video
 
 
-
-
-
-
-
-
 # farmhouse conf 5, 2013
 farmhouse_conf_5 = Conf.create!(
   :name             => "Farmhouse Conf 5",
@@ -934,21 +962,33 @@ farmhouse_conf_5 = Conf.create!(
 )
 
 
-
-
-
 people_5 = [
+
   {
+
     :name => "Claire Evans",
+
     :bio  => %Q{
+
       <p><a href="http://www.clairelevans.com" title="Claire L. Evans &mdash; STAMP OUT REALITY">Claire L. Evans</a> is a writer and artist working in Los Angeles, California. Her &ldquo;day job&rdquo; is as the singer and co-author of the conceptual disco-pop band <a href="http://teamyacht.com" title="YACHT &#9651; Hello">YACHT</a>. A science journalist and science-fiction critic, she is a regular contributor to Aeon Magazine, Vice, Motherboard, and Grantland, and is the editor-in-chief of <a href="http://omnireboot.com" title="Omni Reboot">OMNI Reboot</a>.</p>
       <p>Her writing has been was anthologized in <a href="http://www.amazon.com/Best-Science-Writing-Online-Laboratory/dp/B00DJZIEHE" title="The Best Science Writing Online 2012 (Open Laboratory): Jennifer Ouellette, Bora Zivkovic: 0971486646597: Amazon.com: Books">Best Science Writing Online 2012</a> (Scientific American Books/Farrar, Straus &amp; Giroux), and she regularly participates in panels, conferences, and screenings on the subject of science and culture. She has performed earnestly cosmic presentations at the Kitchen, MoMA PS1, and the Hirshhorn Museum, spoken about extraterrestrial life at the Rubin Museum&rsquo;s BRAINWAVE series, and co-authored a book on interdisciplinarity in the arts, <a href="http://millergallery.cfa.cmu.edu/nasabook/" title="New Art/Science Affinities book &gt;Miller Gallery at Carnegie Mellon University">NA/SA: New Art Science Affinities</a>. </p>
       <p>A collected book of her essays, <a href="http://www.publicationstudio.biz/books/215" title="Publication Studio  &#8211;  Books  &#8211;  215">High Frontiers</a>, is now available from Publication Studio.</p>
+
     },
+
     :talk => {
+
       :slug        => "the-collapse-of-love-in-the-age-of-machines",
+
       :title       => "The Collapse of Love in the Age of Machines",
-      :description => %Q{ <p>When it comes to love, we might all be Luddites. Wouldn&rsquo;t we smash the machine that told us precisely where and when our former paramours found someone new? Unfortunately, the global index that contains every gossamer byte of the love letters we're always unwittingly writing as we make contact across the web is quite unsmashable. We are at a fundamental cultural tipping point in how we deal with love, courtship&mdashand inevitably, heartbreak. Is this the collapse of love as we know it? How do we renegotiate intimacy in the Internet age?</p> },
+
+      :description => %Q{ <p>When it comes to love, we might all be Luddites. Wouldn&rsquo;t we smash the machine that told us precisely where and when our former paramours found someone new? Unfortunately, the global index that contains every gossamer byte of the love letters we're always unwittingly writing as we make contact across the web is quite unsmashable. We are at a fundamental cultural tipping point in how we deal with love, courtship&mdashand inevitably, heartbreak. Is this the collapse of love as we know it? How do we renegotiate intimacy in the Internet age?</p>
+      },
+
+    },
+    :video => {
+      :youtube       => "bOTJeouMLDk",
+      :canonical_url => "http://www.confreaks.com/videos/2838-farmhouseconf5-the-collapse-of-love-in-the-age-of-machines"
     }
   },
   {
@@ -978,6 +1018,10 @@ people_5 = [
       :slug        => "near-term-collapse-why-industrial-society-is-more-vulnerable-than-you-may-think",
       :title       => "Near-Term Collapse: Why Industrial Society Is More Vulnerable Than You May Think",
       :description => %Q{ <p>Rising energy costs, crushing debt burdens, resource depletion, and climate change are converging to undermine the global economy. Our political system appears incapable of responding. Previous civilizations have collapsed in the face of similar challenges. What does collapse look like? Is it likely within the next two decades? If so, what should we be doing?</p> },
+    },
+    :video => {
+      :youtube       => "ExduZ_EYuGo",
+      :canonical_url => "http://www.confreaks.com/videos/2839-farmhouseconf5-near-term-collapse-why-industrial-society-is-more-vulnerable-than-you-may-think"
     }
   },
   {
@@ -991,6 +1035,10 @@ people_5 = [
       :slug        => "the-collapse-of-the-personal-professional-separation",
       :title       => "The Collapse of The Personal/Professional Separation",
       :description => %Q{ <p>Why would you tell 70,000 strangers your every waking thought? What effect does over-sharing have on your career. Does anyone care about your shitty tattoos in the workplace anymore? What would happen if you could just be yourself, unfiltered, all the time?</p> },
+    },
+    :video => {
+      :youtube       => "",
+      :canonical_url => ""
     }
   },
   {
@@ -1006,6 +1054,10 @@ people_5 = [
         <p>Every <s>end</s> collapse marks a new beginning. But where does momentum to start something new come from? Where does resilence originate?</p>
         <p>I want to tell you all my own story of personal resilience and how the best of things can come from the worst of situations. Or, how I learned to take power away from those who thrive on negativity and conflict and use it to create beautfiul movements of empowerment for those of us who deserve a better world.</p>
       },
+    },
+    :video => {
+      :youtube       => "",
+      :canonical_url => ""
     }
   },
   {
@@ -1020,6 +1072,10 @@ people_5 = [
         <p>When we think about collapse, the narrative that comes to mind is that of the massive environmental challenges facing us as a species, as we attempt to recover from variously boiling, acid-bathing, and poisoning ourselves. Just as real, though, is the collapse of trust that's led us to be on such a direct collision path with the end of our future. We have placed a trust in our governments to act in our interests and in our institutions to think on the kind of timescales that lone individuals often fail to, but that trust has completely collapsed. The problem of ecological collapse in the large is really a failure of governance and timescale, an issue of state capture, a failure of fundamental ethics and vision on the part of the super-empowered, a systemic, emergent nightmare.</p>
         <p>Let's walk into that nightmare, sit with it for a while, and then see how we can walk back out.</p>
       },
+    },
+    :video => {
+      :youtube       => "Jd-7nlzZyTs",
+      :canonical_url => "http://www.confreaks.com/videos/2826-farmhouseconf5-the-collapse-of-trust"
     }
   },
   {
@@ -1031,6 +1087,10 @@ people_5 = [
       :slug        => "collapse-of-an-education-system-not-designed-for-creativity",
       :title       => "Collapse of an Education System Not Designed for Creativity",
       :description => %Q{ <p>Nirvan discovered a 9 year old kid named Caine who had made an arcade out of cardboard at an auto parts store. Nirvan bought a fun pass and his life was changed. He organized a flash mob to visit <a href="http://cainesarcade.com" title="Caine&#039;s Arcade  | A cardboard arcade made by a 9-year-old boy.">Caine's Arcade</a> on one day and changed Caine's life. Nirvan made a <a href="http://www.youtube.com/watch?v=faIFNkdq96U" title="Caine&#39;s Arcade">short film about the whole experience</a>. And then both of their lives changed. They went from arcade to <a href="http://www.youtube.com/watch?v=Ul9c-4dX4Hk" title="Caine&#39;s Arcade 2: From a Movie to a Movement">movie to global movement</a> of kids making amazing things out of cardboard. From there, <a href="http://www.imagination.is" title="Imagination Foundation">The Imagination Foundation</a> launched, bringing creativity to classrooms and communities by unplugging for a day to play.</p> },
+    },
+    :video => {
+      :youtube       => "3_hlPNakz_w",
+      :canonical_url => "http://www.confreaks.com/videos/2827-farmhouseconf5-collapse-of-an-education-system-not-designed-for-creativity"
     }
   },
   {
@@ -1050,6 +1110,10 @@ people_5 = [
       :description => %Q{
         <p>A quick look at strategies used by the genus Homo to enhance and extend the joy of mobility past and present.  Starting with the evolution of bipedalism and the radical growth of the brain, I will catalog what I see as the most important behaviors, capacities and inventions that propelled humans into the now..., and I will demonstrate where I think we are going next.</p>
       },
+    },
+    :video => {
+      :youtube       => "s3-xR2z-7Uk",
+      :canonical_url => "http://www.confreaks.com/videos/2836-farmhouseconf5-gravitational-collapse-energetic-wheels-ape-locomotion-a-history"
     }
   },
   {
@@ -1065,9 +1129,15 @@ people_5 = [
       :description => %Q{
         <p>Launching our big ideas into the world takes courage & moxy. We dive in, our eyes twinkling with possibility and hope, and if we&rsquo;re lucky we catalyze collaborators, supportive fans, customers and a community along the way. But what happens when you&rsquo;ve lost that loving feeling? Or when you realize it&rsquo;s time to let go of the baby you&rsquo;ve put your blood, sweat & tears into and move on? Letting go of what could have been may just take more courage & moxy than getting the idea off the ground in the first place.</p>
       },
+    },
+    :video => {
+      :youtube       => "NWUhes-cyz8",
+      :canonical_url => "http://www.confreaks.com/videos/2828-farmhouseconf5-the-collapse-of-hope-letting-go-of-what-could-have-been"
     }
   }
 ]
+
+
 
 # fhc5 people + talks
 people_5.each do |person|
@@ -1089,7 +1159,177 @@ people_5.each do |person|
   )
 
   talk.people << speaker
+
+  video = Video.create!(
+    :conf_id          => farmhouse_conf_5.id,
+    :talk_id          => talk.id,
+    :caption          => talk.description,
+    :videographer     => "Coby Randquist",
+    :youtube          => person[:video][:youtube],
+    :canonical_url    => person[:video][:canonical_url]
+  )
+
+  talk.videos << video
 end
+
+
+# Eli Duke
+fhc5_eli_duke_talk  = Talk.where(:slug => "eli-duke").first
+fhc5_eli_duke_video = Video.create!(
+  :conf_id          => farmhouse_conf_5.id,
+  :talk_id          => fhc5_eli_duke_talk.id,
+  :caption          => fhc5_eli_duke_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "XL6H54dRLK4",
+  :canonical_url    => "http://www.confreaks.com/videos/2831-farmhouseconf5-fhc1-alumni-update"
+)
+fhc5_eli_duke_talk.videos << fhc5_eli_duke_video
+
+# Evan Phoenix
+fhc5_evan_phoenix_talk  = Talk.where(:slug => "evan-phoenix").first
+fhc5_evan_phoenix_video = Video.create!(
+  :conf_id          => farmhouse_conf_5.id,
+  :talk_id          => fhc5_evan_phoenix_talk.id,
+  :caption          => fhc5_evan_phoenix_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "-km67kSgVD0",
+  :canonical_url    => "http://www.confreaks.com/videos/2833-farmhouseconf5-fhc1-alumni-update"
+)
+fhc5_evan_phoenix_talk.videos << fhc5_evan_phoenix_video
+
+# Leah Silber
+fhc5_leah_silber_talk  = Talk.where(:slug => "leah-silber").first
+fhc5_leah_silber_video = Video.create!(
+  :conf_id          => farmhouse_conf_5.id,
+  :talk_id          => fhc5_leah_silber_talk.id,
+  :caption          => fhc5_leah_silber_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "facZCAAU-cQ",
+  :canonical_url    => "http://www.confreaks.com/videos/2832-farmhouseconf5-fhc1-alumni-update"
+)
+fhc5_leah_silber_talk.videos << fhc5_leah_silber_video
+
+# Aaron Patterson
+fhc5_aaron_patterson_talk  = Talk.where(:slug => "aaron-patterson").first
+fhc5_aaron_patterson_video = Video.create!(
+  :conf_id          => farmhouse_conf_5.id,
+  :talk_id          => fhc5_aaron_patterson_talk.id,
+  :caption          => fhc5_aaron_patterson_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "3dINfGb-LOA",
+  :canonical_url    => "http://www.confreaks.com/videos/2829-farmhouseconf5-fhc1-alumni-update"
+)
+fhc5_aaron_patterson_talk.videos << fhc5_aaron_patterson_video
+
+# Greg Bennick
+fhc5_greg_bennick_talk  = Talk.where(:slug => "the-map-from-trauma-to-survival").first
+fhc5_greg_bennick_video = Video.create!(
+  :conf_id          => farmhouse_conf_5.id,
+  :talk_id          => fhc5_greg_bennick_talk.id,
+  :caption          => fhc5_greg_bennick_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "bFq5XNnUztA",
+  :canonical_url    => "http://www.confreaks.com/videos/2840-farmhouseconf5-fhc2-alumni-update"
+)
+fhc5_greg_bennick_talk.videos << fhc5_greg_bennick_video
+
+# Brian
+fhc5_brian_talk  = Talk.where(:slug => "the-map-versus-the-territory").first
+fhc5_brian_video = Video.create!(
+  :conf_id          => farmhouse_conf_5.id,
+  :talk_id          => fhc5_brian_talk.id,
+  :caption          => fhc5_brian_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "T2usHdmlmgU",
+  :canonical_url    => "http://www.confreaks.com/videos/2841-farmhouseconf5-fhc2-alumni-update"
+)
+fhc5_brian_talk.videos << fhc5_brian_video
+
+# Mitch Artman
+fhc5_mitch_artman_talk  = Talk.where(:slug => "falling-off-the-map-skid-row-life-cycle").first
+fhc5_mitch_artman_video = Video.create!(
+  :conf_id          => farmhouse_conf_5.id,
+  :talk_id          => fhc5_mitch_artman_talk.id,
+  :caption          => fhc5_mitch_artman_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "QFRVeFiQTPg",
+  :canonical_url    => "http://www.confreaks.com/videos/2834-farmhouseconf5-fhc1-alumni-update"
+)
+fhc5_mitch_artman_talk.videos << fhc5_mitch_artman_video
+
+# Megan Dean
+fhc5_megan_dean_talk  = Talk.where(:slug => "making-bikes-work").first
+fhc5_megan_dean_video = Video.create!(
+  :conf_id          => farmhouse_conf_5.id,
+  :talk_id          => fhc5_megan_dean_talk.id,
+  :caption          => fhc5_megan_dean_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "kczU1M0qsws",
+  :canonical_url    => "http://www.confreaks.com/videos/2842-farmhouseconf5-fhc3-alumni-update"
+)
+fhc5_megan_dean_talk.videos << fhc5_megan_dean_video
+
+# Peter Young
+fhc5_peter_young_talk  = Talk.where(:slug => "fugitives-have-more-fun").first
+fhc5_peter_young_video = Video.create!(
+  :conf_id          => farmhouse_conf_5.id,
+  :talk_id          => fhc5_peter_young_talk.id,
+  :caption          => fhc5_peter_young_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "IP9_AwZmQYc",
+  :canonical_url    => "http://www.confreaks.com/videos/2843-farmhouseconf5-fhc3-alumni-update"
+)
+fhc5_peter_young_talk.videos << fhc5_peter_young_video
+
+# Caroline Woolard
+fhc5_caroline_woolard_talk  = Talk.where(:slug => "barter-with-me").first
+fhc5_caroline_woolard_video = Video.create!(
+  :conf_id          => farmhouse_conf_5.id,
+  :talk_id          => fhc5_caroline_woolard_talk.id,
+  :caption          => fhc5_caroline_woolard_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "YuHIt5lyJro",
+  :canonical_url    => "http://www.confreaks.com/videos/2844-farmhouseconf5-fhc3-alumni-update"
+)
+fhc5_caroline_woolard_talk.videos << fhc5_caroline_woolard_video
+
+# Ron Evans
+fhc5_ron_evans_talk  = Talk.where(:slug => "future-current-the-robot-r-evolution").first
+fhc5_ron_evans_video = Video.create!(
+  :conf_id          => farmhouse_conf_5.id,
+  :talk_id          => fhc5_ron_evans_talk.id,
+  :caption          => fhc5_ron_evans_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "xxx",
+  :canonical_url    => "yyy"
+)
+fhc5_ron_evans_talk.videos << fhc5_ron_evans_video
+
+# Justin Ouellette
+fhc5_jstn_talk  = Talk.where(:slug => "designing-forever").first
+fhc5_jstn_video = Video.create!(
+  :conf_id          => farmhouse_conf_5.id,
+  :talk_id          => fhc5_jstn_talk.id,
+  :caption          => fhc5_jstn_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "xxx",
+  :canonical_url    => "yyy"
+)
+fhc5_jstn_talk.videos << fhc5_jstn_video
+
+# Starlee Kine
+fhc5_starlee_kine_talk  = Talk.where(:slug => "past-present-future-tense").first
+fhc5_starlee_kine_video = Video.create!(
+  :conf_id          => farmhouse_conf_5.id,
+  :talk_id          => fhc5_starlee_kine_talk.id,
+  :caption          => fhc5_starlee_kine_talk.description,
+  :videographer     => "Coby Randquist",
+  :youtube          => "xxx",
+  :canonical_url    => "yyy"
+)
+fhc5_starlee_kine_talk.videos << fhc5_starlee_kine_video
+
+
 
 
 # sponsors
