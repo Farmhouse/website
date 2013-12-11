@@ -48,8 +48,11 @@ Farmhouse::Application.routes.draw do
   root :to => "about#index"
 
   # labs
-  match "/bs"   => redirect("/labs")
-  match "/labs" => ("labs#index")
+  match "/bs"                   => redirect("/labs")
+  match "/labs"                 => redirect("/labs/learn-to-code/1")
+  match "/labs/learn-to-code/1" => ("labs#index")
+  match "/labs/learn-to-code"   => redirect("/labs/learn-to-code/1")
+
 
   # about
   match "/rules"            => "about#rules",            :as => "rules"
