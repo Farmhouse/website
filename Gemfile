@@ -3,7 +3,7 @@ ruby "2.1.0"
 
 
 gem "rails", "~> 3.2.16"
-gem "puma",  "~> 2.6.0"
+gem "puma",  "~> 2.7.1"
 # gem "rexml"
 
 gem "json"
