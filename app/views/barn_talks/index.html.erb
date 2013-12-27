@@ -1,0 +1,89 @@
+<style>
+.row h2 {
+  margin-top: 0;
+}
+</style>
+
+<article id="conf" class="vevent h-event">
+
+  <header>
+    <h1 class="p-name summary">Barn Talks : 1</h1>
+
+    <h2 class="p-description description">An Intimate Night With <strong>Warren Ellis</strong> and the Strange World of the Future in a 100 Year old Barn in Hollywood, California</h2>
+
+    <div class="row">
+      <div class="span6">
+        <h3>At <span class="p-location location">The Farmhouse</span></h3>
+        <h4>
+          <time class="dt-start dtstart" datetime="2014-01-26T18:00-08:00">Saturday January 26, 6pm</time>
+          &ndash;
+          <time class="dt-end dtend"     datetime="2014-01-26T21:00-08:00">9pm</time>
+        </h4>
+
+        <p class="twitter">
+          <%= link_to "@farmhouse", "https://twitter.com/farmhouse", :rel => "external me" %>
+        </p>
+      </div>
+    </div> <!-- .row -->
+  </header>
+
+  <div class="row">
+    <div id="description" class="span-12">
+      <h3>Description</h3>
+      <div class="p-description description">
+        <p>
+          Come spend an informal listening to Warren Ellis tell stories about the world we live in now (and where we're going in the future) with 40 other people in an intimate 100 year old barn in the heart of Hollywood, California. Light drinks and snacks will be provided.
+        </p>
+
+        <p>
+          <strong>Cost: $20-$50 sliding scale.</strong>
+        </p>
+
+        <p>
+          Email <strong><a href="mailto:barn@Farmhouse.LA">barn@Farmhouse.LA</a></strong> if you're interested in sponsoring the night.
+        </p>
+      </div>
+    </div> <!-- #description -->
+  </div> <!-- .row -->
+
+  <div class="row">
+    <div class="talk span6 h-card vcard p-speaker speaker">
+      <h2 id="warren-ellis">
+        <%= link_to "/barn-talks/1-warren-ellis" do %>
+          <b class="p-name fn n">Warren Ellis</b> <br />
+          A Briefing With Warren Ellis
+        <% end %>
+      </h2>
+
+      <%= link_to "/barn-talks/1-warren-ellis", :class => "u-url url" do %>
+        <%= remote_image_tag("speakers/warren-ellis", :alt => "Warren Ellis", :class => "u-photo photo") %>
+      <% end %>
+    </div> <!-- .span6 -->
+
+    <div class="span6">
+
+      <div class="p-note note">
+        <p>
+          <strong>Description:</strong>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <!-- <p><b><%#= link_to "Watch the video &rarr;", "/barn-talks/1-warren-ellis", :class => "u-url url" %></b></p> -->
+      </div>
+      <div class="bio p-note note">
+
+        <p>
+          <strong>Bio:</strong>
+          Warren Ellis is the award-winning writer of graphic novels like TRANSMETROPOLITAN, FELL, MINISTRY OF SPACE and PLANETARY, and the author of the NYT-bestselling GUN MACHINE and the “underground classic” novel CROOKED LITTLE VEIN.  The movie RED is based on his graphic novel of the same name, its sequel having been released in summer 2013.  His GRAVEL books are in development for film at Legendary Pictures, with Tim Miller attached to direct.  IRON MAN 3 is based on his Marvel Comics graphic novel IRON MAN: EXTREMIS. He’s also written extensively for VICE, WIRED UK and Reuters on technological and cultural matters, and is co-writing a video project called WASTELANDERS with Joss Whedon. Warren Ellis is currently working on a non-fiction book about the future of the city for Farrar Giroux Straus. His newest publication is the digital short-story single DEAD PIG COLLECTOR, from FSG Originals.
+        </p>
+
+        <p>A documentary about his work, CAPTURED GHOSTS, was released in 2012.</p>
+
+        <p>Recognitions include the NUIG Literary and Debating Society’s President’s Medal for service to freedom of speech, the EAGLE AWARDS Roll Of Honour for lifetime achievement in the field of comics & graphic novels, the Grand Prix de l’Imaginaire 2010, the Sidewise Award for Alternate History and the International Horror Guild Award for illustrated narrative.</p>
+      </div> <!-- .bio -->
+    </div> <!-- .talk -->
+  </div> <!-- .description -->
+
+
+
+</article>
