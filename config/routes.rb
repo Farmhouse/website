@@ -45,7 +45,7 @@ Farmhouse::Application.routes.draw do
 
 
 
-  root :to => "about#index"
+  root to: "about#index"
 
   # labs
   match "/bs"                   => redirect("/labs")
@@ -62,42 +62,42 @@ Farmhouse::Application.routes.draw do
 
 
   # about
-  match "/rules"            => "about#rules",            :as => "rules"
-  match "/register"         => "about#register",         :as => "register"
-  match "/us"               => "about#us",               :as => "us"
-  match "/house"            => "about#house",            :as => "house"
-  match "/sandwiches"       => "about#sandwiches",       :as => "sandwiches"
-  match "/barn"             => "about#barn",             :as => "barn"
-  match "/location"         => "about#location",         :as => "location"
+  match "/rules"            => "about#rules",            as: "rules"
+  match "/register"         => "about#register",         as: "register"
+  match "/us"               => "about#us",               as: "us"
+  match "/house"            => "about#house",            as: "house"
+  match "/sandwiches"       => "about#sandwiches",       as: "sandwiches"
+  match "/barn"             => "about#barn",             as: "barn"
+  match "/location"         => "about#location",         as: "location"
 
   # memberships
-  match "/memberships"       => "memberships#index",     :as => "memberships"
-  match "/memberships/:slug" => "memberships#show",      :as => "membership"
+  match "/memberships"       => "memberships#index",     as: "memberships"
+  match "/memberships/:slug" => "memberships#show",      as: "membership"
 
   # conf
-  match "/conf/code-of-conduct" => "confs#code_of_conduct",   :as => "code_of_conduct"
-  match "/prospectus"           => redirect("/conf/sponsor"), :as => "prospectus"
-  match "/conf/sponsor"         => "confs#sponsor",           :as => "sponsor"
+  match "/conf/code-of-conduct" => "confs#code_of_conduct",   as: "code_of_conduct"
+  match "/prospectus"           => redirect("/conf/sponsor"), as: "prospectus"
+  match "/conf/sponsor"         => "confs#sponsor",           as: "sponsor"
 
   match "/conf"            => redirect("/conf/5")
 
-  match "/conf/:id"        => "confs#show",              :as => "conf"
-  match "/conf/:id/photos" => "photos#index",            :as => "conf_photos"
-  match "/conf/:id/talks"  => "talks#index",             :as => "conf_talks"
-  match "/conf/:id/:slug"  => "talks#show",              :as => "conf_talk"
+  match "/conf/:id"        => "confs#show",              as: "conf"
+  match "/conf/:id/photos" => "photos#index",            as: "conf_photos"
+  match "/conf/:id/talks"  => "talks#index",             as: "conf_talks"
+  match "/conf/:id/:slug"  => "talks#show",              as: "conf_talk"
 
   # ??? delete
-  match "/people/:slug"    => "people#show",             :as => "person_slug"
+  match "/people/:slug"    => "people#show",             as: "person_slug"
 
   # podcast
-  match "/podcast/feed"    => "podcast#feed",            :as => "podcasts_feed"
-  match "/podcast"         => "podcast#index",           :as => "podcasts"
-  match "/podcast/sponsor" => "podcast#sponsor",         :as => "podcast_sponsor"
-  match "/podcast/:id"     => "podcast#show",            :as => "podcast"
+  match "/podcast/feed"    => "podcast#feed",            as: "podcasts_feed"
+  match "/podcast"         => "podcast#index",           as: "podcasts"
+  match "/podcast/sponsor" => "podcast#sponsor",         as: "podcast_sponsor"
+  match "/podcast/:id"     => "podcast#show",            as: "podcast"
 
   # publishing
-  match "/publishing"         => "publishing#index",     :as => "publishing"
-  match "/publishing/:id"     => "publishing#show",      :as => "publication"
+  match "/publishing"         => "publishing#index",     as: "publishing"
+  match "/publishing/:id"     => "publishing#show",      as: "publication"
 
 
   namespace :admin do
