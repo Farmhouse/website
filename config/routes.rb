@@ -56,9 +56,11 @@ Farmhouse::Application.routes.draw do
 
 
   # barn talks
-  match "/barn-talks"                => redirect("/barn-talks/1-warren-ellis"), as: "barn_talks"
-  match "/barn-talks/1"              => redirect("/barn-talks/1-warren-ellis")
-  match "/barn-talks/1-warren-ellis" => ("barn_talks#index")
+  match "/barn-talks"                    => redirect("/barn-talks/2-margaret-killjoy"), as: "barn_talks"
+  match "/barn-talks/1"                  => redirect("/barn-talks/1-warren-ellis")
+  match "/barn-talks/1-warren-ellis"     => ("barn_talks#show")
+  match "/barn-talks/2"                  => redirect("/barn-talks/2-margaret-killjoy")
+  match "/barn-talks/2-margaret-killjoy" => ("barn_talks#show")
 
 
   # about
@@ -79,12 +81,12 @@ Farmhouse::Application.routes.draw do
   match "/prospectus"           => redirect("/conf/sponsor"), as: "prospectus"
   match "/conf/sponsor"         => "confs#sponsor",           as: "sponsor"
 
-  match "/conf"            => redirect("/conf/5")
+  match "/conf"                 => redirect("/conf/5")
 
-  match "/conf/:id"        => "confs#show",              as: "conf"
-  match "/conf/:id/photos" => "photos#index",            as: "conf_photos"
-  match "/conf/:id/talks"  => "talks#index",             as: "conf_talks"
-  match "/conf/:id/:slug"  => "talks#show",              as: "conf_talk"
+  match "/conf/:id"             => "confs#show",              as: "conf"
+  match "/conf/:id/photos"      => "photos#index",            as: "conf_photos"
+  match "/conf/:id/talks"       => "talks#index",             as: "conf_talks"
+  match "/conf/:id/:slug"       => "talks#show",              as: "conf_talk"
 
   # ??? delete
   match "/people/:slug"    => "people#show",             as: "person_slug"
