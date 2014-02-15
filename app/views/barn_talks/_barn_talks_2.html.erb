@@ -1,11 +1,7 @@
 <style>
-.row h2 {
-  margin-top: 0;
-}
-
-blockquote {
-  margin-bottom: .5em;
-}
+.row h2{margin-top:0;}
+blockquote{margin-bottom:.5em;}
+h4{margin:1em 0 .5em 0;}
 </style>
 
 <article id="conf" class="vevent h-event">
@@ -25,8 +21,26 @@ blockquote {
         </h4>
 
         <p class="twitter">
-          <%= link_to "@farmhouse", "https://twitter.com/farmhouse", :rel => "external me" %>
+          <%= link_to "@farmhouse", "https://twitter.com/farmhouse", rel: "external me" %>
         </p>
+      </div>
+
+      <div class="span6">
+        <%= link_to register_path, class: "btn btn-large btn-success" do %>
+          <strong>Register Now</strong>&nbsp;&nbsp;
+          ( $20 &ndash; $50 )
+        <% end %>
+
+        <div class="row">
+          <div class="span3">
+            <h4>High End Ticket</h4>
+            <p>This ticket price gets you nothing special extra, but it helps support the event so that some people (who otherwise can't afford the higher ticket price) can come for the lower price.</p>
+          </div>
+          <div class="span3">
+            <h4>Low End Ticket</h4>
+            <p>This ticket price is the cheaper of the two. If you can afford the more expensive one, please buy that. If not, that's fine. Get this one.</p>
+          </div>
+        </div>
       </div>
     </div> <!-- .row -->
   </header>
@@ -55,12 +69,12 @@ blockquote {
       <h2 id="warren-ellis">
         <%= link_to "/barn-talks/2-margaret-killjoy" do %>
           <b class="p-name fn n">Margaret Killjoy</b> <br />
-          TALK TITLE
+          Utopia and the Anarchist Imagination
         <% end %>
       </h2>
 
-      <%= link_to "/barn-talks/2-margaret-killjoy", :class => "u-url url" do %>
-        <%= remote_image_tag("speakers/margaret-killjoy", :alt => "Margaret Killjoy", :class => "u-photo photo") %>
+      <%= link_to "/barn-talks/2-margaret-killjoy", class: "u-url url" do %>
+        <%= remote_image_tag("speakers/margaret-killjoy", alt: "Margaret Killjoy", class: "u-photo photo") %>
       <% end %>
     </div> <!-- .span6 -->
 
@@ -69,7 +83,7 @@ blockquote {
       <div class="p-note note">
         <p>
           <strong>Description:</strong>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          What is the usefulness of fiction &mdash; utopian fiction in particular &mdash; in anarchist struggle and social change? Starting with a historical overview of anarchist fiction writers, this talk will discuss how fiction impacts social struggle, and the interrelation of storytelling and social change. We will then explore the nuances of writing a dystopia versus a utopia? Is writing a dystopian novel the easy way out? What are are the unique challenges of writing a utopia?
         </p>
 
         <!-- <p><b><%#= link_to "Watch the video &rarr;", "/barn-talks/2-margaret-killjoy", :class => "u-url url" %></b></p> -->
@@ -86,7 +100,7 @@ blockquote {
         </p>
 
         <p>
-          Margaret will be touring the southern part of the US throughout most of March 2014, making stops in Maryland, Virginia, Nortch Carolina, Georgia, Flordia, Louisiana, Texas, Arizona, and California. 
+          Margaret will be touring the southern part of the US throughout most of March 2014, making stops in Maryland, Virginia, Nortch Carolina, Georgia, Flordia, Louisiana, Texas, Arizona, and California.
         </p>
 
         <p>
@@ -101,7 +115,7 @@ blockquote {
 
         <p>
           <blockquote>&ldquo;This is a fierce, intelligent, hopeful book - a fantasy (of sorts) of unusual seriousness, humanity and wit.&rdquo;</blockquote>
-          &mdash;Felix Gilman (author of The Half-Made World) 
+          &mdash;Felix Gilman (author of The Half-Made World)
         </p>
       </div> <!-- .bio -->
     </div> <!-- .talk -->

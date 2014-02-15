@@ -19,6 +19,6 @@ class AboutController < ApplicationController
   end
 
   def register
-    redirect_to "/barn-talk/1-warren-ellis"
+    redirect_to "https://ti.to/farmhouse/barn-talks-2"
   end
 end
