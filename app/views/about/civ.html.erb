@@ -59,10 +59,10 @@ img {
       <p><strong>I&rsquo;m proud</strong>. I don&rsquo;t <em>want</em> to ask for charity. But I also don&rsquo;t want to watch my dog die because of my fragile ego. I&rsquo;ve come up with four ways that you can help me.</p>
 
       <ol>
-        <li>You can <a href="http://shop.farmhouse.la" title="The Farmhouse Shop">buy something from <strong>The Farmhouse Shop</strong></a> (more coming very soon)</li>
+        <li>You can <a href="http://shop.farmhouse.co" title="The Farmhouse Shop">buy something from <strong>The Farmhouse Shop</strong></a> (more coming very soon)</li>
         <li>You can <a href="http://farmhouse.la/barn-talks/2-margaret-killjoy" title="The Farmhouse in Hollywood, California">buy a ticket to the upcoming <strong>Barn Talk</strong></a> (with Margaret Killjoy) on March 16, 2014 (<strong>$20&ndash;$50</strong>)</li>
         <li>You can <strong><a href="#donations">donate money</a></strong> straight away (see how below)</li>
-        <li>You can <a href="#">buy <strong>Future Farmhouse Credits&trade;</strong></a> that can be used toward any future Farmhouse events or products</li>
+        <li>You can <a href="#farmhouse-credits">buy <strong>Future Farmhouse Credits&trade;</strong></a> that can be used toward any future Farmhouse events or products</li>
       </ol>
 
       <p>Maybe you could donate the cost of your morning coffee, or your lunch, or your post-work drink. ANY amount that you can give would be a huge help and would go a long way towards getting Civ the care that she needs. (If, by chance, I get more than I need for all of her bills, I&rsquo;ll donate the remainder to an animal sanctuary.) If you are unable to give money, you can still help up spread the word by sharing this link on Facebook, <a href="https://twitter.com/intent/tweet?text=Help%20@civthedog%20beat%20cancer!%0A%0Ahttp://farmhouse.la/civ">Twitter</a>, Instagram, Tumblr, etc.</p>
@@ -73,8 +73,8 @@ img {
   </div> <!-- .row -->
 
 
-  <div class="row" id="donations">
-    <div class="span6">
+  <div class="row">
+    <div class="span6" id="donations">
       <h2>Donations</h2>
       <p>You set the amount on the PayPal site or in the subject line of the Square Cash email.</p>
 
@@ -83,12 +83,12 @@ img {
           <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/civ/donate-with-paypal.png", alt: "Donate using PayPal"), "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BBE39UY7TYWA8", title: "Donate using PayPal" %>
         </div>
         <div class="span3" id="square-cash">
-          <%= mail_to "veganstraightedge@gmail.com", image_tag("http://farmhouse.s3.amazonaws.com/images/civ/donate-with-square.png", alt: "Donate using Square Cash"), cc: "cash@square.com", subject: "$25", title: "Donate using Square Cash" %>
+          <%= mail_to "veganstraightedge@gmail.com", image_tag("http://farmhouse.s3.amazonaws.com/images/civ/donate-with-square.png", alt: "Donate using Square Cash"), cc: "cash@square.com", subject: "$25", body: "Donation to CIV's cancer fund using Square Cash.\n\n\n", title: "Donate using Square Cash" %>
         </div>
       </div>
     </div>
 
-    <div class="span6">
+    <div class="span6" id="farmhouse-credits">
       <h2>Future Farmhouse Credits&trade;</h2>
       <p>You set the amount on the PayPal site or in the subject line of the Square Cash email.</p>
 
@@ -97,7 +97,7 @@ img {
           <%= link_to image_tag("http://farmhouse.s3.amazonaws.com/images/civ/pay-with-paypal.png", alt: "Buy now using PayPal"), "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BBE39UY7TYWA8", title: "Donate using PayPal" %>
         </div>
         <div class="span3">
-          <%= mail_to "veganstraightedge@gmail.com", image_tag("http://farmhouse.s3.amazonaws.com/images/civ/pay-with-square.png", alt: "Buy now using Square Cash"), cc: "cash@square.com", subject: "$25", title: "Buy Future Farmhouse Credits using Square Cash" %>
+          <%= mail_to "veganstraightedge@gmail.com", image_tag("http://farmhouse.s3.amazonaws.com/images/civ/pay-with-square.png", alt: "Buy now using Square Cash"), cc: "cash@square.com", subject: "$25", body: "Buying Future Farmhouse Credits using Square Cash.\n\n\n", title: "Buy Future Farmhouse Credits using Square Cash" %>
         </div>
       </div>
     </div>
