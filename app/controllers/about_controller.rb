@@ -22,7 +22,7 @@ class AboutController < ApplicationController
 
   def civ
     @slug  = "civ"
-    @title = "Civ is a dog"
+    @title = "Civ needs your help."
   end
 
   def register
