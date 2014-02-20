@@ -1,6 +1,7 @@
 class AboutController < ApplicationController
   def index
     @slug = "home"
+    redirect_to civ_path
   end
 
   def house
@@ -16,6 +17,12 @@ class AboutController < ApplicationController
   def us
     @slug  = "us"
     @title = "Friends and Family"
+    redirect_to civ_path
+  end
+
+  def civ
+    @slug  = "civ"
+    @title = "Civ is a dog"
   end
 
   def register

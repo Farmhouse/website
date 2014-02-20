@@ -64,13 +64,14 @@ Farmhouse::Application.routes.draw do
 
 
   # about
-  match "/rules"            => "about#rules",            as: "rules"
-  match "/register"         => "about#register",         as: "register"
-  match "/us"               => "about#us",               as: "us"
-  match "/house"            => "about#house",            as: "house"
-  match "/sandwiches"       => "about#sandwiches",       as: "sandwiches"
-  match "/barn"             => "about#barn",             as: "barn"
-  match "/location"         => "about#location",         as: "location"
+  match "/rules"      => "about#rules",      as: "rules"
+  match "/register"   => "about#register",   as: "register"
+  match "/us"         => "about#us",         as: "us"
+  match "/house"      => "about#house",      as: "house"
+  match "/sandwiches" => "about#sandwiches", as: "sandwiches"
+  match "/barn"       => "about#barn",       as: "barn"
+  match "/location"   => "about#location",   as: "location"
+  match "/civ"        => "about#civ",        as: "civ"
 
   # memberships
   match "/memberships"       => "memberships#index",     as: "memberships"
