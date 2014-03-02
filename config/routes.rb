@@ -54,11 +54,13 @@ Farmhouse::Application.routes.draw do
   match "/labs/learn-to-code"   => redirect("/labs/learn-to-code/1")
 
 
+
   # barn talks
   match "/barn-talks"                    => redirect("/barn-talks/2-margaret-killjoy"), as: "barn_talks"
   match "/barn-talks/1"                  => redirect("/barn-talks/1-warren-ellis")
   match "/barn-talks/1-warren-ellis"     => ("barn_talks#show")
   match "/barn-talks/2"                  => redirect("/barn-talks/1-warren-ellis")
+  match "/barn-talks/2-margaret-killjoy" => redirect("/barn-talks/1-warren-ellis")
 
 
   # about
