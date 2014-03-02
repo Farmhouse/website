@@ -1,4 +1,4 @@
-# The Farmhouse Handbook
+# The Farmhouse
 
 By **[Shane](http://iamshane.com)** of the house: **Farm**
 
