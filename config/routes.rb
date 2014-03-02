@@ -55,7 +55,7 @@ Farmhouse::Application.routes.draw do
 
 
   # barn talks
-  match "/barn-talks"                    => redirect("/barn-talks/2-margaret-killjoy"), as: "barn_talks"
+  match "/barn-talks"                    => redirect("/barn-talks/1-warren-ellis"), as: "barn_talks"
   match "/barn-talks/1"                  => redirect("/barn-talks/1-warren-ellis")
   match "/barn-talks/1-warren-ellis"     => ("barn_talks#show")
   match "/barn-talks/2"                  => redirect("/barn-talks/1-warren-ellis")
