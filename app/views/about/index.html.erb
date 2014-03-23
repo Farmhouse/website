@@ -10,7 +10,7 @@
   <title>The Farmhouse in Hollywood, California</title>
 
   <%= stylesheet_link_tag "new/application" %>
-  <%= javascript_include_tag "new/modernizr.custom.34215.js" %>
+  <%= javascript_include_tag "new/vendor/modernizr.custom.34215.js" %>
 </head>
 
 <body>
@@ -133,12 +133,9 @@
     </div>
   </footer>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <!--
-  <script>window.jQuery || document.write('<%= javascript_include_tag "new/jquery-1.10.2.min.js" %>')</script>
-  -->
-  <%= javascript_include_tag "new/responsive-nav.min.js" %>
-  <%= javascript_include_tag "new/script.js" %>
-
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.0.min.js"><\/script>')</script>  
+  <%= javascript_include_tag "new/vendor/responsive-nav.min.js" %>
+  <%= javascript_include_tag "new/scripts.js" %>
 </body>
 </html>

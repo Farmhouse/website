@@ -32,5 +32,3 @@ $(function() {
   responsiveNav(".nav-collapse", {openPos: "relative"});
 
 });
-
-
