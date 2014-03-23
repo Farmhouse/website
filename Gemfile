@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.1.0"
+ruby "2.1.1"
 
 
 gem "rails", "~> 3.2.16"
@@ -14,7 +14,7 @@ group :development do
   gem "gx"
 end
 
-gem "sass-rails"
+gem "sass", "3.2.13"
 gem "uglifier"
 
 group :production do
