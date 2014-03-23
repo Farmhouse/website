@@ -3,7 +3,14 @@
 = require twitter/bootstrap-responsive
 
 = require_self
-= require_tree .
+= require about
+= require bootstrap-overrides
+= require confs
+= require labs
+= require memberships
+= require people
+= require podcast
+= require publishing
 */
 
 .navbar {

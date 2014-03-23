@@ -1,104 +1,144 @@
-<article>
-  <div class="row">
-    <header class="span12">
-      <h1>A Live / Work Space in Hollywood, CA</h1>
-    </header>
+<!DOCTYPE html>
 
-    <p class="span6">
-      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/home/avocado-tree-at-night-at-the-farmhouse-by-heather-peterson.jpg",    :alt => "100+ year old avocado tree at The Farmhouse by @hrrrthrrr" %>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="author"      content="Shane Becker" />
+  <meta name="description" content="The Farmhouse in Hollywood, California" />
+  <meta name="viewport"    content="width=device-width, initial-scale=1" />
 
-      <span class="photo-attribution">
-        <%= link_to "by", "http://flickr.com/milllkmaid/6258380370/", :rel => "external" %>
-        <%= link_to "Heather Peterson", "http://hrrrthrrr.com", :rel => "external" %>
-      </span>
-    </p>
+  <title>The Farmhouse in Hollywood, California</title>
 
-    <p class="span6">
-      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/home/civ-in-the-shed-at-night-at-the-farmhouse-by-heather-peterson.jpg", :alt => "The Farmhouse backyard by @hrrrthrrr" %>
+  <%= stylesheet_link_tag "new/application" %>
+  <%= javascript_include_tag "new/modernizr.custom.34215.js" %>
+</head>
 
-      <span class="photo-attribution">
-        <%= link_to "by", "http://flickr.com/milllkmaid/6257853097/", :rel => "external" %>
-        <%= link_to "Heather Peterson", "http://hrrrthrrr.com", :rel => "external" %>
-      </span>
-    </p>
-  </div>
+<body>
+  <header role="banner">
+    <div class="l-container">
 
-  <div class="row">
-    <div class="span6">
-      <h2>Co-Working</h2>
-      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/home/living-room-office-at-the-farmhouse-by-shane-becker.jpg", :alt => "The Office at The Farmhouse in Hollywood, CA" %>
+      <a class="brand-logo" href="/">The Farmhouse</a>
 
-      <p class="photo-attribution">
-        <%= link_to "by", "http://flickr.com/veganstraightedge/6711133615/", :rel => "external" %>
-        <%= link_to "Shane Becker", "http://twitter.com/veganstraightedge", :rel => "external" %>
-      </p>
+      <div class="nav-wrapper">
+        <nav class="nav-collapse" role="navigation">
+          <ul class="nav-main">
+            <%= nav_to "HELP CIV BEAT CANCER".html_safe, civ_path %>
 
-      <p class="notes">
-        The living room is really more office than anything else.
-        Currently, it's occupied by <a href="http://twitter.com/veganstraightedge" title="Twitter">Shane Becker</a>,
-        <a href="http://twitter.com/evanphx" title="@evanphx on Twitter">Evan Phoenix</a>,
-        <a href="http://twitter.com/johnbender" title="Twitter">John Bender</a> and
-        <a href="http://hrrrthrrr.com" title="Twitter">Heather Peterson</a>.
-        Overflow guest seating is available at the 10 person dining room table.
-      </p>
-    </div>
+            <%= nav_to "Barn Talks",     barn_talks_path %>
+            <%= nav_to "Farmhouse Conf", conf_path(5) %>
+            <%= nav_to "History",        house_path %>
+            <%= nav_to "Shop",           shop_path %>
 
-    <div class="span6">
-      <h2>Co-Living</h2>
-      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/home/civ-in-the-backyard-grass-at-the-farmhouse-by-heather-peterson.jpg", :alt => "Civ holding down the backyard at the Farmhouse in Hollywood, CA" %>
+            <%#
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+            %>
+          </ul>
+        </nav>
 
-      <p class="photo-attribution">
-        <%= link_to "by", "http://flickr.com/veganstraightedge/5533623778/", :rel => "external" %>
-        <%= link_to "Heather Peterson", "http://hrrrthrrr.com", :rel => "external" %>
-      </p>
+      </div> <!-- end .nav-wrapper -->
+    </div> <!-- end .l-container -->
+  </header>
 
-      <p class="notes">
-        Let's be honest. It's <a href="http://twitter.com/civthedog" title="Twitter">Civ's</a> house and yard.
-        She just lets us use the place. She keeps the raccoons and possums at bay.
-        She also helps with avocado cleanup duty.
-      </p>
-
-    </div>
-  </div> <!-- .row -->
-
-  <div class="row">
-    <div class="span6">
-      <h2>Conferences</h2>
-      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/home/farmhouse-conf-frontyard-sign-by-tj-nelson.jpg", :alt => "Farmhouse Conf Front Yard Sign by Tj Nelson" %>
-
-      <p class="photo-attribution">
-        <%= link_to "by", "http://flickr.com/veganstraightedge/5696302641/", :rel => "external" %>
-        <%= link_to "Tj Nelson Jr", "http://twitter.com/tjnelsonjr", :rel => "external" %>
-      </p>
-
-      <p class="notes">
-        The Farmhouse is home to <%= link_to "Farmhouse Conf", conf_path("") %> which happens once a year in May.
-        The format is simple: <b>no projector</b>, <b>no slides</b>, just <b>incredible stories</b> told by <b>amazing people</b>.
-        Oh yeah, it's under a <a href="http://flickr.com/veganstraightedge/6143359534/" title="The shed and avocado tree in the backyard at the Farmhouse in Hollywood, CA">100 year old avocado tree</a>.
-      </p>
-    </div>
-
-    <div class="span6">
-      <h2>Potlucks</h2>
-      <%= image_tag "http://farmhouse.s3.amazonaws.com/images/home/farmhouse-conf-food-setup-by-tj-nelson.jpg", :alt => "Farmhouse Conf Food Setup by Tj Nelson" %>
-
-      <p class="photo-attribution">
-        <%= link_to "by", "http://flickr.com/veganstraightedge/5696880416/", :rel => "external" %>
-        <%= link_to "Tj Nelson Jr", "http://twitter.com/tjnelsonjr", :rel => "external" %>
-      </p>
-
-      <p class="notes">
-        At The Farmhouse, all food is both <%= link_to "vegan and communal", rules_path %>.
-        If you're a Farmhouse guest or an attendee of the conference, all house food is up for grabs.
-        From time to time we have potlucks where everyone brings something.
-      </p>
-    </div>
-  </div> <!-- .row -->
-
-  <div id="map" class="row">
-    <div class="span12">
-      <h2>In the heart of Hollywood, California</h2>
-      <iframe width="938" height="450" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1558+Gordon+St,+Los+Angeles,+CA+90028&amp;aq=0&amp;oq=15&amp;sll=37.0625,-95.677068&amp;sspn=81.760296,100.898438&amp;ie=UTF8&amp;hq=&amp;hnear=1558+Gordon+St,+Los+Angeles,+California+90028&amp;t=m&amp;50=34.099794,-118.319321&amp;spn=0.031983,0.080595&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+  <div class="hero" style="background-image: url(<%= asset_path "http://assets.farmhouse.co.s3.amazonaws.com/images/new/farmhouse.jpg" %>)">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h2>The New New</h2>
+        <h3>Re-Branding, Re-Designing, Re-Thinking</h3>
+        <p>We&rsquo;re relaunching everything about this site and the whole Farmhouse brand. For now, it&rsquo;s just a new homepage. As we get more of the site, we&rsquo;ll push that out too.</p>
+        <!-- <p><a href="#"><em>Read more here.</em></a></p> -->
+        <div class="hero-footer">
+          <p>
+            Hang in there with us.
+            <br>
+            <em>Pardon our dust while we&rsquo;re under construction.</em>
+          </p>
+          <!-- <a class="btn btn-c" href="#">$20-$50</a> -->
+        </div>
+      </div>
     </div>
   </div>
-</article>
+
+  <div class="panel panel-home">
+    <div class="l-container">
+      <div class="panel-content">
+        <div class="panel-img"></div>
+        <p class="t-lead">Storytelling events in a barn and under a 111 year old avocado tree. Photo zines. Vegan cookbooks. A podcast. Music, editorial and fashion photography. Organic gardens. Arts, style and design blog. Personal web publishing software. Open source organization. Watercoloring painting design assets. Positive attitude / Positive altitude.</p>
+        <a class="btn btn-a"href="#">We do a lot</a>
+      </div>
+    </div>
+  </div>
+
+  <main role="main">
+    <div class="l-container">
+      <div class="feature">
+        <%= image_tag "http://assets.farmhouse.co.s3.amazonaws.com/images/new/farmhouse-conf-frontyard-sign-by-tj-nelson.jpg" %>
+        <h3>What’s the farmhouse, anyway?</h3>
+        <p>The Farmhouse is located in the heart of Hollywood, California and is home to <%= link_to "Farmhouse Publishing", publishing_path %>, <%= link_to "Barn Talks", barn_talks_path %> and (formerly) <%= "Farmhouse Conf" %>. The Farmhouse and The <%= link_to "Friends of the Farmhouse", us_path %> collaborate together or produce separately a slew of projects.</p>
+      </div>
+      <div class="feature">
+        <%= link_to civ_path do %>
+          <%= image_tag "http://assets.farmhouse.co/images/new/barn.jpg" %>
+          <h3>Civ The Dog</h3>
+        <% end %>
+        <p><%= link_to "Civ", civ_path %> is 13 and a half years old. She&rsquo;s battling two cancers (chest and liver). We&rsquo;ve been running a fund-raiser to help defeat her medical bills and get her past this. Fortunately, a lot of people have been very generous and supportive. My undying thanks to everyone that has contributed. It&rsquo;s Civ&rsquo;s house, I just live here. &mdash; Shane</p>
+      </div>
+      <div class="feature">
+        <%= link_to conf_path(5) do %>
+          <%= image_tag "http://assets.farmhouse.co.s3.amazonaws.com/images/new/conf-5.jpg" %>
+          <h3>Farmhouse Conf</h3>
+        <% end %>
+        <p>Farmhouse Conf was the greatest backyard storytelling conference there ever was. Nestled underneath a 111 year old avocado tree and in a <em>charming</em> old barn, FHC was sometimes described as somewhere in between Ted Talks, This American Life and a Fourth of July BBQ. <a href="/conf/5">FHC5</a> was the final show.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="l-container">
+
+      <div class="h-card">
+        <div class="footer-find-us">
+          <h4>Find Us</h4>
+          <p class="h-adr p-adr">
+            <span class="p-street-address">1558 Gordon Street</span>
+            <span class="p-locality">Los Angeles,</span> <span class="p-region">CA</span> <span class="p-postal-code">90028</span>
+          </p>
+          <p class="p-tel">(801) 898-9481</p>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p class="u-email">barn@farmhouse.co</p>
+          <p>@farmhouse</p>
+        </div>
+      </div>
+
+      <div class="footer-mailing">
+        <h4>Mailing List</h4>
+        <form class="form light-form" action="">
+          <label for="mailing-list">Stay up to date on news and events</label>
+          <div class="form-single-field">
+            <input id="mailing-list" type="email" />
+            <input class="btn btn-b" type="submit" value="Go" />
+          </div>
+        </form>
+      </div>
+
+      <p class="footer-copyright">
+        Copyright &copy; The Farmhouse, Inc. <span class="year"><%= Time.now.year %></span>
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!--
+  <script>window.jQuery || document.write('<%= javascript_include_tag "new/jquery-1.10.2.min.js" %>')</script>
+  -->
+  <%= javascript_include_tag "new/responsive-nav.min.js" %>
+  <%= javascript_include_tag "new/script.js" %>
+
+</body>
+</html>

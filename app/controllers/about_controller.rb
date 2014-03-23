@@ -1,6 +1,7 @@
 class AboutController < ApplicationController
   def index
     @slug = "home"
+    render layout: false
   end
 
   def house
