@@ -14,10 +14,8 @@ group :development do
   gem "gx"
 end
 
-group :assets do
-  gem "sass-rails"
-  gem "uglifier"
-end
+gem "sass-rails"
+gem "uglifier"
 
 group :production do
   gem "pg"
