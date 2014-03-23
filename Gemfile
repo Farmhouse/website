@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby "2.1.1"
 
 
-gem "rails", "~> 3.2.16"
+gem "rails", "~> 3.2.17"
 gem "puma"
 
 gem "json"
@@ -14,7 +14,7 @@ group :development do
   gem "gx"
 end
 
-gem "sass", "3.2.13"
+gem "sass"
 gem "uglifier"
 
 group :production do
