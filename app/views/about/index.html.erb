@@ -44,6 +44,12 @@
   </header>
 
   <div class="hero" style="background-image: url(<%= asset_path "http://assets.farmhouse.co.s3.amazonaws.com/images/new/farmhouse.jpg" %>)">
+
+  <% if flash[:notice] %>
+    <div class="alert alert-danger">
+      <p><%= flash[:notice] %></p>
+    </div>
+  <% end %>
     <div class="hero-container">
       <div class="hero-content">
         <h2>The New New</h2>
@@ -117,13 +123,15 @@
 
       <div class="footer-mailing">
         <h4>Mailing List</h4>
-        <form class="form light-form" action="">
-          <label for="mailing-list">Stay up to date on news and events</label>
+
+        <%= form_for(@mailing_list, html: { class: "form light-form" }) do |f| %>
+          <%= f.label       :email, "Stay up to date on news and events" %><br />
+
           <div class="form-single-field">
-            <input id="mailing-list" type="email" />
-            <input class="btn btn-b" type="submit" value="Go" />
+            <%= f.email_field :email %>
+            <%= f.submit "Go", class: "btn btn-b" %>
           </div>
-        </form>
+        <% end %>
       </div>
 
       <p class="footer-copyright">
@@ -134,7 +142,7 @@
   </footer>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.0.min.js"><\/script>')</script>  
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.0.min.js"><\/script>')</script>
   <%= javascript_include_tag "new/vendor/responsive-nav.min.js" %>
   <%= javascript_include_tag "new/scripts.js" %>
 </body>

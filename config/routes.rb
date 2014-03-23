@@ -47,6 +47,9 @@ Farmhouse::Application.routes.draw do
 
   root to: "about#index"
 
+  # homepage mailing list sign up
+  resources :mailing_lists, only: [:create]
+
   # labs
   match "/bs"                   => redirect("/labs")
   match "/labs"                 => redirect("/labs/learn-to-code/1")

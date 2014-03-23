@@ -1,6 +1,7 @@
 class AboutController < ApplicationController
   def index
     @slug = "home"
+    @mailing_list = MailingList.new
     render layout: false
   end
 
