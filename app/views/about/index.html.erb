@@ -110,14 +110,16 @@
           <h4>Find Us</h4>
           <p class="h-adr p-adr">
             <span class="p-street-address">1558 Gordon Street</span>
-            <span class="p-locality">Los Angeles,</span> <span class="p-region">CA</span> <span class="p-postal-code">90028</span>
+            <span class="p-locality">Los Angeles,</span>
+            <span class="p-region">CA</span>
+            <span class="p-postal-code">90028</span>
           </p>
           <p class="p-tel">(801) 898-9481</p>
         </div>
         <div class="footer-contact">
           <h4>Contact Us</h4>
-          <p class="u-email">barn@farmhouse.co</p>
-          <p>@farmhouse</p>
+          <%= mail_to "barn@farmhouse.co", "barn@farmhouse.co", class: "u-email" %>
+          <%= link_to "@farmhouse",        "https://twitter.com/farmhouse", class: "u-url", rel: "me external" %>
         </div>
       </div>
 
@@ -125,7 +127,7 @@
         <h4>Mailing List</h4>
 
         <%= form_for(@mailing_list, html: { class: "form light-form" }) do |f| %>
-          <%= f.label       :email, "Stay up to date on news and events" %><br />
+          <%= f.label :email, "Stay up to date on news and events" %>
 
           <div class="form-single-field">
             <%= f.email_field :email %>

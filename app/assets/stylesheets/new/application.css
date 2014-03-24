@@ -954,6 +954,9 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
   width: 31.62393%; }
   .footer-contact:last-child {
     margin-right: 0; }
+  .footer-contact a {
+    color: white;
+  }
 
 .footer-mailing {
   float: left;
@@ -1013,8 +1016,6 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
     position: absolute;
     right: 2.43902%; } }
 
-/*# sourceMappingURL=application.map */
-
 /* borrowed from bootstrap... */
 .alert {
   text-shadow: 0 1px 0 rgba(255, 255, 255, .2);
@@ -1056,3 +1057,5 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
   border-color: #dca7a7;
 }
 /* ...borrowed from bootstrap */
+
+/*# sourceMappingURL=application.map */
