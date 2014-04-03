@@ -105,7 +105,7 @@ Farmhouse::Application.routes.draw do
   match "/publishing/:id"     => "publishing#show",      as: "publication"
 
   # shop
-  match "/shop"               => redirect("http://shop.farmhouse.la"), as: "shop"
+  match "/shop"               => redirect("http://shop.farmhouse.co"), as: "shop"
 
 
   namespace :admin do
