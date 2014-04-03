@@ -736,7 +736,8 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
   width: 100%; }
 
 .hero-content {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
   overflow: hidden;
   padding: 2em 2.43902%; }
   @media screen and (min-width: 850px) {

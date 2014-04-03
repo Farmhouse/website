@@ -22,8 +22,7 @@
       <div class="nav-wrapper">
         <nav class="nav-collapse" role="navigation">
           <ul class="nav-main">
-            <%= nav_to "HELP CIV BEAT CANCER".html_safe, civ_path %>
-
+            <%= nav_to "Publishing",     publishing_path %>
             <%= nav_to "Barn Talks",     barn_talks_path %>
             <%= nav_to "Farmhouse Conf", conf_path(5) %>
             <%= nav_to "History",        house_path %>
@@ -43,7 +42,7 @@
     </div> <!-- end .l-container -->
   </header>
 
-  <div class="hero" style="background-image: url(<%= asset_path "http://assets.farmhouse.co.s3.amazonaws.com/images/new/farmhouse.jpg" %>)">
+  <div class="hero" style="background-image: url(<%= asset_path "http://assets.farmhouse.co.s3.amazonaws.com/images/new/shoot-it-yourself-cover.png" %>)">
 
   <% if flash[:notice] %>
     <div class="alert alert-info">
@@ -52,17 +51,22 @@
   <% end %>
     <div class="hero-container">
       <div class="hero-content">
-        <h2>The New New</h2>
-        <h3>Re-Branding, Re-Designing, Re-Thinking</h3>
-        <p>We&rsquo;re relaunching everything about this site and the whole Farmhouse brand. For now, it&rsquo;s just a new homepage. As we get more of the site, we&rsquo;ll push that out too.</p>
-        <!-- <p><a href="#"><em>Read more here.</em></a></p> -->
+        <h2>Shoot It Yourself</h2>
+        <h3>Book Release Launch Party</h3>
+        <p>
+          The first release from <strong>Farmhouse Publishing</strong> is <em>Shoot It Yourself</em> by Ignacio Galvez. 80 pages of beautiful black and white photos of bands and live music. We&rsquo;re throwing a book release launch party to kick it all off. <strong>It&rsquo;s FREE!</strong> Bands: <strong>DANGERS</strong>, <strong>Bouquet</strong>, and more. Food: <strong>Pure Luck</strong> and <strong>Clara Cakes</strong>.
+        </p>
+        <p>
+          Sunday <strong>April 13 4&ndash;8pm</strong> at <strong>Space 15 Twenty</strong>.<br />
+          1520 N. Cahuenga Blvd, Los Angeles, CA 90028
+        </p>
+        <p><a href="/publishing/1"><em>Learn more about the book and party.</em></a></p>
         <div class="hero-footer">
           <p>
-            Hang in there with us.
-            <br>
-            <em>Pardon our dust while we&rsquo;re under construction.</em>
+            Buy the book. Come to show. Party with us.
           </p>
-          <!-- <a class="btn btn-c" href="#">$20-$50</a> -->
+          <a class="btn btn-c" href="#">$20 Pre-order Now</a>
+          <%= link_to "$20 Pre-order Now" %>
         </div>
       </div>
     </div>
