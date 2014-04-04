@@ -101,11 +101,11 @@ Farmhouse::Application.routes.draw do
   match "/podcast/:id"     => "podcast#show",            as: "podcast"
 
   # publishing
-  match "/publishing"         => "publishing#index",     as: "publishing"
-  match "/publishing/:id"     => "publishing#show",      as: "publication"
+  match "/publishing"      => "publishing#index",     as: "publishing"
+  match "/publishing/:id"  => "publishing#show",      as: "publication"
 
   # shop
-  match "/shop"               => redirect("http://shop.farmhouse.co"), as: "shop"
+  match "/shop"            => redirect("http://shop.farmhouse.co"), as: "shop"
 
 
   namespace :admin do
