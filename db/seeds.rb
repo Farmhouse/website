@@ -100,7 +100,7 @@ people_1.each_with_index do |person, index|
   Person.create!(
     :name       => person.first,
     :bio        => person.last,
-    :image      => "http://farmhouse.la/images/speakers/#{slug}/#{slug}.jpg",
+    :image      => "http://farmhouse.co/images/speakers/#{slug}/#{slug}.jpg",
     :staff      => false,
     :organizer  => false
   )
@@ -387,7 +387,7 @@ people_2.each do |person|
   speaker = Person.create!(
     :name       => person[:name],
     :bio        => person[:bio],
-    :image      => "http://farmhouse.la/images/speakers/#{slug}/#{slug}.jpg",
+    :image      => "http://farmhouse.co/images/speakers/#{slug}/#{slug}.jpg",
     :staff      => false,
     :organizer  => false
   )
@@ -601,7 +601,7 @@ people_3.each do |person|
   speaker = Person.create!(
     :name       => person[:name],
     :bio        => person[:bio],
-    :image      => "http://farmhouse.la/images/speakers/#{slug}/#{slug}.jpg",
+    :image      => "http://farmhouse.co/images/speakers/#{slug}/#{slug}.jpg",
     :staff      => false,
     :organizer  => false
   )
@@ -871,7 +871,7 @@ people_4.each do |person|
   speaker = Person.create!(
     :name       => person[:name],
     :bio        => person[:bio],
-    :image      => "http://farmhouse.la/images/speakers/#{slug}/#{slug}.jpg",
+    :image      => "http://farmhouse.co/images/speakers/#{slug}/#{slug}.jpg",
     :staff      => false,
     :organizer  => false
   )
@@ -1146,7 +1146,7 @@ people_5.each do |person|
   speaker = Person.create!(
     :name       => person[:name],
     :bio        => person[:bio],
-    :image      => "http://farmhouse.la/images/speakers/#{slug}/#{slug}.jpg",
+    :image      => "http://farmhouse.co/images/speakers/#{slug}/#{slug}.jpg",
     :staff      => false,
     :organizer  => false
   )
