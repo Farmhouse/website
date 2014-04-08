@@ -7,7 +7,7 @@
 
 <div class="row">
   <div class="span6" id="book-cover">
-    <%= image_tag "http://assets.farmhouse.co/images/new/shoot-it-yourself-cover.png" %>
+    <%= image_tag "http://assets.farmhouse.co/publishing/1-shoot-it-yourself/pages/front-cover.jpg" %>
   </div>
 
   <div class="span6" id="book-meta">
@@ -20,6 +20,7 @@
       <li>Farmhouse Publishing #001</li>
       <li>80 pages</li>
       <li>Paperback</li>
+      <li>8&frac14; &times; 5&frac14;</li>
     </ul>
 
     <div>
@@ -28,4 +29,43 @@
       <p>Included in this paperback are photos of: AFI, Anthrax, Bad Brains, Bad Religion, Bane, Beastie Boys, Behemoth, Biohazard, Blur, Brujeria, Circle Jerks, Comeback Kid, Como Asesinar a Felipes, Deftones, Descendents, Earth Crisis, Faith No More, Gorilla Biscuits, H2O, Hatebreed, Immortal, Incubus, Janes Addiction, Judge, Korn, Limp Bizkit, Madball, Marilyn Manson, Mastodon, Millencolin, Mixhell, Mondo Cane, Nas, Nine Inch Nails, No use for a Name, NOFX, Parkway Drive, Placebo, Planet Hemp, P.O.D., Public Enemy, Queens of the Stone Age, Rage Against the Machine, Red hot Chili Peppers, Sepultura, Sick of it All, Slayer, Social Distortion, Sonic Youth, Steve Aoki, Strife, Suicidal Tendencies, Terror, The Cure, The Hives, Walls of Jericho, Wu, Tang Clan. With afterwords by Andrew Kline (of Strife) and Billy Graziadei (of Biohazard).</p>
     </div>
   </div>
+</div>
+
+<div class="row" id="sample-pages">
+  <div class="span12">
+    <h2>Sample Pages</h2>
+  </div>
+</div>
+
+  <%
+    {
+      "front-cover"              => "Front cover.",
+      "back-cover"               => "Back cover.",
+      "author-page"              => "About the photographer.",
+      "intro"                    => "Foreword by Francisco Padilla.",
+      "anthrax"                  => "Anthrax.",
+      "biohazard"                => "Biohazard.",
+      "nofx"                     => "NOFX.",
+      "judge"                    => "Judge.",
+      "red-hot-chili-peppers"    => "Red Hot Chili Peppers.",
+      "h2o"                      => "H2O.",
+      "public-enemy"             => "Public Enemy.",
+      "bane"                     => "Bane.",
+      "rage-against-the-machine" => "Rage Against The Machine.",
+      "slayer"                   => "Slayer.",
+      "afterword"                => "Afterword.",
+      "index"                    => "Index."
+    }.to_a.in_groups_of(2).each do |row|
+  %>
+
+    <div class="row">
+      <% row.each do |slug, caption| %>
+        <div class="span6">
+          <%= image_tag "http://assets.farmhouse.co/publishing/1-shoot-it-yourself/pages/#{slug}.jpg" %>
+          <p><%= caption %></p>
+        </div>
+      <% end %>
+    </div>
+
+  <% end %>
 </div>
