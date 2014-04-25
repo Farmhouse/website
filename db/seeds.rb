@@ -1037,8 +1037,8 @@ people_5 = [
       :description => %Q{ <p>Why would you tell 70,000 strangers your every waking thought? What effect does over-sharing have on your career. Does anyone care about your shitty tattoos in the workplace anymore? What would happen if you could just be yourself, unfiltered, all the time?</p> },
     },
     :video => {
-      :youtube       => "",
-      :canonical_url => ""
+      :youtube       => "z8AC0we3MXQ",
+      :canonical_url => "http://www.confreaks.com/videos/2835-farmhouseconf5-the-collapse-of-the-personal-professional-separation"
     }
   },
   {
@@ -1056,8 +1056,8 @@ people_5 = [
       },
     },
     :video => {
-      :youtube       => "",
-      :canonical_url => ""
+      :youtube       => "ah-7hjVKCuc",
+      :canonical_url => "http://www.confreaks.com/videos/2837-farmhouseconf5-resilience-in-the-face-of-total-collapse"
     }
   },
   {
