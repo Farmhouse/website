@@ -1300,8 +1300,8 @@ fhc5_ron_evans_video = Video.create!(
   :talk_id          => fhc5_ron_evans_talk.id,
   :caption          => fhc5_ron_evans_talk.description,
   :videographer     => "Coby Randquist",
-  :youtube          => "xxx",
-  :canonical_url    => "yyy"
+  :youtube          => "jKfQigUMuaE",
+  :canonical_url    => "http://www.confreaks.com/videos/2845-farmhouseconf5-fhc4-alumni-update"
 )
 fhc5_ron_evans_talk.videos << fhc5_ron_evans_video
 
@@ -1312,8 +1312,8 @@ fhc5_jstn_video = Video.create!(
   :talk_id          => fhc5_jstn_talk.id,
   :caption          => fhc5_jstn_talk.description,
   :videographer     => "Coby Randquist",
-  :youtube          => "xxx",
-  :canonical_url    => "yyy"
+  :youtube          => "o7Cc34Ox5Uw",
+  :canonical_url    => "http://www.confreaks.com/videos/2847-farmhouseconf5-fhc4-alumni-update"
 )
 fhc5_jstn_talk.videos << fhc5_jstn_video
 
@@ -1324,8 +1324,8 @@ fhc5_starlee_kine_video = Video.create!(
   :talk_id          => fhc5_starlee_kine_talk.id,
   :caption          => fhc5_starlee_kine_talk.description,
   :videographer     => "Coby Randquist",
-  :youtube          => "xxx",
-  :canonical_url    => "yyy"
+  :youtube          => "tXVX4PXaMDk",
+  :canonical_url    => "http://www.confreaks.com/videos/2846-farmhouseconf5-fhc4-alumni-update"
 )
 fhc5_starlee_kine_talk.videos << fhc5_starlee_kine_video
 
