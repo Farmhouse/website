@@ -8,7 +8,7 @@ By **[Shane](http://iamshane.com)** of the house: **Farm**
 * **Coat of arms**     : Black avocado in a black circle on a grey field
 * **Words**            : Come back with a fucking warrant
 * **Seat**             : Hollywood
-* **Current Lord**     : Civ The Dog
+* **Current Lord**     : #RooftopTheCat
 * **Region**           : Los Angeles, CA
 * **Overlord**         : No gods, no fucking masters
 * **Ancestral Weapon** : Rocks and Words
