@@ -39,6 +39,8 @@ Farmhouse::Application.routes.draw do
   # fhc3 talks
   match "/2013/talks/meme--myself--and-eye-" => redirect("/conf/3/meme-myself-and-eye")
 
+  # fhc5 talks
+  match "/conf/5/eleanor-saitta-tba" => redirect("/conf/5/the-collapse-of-trust")
   # ...REDIRECTS
 
 

@@ -13,15 +13,6 @@ barn = Membership.create!(
   :slug        => "barn"
 )
 
-# desk = Membership.create!(
-#   :name        => "Van",
-#   :description => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-#   :price       => 50,
-#   :slug        => "van"
-# )
-
-
-
 
 # the farmhouse location
 location = Location.create!(
@@ -1066,7 +1057,7 @@ people_5 = [
       <p><a href="http://dymaxion.org" title="Dymaxion">Eleanor Saitta</a> is a hacker, designer, artist, writer, and barbarian. She makes a living and a vocation of understanding how complex, transdisciplinary systems operate and redesigning them to work, or at least fail, better. Among other things, Eleanor is a co-founder of <a href="http://octotrike.org" title="Trike: Trike">the Trike project</a> and the <a href="http://const.is">Constitutional Analysis Support Team</a>, Technical Director at the <a href="http://immi.is">International Modern Media Institute</a>, Principal Security Engineer at the <a href="http://openitp.org" title="openitp.org">Open Internet Tools Project</a>, a member of the advisory board at <a href="http://gwob.org" title="Geeks Without Bounds">Geeks Without Bounds</a>, a contributor to the <a href="http://briar.sf.net" title="Briar: A Secure News and Discussion System">Briar project</a>, and a Senior Security Associate with <a href="http://stachliu.com" title="Home &laquo; Stach &amp; Liu">Stach &amp; Liu</a>. She is nomadic and lives mostly in airports and occasionally in New York, London, and Stockholm. She can be found at <a href="http://dymaxion.org" title="Dymaxion">http://dymaxion.org</a> and on Twitter as <a href="https://twitter.com/dymaxion">@dymaxion</a>.</p>
     },
     :talk => {
-      :slug        => "eleanor-saitta-tba",
+      :slug        => "the-collapse-of-trust",
       :title       => "The Collapse of Trust",
       :description => %Q{
         <p>When we think about collapse, the narrative that comes to mind is that of the massive environmental challenges facing us as a species, as we attempt to recover from variously boiling, acid-bathing, and poisoning ourselves. Just as real, though, is the collapse of trust that's led us to be on such a direct collision path with the end of our future. We have placed a trust in our governments to act in our interests and in our institutions to think on the kind of timescales that lone individuals often fail to, but that trust has completely collapsed. The problem of ecological collapse in the large is really a failure of governance and timescale, an issue of state capture, a failure of fundamental ethics and vision on the part of the super-empowered, a systemic, emergent nightmare.</p>
