@@ -459,12 +459,8 @@ people_3 = [
       :description => "<p>The physical and virtual approach to creating viral memes. The visceral reaction to the things that exist in, impact, and replicate in the real world helps to propel things to go viral in the virtual world. The digital tools help to achieve greater reach, but understanding the fundamentals of human emotional response to the tangible and powerful is essential.</p>"
     },
     :video => {
-      :youtube       => "",
-      :canonical_url => ""
-    },
-    :video => {
-      :youtube       => "",
-      :canonical_url => ""
+      :youtube       => "https://vimeo.com/177478124",
+      :canonical_url => "https://vimeo.com/177478124"
     }
   },
   {
