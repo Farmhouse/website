@@ -47,7 +47,7 @@ GEM
     pg (0.18.4)
     polyglot (0.3.5)
     power_assert (0.2.7)
-    puma (2.16.0)
+    puma (3.12.2)
     rack (1.4.7)
     rack-cache (1.6.1)
       rack (>= 0.4)
