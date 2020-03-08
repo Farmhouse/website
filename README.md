@@ -2,7 +2,6 @@
 
 By **[Shane](http://iamshane.com)** of the house: **Farm**
 
-
 ## The House
 
 * **Coat of arms**     : Black avocado in a black circle on a grey field
@@ -14,7 +13,6 @@ By **[Shane](http://iamshane.com)** of the house: **Farm**
 * **Ancestral Weapon** : Rocks and Words
 * **Founder**          : Shane Becker
 * **Founded**          : 1903 / 2011
-
 
 ## Preface
 
