@@ -2,7 +2,6 @@
 
 By **[Shane](http://iamshane.com)** of the house: **Farm**
 
-
 ## The House
 
 * **Coat of arms**     : Black avocado in a black circle on a grey field
@@ -21,7 +20,6 @@ This is a living document to share the otherwise tribal knowledge of the day to 
 Tenants and guests are both expected to contribute to the house staying healthy and happy.
 
 Imagine each of these statements with "please" before it and "thank you" after it. :)
-
 
 ## The Rules™
 
