@@ -43,10 +43,6 @@ Farmhouse::Application.routes.draw do
   match "/conf/5/eleanor-saitta-tba" => redirect("/conf/5/the-collapse-of-trust")
   # ...REDIRECTS
 
-
-
-
-
   root to: "about#index"
 
   # homepage mailing list sign up
@@ -58,14 +54,12 @@ Farmhouse::Application.routes.draw do
   match "/labs/learn-to-code/1" => ("labs#index")
   match "/labs/learn-to-code"   => redirect("/labs/learn-to-code/1")
 
-
   # barn talks
   match "/barn-talks"                    => redirect("/conf")
   match "/barn-talks/1"                  => redirect("/conf")
   match "/barn-talks/1-warren-ellis"     => redirect("/conf")
   match "/barn-talks/2"                  => redirect("/conf")
   match "/barn-talks/2-margaret-killjoy" => redirect("/conf")
-
 
   # about
   match "/rules"      => "about#rules",      as: "rules"
@@ -108,7 +102,6 @@ Farmhouse::Application.routes.draw do
 
   # shop
   match "/shop"            => redirect("http://shop.farmhouse.co"), as: "shop"
-
 
   namespace :admin do
     resources :episodes #podcast admin
